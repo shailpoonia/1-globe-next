@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import { Metadata } from 'next'
 import { Section } from '@/components/shared/Section'
 import Link from 'next/link'
@@ -130,7 +130,7 @@ export default function PricingPage() {
             </div>
 
             <p className="text-xs text-muted-foreground font-medium uppercase tracking-widest mt-12 text-center">
-              All plans billed through Shopify · Cancel anytime
+              Planned billing through Shopify App Store
             </p>
           </div>
         </Section>

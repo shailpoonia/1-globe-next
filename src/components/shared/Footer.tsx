@@ -30,8 +30,13 @@ export const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <span className="text-sm text-muted-foreground/50 font-medium">
-                  1-BLOG <span className="text-[10px] ml-1 uppercase tracking-wider bg-secondary px-1.5 py-0.5">Soon</span>
+                <span className="text-sm text-muted-foreground/50 font-medium flex items-center">
+                  1-BLOG <span className="text-[10px] ml-1.5 uppercase tracking-wider bg-secondary px-1.5 py-0.5 leading-none">Soon</span>
+                </span>
+              </li>
+              <li>
+                <span className="text-sm text-muted-foreground/50 font-medium flex items-center">
+                  1-LIST <span className="text-[10px] ml-1.5 uppercase tracking-wider bg-secondary px-1.5 py-0.5 leading-none">Soon</span>
                 </span>
               </li>
             </ul>
