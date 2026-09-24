@@ -1,157 +1,135 @@
-# 1-globe.com — Design Brief
+# 1-GLOBE — Design Brief & Architecture
 
-**Purpose:** the single source of truth for rebuilding the 1-globe.com website (and future project sites) from scratch in a code editor such as Google Antigravity. Every value below is the **real** design system, extracted from the existing Vite + React + Tailwind + shadcn/ui project — not a reconstruction.
-
-> **Fastest path:** you already have the real `tailwind.config.js` and the global `index.css`. Reuse those two files directly as the foundation (see "Reuse the real files" at the bottom) and use this brief as the human-readable spec + build prompt. Only rebuild the tokens from scratch if you can't carry the files over.
+**Purpose:** This document is the single source of truth for the 1-GLOBE website design system, brand positioning, and technical architecture. It accurately reflects the current state of the repository.
 
 ---
 
-## 1. Brand at a glance
+## 1. Brand Positioning
 
-- **Feel:** dark, premium, high-tech. A "space / orbit / gravity" metaphor for ecommerce systems.
-- **Signature look:** near-black navy background, near-white text, and two vivid brights — **cyan** and **teal/aqua** — used sparingly for accents, CTAs, and the orbit motion.
-- **Typeface personality:** geometric grotesk headings (Space Grotesk) over a clean neutral sans (Inter).
-- **Signature moves to preserve:** one italic accent word in big headlines; small uppercase eyebrow labels above sections; slow rotating "orbit" animations.
-
----
-
-## 2. Colors  (authoritative = HSL, as used in CSS variables)
-
-The project stores color as HSL triplets consumed via `hsl(var(--token))`. HSL is the source of truth; the hex column is an approximate reference for humans.
-
-| Token | HSL (real) | ~Hex | Role |
-|---|---|---|---|
-| `--background` | `220 43% 5%` | `#070B12` | Page background (near-black navy) |
-| `--foreground` | `0 0% 96%` | `#F5F5F5` | Primary text |
-| `--card` | `211 53% 11%` | `#0E1B2B` | Cards / elevated surfaces |
-| `--card-foreground` | `208 100% 97%` | `#F0F9FF` | Text on cards |
-| `--popover` | `220 43% 5%` | `#070B12` | Popover background |
-| `--primary` | `190 100% 50%` | `#00D5FF` | **Primary bright — cyan.** CTAs, links, focus |
-| `--primary-foreground` | `0 0% 29%` | `#4A4A4A` | Text on primary |
-| `--secondary` | `211 53% 11%` | `#0E1B2B` | Secondary surface |
-| `--secondary-foreground` | `0 0% 100%` | `#FFFFFF` | Text on secondary |
-| `--muted` | `213 52% 12%` | `#0F1D2E` | Muted surface |
-| `--muted-foreground` | `206 29% 59%` | `#7C9BB4` | Secondary / supporting text |
-| `--accent` | `168 100% 48%` | `#00F5C4` | **Accent bright — teal/aqua.** Highlights, status |
-| `--accent-foreground` | `0 0% 34%` | `#575757` | Text on accent |
-| `--destructive` | `0 84% 60%` | `#EF4444` | Errors |
-| `--success` | `160 84% 39%` | `#12B77F` | Success / "live" states |
-| `--warning` | `38 92% 50%` | `#F5A311` | Warnings / roadmap |
-| `--info` | `217 91% 60%` | `#3B82F6` | Info |
-| `--border` | `211 45% 19%` | `#1B2F45` | Hairline borders |
-| `--input` | `211 45% 19%` | `#1B2F45` | Input borders |
-| `--ring` | `190 100% 50%` | `#00D5FF` | Focus ring (cyan) |
-
-**Chart ramp** (cyan tints): `--chart-1..5` = `190 100% 80% / 65% / 50% / 35% / 20%`.
-
-**Usage rule:** the palette is dark by default. Use cyan (primary) and teal (accent) *sparingly* — one accent word per headline, primary CTAs, focus rings, and small status dots. Never flood large areas with the brights.
+- **Brand:** 1-GLOBE
+- **Domain:** 1-globe.com
+- **Core Positioning:** Ecommerce performance.
+- **Primary Brand Promise:** MAKE ECOMMERCE PERFORM.
+- **Supporting Message:** Technology that makes online stores faster, smarter and easier to grow.
+- **Brand Philosophy:**
+  - BUSINESS FIRST.
+  - TECHNOLOGY SECOND.
+  - PERFORMANCE ALWAYS.
 
 ---
 
-## 3. Typography
+## 2. Product Ecosystem
 
-**Import (already in the CSS):**
-```css
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&display=swap');
-```
+1-GLOBE builds focused technology for ecommerce businesses. The current ecosystem includes:
 
-| Token | Stack |
-|---|---|
-| `--font-sans` (body) | `"Inter", -apple-system, BlinkMacSystemFont, sans-serif` |
-| `--font-heading` | `"Space Grotesk", -apple-system, BlinkMacSystemFont, sans-serif` |
-| `--font-serif` | `ui-serif, Georgia, "Times New Roman", serif` |
-| `--font-mono` | `ui-mono, "SF Mono", Monaco, "Cascadia Code", Consolas, monospace` |
+- **01 — 1-OPTIMISER**
+  - Category: Image Performance
+  - Status: **AVAILABLE**
+  - Description: Compress image payloads, generate descriptive SEO filenames, and write contextual alt text automatically.
+- **02 — 1-BLOG**
+  - Category: Content Performance
+  - Status: **LAUNCHING SOON**
+  - Description: Content performance for the modern store.
+- **03 — 1-LIST**
+  - Category: Product Listing Performance
+  - Status: **LAUNCHING SOON**
+  - Description: Build product listings structured for search, answer engines and generative discovery.
 
-**Rules baked into the CSS:**
-- `body` uses `--font-sans` (Inter).
-- All headings `h1–h6` are forced to `--font-heading` (Space Grotesk) with `!important`.
-- Weights available: Space Grotesk 500 & 700; Inter 400 & 500.
-
-**Long-form type scale (from `.page-title` / `.rich-text`):**
-- Page title: `clamp(1.875rem, 2vw + 1rem, 2.25rem)`, weight 700, line-height 1.15
-- Body copy: 1rem, line-height 1.75, color `--muted-foreground`
-- Rich H2: `clamp(1.5rem, 1.5vw + 1rem, 1.875rem)`, weight 700
-- Rich H3: `clamp(1.25rem, 1vw + 0.9rem, 1.5rem)`, weight 700
-- Rich H4: 1.125rem, weight 600
-- Links inside rich text: color `--primary` (cyan), underlined
+*Important Note:* Unavailable products (1-BLOG, 1-LIST) do not have live product pages and should never be presented as installable.
 
 ---
 
-## 4. Spacing, layout, radius, shadow
+## 3. Visual Character & Design Principles
 
-**Spacing scale** (Tailwind names → effective value):
-`xs` 0.5rem · `sm` 1rem · `base` 1.5rem · `lg` 2rem · `xl` 3rem · `xxl` 4rem · `xxxl` 6rem
+The 1-GLOBE visual system is **premium editorial technology**.
 
-**Layout:**
-- Content max-width: `--width-content` = **72rem** (`max-w-content`)
-- Container: centered, padding **2rem**, capped at **1400px** on `2xl`
+- **Palette:** Black / Near-Black, Pure White, Neutral Greys, and the existing 1-GLOBE Blue (`--primary`) used purely as an accent.
+- **Typography:** Strong, confident editorial typography that does most of the visual work.
+- **Whitespace:** Generous and deliberate.
+- **Borders:** Clean, precise, subtle.
+- **Motion & Effects:** Restrained. 
+- **Voice:** Factual, technical, confident, business-focused. Avoid exaggerated SaaS marketing claims (e.g., "guaranteed ROI"). Avoid generic SaaS elements (e.g., glassmorphism, heavy neon glow).
 
-**Border radius:** `--radius` = **0.5rem (8px)** → `lg` 8px, `md` 6px, `sm` 4px. Button radius = `calc(--radius - 2px)` = 6px.
-
-**Shadows:** subtle, dark. `--shadow-sm` → `--shadow-2xl` defined; elevation on the dark theme comes mostly from `--card` surfaces + hairline borders, not heavy shadows.
-
----
-
-## 5. Motion (the "orbit" signature)
-
-Keyframes + animations already defined in `tailwind.config.js`:
-- `float` — gentle vertical bob (3s)
-- `rotate-clockwise` (4s) / `rotate-counter` (3s) — the orbiting rings
-- `spin-slow` (3s), `pulse-slow` (2s), `bounce-gentle` (2s)
-- `accordion-down` / `accordion-up` (shadcn accordions)
-
-Plugin: `tailwindcss-animate`. Keep these — they create the orbital hero motion. Respect `prefers-reduced-motion` when rebuilding.
+*What to Avoid:* The legacy "space / orbit / gravity" metaphor and excessive cyan/teal gradients have been retired. The brand is grounded in ecommerce infrastructure.
 
 ---
 
-## 6. Sections / components to build
+## 4. Current Technology Architecture
 
-Rebuild these as reusable components (match the layout of the existing site — use screenshots or the live reference https://1-globe.com):
-- **Header / Nav** — logo left, minimal links, primary (cyan) CTA
-- **Hero** — eyebrow label, big headline with one italic accent word, orbit animation, dual CTA
-- **Portfolio / product cards** — on `--card` surface with hairline borders
-- **"Why 1-globe.com"** — feature grid
-- **"How it works"** — numbered steps (01–04)
-- **Stat / metric band**
-- **CTA band** — cyan primary button, glow
-- **Footer**
+- **Framework:** Next.js (App Router)
+- **UI Library:** React
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS (`tailwind.config.ts`, `globals.css`)
+- **Components:** Shared reusable components in `src/components/`, building on Radix UI where appropriate.
+- **SEO/Schema:** Foundational SEO and JSON-LD structured data architecture is established in the metadata and schema components.
 
 ---
 
-## 7. Assets still to add  ([FILL IN])
+## 5. Homepage Structure
 
-- `[FILL IN]` **Logo** — download `logo.svg` / `logo.png` from the project's `public/` folder (not in the CSS/config).
-- `[FILL IN]` **Favicon** — `public/favicon.ico`.
-- `[FILL IN]` **Brand / hero images** — from `public/`.
-- `[FILL IN]` **Page copy** — from `content-lib` / `content-plugin` or the `src/` components (or reuse existing marketing copy).
+The homepage follows a strict narrative sequence designed to walk a merchant from the overarching problem to a specific, measurable solution.
 
----
-
-## 8. Reuse the real files (recommended)
-
-You already have production-accurate files. Carry them over and strip the Airo-specific bits:
-
-**Keep as-is:** `tailwind.config.js` (remove only the `./dev-tools/src/**` content path), and the global `index.css` (the `:root` tokens + `@layer base/components/utilities`).
-
-**In `index.html`, remove these Airo-only lines when reusing:**
-- the `airoShareToken` inline `<script>`
-- `<script src="/airo-video-slots.js">` and `<script src="/airo-logo-orientation.js">`
-- the `<!--app-head-->` and `<!--app-html-->` SSR placeholders
-- the `fs-unmask-airo-app-builder` classes
-- `<script src="/analytics.js">` (swap for your own analytics if wanted)
-Keep: charset, viewport, favicon link, and the Vite entry `<script type="module" src="/src/main.tsx">`.
-
-**Airo plumbing you can ignore/replace:** `airo-media.json`, `airo-media-folders.json`, `format-overrides-plugin.ts`, `components.json` (shadcn config — keep if you keep shadcn).
+1. **Hero** (`EditorialHero.tsx`): Establishes "MAKE ECOMMERCE PERFORM."
+2. **Brand Statement** (`BrandStatement.tsx`): Outlines the problem ("MARKETING CREATES DEMAND. THE STORE HAS TO PERFORM.")
+3. **Product Ecosystem** (`ProductEcosystem.tsx`): Introduces the 3-part product family.
+4. **Infographic Showcase** (`InfographicShowcase.tsx`): Visualizes the impact of the technology on the storefront payload.
+5. **1-OPTIMISER Product Story** (`ProductDetailHome.tsx`): "START WITH THE PRODUCT IMAGE."
+6. **Performance Proof** (`PerformanceProof.tsx`): Factual, measurable examples of image payload and metadata optimization.
+7. **Brand Philosophy** (`BrandPhilosophy.tsx`): The three core principles.
+8. **Merchant Story** (`MerchantStory.tsx`): "BUILT FROM THE MERCHANT'S SIDE."
+9. **FAQ** (`FaqSection.tsx`): Genuine questions answered directly.
+10. **Final CTA** (`CtaBand.tsx`): Clear frictionless conversion path to explore 1-OPTIMISER.
 
 ---
 
-## 9. Suggested Antigravity prompt
+## 6. Typography System
 
-> Build a marketing website for the brand **1-globe.com** from scratch.
-> **Stack:** Vite + React + Tailwind CSS + shadcn/ui.
-> **Design system:** use the attached `tailwind.config.js` and `index.css` exactly as the source of truth for all colors, fonts, spacing, radius, and animations — do not invent new values. Colors are HSL CSS variables consumed via `hsl(var(--token))`.
-> **Look & feel:** dark near-black navy background, cyan (`--primary`) and teal (`--accent`) brights used sparingly, Space Grotesk headings, Inter body. Match the live reference https://1-globe.com and the screenshots in `/reference`.
-> **Build reusable components:** Header, Hero (with orbit `float`/`rotate` animation), feature grid, numbered "how it works" steps, stat band, CTA band, Footer.
-> **Brand:** use the logo from `/public` and the fonts/colors from the config.
-> **Content:** pull copy from `/content`.
-> When done, open the built-in browser, compare against the reference, and fix any spacing or type mismatches. Respect `prefers-reduced-motion`.
+**Font Stack:**
+- **Headings** (`--font-heading`): Space Grotesk
+- **Body** (`--font-sans`): Inter
+- **Monospace** (`--font-mono`): ui-monospace, SF Mono, etc.
+
+**Hierarchy Rules:**
+- `body` uses Inter.
+- All headings use Space Grotesk.
+- Section titles (`.text-section-title`) and massive typographic moments (`.text-hero`) are heavily tracked and bold.
+- Supporting elements often use uppercase tracking (`.text-eyebrow`, `.text-sub-eyebrow`).
+
+---
+
+## 7. Color System
+
+Colors are defined in HSL format in `src/app/globals.css` and consumed via Tailwind CSS variables. 
+
+- **Background:** `--background: 0 0% 2%` (Almost pure black)
+- **Foreground:** `--foreground: 0 0% 100%` (Pure white)
+- **Surfaces:** `--card: 0 0% 5%`, `--secondary: 0 0% 12%`, `--muted: 0 0% 10%`
+- **Text:** `--muted-foreground: 0 0% 65%`
+- **Borders:** `--border: 0 0% 15%`
+- **1-GLOBE Blue (Accent):** `--primary: 190 100% 50%` (`#00D5FF`).
+  - *Usage:* Used sparingly for interactive elements, focus rings, specific visual indicators, and to highlight a single critical word in major headlines. It does not flood the screen.
+
+**Functional Colors:**
+- `--destructive: 0 84% 60%` (Errors)
+- `--success: 160 84% 39%` (Success / Live)
+- `--warning: 38 92% 50%` (Warnings)
+- `--info: 190 100% 50%` (Info)
+
+---
+
+## 8. Layout & Spacing
+
+- **Container:** Centered with max-width of `1400px`.
+- **Content Width:** `--width-content` (`72rem` / `1152px`), ensuring optimal reading length and structural balance.
+- **Spacing System:** Extends standard Tailwind spacing with custom token-based spacing (`xs` to `xxxl`).
+- **Section Spacing:** The `.section-spacing` utility class provides generous vertical padding (`py-24 md:py-32`) to give sections breathing room.
+- **Border Radius:** `--radius: 0.5rem`. Crisp and architectural.
+
+---
+
+## 9. Motion
+
+- Motion is restrained and functional.
+- Animations include subtle accordion transitions and fade-ins.
+- Legacy sweeping, orbiting, or continuous looping CSS animations have been removed to prioritize performance and an editorial aesthetic.
+- The site rigorously respects `prefers-reduced-motion` for accessibility.
