@@ -25,7 +25,7 @@ export default function AboutPage() {
               not a <span className="text-primary italic">code factory</span>.
             </h1>
             <p className="text-lead max-w-2xl">
-              1-globe.com comes from the other side of the counter. It's built by operators who have run real Shopify stores and spent decades building brands — so every app starts from a problem we've actually lived, not one we imagined from a spec sheet.
+              1-GLOBE is an ecommerce performance technology company building tools for online merchants. It's built by operators who have run real Shopify stores and spent decades building brands — so every app starts from a problem we've actually lived, not one we imagined from a spec sheet.
             </p>
           </div>
         </Section>
@@ -34,7 +34,10 @@ export default function AboutPage() {
         <Section className="section-spacing bg-background border-b border-border">
           <div className="max-w-3xl mx-auto px-6 sm:px-8 lg:px-12 space-y-8 text-lead">
             <p>
-              We hit these exact walls ourselves: a heavy, slow catalog lacking proper structure, and legacy setups we were afraid to touch in case we broke the storefront. We'd spent careers making brands desirable—so we weren't about to let a broken technical foundation quietly cost us momentum. We built the fix—starting with <Link href="/apps/1-optimiser" className="text-primary hover:text-foreground transition-colors underline underline-offset-4 decoration-primary/30">1-OPTIMISER image performance</Link>.
+              We focus our technology on three core areas of the modern storefront: image performance, content performance, and product listing performance. We hit these exact walls ourselves: a heavy, slow catalog lacking proper structure, and legacy setups we were afraid to touch in case we broke the storefront.
+            </p>
+            <p>
+              We'd spent careers making brands desirable—so we weren't about to let a broken technical foundation quietly cost us momentum. We built the fix—starting with <Link href="/apps/1-optimiser" className="text-primary hover:text-foreground transition-colors underline underline-offset-4 decoration-primary/30">1-OPTIMISER image performance</Link>.
             </p>
             <p>
               That's the difference. These aren't apps written by a code shop guessing what merchants need. They carry two decades of real brand and store-building experience — business judgment poured into software, not just code that automates a task. This operational experience also shapes the practical <Link href="/resources" className="text-primary hover:text-foreground transition-colors underline underline-offset-4 decoration-primary/30">educational resources</Link> we publish for merchants.

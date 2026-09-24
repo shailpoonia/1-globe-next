@@ -14,6 +14,12 @@ export const ENTITY_WEBSITE = {
   '@id': `${siteConfig.url}/#website`,
 };
 
+export const PERFORMANCE_CATEGORIES = {
+  IMAGE: 'Image Performance',
+  CONTENT: 'Content Performance',
+  PRODUCT_LISTING: 'Product Listing Performance',
+} as const;
+
 export type ProductStatus = 'available' | 'launching-soon' | 'coming-soon';
 
 export interface EcosystemProduct {
@@ -34,7 +40,7 @@ export const ENTITY_PRODUCTS: Record<string, EcosystemProduct> = {
     number: '01',
     name: '1-OPTIMISER',
     category: 'Image Performance',
-    description: 'Make every product image work harder. Compress, optimize and improve image discoverability across your Shopify catalog.',
+    description: 'Image performance for Shopify. Compress image assets, rewrite generic filenames, and generate contextual alt text to support storefront performance.',
     status: 'coming-soon',
     href: '/apps/1-optimiser',
     ctaLabel: 'EXPLORE 1-OPTIMISER',
@@ -54,7 +60,7 @@ export const ENTITY_PRODUCTS: Record<string, EcosystemProduct> = {
     number: '03',
     name: '1-LIST',
     category: 'Product Listing Performance',
-    description: 'Build product listings structured for search, answer engines and generative discovery.',
+    description: 'Product listing performance for the modern store.',
     status: 'launching-soon',
     href: null,
   },
