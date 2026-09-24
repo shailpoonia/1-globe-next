@@ -32,22 +32,13 @@ const products: EcosystemProduct[] = [
     category: "CONTENT PERFORMANCE",
     description: "Content performance for the modern store.",
     status: "launching-soon",
-    href: null,
-    launchInformation: "Coming in Q4"
-  },
-  {
-    number: "03",
-    name: "1-SEARCH",
-    category: "DISCOVERY PERFORMANCE",
-    description: "Discovery performance across the store.",
-    status: "launching-soon",
     href: null
   },
   {
-    number: "04",
-    name: "1-CHECKOUT",
-    category: "CONVERSION PERFORMANCE",
-    description: "Conversion performance where the purchase happens.",
+    number: "03",
+    name: "1-LIST",
+    category: "PRODUCT LISTING PERFORMANCE",
+    description: "Build product listings structured for search, answer engines and generative discovery.",
     status: "launching-soon",
     href: null
   }
