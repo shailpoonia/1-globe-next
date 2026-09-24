@@ -53,30 +53,40 @@ export default function ArticlePage() {
             <div className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">What is ecommerce image optimization?</h2>
               <p className="text-xl text-muted-foreground font-medium leading-relaxed">
-                Ecommerce image optimization is the process of reducing file sizes and structuring image data to help a storefront perform better for both search systems and human visitors. It balances visual quality with technical efficiency to reduce Largest Contentful Paint (LCP) times and improve discoverability.
+                Ecommerce image optimization is the process of reducing file sizes and structuring image data to help a storefront perform better. It balances visual quality with technical efficiency to reduce image payloads and improve discoverability.
               </p>
               <p className="text-lg text-neutral-400 leading-relaxed">
-                When a merchant uploads high-resolution photography directly from a camera to a platform like Shopify, the files are typically too large and carry unhelpful filenames. Optimization solves these technical bottlenecks before they slow down the storefront.
+                When a merchant uploads high-resolution photography directly from a camera to a platform like Shopify, the files are typically large and carry unhelpful filenames. Optimization addresses these technical characteristics before they affect the storefront.
               </p>
             </div>
 
             <div className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">Why should ecommerce stores optimize product images?</h2>
               <p className="text-xl text-muted-foreground font-medium leading-relaxed">
-                Ecommerce stores must optimize product images because heavy payloads directly degrade the user experience and negatively impact Core Web Vitals. Simultaneously, poorly structured images lack the context required by search engines and AI generative discovery tools.
+                Ecommerce stores should optimize product images because heavy payloads can degrade the user experience and negatively impact page-loading performance. Simultaneously, poorly structured images may lack the context useful for discovery systems.
               </p>
               <p className="text-lg text-neutral-400 leading-relaxed">
-                An unoptimized catalog forces mobile users to download megabytes of unnecessary data, increasing bounce rates. From a discoverability perspective, search and answer engines cannot physically see an image; they rely on its filename, format, and alt text to understand what the product is.
+                Reducing unnecessarily large image payloads can help reduce the amount of data a browser needs to download and may improve page-loading performance, particularly on slower connections or mobile devices. This can have a positive effect on metrics like Largest Contentful Paint (LCP). From a discoverability perspective, image metadata and surrounding page context can provide useful information about an image. While image understanding capabilities vary between search and AI systems, providing structured information helps ensure your catalog is accessible and understandable.
               </p>
             </div>
 
             <div className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">What image format should ecommerce stores use?</h2>
               <p className="text-xl text-muted-foreground font-medium leading-relaxed">
-                Ecommerce stores should serve modern, highly efficient formats like WebP or AVIF instead of legacy formats like JPEG or PNG.
+                The appropriate format depends on the image, transparency requirements, browser support, and delivery system. Modern formats such as WebP and AVIF can offer useful compression characteristics, while JPEG and PNG still have legitimate use cases.
               </p>
               <p className="text-lg text-neutral-400 leading-relaxed">
-                WebP provides superior lossless and lossy compression, often reducing file weights significantly while maintaining perceptual quality. Most modern ecommerce architectures automatically negotiate and serve the best format supported by the shopper's browser.
+                WebP provides strong lossless and lossy compression, often reducing file weights significantly while maintaining perceptual quality. However, modern ecommerce platforms and content delivery networks (CDNs) often handle format selection automatically, negotiating and serving the most efficient format supported by the shopper's browser.
+              </p>
+            </div>
+
+            <div className="space-y-6">
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">How should ecommerce stores choose image dimensions?</h2>
+              <p className="text-xl text-muted-foreground font-medium leading-relaxed">
+                Stores should avoid serving dramatically larger images than the display context requires, balancing visual quality with payload size.
+              </p>
+              <p className="text-lg text-neutral-400 leading-relaxed">
+                Using appropriate source dimensions prevents the browser from downloading unnecessarily huge source files only to scale them down visually. It is important to consider responsive image delivery and retina/high-density displays, ensuring the platform serves appropriately sized versions of the image based on the user's screen size.
               </p>
             </div>
 
@@ -93,20 +103,30 @@ export default function ArticlePage() {
             <div className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">Should product images have descriptive filenames?</h2>
               <p className="text-xl text-muted-foreground font-medium leading-relaxed">
-                Yes, product images should have descriptive filenames. Generic camera strings like <code className="bg-secondary px-1.5 py-0.5 rounded text-sm text-foreground">IMG_4837.jpg</code> provide zero semantic value to search engines.
+                Yes. Generic camera filenames provide little descriptive context about the subject of an image.
               </p>
               <p className="text-lg text-neutral-400 leading-relaxed">
-                Renaming a file to <code className="bg-secondary px-1.5 py-0.5 rounded text-sm text-foreground">handcrafted-wooden-wall-clock-12-inch.webp</code> explicitly tells Google Images, Bing, and AI discovery tools exactly what the asset represents, providing crucial context that supports storefront performance.
+                Renaming a generic string like <code className="bg-secondary px-1.5 py-0.5 rounded text-sm text-foreground">IMG_4837.jpg</code> to a descriptive format like <code className="bg-secondary px-1.5 py-0.5 rounded text-sm text-foreground">handcrafted-wooden-wall-clock-12-inch.webp</code> can provide additional descriptive context that may support storefront discoverability.
               </p>
             </div>
 
             <div className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">Should product images have alt text?</h2>
               <p className="text-xl text-muted-foreground font-medium leading-relaxed">
-                Yes, alt text is a critical component of product image optimization. It provides essential accessibility information for screen readers and acts as a strong contextual signal for search and answer engines.
+                Yes. Alt text is primarily intended to provide an accessible text alternative for people who cannot see an image, and it can also contribute contextual information for search engines.
               </p>
               <p className="text-lg text-neutral-400 leading-relaxed">
-                Effective alt text objectively describes the visual contents of the image in the context of the product. It should be descriptive rather than keyword-stuffed.
+                Product alt text should accurately identify the product and relevant visual characteristics when appropriate, describing meaningful visual information. It should not be stuffed with keywords. Note that decorative images may require different treatment, such as empty alt attributes.
+              </p>
+            </div>
+
+            <div className="space-y-6">
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">How does image optimization apply to Shopify stores?</h2>
+              <p className="text-xl text-muted-foreground font-medium leading-relaxed">
+                Product images are a core part of the Shopify storefront experience. Merchants should consider how images are uploaded, transformed, and delivered by Shopify and their active theme.
+              </p>
+              <p className="text-lg text-neutral-400 leading-relaxed">
+                While Shopify provides built-in image delivery and CDN capabilities, initial image size and metadata structure still affect the final page payload and product context. Product image metadata should remain descriptive and accurate. Any optimization tools or apps should complement the existing Shopify workflow rather than unnecessarily disrupting it.
               </p>
             </div>
 
@@ -117,18 +137,18 @@ export default function ArticlePage() {
             <div className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">Practical optimization checklist</h2>
               <ul className="space-y-4 text-lg text-neutral-400 list-disc list-inside">
-                <li><strong className="text-foreground">Scale properly:</strong> Do not serve 4000px images in a 500px container.</li>
-                <li><strong className="text-foreground">Compress consistently:</strong> Ensure every image in your catalog is compressed to reduce payload.</li>
-                <li><strong className="text-foreground">Use modern formats:</strong> Serve WebP where supported.</li>
-                <li><strong className="text-foreground">Rename files:</strong> Replace generic camera names with descriptive, hyphenated strings.</li>
-                <li><strong className="text-foreground">Write clear alt text:</strong> Describe the product accurately for accessibility and search context.</li>
+                <li><strong className="text-foreground">Scale properly:</strong> Avoid serving dramatically larger images than the display requires.</li>
+                <li><strong className="text-foreground">Compress consistently:</strong> Ensure images are compressed to reduce payload size.</li>
+                <li><strong className="text-foreground">Use modern formats:</strong> Rely on formats like WebP or AVIF where supported and practical.</li>
+                <li><strong className="text-foreground">Rename files:</strong> Replace generic camera names with descriptive strings.</li>
+                <li><strong className="text-foreground">Write clear alt text:</strong> Accurately describe the product for accessibility and context.</li>
               </ul>
             </div>
 
             <div className="bg-secondary/30 p-8 mt-16 border border-border rounded-sm">
               <h3 className="text-lg font-bold uppercase tracking-widest text-foreground mb-4">Automate your image optimization</h3>
               <p className="text-muted-foreground mb-8 text-lg">
-                1-OPTIMISER is designed specifically for Shopify stores. It compresses image assets, rewrites generic filenames, and generates contextual alt text to support storefront performance.
+                1-OPTIMISER is an ecommerce performance tool designed specifically for Shopify stores. It compresses image assets, rewrites generic filenames, and generates contextual alt text to support storefront performance.
               </p>
               <Link href="/apps/1-optimiser" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-bold text-xs uppercase tracking-widest bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors">
                 Explore 1-OPTIMISER
