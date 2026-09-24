@@ -1,8 +1,8 @@
-﻿import React from 'react'
+import React from 'react'
 
 export const BrandStatement: React.FC = () => {
   return (
-    <section className="bg-background py-24 md:py-32 lg:py-40 border-b border-border">
+    <section id="why" className="bg-background py-24 md:py-32 lg:py-40 border-b border-border">
       <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
         
         {/* First Block */}
