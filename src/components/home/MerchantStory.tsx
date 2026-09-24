@@ -1,40 +1,81 @@
 import React from 'react'
-import { Section } from '@/components/shared/Section'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 
 export const MerchantStory: React.FC = () => {
   return (
-    <Section className="section-spacing bg-background border-b border-border">
+    <section id="merchant-story" className="bg-background py-24 md:py-32 lg:py-40 border-b border-border">
       <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-start">
           
-          <div className="lg:col-span-6">
-            <h2 className="text-section-title">
-              Built from the merchant's side of the counter.
+          {/* Left Column - Headline */}
+          <div className="lg:col-span-6 sticky top-32">
+            <h2 className="font-heading font-bold text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] tracking-tighter leading-[0.95] text-foreground uppercase">
+              BUILT FROM<br />
+              THE MERCHANT'S<br />
+              SIDE.
             </h2>
           </div>
           
-          <div className="lg:col-span-6 flex flex-col justify-end space-y-6 text-lead pt-2 lg:pt-0">
-            <p>
-              1-globe.com wasn't born in a software incubator. It was engineered out of practical necessity while operating real ecommerce businesses.
-            </p>
-            <p>
-              We experienced firsthand the friction of bloated "all-in-one" apps that slowed down themes and provided questionable ROI. We realized that true scale requires precision tools—technology built to fix exact operational problems without collateral damage to site speed.
-            </p>
-            <div className="pt-8">
+          {/* Right Column - Story & Philosophy */}
+          <div className="lg:col-span-6 flex flex-col pt-2 lg:pt-4">
+            <div className="text-lg md:text-xl text-neutral-400 font-medium leading-relaxed space-y-6 mb-12">
+              <p>
+                1-GLOBE was built around the practical problems ecommerce businesses encounter every day. 
+              </p>
+              <p>
+                The goal is not to add another layer of software to the store. It is to build focused technology that solves a specific problem, integrates into the existing ecommerce workflow, and improves the underlying experience—removing the friction of unnecessary complexity and disconnected tools.
+              </p>
+              
+              <div className="pt-8 mt-8 border-t border-border">
+                <p className="font-heading font-bold text-2xl md:text-3xl tracking-tighter uppercase text-foreground">
+                  BUSINESS FIRST.<br />
+                  TECHNOLOGY SECOND.<br />
+                  PERFORMANCE ALWAYS.
+                </p>
+              </div>
+            </div>
+            
+            <div className="pb-16 mb-16 border-b border-border">
               <Link
                 href="/about"
-                className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-foreground hover:text-primary transition-colors border-b-2 border-foreground pb-1 hover:border-primary"
+                className="interactive-btn inline-flex items-center justify-center gap-2 h-14 px-8 border border-neutral-700 bg-transparent text-sm font-bold uppercase tracking-widest text-foreground hover:bg-white/5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary w-fit"
               >
-                <span>Read our full story</span>
+                <span>READ THE 1-GLOBE STORY</span>
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
-          </div>
 
+            {/* Product Connection */}
+            <div>
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground block mb-6">
+                THE WORK CONTINUES
+              </span>
+              <ul className="flex flex-col gap-4">
+                <li className="flex items-baseline gap-4 group">
+                  <span className="text-sm font-heading font-bold text-neutral-700 group-hover:text-primary transition-colors">01</span>
+                  <span className="text-sm font-bold uppercase tracking-widest text-foreground">
+                    1-OPTIMISER <span className="text-primary px-1">/</span> <span className="text-neutral-400">IMAGE PERFORMANCE</span>
+                  </span>
+                </li>
+                <li className="flex items-baseline gap-4 group">
+                  <span className="text-sm font-heading font-bold text-neutral-700 group-hover:text-primary transition-colors">02</span>
+                  <span className="text-sm font-bold uppercase tracking-widest text-foreground">
+                    1-BLOG <span className="text-primary px-1">/</span> <span className="text-neutral-400">CONTENT PERFORMANCE</span>
+                  </span>
+                </li>
+                <li className="flex items-baseline gap-4 group">
+                  <span className="text-sm font-heading font-bold text-neutral-700 group-hover:text-primary transition-colors">03</span>
+                  <span className="text-sm font-bold uppercase tracking-widest text-foreground">
+                    1-LIST <span className="text-primary px-1">/</span> <span className="text-neutral-400">PRODUCT LISTING PERFORMANCE</span>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            
+          </div>
         </div>
       </div>
-    </Section>
+    </section>
   )
 }
