@@ -102,12 +102,12 @@ export const Header: React.FC = () => {
 
           {/* Right: Primary CTA */}
           <div className="flex items-center justify-end gap-3 sm:gap-4 flex-1">
-            <div
-              className="hidden sm:inline-flex items-center gap-1.5 text-[10px] sm:text-xs uppercase tracking-[0.1em] sm:tracking-[0.14em] font-bold text-muted-foreground bg-secondary px-4 sm:px-6 py-2.5 cursor-not-allowed select-none"
-              title="Coming to the Shopify App Store"
+            <Link
+              href="/apps/1-optimiser"
+              className="hidden sm:inline-flex items-center justify-center gap-1.5 h-10 px-6 border border-neutral-700 bg-transparent text-xs font-bold uppercase tracking-widest text-foreground hover:bg-white/5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
             >
-              <span>Coming to App Store</span>
-            </div>
+              <span>EXPLORE 1-OPTIMISER</span>
+            </Link>
 
             {/* Mobile Menu Hamburger */}
             <button
@@ -166,11 +166,13 @@ export const Header: React.FC = () => {
           </nav>
 
           <div className="pt-6 border-t border-border flex flex-col gap-4">
-            <div
-              className="w-full h-14 bg-secondary text-muted-foreground font-bold uppercase tracking-wider flex items-center justify-center gap-2 text-sm cursor-not-allowed select-none"
+            <Link
+              href="/apps/1-optimiser"
+              onClick={() => setMobileMenuOpen(false)}
+              className="interactive-btn w-full h-14 border border-neutral-700 bg-transparent text-foreground font-bold uppercase tracking-widest flex items-center justify-center gap-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
             >
-              <span>Coming to App Store</span>
-            </div>
+              <span>EXPLORE 1-OPTIMISER</span>
+            </Link>
           </div>
         </div>
       )}

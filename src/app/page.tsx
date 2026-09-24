@@ -52,7 +52,15 @@ export default function HomePage() {
       <FaqSection />
 
       {/* 11: Final CTA */}
-      <CtaBand />
+      <CtaBand
+        headlinePart1="MAKE YOUR STORE"
+        italicWord="PERFORM"
+        headlinePart2="BETTER."
+        subhead="Start with the performance problem."
+        primaryCtaText="EXPLORE 1-OPTIMISER"
+        primaryCtaUrl="/apps/1-optimiser"
+        primaryIsLink={true}
+      />
     </div>
   )
 }

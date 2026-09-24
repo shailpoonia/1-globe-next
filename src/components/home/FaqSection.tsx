@@ -1,62 +1,102 @@
 import React from 'react'
 import * as Accordion from '@radix-ui/react-accordion'
 import { ChevronDown } from 'lucide-react'
-import { Section } from '@/components/shared/Section'
-import { SectionHeader } from '@/components/shared/SectionHeader'
+import Link from 'next/link'
 
 export const FaqSection: React.FC = () => {
   const faqs = [
     {
-      q: "What does 1-globe.com actually do?",
-      a: "We build Shopify-native performance technology. Our applications solve specific structural bottlenecks—like oversized image payloads, missing metadata, and content workflows—that prevent standard ecommerce stores from loading quickly and indexing efficiently."
+      q: "What is 1-GLOBE?",
+      a: "1-GLOBE builds focused technology for ecommerce businesses. We design tools that address specific operational and performance challenges across the store, from image and content performance to product listing structure."
     },
     {
-      q: "Why use focused apps instead of an all-in-one suite?",
-      a: "General-purpose tools often introduce code bloat because they attempt to handle dozens of edge cases. We build specific tools for specific problems. This modular architecture allows you to optimize a specific layer without adding unnecessary scripts or overhead to your storefront."
+      q: "Who is 1-GLOBE built for?",
+      a: "1-GLOBE is designed for ecommerce businesses and the teams that operate them. The focus is on practical tools that can fit into existing ecommerce workflows rather than adding unnecessary complexity."
     },
     {
-      q: "Do you guarantee higher search rankings?",
-      a: "No. Rankings are determined by external algorithms. What we guarantee is that we resolve the technical barriers—slow pages, unreadable assets, unstructured data—that prevent search engines from effectively crawling and interpreting your store. We provide the technical foundation; you provide the product and brand."
+      q: "What products does 1-GLOBE offer?",
+      a: "The current ecosystem includes 1-OPTIMISER for image performance, 1-BLOG for content performance, and 1-LIST for product listing performance. Product availability may differ as the ecosystem develops."
     },
     {
-      q: "How do your apps interact with my Shopify theme?",
-      a: "Where possible, we interact directly with the Shopify Admin API to modify underlying data rather than injecting client-side scripts. This ensures your theme remains lightweight, and if you ever uninstall an application, it leaves zero residual code behind."
+      q: "What is 1-OPTIMISER?",
+      a: "1-OPTIMISER is an image performance tool for Shopify stores. It helps merchants optimize image assets, improve filenames and generate contextual alt text as part of their image management workflow."
+    },
+    {
+      q: "Are 1-BLOG and 1-LIST available?",
+      a: "They are currently part of the 1-GLOBE product roadmap and are being prepared for launch. Their purpose is to help merchants improve content and product listing structure for modern search and discovery environments."
+    },
+    {
+      q: "Does 1-GLOBE work with Shopify?",
+      a: "1-OPTIMISER is designed for Shopify stores and works with the Shopify catalog workflow. Other 1-GLOBE products may have their own platform requirements as they launch."
+    },
+    {
+      q: "Do I need to replace my existing ecommerce tools?",
+      a: "No. 1-GLOBE is designed around focused capabilities rather than requiring merchants to replace their entire ecommerce stack. Each product should address a defined problem within the existing store workflow."
+    },
+    {
+      q: "How does 1-GLOBE think about ecommerce performance?",
+      a: "We look at performance as more than a single speed score. Technical assets, content, product data, structure and the customer experience all contribute to how an ecommerce store operates and communicates."
+    },
+    {
+      q: "Where should I start?",
+      a: (
+        <>
+          Start with the problem you are trying to solve. If image performance and image management are the priority, explore 1-OPTIMISER. As additional products become available, they will address other areas of ecommerce performance.
+          <div className="mt-6">
+            <Link href="/apps/1-optimiser" className="inline-flex items-center text-sm font-bold uppercase tracking-widest text-primary hover:text-foreground transition-colors">
+              Explore 1-OPTIMISER →
+            </Link>
+          </div>
+        </>
+      )
     }
   ]
 
   return (
-    <Section id="faq" className="section-spacing bg-background border-b border-border">
-      <div className="max-w-3xl mx-auto px-6 sm:px-8 lg:px-12">
-        <SectionHeader
-          headline="FAQ"
-          align="left"
-        />
+    <section id="faq" className="bg-background py-24 md:py-32 lg:py-40 border-b border-border">
+      <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-start">
+          
+          <div className="lg:col-span-5 sticky top-32">
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground block mb-6">
+              COMMON QUESTIONS
+            </span>
+            <h2 className="font-heading font-bold text-5xl sm:text-6xl tracking-tighter leading-[0.95] text-foreground uppercase">
+              QUESTIONS<br />
+              WORTH<br />
+              ANSWERING.
+            </h2>
+          </div>
 
-        <Accordion.Root type="single" collapsible className="w-full">
-          {faqs.map((faq, i) => (
-            <Accordion.Item
-              key={i}
-              value={`item-${i}`}
-              className="border-b border-border last:border-0"
-            >
-              <Accordion.Header className="flex">
-                <Accordion.Trigger className="flex flex-1 items-center justify-between py-6 text-left font-heading font-bold text-lg sm:text-xl text-foreground hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded">
-                  {faq.q}
-                  <ChevronDown
-                    className="w-5 h-5 text-muted-foreground transition-transform duration-300 ease-in-out group-data-[state=open]:rotate-180"
-                    aria-hidden
-                  />
-                </Accordion.Trigger>
-              </Accordion.Header>
-              <Accordion.Content className="overflow-hidden text-sm sm:text-base text-muted-foreground leading-relaxed data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down">
-                <div className="pb-6 pr-8 font-medium">
-                  {faq.a}
-                </div>
-              </Accordion.Content>
-            </Accordion.Item>
-          ))}
-        </Accordion.Root>
+          <div className="lg:col-span-7">
+            <Accordion.Root type="single" collapsible className="w-full">
+              {faqs.map((faq, i) => (
+                <Accordion.Item
+                  key={i}
+                  value={`item-${i}`}
+                  className="border-b border-border last:border-0"
+                >
+                  <Accordion.Header className="flex">
+                    <Accordion.Trigger className="group flex flex-1 items-center justify-between py-6 text-left font-heading font-bold text-lg sm:text-xl text-foreground hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded">
+                      {faq.q}
+                      <ChevronDown
+                        className="w-5 h-5 text-muted-foreground transition-transform duration-300 ease-in-out group-data-[state=open]:rotate-180 shrink-0 ml-4"
+                        aria-hidden
+                      />
+                    </Accordion.Trigger>
+                  </Accordion.Header>
+                  <Accordion.Content className="overflow-hidden text-sm sm:text-base text-neutral-400 leading-relaxed data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down">
+                    <div className="pb-8 pr-8 font-medium">
+                      {faq.a}
+                    </div>
+                  </Accordion.Content>
+                </Accordion.Item>
+              ))}
+            </Accordion.Root>
+          </div>
+          
+        </div>
       </div>
-    </Section>
+    </section>
   )
 }
