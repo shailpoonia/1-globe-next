@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
@@ -62,7 +62,7 @@ export const Header: React.FC = () => {
               onClick={(e) => handleNavClick(e, '#why')}
               className="text-sm font-semibold text-foreground/80 interactive-link uppercase tracking-[0.1em] whitespace-nowrap"
             >
-              Why 1-globe.com
+              Why 1-GLOBE
             </a>
             <Link
               href="/about"
@@ -149,7 +149,7 @@ export const Header: React.FC = () => {
               onClick={(e) => handleNavClick(e, '#why')}
               className="text-2xl font-heading font-bold text-foreground hover:text-primary transition-colors"
             >
-              Why 1-globe.com
+              Why 1-GLOBE
             </a>
             <Link
               href="/about"
