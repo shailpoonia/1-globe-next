@@ -31,26 +31,6 @@ export default function ImageOptimizerPage() {
         description={product.description}
         slug={product.id}
         {...(product['@id'] && { '@id': product['@id'] })}
-        offers={[
-          {
-            '@type': 'Offer',
-            name: 'Free Starter',
-            price: '0',
-            priceCurrency: 'USD'
-          },
-          {
-            '@type': 'Offer',
-            name: 'Growth',
-            price: '9.99',
-            priceCurrency: 'USD'
-          },
-          {
-            '@type': 'Offer',
-            name: 'Pro Catalog',
-            price: '19.99',
-            priceCurrency: 'USD'
-          }
-        ]}
       />
       <AppBreadcrumbSchema appName="1-OPTIMISER" appSlug="1-optimiser" />
       {/* App Sub-Navigation */}
@@ -101,7 +81,7 @@ export default function ImageOptimizerPage() {
         headlinePart2="PERFORMANCE?"
         subhead="Start optimizing your catalog today."
         primaryCtaText="COMING TO APP STORE"
-        primaryCtaUrl="#"
+        primaryIsLink={false}
         secondaryCtaText="View pricing"
         secondaryCtaUrl="/pricing"
         secondaryIsLink={true}

@@ -1,3 +1,5 @@
+import { PERFORMANCE_CATEGORIES } from './entities';
+
 export type ResourceCategory =
   | 'Ecommerce Performance'
   | 'Image Performance'
@@ -27,7 +29,7 @@ export const RESOURCES: Record<string, ResourceItem> = {
     slug: 'ecommerce-image-optimization',
     title: 'Ecommerce Image Optimization: A Practical Guide',
     description: 'How product images affect storefront performance, usability, accessibility and discoverability.',
-    category: 'Image Performance',
+    category: PERFORMANCE_CATEGORIES.IMAGE,
     datePublished: '2026-09-24T12:00:00Z',
     dateModified: '2026-09-24T12:00:00Z',
   }
