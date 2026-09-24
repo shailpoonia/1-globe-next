@@ -21,6 +21,7 @@ export function SoftwareAppSchema({ name, description, slug, '@id': idId, offers
     description,
     url: `${siteConfig.url}/apps/${slug}`,
     provider: {
+      '@type': 'Organization',
       '@id': ENTITY_ORGANIZATION['@id']
     },
     ...(offers && { offers }),

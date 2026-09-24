@@ -37,6 +37,7 @@ export function WebSiteSchema() {
     name: ENTITY_WEBSITE.name,
     url: ENTITY_WEBSITE.url,
     publisher: {
+      '@type': 'Organization',
       '@id': ENTITY_ORGANIZATION['@id']
     }
   };

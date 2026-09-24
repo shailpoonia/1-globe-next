@@ -7,7 +7,7 @@ export const FaqSection: React.FC = () => {
   const faqs = [
     {
       q: "What is 1-GLOBE?",
-      a: "1-GLOBE is an ecommerce performance technology brand. We build infrastructure that helps online stores operate faster and rank better."
+      a: "1-GLOBE is an ecommerce performance technology brand. We build technology that helps online stores improve their technical and content foundations."
     },
     {
       q: "What does 1-GLOBE build?",
@@ -19,11 +19,11 @@ export const FaqSection: React.FC = () => {
     },
     {
       q: "What is ecommerce performance technology?",
-      a: "It is infrastructure—such as image compression engines, metadata generators, and structural data tools—that ensures a storefront performs well for both search engines and human shoppers."
+      a: "It is infrastructure—such as image compression engines, metadata generators, and structural data tools—designed to help a storefront perform better for both search engines and human shoppers."
     },
     {
       q: "What products does 1-GLOBE offer?",
-      a: "The ecosystem currently includes 1-OPTIMISER for image performance, 1-BLOG for content performance, and 1-LIST for product listing performance."
+      a: "The 1-GLOBE product ecosystem includes 1-OPTIMISER for image performance, 1-BLOG for content performance, and 1-LIST for product listing performance. 1-OPTIMISER is currently coming soon, while 1-BLOG and 1-LIST are launching soon."
     },
     {
       q: "What is 1-OPTIMISER?",

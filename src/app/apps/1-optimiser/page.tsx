@@ -14,7 +14,7 @@ import { SoftwareAppSchema, AppBreadcrumbSchema } from '@/components/shared/AppS
 
 export const metadata: Metadata = {
   title: '1-OPTIMISER | Shopify Image Optimizer',
-  description: 'Make every product image work harder. Compress, optimize and improve image discoverability across your Shopify catalog.',
+  description: ENTITY_PRODUCTS['1-optimiser'].description,
   alternates: {
     canonical: '/apps/1-optimiser',
   },
