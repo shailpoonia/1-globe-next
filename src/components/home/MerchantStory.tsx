@@ -48,7 +48,10 @@ export const MerchantStory: React.FC = () => {
                 <li className="flex items-baseline gap-4 group">
                   <span className="text-sm font-heading font-bold text-neutral-700 group-hover:text-primary transition-colors">01</span>
                   <span className="text-sm font-bold uppercase tracking-widest text-foreground">
-                    1-OPTIMISER <span className="text-primary px-1">/</span> <span className="text-neutral-400">IMAGE PERFORMANCE</span>
+                    <Link href="/apps/1-optimiser" className="hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary rounded">
+                      1-OPTIMISER
+                    </Link>
+                    <span className="text-primary px-1">/</span> <span className="text-neutral-400">IMAGE PERFORMANCE</span>
                   </span>
                 </li>
                 <li className="flex items-baseline gap-4 group">

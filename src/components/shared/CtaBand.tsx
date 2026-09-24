@@ -84,6 +84,10 @@ export const CtaBand: React.FC<CtaBandProps> = ({
               <span>{primaryCtaText}</span>
               <ArrowUpRight className="w-4 h-4" />
             </Link>
+          ) : primaryCtaUrl === '#' ? (
+            <div className={`${primaryButtonClass} opacity-80 cursor-default`}>
+              <span>{primaryCtaText}</span>
+            </div>
           ) : (
             <a
               href={primaryCtaUrl}
@@ -101,6 +105,10 @@ export const CtaBand: React.FC<CtaBandProps> = ({
               <Link href={secondaryCtaUrl} className={secondaryButtonClass}>
                 <span>{secondaryCtaText}</span>
               </Link>
+            ) : secondaryCtaUrl === '#' ? (
+              <div className={`${secondaryButtonClass} opacity-80 cursor-default`}>
+                <span>{secondaryCtaText}</span>
+              </div>
             ) : (
               <a
                 href={secondaryCtaUrl}

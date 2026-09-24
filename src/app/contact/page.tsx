@@ -1,6 +1,7 @@
 import React from 'react'
 import { Metadata } from 'next'
 import { Section } from '@/components/shared/Section'
+import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Contact',
@@ -33,6 +34,19 @@ export default function ContactPage() {
                   <a href="mailto:support@1-globe.com" className="text-primary hover:underline text-lg font-medium">
                     support@1-globe.com
                   </a>
+                </div>
+                
+                <div className="pt-6 border-t border-border mt-8">
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Looking for product details?{' '}
+                    <Link href="/apps/1-optimiser" className="text-primary hover:text-foreground transition-colors underline underline-offset-4 decoration-primary/30">
+                      Explore 1-OPTIMISER
+                    </Link>{' '}
+                    or{' '}
+                    <Link href="/pricing" className="text-primary hover:text-foreground transition-colors underline underline-offset-4 decoration-primary/30">
+                      view 1-OPTIMISER pricing
+                    </Link>.
+                  </p>
                 </div>
               </div>
             </div>

@@ -94,7 +94,17 @@ export default function ImageOptimizerPage() {
       <AppFaqSection />
 
       {/* 5. Shared Final CTA Band */}
-      <CtaBand />
+      <CtaBand 
+        headlinePart1="READY FOR"
+        italicWord="BETTER"
+        headlinePart2="PERFORMANCE?"
+        subhead="Start optimizing your catalog today."
+        primaryCtaText="Coming to App Store"
+        primaryCtaUrl="#"
+        secondaryCtaText="View pricing"
+        secondaryCtaUrl="/pricing"
+        secondaryIsLink={true}
+      />
     </div>
   )
 }

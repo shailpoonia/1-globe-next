@@ -1,6 +1,7 @@
 import React from 'react'
 import { Metadata } from 'next'
 import { Section } from '@/components/shared/Section'
+import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: '1-OPTIMISER Pricing',
@@ -24,6 +25,11 @@ export default function PricingPage() {
               </h1>
               <p className="text-lead">
                 Free to install, test on your own store, and cancel anytime. Billing is handled securely through the Shopify App Store.
+              </p>
+              <p className="text-lead mt-4">
+                <Link href="/apps/1-optimiser" className="text-primary hover:text-foreground transition-colors underline underline-offset-4 decoration-primary/30">
+                  See how 1-OPTIMISER works
+                </Link> before choosing a plan.
               </p>
             </div>
 

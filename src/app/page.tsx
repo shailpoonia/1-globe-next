@@ -67,6 +67,9 @@ export default function HomePage() {
         primaryCtaText="EXPLORE 1-OPTIMISER"
         primaryCtaUrl="/apps/1-optimiser"
         primaryIsLink={true}
+        secondaryCtaText="View pricing"
+        secondaryCtaUrl="/pricing"
+        secondaryIsLink={true}
       />
     </div>
   )
