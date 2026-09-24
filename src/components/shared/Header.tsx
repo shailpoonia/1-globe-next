@@ -84,6 +84,16 @@ export const Header: React.FC = () => {
             >
               Pricing
             </Link>
+            <Link
+              href="/resources"
+              className={`text-sm font-semibold interactive-link uppercase tracking-[0.1em] whitespace-nowrap ${
+                pathname === '/resources' || pathname.startsWith('/resources/')
+                  ? '!text-primary'
+                  : 'text-foreground/80'
+              }`}
+            >
+              Resources
+            </Link>
           </nav>
 
           {/* Center: Brand Lockup */}
@@ -162,6 +172,17 @@ export const Header: React.FC = () => {
               }`}
             >
               Pricing
+            </Link>
+            <Link
+              href="/resources"
+              onClick={() => setMobileMenuOpen(false)}
+              className={`text-2xl font-heading font-bold transition-colors ${
+                pathname === '/resources' || pathname.startsWith('/resources/')
+                  ? 'text-primary'
+                  : 'text-foreground hover:text-primary'
+              }`}
+            >
+              Resources
             </Link>
           </nav>
 

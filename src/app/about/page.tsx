@@ -37,7 +37,7 @@ export default function AboutPage() {
               We hit these exact walls ourselves: a heavy, slow catalog lacking proper structure, and legacy setups we were afraid to touch in case we broke the storefront. We'd spent careers making brands desirable—so we weren't about to let a broken technical foundation quietly cost us momentum. We built the fix—starting with <Link href="/apps/1-optimiser" className="text-primary hover:text-foreground transition-colors underline underline-offset-4 decoration-primary/30">1-OPTIMISER image performance</Link>.
             </p>
             <p>
-              That's the difference. These aren't apps written by a code shop guessing what merchants need. They carry two decades of real brand and store-building experience — business judgment poured into software, not just code that automates a task.
+              That's the difference. These aren't apps written by a code shop guessing what merchants need. They carry two decades of real brand and store-building experience — business judgment poured into software, not just code that automates a task. This operational experience also shapes the practical <Link href="/resources" className="text-primary hover:text-foreground transition-colors underline underline-offset-4 decoration-primary/30">educational resources</Link> we publish for merchants.
             </p>
             <p className="text-foreground font-bold text-xl uppercase tracking-widest mt-12">
               Business sense first. Code second. Always.

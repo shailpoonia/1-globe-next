@@ -59,6 +59,11 @@ export const Footer: React.FC = () => {
             <h4 className="text-xs font-semibold text-foreground uppercase tracking-wider">Resources</h4>
             <ul className="space-y-3">
               <li>
+                <Link href="/resources" className="text-sm interactive-link text-muted-foreground font-medium">
+                  Guides
+                </Link>
+              </li>
+              <li>
                 <Link href="/contact" className="text-sm interactive-link text-muted-foreground font-medium">
                   Help
                 </Link>

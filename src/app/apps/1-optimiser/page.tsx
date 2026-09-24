@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import { Metadata } from 'next'
 import { CtaBand } from '@/components/shared/CtaBand'
 import { AppSubNav } from '@/components/feature-page/AppSubNav'
@@ -71,7 +72,7 @@ export default function ImageOptimizerPage() {
             <p>Marketing drives traffic, but your storefront infrastructure dictates performance. Heavy payloads and missing metadata can undermine your acquisition efforts.</p>
             <div className="bg-secondary/30 p-6 border-l-2 border-primary mt-6">
               <p className="font-bold text-foreground mb-2">Image performance matters.</p>
-              <p className="text-sm">Large image files slow down page speeds, while generic filenames and missing alt text provide limited context for search and AI discovery. 1-OPTIMISER automatically compresses your images and enriches your metadata, helping you build a faster, more discoverable storefront.</p>
+              <p className="text-sm">Large image files slow down page speeds, while generic filenames and missing alt text provide limited context for search and AI discovery. 1-OPTIMISER automatically compresses your images and enriches your metadata, helping you build a faster, more discoverable storefront. <Link href="/resources/ecommerce-image-optimization" className="text-primary hover:text-foreground transition-colors underline underline-offset-4 decoration-primary/30">Read our complete guide to image optimization</Link>.</p>
             </div>
           </div>
         }

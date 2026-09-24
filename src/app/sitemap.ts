@@ -1,18 +1,23 @@
 import { MetadataRoute } from 'next';
 import { siteConfig } from '@/lib/seo';
+import { getAllResources } from '@/lib/resources';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = [
+  const staticRoutes = [
     '',
     '/about',
     '/apps/1-optimiser',
     '/pricing',
     '/contact',
     '/privacy',
-    '/terms'
+    '/terms',
+    '/resources'
   ];
 
-  return routes.map((route) => ({
+  const resourceRoutes = getAllResources().map(resource => `/resources/${resource.slug}`);
+  const allRoutes = [...staticRoutes, ...resourceRoutes];
+
+  return allRoutes.map((route) => ({
     url: `${siteConfig.url}${route}`,
   }));
 }
