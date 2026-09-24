@@ -7,6 +7,18 @@ import { SectionHeader } from '@/components/shared/SectionHeader'
 export const AppFaqSection: React.FC = () => {
   const faqs = [
     {
+      q: "What is 1-OPTIMISER?",
+      a: "1-OPTIMISER is an image performance tool designed specifically for Shopify stores. It compresses image assets, rewrites generic filenames, and generates contextual alt text to support storefront performance and image discoverability."
+    },
+    {
+      q: "How does 1-OPTIMISER work?",
+      a: "1-OPTIMISER connects directly to your Shopify catalog. It automatically analyzes your product imagery in the background, optimizes the file size, and writes new metadata back to your store via the Shopify Admin API without injecting external scripts."
+    },
+    {
+      q: "Why do product images matter to ecommerce storefronts?",
+      a: "Product images are critical to ecommerce performance. Heavy image payloads slow down Largest Contentful Paint (LCP) and overall page speed, while missing alt text and generic filenames deprive search engines and AI systems of the context needed for product discovery."
+    },
+    {
       q: "Does compression affect image quality?",
       a: "Our compression process reduces file size while aiming to maintain perceptual quality. We strip unnecessary metadata and optimize pixel data to help you serve lighter product photography."
     },

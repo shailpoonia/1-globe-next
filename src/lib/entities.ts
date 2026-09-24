@@ -4,7 +4,7 @@ export const ENTITY_ORGANIZATION = {
   name: '1-GLOBE',
   website: siteConfig.url,
   category: 'Ecommerce Performance Technology',
-  description: '1-GLOBE builds ecommerce performance technology. Our products help online merchants improve image payloads, content structure, and storefront performance.',
+  description: '1-GLOBE is an ecommerce performance technology company building tools for online merchants. We build products focused on storefront image performance, content performance, and product listing performance.',
   '@id': `${siteConfig.url}/#organization`,
 };
 

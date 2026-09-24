@@ -248,7 +248,7 @@ const Slide2Content: React.FC = () => {
             <div className="w-12 h-12 rounded-full border-2 border-slate-700 bg-slate-800/50 text-slate-500 flex items-center justify-center s2-node-3 shrink-0">
               <TrendingUp className="w-5 h-5" />
             </div>
-            <span className="text-[10px] font-bold text-slate-400 text-center leading-tight">Ranks &<br/>Backlinks</span>
+            <span className="text-[10px] font-bold text-slate-400 text-center leading-tight">Discovery &<br/>Context</span>
           </div>
 
           <ArrowRight className="w-5 h-5 text-slate-700 shrink-0 s2-arrow-3" />
