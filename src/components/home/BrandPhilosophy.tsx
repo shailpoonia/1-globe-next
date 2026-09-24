@@ -20,7 +20,7 @@ export const BrandPhilosophy: React.FC = () => {
               Technology should solve a business problem. The goal is not to add more software to an ecommerce store. The goal is to make the store perform better.
             </p>
             <p>
-              1-GLOBE designs the operating systems, checkout engines, and intelligence layers that let ecommerce businesses run at the speed the digital economy now demands.
+              1-GLOBE builds the ecommerce performance technology—from image processing to content architecture—that helps online stores operate faster and reach more customers.
             </p>
           </div>
         </div>

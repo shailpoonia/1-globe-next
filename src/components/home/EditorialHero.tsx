@@ -49,7 +49,7 @@ export const EditorialHero: React.FC = () => {
 
           <div className="space-y-6 pt-2 max-w-2xl">
             <p className="text-xl sm:text-2xl text-neutral-300 font-medium leading-snug">
-              Technology that makes online stores faster, smarter and easier to grow.
+              1-GLOBE builds ecommerce performance technology that makes online stores faster, smarter, and easier to grow.
             </p>
             <p className="text-sm font-bold text-neutral-500 uppercase tracking-widest">
               Business first. Technology second. Performance always.

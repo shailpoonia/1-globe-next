@@ -3,7 +3,7 @@ import { Metadata } from 'next'
 import { Section } from '@/components/shared/Section'
 
 export const metadata: Metadata = {
-  title: 'Pricing',
+  title: '1-OPTIMISER Pricing',
   description: 'Pricing for 1-OPTIMISER. Simple, merchant-aligned plans starting at $0, with zero surprises.',
   alternates: {
     canonical: '/pricing',

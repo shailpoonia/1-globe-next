@@ -7,41 +7,57 @@ export const FaqSection: React.FC = () => {
   const faqs = [
     {
       q: "What is 1-GLOBE?",
-      a: "1-GLOBE builds focused technology for ecommerce businesses. We design tools that address specific operational and performance challenges across the store, from image and content performance to product listing structure."
+      a: "1-GLOBE is an ecommerce performance technology brand. We build infrastructure that helps online stores operate faster and rank better."
+    },
+    {
+      q: "What does 1-GLOBE build?",
+      a: "We build targeted technology that addresses specific operational bottlenecks across the store, from image payloads to content architecture and product listing structures."
     },
     {
       q: "Who is 1-GLOBE built for?",
-      a: "1-GLOBE is designed for ecommerce businesses and the teams that operate them. The focus is on practical tools that can fit into existing ecommerce workflows rather than adding unnecessary complexity."
+      a: "Our technology is designed for ecommerce businesses and the teams that operate them, prioritizing practical tools that integrate into existing workflows."
+    },
+    {
+      q: "What is ecommerce performance technology?",
+      a: "It is infrastructure—such as image compression engines, metadata generators, and structural data tools—that ensures a storefront performs well for both search engines and human shoppers."
     },
     {
       q: "What products does 1-GLOBE offer?",
-      a: "The current ecosystem includes 1-OPTIMISER for image performance, 1-BLOG for content performance, and 1-LIST for product listing performance. Product availability may differ as the ecosystem develops."
+      a: "The ecosystem currently includes 1-OPTIMISER for image performance, 1-BLOG for content performance, and 1-LIST for product listing performance."
     },
     {
       q: "What is 1-OPTIMISER?",
-      a: "1-OPTIMISER is an image performance tool for Shopify stores. It helps merchants optimize image assets, improve filenames and generate contextual alt text as part of their image management workflow."
+      a: "1-OPTIMISER is an image performance tool for Shopify stores. It compresses image assets, improves filenames, and generates contextual alt text."
     },
     {
-      q: "Are 1-BLOG and 1-LIST available?",
-      a: "They are currently part of the 1-GLOBE product roadmap and are being prepared for launch. Their purpose is to help merchants improve content and product listing structure for modern search and discovery environments."
+      q: "What is 1-BLOG?",
+      a: "1-BLOG focuses on content performance for the modern store."
+    },
+    {
+      q: "What is 1-LIST?",
+      a: "1-LIST helps build product listings structured for search, answer engines, and generative discovery."
+    },
+    {
+      q: "Is 1-OPTIMISER available yet?",
+      a: "1-OPTIMISER is currently in its final stages and is coming to the Shopify App Store soon."
+    },
+    {
+      q: "Are 1-BLOG and 1-LIST available yet?",
+      a: "No. 1-BLOG and 1-LIST are currently part of the 1-GLOBE roadmap and will be launching soon."
     },
     {
       q: "Does 1-GLOBE work with Shopify?",
-      a: "1-OPTIMISER is designed for Shopify stores and works with the Shopify catalog workflow. Other 1-GLOBE products may have their own platform requirements as they launch."
+      a: "1-OPTIMISER is designed specifically for Shopify stores. Future products may have their own platform requirements as they launch."
     },
     {
       q: "Do I need to replace my existing ecommerce tools?",
-      a: "No. 1-GLOBE is designed around focused capabilities rather than requiring merchants to replace their entire ecommerce stack. Each product should address a defined problem within the existing store workflow."
-    },
-    {
-      q: "How does 1-GLOBE think about ecommerce performance?",
-      a: "We look at performance as more than a single speed score. Technical assets, content, product data, structure and the customer experience all contribute to how an ecommerce store operates and communicates."
+      a: "No. 1-GLOBE is designed around focused capabilities rather than requiring merchants to replace their entire ecommerce stack."
     },
     {
       q: "Where should I start?",
       a: (
         <>
-          Start with the problem you are trying to solve. If image performance and image management are the priority, explore 1-OPTIMISER. As additional products become available, they will address other areas of ecommerce performance.
+          Start with the foundation. If image performance and image management are your priority, explore 1-OPTIMISER.
           <div className="mt-6">
             <Link href="/apps/1-optimiser" className="inline-flex items-center text-sm font-bold uppercase tracking-widest text-primary hover:text-foreground transition-colors">
               Explore 1-OPTIMISER →
@@ -110,7 +126,7 @@ export const FaqSection: React.FC = () => {
               "name": faq.q,
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": typeof faq.a === "string" ? faq.a : "Start with the problem you are trying to solve. If image performance and image management are the priority, explore 1-OPTIMISER."
+                "text": typeof faq.a === "string" ? faq.a : "Start with the foundation. If image performance and image management are your priority, explore 1-OPTIMISER."
               }
             }))
           })

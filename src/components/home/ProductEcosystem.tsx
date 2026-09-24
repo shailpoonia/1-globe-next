@@ -2,47 +2,13 @@ import React from 'react'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 
-type ProductStatus = 'available' | 'launching-soon' | 'coming-soon'
+import { ENTITY_PRODUCTS } from '@/lib/entities'
 
-interface EcosystemProduct {
-  number: string
-  name: string
-  category: string
-  description: string
-  status: ProductStatus
-  href: string | null
-  externalUrl?: string
-  ctaLabel?: string
-  launchInformation?: string
-}
-
-const products: EcosystemProduct[] = [
-  {
-    number: "01",
-    name: "1-OPTIMISER",
-    category: "IMAGE PERFORMANCE",
-    description: "Make every product image work harder.",
-    status: "coming-soon",
-    href: "/apps/1-optimiser",
-    ctaLabel: "EXPLORE 1-OPTIMISER"
-  },
-  {
-    number: "02",
-    name: "1-BLOG",
-    category: "CONTENT PERFORMANCE",
-    description: "Content performance for the modern store.",
-    status: "launching-soon",
-    href: null
-  },
-  {
-    number: "03",
-    name: "1-LIST",
-    category: "PRODUCT LISTING PERFORMANCE",
-    description: "Build product listings structured for search, answer engines and generative discovery.",
-    status: "launching-soon",
-    href: null
-  }
-]
+const products = [
+  ENTITY_PRODUCTS['1-optimiser'],
+  ENTITY_PRODUCTS['1-blog'],
+  ENTITY_PRODUCTS['1-list']
+];
 
 export const ProductEcosystem: React.FC = () => {
   return (

@@ -9,6 +9,7 @@ import { EditorialFeatures } from '@/components/feature-page/EditorialFeatures'
 import { PerformanceProof } from '@/components/home/PerformanceProof'
 import { AppFaqSection } from '@/components/feature-page/AppFaqSection'
 
+import { ENTITY_PRODUCTS } from '@/lib/entities'
 import { SoftwareAppSchema, AppBreadcrumbSchema } from '@/components/shared/AppSchemaOrg'
 
 export const metadata: Metadata = {
@@ -20,12 +21,15 @@ export const metadata: Metadata = {
 }
 
 export default function ImageOptimizerPage() {
+  const product = ENTITY_PRODUCTS['1-optimiser'];
+
   return (
     <div className="flex flex-col bg-background text-foreground selection:bg-primary/20 selection:text-primary pt-24">
       <SoftwareAppSchema 
-        name="1-OPTIMISER" 
-        description="Make every product image work harder. Compress, optimize and improve image discoverability across your Shopify catalog."
-        slug="1-optimiser"
+        name={product.name} 
+        description={product.description}
+        slug={product.id}
+        {...(product['@id'] && { '@id': product['@id'] })}
         offers={[
           {
             '@type': 'Offer',

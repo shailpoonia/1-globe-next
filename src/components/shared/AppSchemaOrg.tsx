@@ -1,25 +1,27 @@
 import React from 'react';
 import { siteConfig } from '@/lib/seo';
 
+import { ENTITY_ORGANIZATION } from '@/lib/entities';
+
 interface SoftwareAppProps {
   name: string;
   description: string;
   slug: string;
+  '@id'?: string;
   offers?: any[];
 }
 
-export function SoftwareAppSchema({ name, description, slug, offers }: SoftwareAppProps) {
+export function SoftwareAppSchema({ name, description, slug, '@id': idId, offers }: SoftwareAppProps) {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
+    ...(idId && { '@id': idId }),
     name,
     applicationCategory: 'BusinessApplication',
     description,
     url: `${siteConfig.url}/apps/${slug}`,
     provider: {
-      '@type': 'Organization',
-      name: '1-GLOBE',
-      url: siteConfig.url
+      '@id': ENTITY_ORGANIZATION['@id']
     },
     ...(offers && { offers }),
   };

@@ -39,7 +39,7 @@ export const BrandStatement: React.FC = () => {
           </div>
           <div className="lg:col-span-5 lg:pt-6 max-w-lg">
             <p className="text-lg md:text-xl lg:text-2xl text-foreground font-medium leading-relaxed">
-              1-GLOBE builds the systems that help ecommerce businesses make more of the traffic they already work so hard to earn.
+              1-GLOBE builds ecommerce performance technology that helps online merchants make more of the traffic they already work so hard to earn.
             </p>
           </div>
         </div>
