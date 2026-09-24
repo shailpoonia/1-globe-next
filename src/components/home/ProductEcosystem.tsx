@@ -7,7 +7,7 @@ import { ArrowRight } from 'lucide-react'
 
 export const ProductEcosystem: React.FC = () => {
   return (
-    <Section id="ecosystem" className="py-24 md:py-32 bg-background border-b border-border">
+    <Section id="ecosystem" className="section-spacing bg-background border-b border-border">
       <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
         
         <SectionHeader

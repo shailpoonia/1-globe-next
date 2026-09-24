@@ -36,17 +36,17 @@ export const SectionHeader: React.FC<SectionHeaderProps> = ({
         isCentered ? 'text-center max-w-3xl mx-auto' : 'text-left max-w-3xl'
       } ${className}`}
     >
-      {/* Eyebrow Label (Optional, Neutral) */}
+      {/* Eyebrow Label */}
       {eyebrow && (
         <div className={`mb-4 ${isCentered ? 'flex justify-center' : ''}`}>
-          <span className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">
+          <span className="text-eyebrow">
             {eyebrow}
           </span>
         </div>
       )}
 
-      {/* Main Headline (Sentence Case default) */}
-      <h2 className={`font-heading font-bold text-foreground leading-[1.15] mb-6 ${headlineSize}`}>
+      {/* Main Headline */}
+      <h2 className={`text-section-title mb-6`}>
         {headline ? (
           headline
         ) : (
@@ -66,7 +66,7 @@ export const SectionHeader: React.FC<SectionHeaderProps> = ({
       {/* Subhead */}
       {subhead && (
         <div
-          className={`text-lg sm:text-xl font-normal text-muted-foreground leading-relaxed ${
+          className={`text-lead ${
             isCentered ? 'mx-auto' : ''
           }`}
         >

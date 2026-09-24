@@ -11,15 +11,15 @@ export default function PricingPage() {
   return (
     <div className="flex flex-col bg-background text-foreground selection:bg-primary/20 selection:text-primary pt-24">
       <main className="flex-1">
-        <Section className="py-24 md:py-32 bg-background border-b border-border">
+        <Section className="section-spacing bg-background border-b border-border">
           <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
             
             <div className="text-left mb-20 max-w-3xl">
-              <span className="text-sm font-semibold uppercase tracking-widest text-muted-foreground block mb-6">Pricing</span>
-              <h1 className="font-heading font-bold text-4xl sm:text-5xl md:text-6xl tracking-tight text-foreground leading-[1.05] mb-6">
+              <span className="text-eyebrow block mb-6">Pricing</span>
+              <h1 className="text-hero mb-6">
                 Simple, merchant-aligned pricing with zero <span className="text-primary italic">surprises</span>.
               </h1>
-              <p className="text-xl md:text-2xl font-medium text-muted-foreground leading-relaxed">
+              <p className="text-lead">
                 Free to install, test on your own store, and cancel anytime. Billing is handled securely through the Shopify App Store.
               </p>
             </div>

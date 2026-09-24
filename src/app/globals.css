@@ -115,17 +115,31 @@
   }
 }
 
-/* Shared long-form type scale. Single source of truth for page titles and
-   rich markdown content, anchored to the site heading range. */
+/* Shared centralized design system classes for consistent breathing room and sizing */
 @layer components {
-  .page-title {
-    font-size: clamp(1.875rem, 2vw + 1rem, 2.25rem);
-    font-weight: 700;
-    line-height: 1.15;
-    letter-spacing: normal;
-    color: hsl(var(--foreground));
+  /* Typographic scale */
+  .text-hero {
+    @apply font-heading font-bold text-4xl sm:text-5xl md:text-6xl tracking-tight leading-[1.05] uppercase text-foreground;
+  }
+  .text-section-title {
+    @apply font-heading font-bold text-3xl sm:text-4xl md:text-5xl tracking-tight leading-[1.1] text-foreground;
+  }
+  .text-eyebrow {
+    @apply text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground;
+  }
+  .text-lead {
+    @apply text-lg sm:text-xl text-muted-foreground font-medium leading-relaxed;
+  }
+  .text-sub-eyebrow {
+    @apply text-xs font-bold uppercase tracking-widest text-foreground;
   }
 
+  /* Consistent Section spacing */
+  .section-spacing {
+    @apply py-24 md:py-32;
+  }
+
+  /* Page title fallback */
   .rich-text {
     color: hsl(var(--muted-foreground));
     font-size: 1rem;

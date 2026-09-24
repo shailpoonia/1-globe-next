@@ -20,7 +20,7 @@ export const AppHero: React.FC<AppHeroProps> = ({
   heroMoment
 }) => {
   return (
-    <section className="relative pt-12 pb-16 md:pt-20 md:pb-24 border-b border-border overflow-hidden bg-background">
+    <section className="relative section-spacing border-b border-border overflow-hidden bg-background">
       <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-8 items-center">
           
@@ -28,18 +28,18 @@ export const AppHero: React.FC<AppHeroProps> = ({
           <div className="lg:col-span-5 flex flex-col items-start text-left">
             {/* Eyebrow */}
             <div className="mb-6">
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground">
+              <span className="text-eyebrow">
                 {eyebrow}
               </span>
             </div>
 
             {/* Headline */}
-            <h1 className="text-5xl sm:text-6xl md:text-7xl font-heading font-bold tracking-tight text-foreground leading-[1.05] uppercase mb-6">
+            <h1 className="text-hero mb-6">
               {headline}
             </h1>
 
             {/* Subhead */}
-            <div className="text-lg sm:text-xl text-muted-foreground font-medium leading-relaxed max-w-xl mb-10">
+            <div className="text-lead max-w-xl mb-10">
               {subhead}
             </div>
 

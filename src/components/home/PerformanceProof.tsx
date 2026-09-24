@@ -4,7 +4,7 @@ import { SectionHeader } from '@/components/shared/SectionHeader'
 
 export const PerformanceProof: React.FC = () => {
   return (
-    <Section className="py-24 md:py-32 bg-background border-b border-border">
+    <Section className="section-spacing bg-background border-b border-border">
       <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12 text-center">
         <SectionHeader
           

@@ -3,7 +3,7 @@ import { Section } from '@/components/shared/Section'
 
 export const JobsDoneSection: React.FC = () => {
   return (
-    <Section className="py-24 md:py-32 bg-secondary/20 border-b border-border overflow-hidden">
+    <Section className="section-spacing bg-secondary/20 border-b border-border overflow-hidden">
       <style>{`
         @media (prefers-reduced-motion: no-preference) {
           @keyframes shrinkBar {
@@ -75,10 +75,10 @@ export const JobsDoneSection: React.FC = () => {
       <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
         
         <div className="mb-16">
-          <h2 className="font-heading font-bold text-3xl sm:text-4xl md:text-5xl tracking-tight text-foreground leading-[1.1] mb-6">
+          <h2 className="text-section-title mb-6">
             One image. Five jobs done.
           </h2>
-          <p className="text-lg md:text-xl font-medium text-muted-foreground leading-relaxed max-w-2xl">
+          <p className="text-lead max-w-2xl">
             More than just a compression tool. Every image you upload is instantly transformed, tagged, and standardized.
           </p>
         </div>

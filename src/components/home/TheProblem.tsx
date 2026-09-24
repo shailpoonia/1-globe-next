@@ -4,15 +4,15 @@ import { GoogleSearchAnimationCard } from './GoogleSearchAnimationCard'
 
 export const TheProblem: React.FC = () => {
   return (
-    <Section id="why" className="py-24 md:py-32 bg-secondary/30 border-b border-border">
+    <Section id="why" className="section-spacing bg-secondary/30 border-b border-border">
       <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
         
         <div className="mb-16 max-w-4xl text-left">
-          <span className="text-sm font-semibold uppercase tracking-widest text-muted-foreground block mb-6">Why 1-globe.com</span>
-          <h2 className="font-heading font-bold text-3xl sm:text-4xl md:text-5xl tracking-tight text-foreground leading-[1.1] mb-6">
+          <span className="text-eyebrow block mb-6">Why 1-globe.com</span>
+          <h2 className="text-section-title mb-6">
             Your ads and SEO aren't broken. Your store's <span className="text-primary italic">foundation</span> is.
           </h2>
-          <p className="text-lg sm:text-xl md:text-2xl font-medium text-muted-foreground leading-relaxed">
+          <p className="text-lead">
             You pay for traffic and work on your SEO — but it leaks away on a store that's slow and invisible to search. It's a Ferrari engine on a cracked chassis: all that power has nowhere to go. 1-globe.com fixes the chassis — one focused app per problem — so every rupee you spend on ads and SEO finally pays off.
           </p>
         </div>

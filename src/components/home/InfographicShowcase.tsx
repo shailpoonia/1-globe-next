@@ -20,7 +20,7 @@ export const InfographicShowcase: React.FC = () => {
   }, [isPaused])
 
   return (
-    <section className="w-full py-24 lg:py-32 bg-background border-t border-border/50 overflow-hidden relative">
+    <section className="w-full section-spacing bg-background border-t border-border/50 overflow-hidden relative">
       {/* Ambient background glows */}
       <div className="absolute top-1/2 left-0 w-[500px] h-[400px] bg-cyan-500/5 blur-[120px] pointer-events-none -z-10 -translate-y-1/2" />
       <div className="absolute top-1/2 right-0 w-[500px] h-[400px] bg-teal-500/5 blur-[120px] pointer-events-none -z-10 -translate-y-1/2" />

@@ -11,16 +11,16 @@ export default function ContactPage() {
   return (
     <div className="flex flex-col bg-background text-foreground selection:bg-primary/20 selection:text-primary pt-24">
       <main className="flex-1">
-        <Section className="py-24 md:py-32 bg-background border-b border-border">
+        <Section className="section-spacing bg-background border-b border-border">
           <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12 grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-24">
             
             {/* Left: Copy */}
             <div>
-              <span className="text-sm font-semibold uppercase tracking-widest text-muted-foreground block mb-6">Contact</span>
-              <h1 className="text-5xl sm:text-6xl font-heading font-bold tracking-tight text-foreground leading-[1.05] uppercase mb-6">
+              <span className="text-eyebrow block mb-6">Contact</span>
+              <h1 className="text-hero mb-6">
                 Talk to <span className="text-primary italic">us</span>.
               </h1>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-10 max-w-md">
+              <p className="text-lead max-w-md mb-10">
                 Questions, feedback, or need a hand? We usually reply within one business day.
               </p>
 

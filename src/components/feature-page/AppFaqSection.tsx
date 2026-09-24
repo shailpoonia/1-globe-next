@@ -25,7 +25,7 @@ export const AppFaqSection: React.FC = () => {
   ]
 
   return (
-    <Section id="faq" className="py-24 md:py-32 bg-background border-b border-border">
+    <Section id="faq" className="section-spacing bg-background border-b border-border">
       <div className="max-w-3xl mx-auto px-6 sm:px-8 lg:px-12">
         <SectionHeader
           headline="FAQ"

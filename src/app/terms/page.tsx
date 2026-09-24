@@ -9,17 +9,17 @@ export const metadata: Metadata = {
 export default function TermsPage() {
   return (
     <div className="flex flex-col bg-background text-foreground selection:bg-primary/20 selection:text-primary pt-24">
-      <main className="flex-1 py-16 sm:py-20 lg:py-24">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <main className="flex-1 section-spacing">
+        <div className="max-w-content mx-auto px-4 sm:px-6 lg:px-8">
           {/* Document Header */}
           <div className="mb-12 pb-8 border-b border-border">
-            <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.14em] text-foreground mb-3 border-b border-foreground pb-1">
+            <span className="text-eyebrow block mb-6">
               Terms of Agreement
-            </div>
-            <h1 className="font-heading font-bold text-3xl sm:text-4xl md:text-5xl text-foreground tracking-tight mb-3">
+            </span>
+            <h1 className="text-hero mb-6">
               Terms of Service
             </h1>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-lead">
               Last Updated: <span className="text-foreground font-medium">September 21, 2026</span>
             </p>
           </div>

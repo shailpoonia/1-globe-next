@@ -27,9 +27,9 @@ export const Section: React.FC<SectionProps> = ({
   }
 
   const spacingStyles = {
-    default: 'py-16 sm:py-20 lg:py-24',
+    default: 'section-spacing',
     compact: 'py-12 sm:py-16',
-    hero: 'py-16 sm:py-20 lg:py-28',
+    hero: 'section-spacing',
     none: '',
   }
 

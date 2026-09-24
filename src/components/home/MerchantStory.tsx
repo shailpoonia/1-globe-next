@@ -5,17 +5,17 @@ import { ArrowRight } from 'lucide-react'
 
 export const MerchantStory: React.FC = () => {
   return (
-    <Section className="py-24 md:py-32 bg-background border-b border-border">
+    <Section className="section-spacing bg-background border-b border-border">
       <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-start">
           
           <div className="lg:col-span-6">
-            <h2 className="font-heading font-bold text-3xl sm:text-4xl md:text-5xl tracking-tight text-foreground leading-[1.1]">
+            <h2 className="text-section-title">
               Built from the merchant's side of the counter.
             </h2>
           </div>
           
-          <div className="lg:col-span-6 flex flex-col justify-end space-y-6 text-lg text-muted-foreground leading-relaxed pt-2 lg:pt-0 font-medium">
+          <div className="lg:col-span-6 flex flex-col justify-end space-y-6 text-lead pt-2 lg:pt-0">
             <p>
               1-globe.com wasn't born in a software incubator. It was engineered out of practical necessity while operating real ecommerce businesses.
             </p>

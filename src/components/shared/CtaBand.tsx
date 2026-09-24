@@ -41,19 +41,19 @@ export const CtaBand: React.FC<CtaBandProps> = ({
   const secondaryButtonClass = 'inline-flex items-center gap-1.5 h-14 px-8 font-bold text-sm uppercase tracking-[0.14em] border border-border bg-transparent text-foreground hover:bg-white/5 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary'
 
   return (
-    <section id={id} className={`py-24 lg:py-32 relative overflow-hidden bg-background ${className}`}>
+    <section id={id} className={`section-spacing relative overflow-hidden bg-background ${className}`}>
       <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
         {/* Eyebrow */}
         {eyebrow && (
           <div className="mb-6">
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-primary">
+            <span className="text-eyebrow !text-primary">
               {eyebrow}
             </span>
           </div>
         )}
 
         {/* Headline */}
-        <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-foreground uppercase leading-[1.1] mb-6">
+        <h2 className="text-section-title mb-6">
           {headline ? (
             headline
           ) : (
@@ -72,7 +72,7 @@ export const CtaBand: React.FC<CtaBandProps> = ({
 
         {/* Subtext */}
         {subhead && (
-          <div className="text-lg sm:text-xl md:text-2xl font-medium text-muted-foreground leading-relaxed mb-10 max-w-2xl mx-auto">
+          <div className="text-lead mb-10 max-w-2xl mx-auto">
             {subhead}
           </div>
         )}
