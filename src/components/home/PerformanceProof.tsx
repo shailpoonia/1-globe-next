@@ -15,7 +15,7 @@ export const PerformanceProof: React.FC = () => {
 
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           
-          <div className="flex flex-col items-center justify-center p-8 border border-border bg-card">
+          <div className="flex flex-col items-center justify-center p-8 border border-border interactive-card bg-card">
             <span className="text-5xl font-heading font-bold text-foreground mb-4">98%</span>
             <span className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Payload Reduction</span>
             <p className="mt-4 text-sm text-muted-foreground max-w-[200px] leading-relaxed">
@@ -23,7 +23,7 @@ export const PerformanceProof: React.FC = () => {
             </p>
           </div>
 
-          <div className="flex flex-col items-center justify-center p-8 border border-border bg-card">
+          <div className="flex flex-col items-center justify-center p-8 border border-border interactive-card bg-card">
             <span className="text-5xl font-heading font-bold text-foreground mb-4">100%</span>
             <span className="text-sm font-bold uppercase tracking-widest text-muted-foreground">API Automation</span>
             <p className="mt-4 text-sm text-muted-foreground max-w-[200px] leading-relaxed">
@@ -31,7 +31,7 @@ export const PerformanceProof: React.FC = () => {
             </p>
           </div>
 
-          <div className="flex flex-col items-center justify-center p-8 border border-border bg-card">
+          <div className="flex flex-col items-center justify-center p-8 border border-border interactive-card bg-card">
             <span className="text-5xl font-heading font-bold text-foreground mb-4">LCP</span>
             <span className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Core Web Vitals</span>
             <p className="mt-4 text-sm text-muted-foreground max-w-[200px] leading-relaxed">

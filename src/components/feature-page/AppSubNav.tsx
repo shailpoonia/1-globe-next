@@ -17,7 +17,7 @@ export const AppSubNav: React.FC<AppSubNavProps> = ({
         <div className="flex items-center gap-3 text-xs font-bold uppercase tracking-widest shrink-0">
           <Link
             href="/"
-            className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded"
+            className="text-muted-foreground interactive-link flex items-center gap-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded"
             aria-label="Back to 1-globe.com home"
           >
             &larr; 1-globe.com
@@ -31,10 +31,10 @@ export const AppSubNav: React.FC<AppSubNavProps> = ({
           className="hidden md:flex items-center gap-6 text-xs font-bold uppercase tracking-widest text-muted-foreground overflow-x-auto no-scrollbar"
           aria-label="App page sections"
         >
-          <a href="#features" className="hover:text-foreground transition-colors whitespace-nowrap">
+          <a href="#features" className="interactive-link whitespace-nowrap">
             Features
           </a>
-          <a href="#faq" className="hover:text-foreground transition-colors whitespace-nowrap">
+          <a href="#faq" className="interactive-link whitespace-nowrap">
             FAQ
           </a>
         </nav>

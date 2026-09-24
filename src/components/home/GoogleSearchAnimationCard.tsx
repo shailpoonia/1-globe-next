@@ -38,7 +38,7 @@ export const GoogleSearchAnimationCard: React.FC = () => {
 
   return (
     <div className="w-full flex flex-col items-center">
-      <div className="w-full bg-card border border-border p-6 sm:p-8 lg:p-12 flex flex-col lg:flex-row gap-10 lg:gap-16 items-center overflow-hidden relative">
+      <div className="w-full interactive-card bg-card border border-border p-6 sm:p-8 lg:p-12 flex flex-col lg:flex-row gap-10 lg:gap-16 items-center overflow-hidden relative">
         <style dangerouslySetInnerHTML={{__html: `
           @keyframes typeTextFast {
             from { width: 0; }
@@ -63,7 +63,7 @@ export const GoogleSearchAnimationCard: React.FC = () => {
           </div>
 
           {/* Product Image Box */}
-          <div className="relative aspect-video rounded-none overflow-hidden bg-slate-800 border border-slate-700 shadow-inner">
+          <div className="relative aspect-video rounded-[var(--radius)] overflow-hidden bg-slate-800 border border-slate-700 shadow-inner">
             <Image 
               src="/demo-product.jpg" 
               alt="Product" 
@@ -89,7 +89,7 @@ export const GoogleSearchAnimationCard: React.FC = () => {
           {/* Metadata Boxes */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-3">
             {/* Filename */}
-            <div className={`p-3.5 rounded-none border transition-all duration-500 ${step === 1 ? 'border-cyan-500 bg-cyan-500/10 shadow-[0_0_15px_rgba(0,213,255,0.15)]' : step >= 2 ? 'border-slate-600 bg-slate-800/50' : 'border-slate-700 bg-slate-800/50'}`}>
+            <div className={`p-3.5 rounded-[var(--radius)] border transition-all duration-500 ${step === 1 ? 'border-cyan-500 bg-cyan-500/10 shadow-[0_0_15px_rgba(0,213,255,0.15)]' : step >= 2 ? 'border-slate-600 bg-slate-800/50' : 'border-slate-700 bg-slate-800/50'}`}>
               <div className="text-[10px] text-slate-500 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
                 <ImageIcon className="w-3 h-3" /> Filename
               </div>
@@ -99,7 +99,7 @@ export const GoogleSearchAnimationCard: React.FC = () => {
             </div>
 
             {/* Alt Text */}
-            <div className={`p-3.5 rounded-none border transition-all duration-500 ${step === 1 ? 'border-cyan-500 bg-cyan-500/10 shadow-[0_0_15px_rgba(0,213,255,0.15)]' : step >= 2 ? 'border-slate-600 bg-slate-800/50' : 'border-slate-700 bg-slate-800/50'}`}>
+            <div className={`p-3.5 rounded-[var(--radius)] border transition-all duration-500 ${step === 1 ? 'border-cyan-500 bg-cyan-500/10 shadow-[0_0_15px_rgba(0,213,255,0.15)]' : step >= 2 ? 'border-slate-600 bg-slate-800/50' : 'border-slate-700 bg-slate-800/50'}`}>
               <div className="text-[10px] text-slate-500 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
                 <FileText className="w-3 h-3" /> Alt Text
               </div>
@@ -144,7 +144,7 @@ export const GoogleSearchAnimationCard: React.FC = () => {
               
               {/* Competitor Result 1 */}
               <div className={`flex items-center gap-4 transition-all duration-700 ${step === 2 ? 'opacity-30' : 'opacity-100'}`}>
-                <div className="w-16 h-16 rounded-none bg-slate-800 border border-slate-700 flex-shrink-0"></div>
+                <div className="w-16 h-16 rounded-[var(--radius)] bg-slate-800 border border-slate-700 flex-shrink-0"></div>
                 <div className="w-full space-y-2">
                   <div className="h-3 w-1/3 bg-slate-700 rounded-full"></div>
                   <div className="h-2.5 w-2/3 bg-slate-800 rounded-full"></div>
@@ -152,14 +152,14 @@ export const GoogleSearchAnimationCard: React.FC = () => {
               </div>
 
               {/* Your Product Slot */}
-              <div className={`relative overflow-hidden flex items-center gap-4 p-3.5 rounded-none border transition-all duration-700 ${
+              <div className={`relative overflow-hidden flex items-center gap-4 p-3.5 rounded-[var(--radius)] border transition-all duration-700 ${
                 step < 3 ? 'border-rose-500/20 bg-rose-500/5' :
                 'border-teal-500/50 bg-teal-500/10 shadow-[0_0_20px_rgba(0,245,196,0.15)] scale-[1.02]'
               }`}>
                 {/* Highlight flash */}
                 <div className={`absolute inset-0 bg-teal-400 mix-blend-overlay transition-opacity duration-500 ${step === 3 ? 'opacity-10' : 'opacity-0'}`} />
 
-                <div className={`relative w-16 h-16 rounded-none overflow-hidden flex items-center justify-center border shrink-0 transition-all duration-500 ${step >= 3 ? 'border-teal-500/40 bg-slate-900 shadow-lg' : 'border-rose-500/20 bg-rose-500/10'}`}>
+                <div className={`relative w-16 h-16 rounded-[var(--radius)] overflow-hidden flex items-center justify-center border shrink-0 transition-all duration-500 ${step >= 3 ? 'border-teal-500/40 bg-slate-900 shadow-lg' : 'border-rose-500/20 bg-rose-500/10'}`}>
                   {step >= 3 ? (
                     <Image src="/demo-product.jpg" fill className="object-cover animate-in fade-in zoom-in duration-500" alt="Result" />
                   ) : (
@@ -184,7 +184,7 @@ export const GoogleSearchAnimationCard: React.FC = () => {
 
               {/* Competitor Result 2 */}
               <div className={`flex items-center gap-4 transition-all duration-700 ${step === 2 ? 'opacity-30' : 'opacity-100'}`}>
-                <div className="w-16 h-16 rounded-none bg-slate-800 border border-slate-700 flex-shrink-0"></div>
+                <div className="w-16 h-16 rounded-[var(--radius)] bg-slate-800 border border-slate-700 flex-shrink-0"></div>
                 <div className="w-full space-y-2">
                   <div className="h-3 w-2/5 bg-slate-700 rounded-full"></div>
                   <div className="h-2.5 w-1/2 bg-slate-800 rounded-full"></div>

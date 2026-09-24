@@ -17,7 +17,7 @@ export const EditorialFeatures: React.FC = () => {
           
           {/* Feature 1: Visual Left / Text Right */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="aspect-square bg-card border border-border flex flex-col items-center justify-center p-12">
+            <div className="aspect-square interactive-card bg-card border border-border flex flex-col items-center justify-center p-12">
                <span className="font-heading font-bold text-7xl text-foreground">90%</span>
                <span className="text-eyebrow mt-4">Payload reduction</span>
             </div>
@@ -37,7 +37,7 @@ export const EditorialFeatures: React.FC = () => {
                 Automatically converts standard JPG and PNG assets into next-generation WebP formats, ensuring modern browsers serve the most efficient image architecture available.
               </p>
             </div>
-            <div className="aspect-square bg-card border border-border flex flex-col items-center justify-center p-12 lg:order-2 order-1">
+            <div className="aspect-square interactive-card bg-card border border-border flex flex-col items-center justify-center p-12 lg:order-2 order-1">
               <div className="flex items-center gap-6 text-2xl font-bold uppercase tracking-widest text-muted-foreground">
                 <span className="line-through">.JPG</span>
                 <span className="text-primary">.WEBP</span>
@@ -55,7 +55,7 @@ export const EditorialFeatures: React.FC = () => {
 
           {/* Feature 4: Visual Left / Text Right */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="aspect-video lg:aspect-square bg-card border border-border flex flex-col items-center justify-center p-8">
+            <div className="aspect-video lg:aspect-square interactive-card bg-card border border-border flex flex-col items-center justify-center p-8">
               <div className="w-full bg-background border border-border p-4 mb-4">
                 <span className="text-xs text-muted-foreground uppercase tracking-widest block mb-2">Original Filename</span>
                 <span className="font-mono text-sm text-foreground">IMG_4837.jpg</span>
@@ -81,7 +81,7 @@ export const EditorialFeatures: React.FC = () => {
                 Automatically generates highly descriptive alt text for every image. Enhances accessibility compliance and provides crucial semantic context for Google Images, ChatGPT, and Perplexity.
               </p>
             </div>
-            <div className="aspect-video lg:aspect-square bg-card border border-border flex flex-col items-center justify-center p-8 lg:order-2 order-1">
+            <div className="aspect-video lg:aspect-square interactive-card bg-card border border-border flex flex-col items-center justify-center p-8 lg:order-2 order-1">
               <span className="text-sub-eyebrow mb-4 border-b border-border pb-4 w-full text-center">Generated Alt Text</span>
               <p className="text-sm font-mono text-muted-foreground text-center">
                 "Handcrafted 12-inch wooden wall clock, minimalist wall décor"

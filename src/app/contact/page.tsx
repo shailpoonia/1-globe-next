@@ -37,7 +37,7 @@ export default function ContactPage() {
             {/* Right: Form */}
             <div>
               <form 
-                className="bg-card border border-border p-8 flex flex-col gap-6" 
+                className="bg-card border border-border p-8 flex flex-col gap-6 rounded-[var(--radius)]" 
                 action="mailto:support@1-globe.com"
                 method="POST"
                 encType="text/plain"
@@ -50,7 +50,7 @@ export default function ContactPage() {
                     id="name" 
                     name="name"
                     required
-                    className="h-12 px-4 bg-background border border-border focus:outline-none focus:ring-1 focus:ring-primary text-foreground"
+                    className="h-12 px-4 bg-background border border-border focus:outline-none focus:ring-1 focus:ring-primary text-foreground rounded-md"
                   />
                 </div>
 
@@ -61,7 +61,7 @@ export default function ContactPage() {
                     id="email" 
                     name="email"
                     required
-                    className="h-12 px-4 bg-background border border-border focus:outline-none focus:ring-1 focus:ring-primary text-foreground"
+                    className="h-12 px-4 bg-background border border-border focus:outline-none focus:ring-1 focus:ring-primary text-foreground rounded-md"
                   />
                 </div>
 
@@ -72,13 +72,13 @@ export default function ContactPage() {
                     name="message"
                     required
                     rows={5}
-                    className="p-4 bg-background border border-border focus:outline-none focus:ring-1 focus:ring-primary text-foreground resize-none"
+                    className="p-4 bg-background border border-border focus:outline-none focus:ring-1 focus:ring-primary text-foreground resize-none rounded-md"
                   />
                 </div>
 
                 <button 
                   type="submit"
-                  className="h-14 font-bold text-sm uppercase tracking-[0.14em] bg-foreground text-background hover:bg-foreground/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary mt-2"
+                  className="interactive-btn h-14 font-bold text-sm uppercase tracking-[0.14em] bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary mt-2"
                 >
                   Send Message
                 </button>

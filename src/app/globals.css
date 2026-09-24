@@ -46,7 +46,7 @@
     --ring: 190 100% 50%;
 
     /* Radius: Crisp, architectural */
-    --radius: 0px;
+    --radius: 0.5rem;
 
     /* Extended Colors */
     --chart-1: 190 100% 80%;
@@ -236,6 +236,31 @@
 
 /* Custom utility classes */
 @layer utilities {
+  /* Interactive utilities */
+  .interactive-card {
+    @apply transition-all duration-300 ease-out rounded-[var(--radius)] overflow-hidden;
+    @apply hover:shadow-lg hover:shadow-primary/5 hover:border-primary/30 hover:-translate-y-1;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .interactive-card {
+      @apply hover:-translate-y-0 hover:shadow-none;
+    }
+  }
+
+  .interactive-btn {
+    @apply transition-all duration-200 ease-out rounded-[var(--radius-button)];
+    @apply hover:opacity-90 active:scale-[0.98];
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .interactive-btn {
+      @apply active:scale-100;
+    }
+  }
+
+  .interactive-link {
+    @apply transition-colors duration-200 ease-out hover:text-primary relative;
+  }
+  
   .animate-in {
     animation-duration: 0.2s;
     animation-fill-mode: both;

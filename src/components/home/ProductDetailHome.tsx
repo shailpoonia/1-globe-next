@@ -24,7 +24,7 @@ export const ProductDetailHome: React.FC = () => {
           </div>
           <Link
             href="/apps/1-optimiser"
-            className="inline-flex items-center gap-2 h-14 px-8 font-bold text-sm uppercase tracking-[0.14em] bg-foreground text-background hover:bg-foreground/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+            className="interactive-btn inline-flex items-center gap-2 h-14 px-8 font-bold text-sm uppercase tracking-[0.14em] bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
           >
             <span>Explore 1-Optimiser</span>
             <ArrowUpRight className="w-4 h-4" />

@@ -37,8 +37,8 @@ export const CtaBand: React.FC<CtaBandProps> = ({
   noteText = '',
   className = '',
 }) => {
-  const primaryButtonClass = 'inline-flex items-center gap-1.5 h-14 px-8 font-bold text-sm uppercase tracking-[0.14em] bg-foreground text-background hover:bg-foreground/90 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary'
-  const secondaryButtonClass = 'inline-flex items-center gap-1.5 h-14 px-8 font-bold text-sm uppercase tracking-[0.14em] border border-border bg-transparent text-foreground hover:bg-white/5 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary'
+  const primaryButtonClass = 'interactive-btn inline-flex items-center gap-1.5 h-14 px-8 font-bold text-sm uppercase tracking-[0.14em] bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary'
+  const secondaryButtonClass = 'interactive-btn inline-flex items-center gap-1.5 h-14 px-8 font-bold text-sm uppercase tracking-[0.14em] border border-border bg-transparent text-foreground hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary'
 
   return (
     <section id={id} className={`section-spacing relative overflow-hidden bg-background ${className}`}>

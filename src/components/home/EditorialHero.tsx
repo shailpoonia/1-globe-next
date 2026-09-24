@@ -96,14 +96,14 @@ export const EditorialHero: React.FC = () => {
           <div className="pt-8 flex flex-col sm:flex-row items-start sm:items-center gap-4 w-full sm:w-auto">
             <Link
               href="#ecosystem"
-              className="inline-flex items-center justify-center gap-2 h-14 px-8 font-bold text-sm uppercase tracking-[0.14em] bg-foreground text-background hover:bg-foreground/90 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary w-full sm:w-auto rounded-none"
+              className="interactive-btn inline-flex items-center justify-center gap-2 h-14 px-8 font-bold text-sm uppercase tracking-[0.14em] bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary w-full sm:w-auto"
             >
               <span>Explore Apps</span>
               <ArrowDown className="w-4 h-4" />
             </Link>
             <Link
               href="/apps/1-optimiser"
-              className="inline-flex items-center justify-center gap-2 h-14 px-8 font-bold text-sm uppercase tracking-[0.14em] border border-border bg-transparent text-foreground hover:bg-white/5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary w-full sm:w-auto rounded-none"
+              className="interactive-btn inline-flex items-center justify-center gap-2 h-14 px-8 font-bold text-sm uppercase tracking-[0.14em] border border-border bg-transparent text-foreground hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary w-full sm:w-auto"
             >
               <span>See 1-Optimiser</span>
               <ArrowRight className="w-4 h-4" />

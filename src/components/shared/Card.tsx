@@ -15,7 +15,7 @@ export const Card: React.FC<CardProps> = ({
 }) => {
   return (
     <Component
-      className={`border bg-card text-card-foreground p-8 lg:p-10 h-full flex flex-col ${
+      className={`border bg-card text-card-foreground p-8 lg:p-10 h-full flex flex-col interactive-card ${
         featured
           ? 'border-primary'
           : 'border-border'

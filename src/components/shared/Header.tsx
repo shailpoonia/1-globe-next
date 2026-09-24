@@ -53,33 +53,33 @@ export const Header: React.FC = () => {
             <a
               href="/#ecosystem"
               onClick={(e) => handleNavClick(e, '#ecosystem')}
-              className="text-sm font-semibold text-foreground/80 hover:text-foreground transition-colors uppercase tracking-[0.1em] whitespace-nowrap"
+              className="text-sm font-semibold text-foreground/80 interactive-link uppercase tracking-[0.1em] whitespace-nowrap"
             >
               Apps
             </a>
             <a
               href="/#why"
               onClick={(e) => handleNavClick(e, '#why')}
-              className="text-sm font-semibold text-foreground/80 hover:text-foreground transition-colors uppercase tracking-[0.1em] whitespace-nowrap"
+              className="text-sm font-semibold text-foreground/80 interactive-link uppercase tracking-[0.1em] whitespace-nowrap"
             >
               Why 1-globe.com
             </a>
             <Link
               href="/about"
-              className={`text-sm font-semibold transition-colors uppercase tracking-[0.1em] whitespace-nowrap ${
+              className={`text-sm font-semibold interactive-link uppercase tracking-[0.1em] whitespace-nowrap ${
                 pathname === '/about'
-                  ? 'text-primary'
-                  : 'text-foreground/80 hover:text-foreground'
+                  ? '!text-primary'
+                  : 'text-foreground/80'
               }`}
             >
               About
             </Link>
             <Link
               href="/pricing"
-              className={`text-sm font-semibold transition-colors uppercase tracking-[0.1em] whitespace-nowrap ${
+              className={`text-sm font-semibold interactive-link uppercase tracking-[0.1em] whitespace-nowrap ${
                 pathname === '/pricing'
-                  ? 'text-primary'
-                  : 'text-foreground/80 hover:text-foreground'
+                  ? '!text-primary'
+                  : 'text-foreground/80'
               }`}
             >
               Pricing

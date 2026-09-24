@@ -3,7 +3,7 @@ import { Image as ImageIcon, Sparkles, CheckCircle2, Search, ArrowDown, Zap, Fil
 
 export const AIPipelineHeroCard: React.FC = () => {
   return (
-    <div className="relative w-full max-w-[420px] mx-auto bg-card border border-border/60 overflow-hidden flex flex-col font-sans">
+    <div className="relative w-full max-w-[420px] mx-auto bg-card border border-border/60 overflow-hidden flex flex-col font-sans rounded-[var(--radius)]">
       <style dangerouslySetInnerHTML={{__html: `
         @keyframes scanLine {
           0% { top: 0%; opacity: 0; }
@@ -71,7 +71,7 @@ export const AIPipelineHeroCard: React.FC = () => {
 
       {/* Top Image Section with Scanner */}
       <div className="p-5 pb-0">
-        <div className="relative rounded-none overflow-hidden bg-slate-800 border border-slate-700/50 aspect-video isolate">
+        <div className="relative rounded-[var(--radius)] overflow-hidden bg-slate-800 border border-slate-700/50 aspect-video isolate">
           <img 
             src="/Wall-Clock-Artistic-Wooden-12-Inch.webp" 
             alt="Wooden Wall Clock" 
@@ -83,7 +83,7 @@ export const AIPipelineHeroCard: React.FC = () => {
           </div>
           
           {/* Secondary stat: Compression */}
-          <div className="absolute bottom-2 right-2 bg-slate-900/80 backdrop-blur-md border border-slate-700/50 rounded-none px-2.5 py-1 flex items-center gap-2 shadow-lg">
+          <div className="absolute bottom-2 right-2 bg-slate-900/80 backdrop-blur-md border border-slate-700/50 rounded-[var(--radius)] px-2.5 py-1 flex items-center gap-2 shadow-lg">
             <span className="text-[10px] font-medium text-slate-400 line-through">18.4 MB</span>
             <span className="text-[11px] font-bold text-teal-400 flex items-center gap-1">
               <Zap className="w-3 h-3 fill-current" /> 212 KB
@@ -104,7 +104,7 @@ export const AIPipelineHeroCard: React.FC = () => {
           <div className="text-[10px] font-bold uppercase tracking-wider text-slate-500 flex items-center gap-1">
             <ImageIcon className="w-3 h-3" /> Filename
           </div>
-          <div className="animate-filename-box border rounded-none px-3 py-2 text-sm font-mono tracking-tight flex items-center">
+          <div className="animate-filename-box border rounded-[var(--radius)] px-3 py-2 text-sm font-mono tracking-tight flex items-center">
             <span className="animate-filename"></span>
             <CheckCircle2 className="w-4 h-4 text-cyan-400 ml-auto animate-check" />
           </div>
@@ -115,7 +115,7 @@ export const AIPipelineHeroCard: React.FC = () => {
           <div className="text-[10px] font-bold uppercase tracking-wider text-slate-500 flex items-center gap-1">
             <FileText className="w-3 h-3" /> AI Alt Text
           </div>
-          <div className="animate-alt-box border rounded-none px-3 py-2 text-[13px] text-slate-300 min-h-[38px] flex items-center">
+          <div className="animate-alt-box border rounded-[var(--radius)] px-3 py-2 text-[13px] text-slate-300 min-h-[38px] flex items-center">
             <div className="animate-typewriter">
               Handcrafted 12-inch wooden wall clock, minimalist wall decor
             </div>

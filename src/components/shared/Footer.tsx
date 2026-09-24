@@ -25,7 +25,7 @@ export const Footer: React.FC = () => {
             <h4 className="text-xs font-semibold text-foreground uppercase tracking-wider">Products</h4>
             <ul className="space-y-3">
               <li>
-                <Link href="/apps/1-optimiser" className="text-sm text-muted-foreground hover:text-foreground transition-colors font-medium">
+                <Link href="/apps/1-optimiser" className="text-sm interactive-link text-muted-foreground font-medium">
                   1-Optimiser
                 </Link>
               </li>
@@ -42,12 +42,12 @@ export const Footer: React.FC = () => {
             <h4 className="text-xs font-semibold text-foreground uppercase tracking-wider">Company</h4>
             <ul className="space-y-3">
               <li>
-                <Link href="/about" className="text-sm text-muted-foreground hover:text-foreground transition-colors font-medium">
+                <Link href="/about" className="text-sm interactive-link text-muted-foreground font-medium">
                   About
                 </Link>
               </li>
               <li>
-                <Link href="/pricing" className="text-sm text-muted-foreground hover:text-foreground transition-colors font-medium">
+                <Link href="/pricing" className="text-sm interactive-link text-muted-foreground font-medium">
                   Pricing
                 </Link>
               </li>
@@ -59,12 +59,12 @@ export const Footer: React.FC = () => {
             <h4 className="text-xs font-semibold text-foreground uppercase tracking-wider">Resources</h4>
             <ul className="space-y-3">
               <li>
-                <Link href="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors font-medium">
+                <Link href="/contact" className="text-sm interactive-link text-muted-foreground font-medium">
                   Help
                 </Link>
               </li>
               <li>
-                <Link href="/#ecosystem" className="text-sm text-muted-foreground hover:text-foreground transition-colors font-medium">
+                <Link href="/#ecosystem" className="text-sm interactive-link text-muted-foreground font-medium">
                   Ecosystem
                 </Link>
               </li>
@@ -76,12 +76,12 @@ export const Footer: React.FC = () => {
             <h4 className="text-xs font-semibold text-foreground uppercase tracking-wider">Legal</h4>
             <ul className="space-y-3">
               <li>
-                <Link href="/privacy" className="text-sm text-muted-foreground hover:text-foreground transition-colors font-medium">
+                <Link href="/privacy" className="text-sm interactive-link text-muted-foreground font-medium">
                   Privacy
                 </Link>
               </li>
               <li>
-                <Link href="/terms" className="text-sm text-muted-foreground hover:text-foreground transition-colors font-medium">
+                <Link href="/terms" className="text-sm interactive-link text-muted-foreground font-medium">
                   Terms
                 </Link>
               </li>
