@@ -27,13 +27,6 @@ export const MerchantStory: React.FC = () => {
                 The goal is not to add another layer of software to the store. It is to build focused technology that solves a specific problem, integrates into the existing ecommerce workflow, and improves the underlying experience—removing the friction of unnecessary complexity and disconnected tools.
               </p>
               
-              <div className="pt-8 mt-8 border-t border-border">
-                <p className="font-heading font-bold text-2xl md:text-3xl tracking-tighter uppercase text-foreground">
-                  BUSINESS FIRST.<br />
-                  TECHNOLOGY SECOND.<br />
-                  PERFORMANCE ALWAYS.
-                </p>
-              </div>
             </div>
             
             <div className="pb-16 mb-16 border-b border-border">

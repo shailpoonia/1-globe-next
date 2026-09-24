@@ -22,9 +22,6 @@ export const InfographicShowcase: React.FC = () => {
 
   return (
     <section className="w-full section-spacing bg-background border-t border-border/50 overflow-hidden relative">
-      {/* Ambient background glows */}
-      <div className="absolute top-1/2 left-0 w-[500px] h-[400px] bg-cyan-500/5 blur-[120px] pointer-events-none -z-10 -translate-y-1/2" />
-      <div className="absolute top-1/2 right-0 w-[500px] h-[400px] bg-teal-500/5 blur-[120px] pointer-events-none -z-10 -translate-y-1/2" />
 
       <div className="max-w-content mx-auto px-5 sm:px-8 lg:px-12">
         <SectionHeader
@@ -43,22 +40,22 @@ export const InfographicShowcase: React.FC = () => {
           <div className="flex items-center justify-center gap-4 mb-8">
             <button 
               onClick={() => setActiveSlide(0)}
-              className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold transition-all ${activeSlide === 0 ? 'bg-cyan-500/15 text-cyan-400 border border-cyan-500/30' : 'bg-slate-800/50 text-slate-500 border border-slate-700 hover:text-slate-300'}`}
+              className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold transition-all ${activeSlide === 0 ? 'bg-primary/10 text-primary border border-primary/30' : 'bg-secondary/50 text-neutral-500 border border-border hover:text-neutral-300'}`}
             >
-              <div className={`w-2 h-2 rounded-full ${activeSlide === 0 ? 'bg-cyan-400 animate-pulse' : 'bg-slate-600'}`} />
-              1-Optimiser · Images & Tags
+              <div className={`w-2 h-2 rounded-full ${activeSlide === 0 ? 'bg-primary animate-pulse' : 'bg-neutral-600'}`} />
+              1-OPTIMISER · IMAGE PERFORMANCE
             </button>
             <button 
               onClick={() => setActiveSlide(1)}
-              className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold transition-all ${activeSlide === 1 ? 'bg-teal-500/15 text-teal-400 border border-teal-500/30' : 'bg-slate-800/50 text-slate-500 border border-slate-700 hover:text-slate-300'}`}
+              className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold transition-all ${activeSlide === 1 ? 'bg-primary/10 text-primary border border-primary/30' : 'bg-secondary/50 text-neutral-500 border border-border hover:text-neutral-300'}`}
             >
-              <div className={`w-2 h-2 rounded-full ${activeSlide === 1 ? 'bg-teal-400 animate-pulse' : 'bg-slate-600'}`} />
-              1-Blog · Content & Backlinks
+              <div className={`w-2 h-2 rounded-full ${activeSlide === 1 ? 'bg-primary animate-pulse' : 'bg-neutral-600'}`} />
+              1-BLOG · LAUNCHING SOON
             </button>
           </div>
 
           {/* Carousel Container */}
-          <div className="relative w-full rounded-2xl bg-slate-900 border border-slate-800 shadow-2xl overflow-hidden min-h-[500px]">
+          <div className="relative w-full rounded-2xl bg-secondary/30 border border-border overflow-hidden min-h-[500px]">
             {/* Nav Arrows */}
             <button 
               onClick={() => setActiveSlide(prev => prev === 0 ? 1 : 0)}
@@ -85,8 +82,8 @@ export const InfographicShowcase: React.FC = () => {
           </div>
           
           <div className="text-center mt-8">
-            <p className="text-sm font-semibold text-slate-400">
-              From comforters to sneakers to cookware — if your store has product photos, <span className="text-cyan-400">1-globe.com</span> makes them work.
+            <p className="text-sm font-semibold text-neutral-400">
+              From comforters to sneakers to cookware — if your store has product photos, <span className="text-primary">1-GLOBE</span> makes them work.
             </p>
           </div>
         </div>
@@ -155,17 +152,17 @@ const Slide1Content: React.FC = () => {
         {/* Visual Box */}
         <div className="relative w-full md:w-1/2 bg-slate-800 border border-slate-700/50 rounded-xl overflow-hidden aspect-video shadow-xl">
           <Image src="/demo-product.jpg" alt="Comforter" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover opacity-80" />
-          <div className="absolute left-0 w-full h-[2px] bg-cyan-400 shadow-[0_0_8px_2px_rgba(0,213,255,0.6)] s1-animate-scan z-10">
-            <div className="absolute top-0 left-0 w-full h-12 bg-gradient-to-b from-cyan-500/20 to-transparent -translate-y-full" />
+          <div className="absolute left-0 w-full h-[2px] bg-primary shadow-[0_0_8px_2px_rgba(0,213,255,0.6)] s1-animate-scan z-10">
+            <div className="absolute top-0 left-0 w-full h-12 bg-gradient-to-b from-primary/20 to-transparent -translate-y-full" />
           </div>
           <div className="absolute bottom-2 right-2 bg-slate-900/80 backdrop-blur-md border border-slate-700/50 rounded-lg px-2.5 py-1 flex items-center gap-2 shadow-lg">
             <span className="text-[10px] font-medium text-slate-400 line-through">8.2 MB</span>
-            <span className="text-[11px] font-bold text-teal-400 flex items-center gap-1">
+            <span className="text-[11px] font-bold text-primary flex items-center gap-1">
               <Zap className="w-3 h-3 fill-current" /> 240 KB
             </span>
           </div>
           <div className="absolute top-2 left-2 bg-slate-900/70 backdrop-blur border border-slate-700/50 rounded-md px-2 py-0.5 flex items-center gap-1.5">
-            <Sparkles className="w-3 h-3 text-cyan-400" />
+            <Sparkles className="w-3 h-3 text-primary" />
             <span className="text-[10px] font-medium text-slate-200 uppercase tracking-wider">AI Vision</span>
           </div>
         </div>
@@ -231,7 +228,7 @@ const Slide2Content: React.FC = () => {
           <div className="flex flex-col items-center gap-2 min-w-[70px]">
             <div className="w-12 h-12 rounded-full border-2 border-slate-700 bg-slate-800/50 text-slate-500 flex items-center justify-center s2-node-1 relative shrink-0">
               <ImageIcon className="w-5 h-5" />
-              <CheckCircle2 className="w-4 h-4 text-cyan-400 absolute -bottom-1 -right-1 bg-slate-900 rounded-full" />
+              <CheckCircle2 className="w-4 h-4 text-primary absolute -bottom-1 -right-1 bg-slate-900 rounded-full" />
             </div>
             <span className="text-[10px] font-bold text-slate-400 text-center leading-tight">Optimized<br/>Product</span>
           </div>
@@ -242,7 +239,7 @@ const Slide2Content: React.FC = () => {
             <div className="w-12 h-12 rounded-full border-2 border-slate-700 bg-slate-800/50 text-slate-500 flex items-center justify-center s2-node-2 shrink-0">
               <PenTool className="w-5 h-5" />
             </div>
-            <span className="text-[10px] font-bold text-slate-400 text-center leading-tight">1-Blog<br/>Writes Post</span>
+            <span className="text-[10px] font-bold text-slate-400 text-center leading-tight">1-Blog<br/>Drafts Post</span>
           </div>
 
           <ArrowRight className="w-5 h-5 text-slate-700 shrink-0 s2-arrow-2" />
@@ -280,7 +277,7 @@ const Slide2Content: React.FC = () => {
              <Image src="/demo-product.jpg" alt="Comforter thumbnail" fill sizes="80px" className="object-cover group-hover:scale-110 transition-transform duration-500" />
            </div>
            <div>
-             <div className="text-[10px] text-teal-400 font-bold uppercase tracking-wider mb-1">Blog Post Published</div>
+             <div className="text-[10px] text-primary font-bold uppercase tracking-wider mb-1">Blog Post Published</div>
              <h4 className="text-sm font-semibold text-slate-200 leading-tight mb-2">The Art of Sanganer Hand Block Printing — A Bedroom Story</h4>
              <div className="text-[11px] text-slate-400 flex items-center gap-1">
                <LinkIcon className="w-3 h-3" /> Links directly to product
@@ -291,8 +288,8 @@ const Slide2Content: React.FC = () => {
       </div>
 
       <div className="text-center px-4 md:px-12">
-        <h3 className="text-lg md:text-xl font-bold text-white mb-2 leading-tight">Once your products are readable, 1-Blog writes real content around them.</h3>
-        <p className="text-sm text-slate-400">Content that earns backlinks over time and pulls shoppers to your store.</p>
+        <h3 className="text-lg md:text-xl font-bold text-white mb-2 leading-tight">Once your products are readable, 1-Blog will write real content around them.</h3>
+        <p className="text-sm text-neutral-400">Content designed to earn backlinks over time and pull shoppers to your store.</p>
       </div>
     </div>
   )

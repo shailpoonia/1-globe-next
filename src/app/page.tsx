@@ -3,7 +3,7 @@ import { Metadata } from 'next'
 import { CtaBand } from '@/components/shared/CtaBand'
 import { EditorialHero } from '@/components/home/EditorialHero'
 import { BrandStatement } from '@/components/home/BrandStatement'
-import { TheProblem } from '@/components/home/TheProblem'
+
 import { ProductEcosystem } from '@/components/home/ProductEcosystem'
 import { InfographicShowcase } from '@/components/home/InfographicShowcase'
 import { ProductDetailHome } from '@/components/home/ProductDetailHome'
@@ -24,11 +24,8 @@ export default function HomePage() {
       {/* 01: Hero */}
       <EditorialHero />
 
-      {/* 02: Brand Statement */}
+      {/* 02: Brand Statement (Includes The Problem narrative) */}
       <BrandStatement />
-
-      {/* 03: The Problem */}
-      <TheProblem />
 
       {/* 04: Product Ecosystem */}
       <ProductEcosystem />

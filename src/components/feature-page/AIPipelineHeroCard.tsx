@@ -66,10 +66,6 @@ export const AIPipelineHeroCard: React.FC = () => {
         }
       `}} />
 
-      {/* Glassy Background Glows */}
-      <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-cyan-500/10 blur-[60px] pointer-events-none rounded-full" />
-      <div className="absolute bottom-[-20%] right-[-10%] w-[50%] h-[50%] bg-teal-500/10 blur-[60px] pointer-events-none rounded-full" />
-
       {/* Top Image Section with Scanner */}
       <div className="p-5 pb-0">
         <div className="relative rounded-[var(--radius)] overflow-hidden bg-slate-800 border border-slate-700/50 aspect-video isolate">
@@ -81,20 +77,20 @@ export const AIPipelineHeroCard: React.FC = () => {
             className="object-cover opacity-80"
           />
           {/* Scanning Line */}
-          <div className="absolute left-0 w-full h-[2px] bg-cyan-400 shadow-[0_0_8px_2px_rgba(0,213,255,0.6)] animate-scan z-10">
-            <div className="absolute top-0 left-0 w-full h-12 bg-gradient-to-b from-cyan-500/20 to-transparent -translate-y-full" />
+          <div className="absolute left-0 w-full h-[2px] bg-primary shadow-[0_0_8px_2px_rgba(0,213,255,0.6)] animate-scan z-10">
+            <div className="absolute top-0 left-0 w-full h-12 bg-gradient-to-b from-primary/20 to-transparent -translate-y-full" />
           </div>
           
           {/* Secondary stat: Compression */}
           <div className="absolute bottom-2 right-2 bg-slate-900/80 backdrop-blur-md border border-slate-700/50 rounded-[var(--radius)] px-2.5 py-1 flex items-center gap-2 shadow-lg">
             <span className="text-[10px] font-medium text-slate-400 line-through">18.4 MB</span>
-            <span className="text-[11px] font-bold text-teal-400 flex items-center gap-1">
+            <span className="text-[11px] font-bold text-primary flex items-center gap-1">
               <Zap className="w-3 h-3 fill-current" /> 212 KB
             </span>
           </div>
           
           <div className="absolute top-2 left-2 bg-slate-900/70 backdrop-blur border border-slate-700/50 rounded-md px-2 py-0.5 flex items-center gap-1.5">
-            <Sparkles className="w-3 h-3 text-cyan-400" />
+            <Sparkles className="w-3 h-3 text-primary" />
             <span className="text-[10px] font-medium text-slate-200 uppercase tracking-wider">AI Vision</span>
           </div>
         </div>
@@ -109,7 +105,7 @@ export const AIPipelineHeroCard: React.FC = () => {
           </div>
           <div className="animate-filename-box border rounded-[var(--radius)] px-3 py-2 text-sm font-mono tracking-tight flex items-center">
             <span className="animate-filename"></span>
-            <CheckCircle2 className="w-4 h-4 text-cyan-400 ml-auto animate-check" />
+            <CheckCircle2 className="w-4 h-4 text-primary ml-auto animate-check" />
           </div>
         </div>
 
