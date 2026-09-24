@@ -130,7 +130,7 @@ export const AIPipelineHeroCard: React.FC = () => {
       {/* Discoverability Badges */}
       <div className="p-5 pt-4 bg-slate-900/40 border-t border-border/50 relative z-10 mt-auto">
         <div className="text-[10px] font-bold uppercase tracking-wider text-slate-500 mb-3 text-center">
-          Now Discoverable On
+          Provides Context For
         </div>
         <div className="flex flex-wrap justify-center gap-2">
           <div className="px-2.5 py-1 rounded-full border border-slate-700/50 text-xs font-medium text-slate-500 flex items-center gap-1.5 animate-badge">

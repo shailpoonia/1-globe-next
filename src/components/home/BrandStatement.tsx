@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 
 export const BrandStatement: React.FC = () => {
   return (
@@ -56,3 +56,4 @@ export const BrandStatement: React.FC = () => {
     </section>
   )
 }
+

@@ -24,7 +24,7 @@ export const EditorialFeatures: React.FC = () => {
             <div className="max-w-xl lg:pl-8">
               <h3 className="text-section-title mb-6">Image Optimization</h3>
               <p className="text-lead">
-                Compress images, resize them and optionally convert them to WebP formats to reduce payload size without compromising visual quality.
+                Compress images, resize them and optionally convert them to WebP to reduce image payload size while giving merchants control over optimization settings.
               </p>
             </div>
           </div>
