@@ -91,6 +91,7 @@ export const ProductEcosystem: React.FC = () => {
                   {/* Extra Technical Emphasis for Live Products */}
                   {isLive && product.name === '1-OPTIMISER' && (
                     <div className="mt-8 bg-secondary/20 border border-white/5 p-4 rounded-sm inline-block">
+                      <p className="text-xs uppercase tracking-widest font-bold text-neutral-500 mb-2">Example Optimisation</p>
                       <p className="text-sm font-medium text-foreground tracking-wide">
                         <span className="font-bold text-primary">18.4 MB → 212 KB</span> — 98% lighter, same quality
                       </p>

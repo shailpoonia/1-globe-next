@@ -1,46 +1,100 @@
 import React from 'react'
-import { Section } from '@/components/shared/Section'
-import { SectionHeader } from '@/components/shared/SectionHeader'
+import Link from 'next/link'
+import { ArrowRight } from 'lucide-react'
 
 export const PerformanceProof: React.FC = () => {
   return (
-    <Section className="section-spacing bg-background border-b border-border">
-      <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12 text-center">
-        <SectionHeader
-          
-          headline="The difference is measurable."
-          subhead="Engineering impact backed by verified performance metrics, not abstract claims."
-          align="center"
-        />
+    <section id="performance-proof" className="bg-background py-24 md:py-32 lg:py-40 border-b border-border">
+      <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
+        
+        {/* Header */}
+        <div className="max-w-3xl mb-20 md:mb-32">
+          <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground block mb-6">
+            MEASURE THE DIFFERENCE
+          </span>
+          <h2 className="font-heading font-bold text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] tracking-tighter leading-[0.95] text-foreground uppercase mb-8">
+            PERFORMANCE<br />
+            SHOULD BE<br />
+            MEASURABLE.
+          </h2>
+          <p className="text-lg md:text-xl text-neutral-400 font-medium leading-relaxed max-w-xl">
+            Ecommerce performance is not a slogan. It can be observed in the technical assets, data structure and user experience that make up a store.
+          </p>
+        </div>
 
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        {/* Evidence List */}
+        <div className="border-t border-border">
           
-          <div className="flex flex-col items-center justify-center p-8 border border-border interactive-card bg-card">
-            <span className="text-5xl font-heading font-bold text-foreground mb-4">98%</span>
-            <span className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Payload Reduction</span>
-            <p className="mt-4 text-sm text-muted-foreground max-w-[200px] leading-relaxed">
-              18.4 MB source asset reduced to 212 KB WebP with no perceived quality loss.
-            </p>
+          {/* Proof 1: Payload */}
+          <div className="py-12 border-b border-border flex flex-col md:flex-row gap-8 md:gap-16 lg:gap-24 items-start transition-colors hover:bg-white/[0.02]">
+            <div className="md:w-64 shrink-0">
+              <h3 className="text-sm font-bold uppercase tracking-widest text-foreground mb-2">IMAGE PAYLOAD</h3>
+              <p className="text-sm font-medium text-neutral-500">Example compression</p>
+            </div>
+            <div className="flex-1">
+              <div className="flex flex-wrap items-baseline gap-4 mb-6">
+                <span className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-neutral-600 line-through">18.4 MB</span>
+                <span className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary">212 KB</span>
+              </div>
+              <p className="text-lg text-neutral-400 max-w-xl leading-relaxed">
+                High-resolution source assets converted to optimized WebP formats with no perceived quality loss—a 98% reduction in image weight.
+              </p>
+            </div>
           </div>
 
-          <div className="flex flex-col items-center justify-center p-8 border border-border interactive-card bg-card">
-            <span className="text-5xl font-heading font-bold text-foreground mb-4">100%</span>
-            <span className="text-sm font-bold uppercase tracking-widest text-muted-foreground">API Automation</span>
-            <p className="mt-4 text-sm text-muted-foreground max-w-[200px] leading-relaxed">
-              Zero manual file exports. Metadata and formats are pushed directly via Shopify Admin API.
-            </p>
+          {/* Proof 2: Filename Structure */}
+          <div className="py-12 border-b border-border flex flex-col md:flex-row gap-8 md:gap-16 lg:gap-24 items-start transition-colors hover:bg-white/[0.02]">
+            <div className="md:w-64 shrink-0">
+              <h3 className="text-sm font-bold uppercase tracking-widest text-foreground mb-2">FILENAME STRUCTURE</h3>
+              <p className="text-sm font-medium text-neutral-500">Example transformation</p>
+            </div>
+            <div className="flex-1 w-full overflow-hidden">
+              <div className="flex flex-col gap-2 mb-6 font-mono text-sm sm:text-base max-w-xl">
+                <div className="text-neutral-500 bg-secondary/30 px-4 py-3 rounded-sm truncate">
+                  IMG_4837.jpg
+                </div>
+                <div className="text-primary bg-primary/10 px-4 py-3 rounded-sm border border-primary/20 truncate shadow-[0_0_15px_rgba(0,213,255,0.05)]">
+                  wooden-wall-clock-12-inch.webp
+                </div>
+              </div>
+              <p className="text-lg text-neutral-400 max-w-xl leading-relaxed">
+                Generic camera strings are rewritten into descriptive, readable filenames that search engines can accurately index.
+              </p>
+            </div>
           </div>
 
-          <div className="flex flex-col items-center justify-center p-8 border border-border interactive-card bg-card">
-            <span className="text-5xl font-heading font-bold text-foreground mb-4">LCP</span>
-            <span className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Core Web Vitals</span>
-            <p className="mt-4 text-sm text-muted-foreground max-w-[200px] leading-relaxed">
-              Lightweight assets drastically improve Largest Contentful Paint timings for mobile storefronts.
-            </p>
+          {/* Proof 3: Alt Text Generation */}
+          <div className="py-12 border-b border-border flex flex-col md:flex-row gap-8 md:gap-16 lg:gap-24 items-start transition-colors hover:bg-white/[0.02]">
+            <div className="md:w-64 shrink-0">
+              <h3 className="text-sm font-bold uppercase tracking-widest text-foreground mb-2">METADATA</h3>
+              <p className="text-sm font-medium text-neutral-500">Example AI generation</p>
+            </div>
+            <div className="flex-1">
+              <div className="bg-secondary/20 border border-white/5 px-6 py-5 rounded-sm mb-6 max-w-xl">
+                <p className="text-foreground text-lg italic font-medium">
+                  "Handcrafted 12-inch wooden wall clock, minimalist wall decor"
+                </p>
+              </div>
+              <p className="text-lg text-neutral-400 max-w-xl leading-relaxed">
+                Meaningful alt text is generated to provide essential context for accessibility tools and image discovery engines.
+              </p>
+            </div>
           </div>
 
         </div>
+
+        {/* CTA */}
+        <div className="mt-16 flex justify-start">
+          <Link
+            href="/apps/1-optimiser"
+            className="interactive-btn inline-flex items-center justify-center gap-2 h-14 px-8 border border-neutral-700 bg-transparent text-sm font-bold uppercase tracking-widest text-foreground hover:bg-white/5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+          >
+            <span>EXPLORE 1-OPTIMISER</span>
+            <ArrowRight className="w-4 h-4" />
+          </Link>
+        </div>
+
       </div>
-    </Section>
+    </section>
   )
 }
