@@ -3,8 +3,11 @@ import { Metadata } from 'next'
 import { Section } from '@/components/shared/Section'
 
 export const metadata: Metadata = {
-  title: 'Pricing | 1-globe.com',
-  description: 'Simple, merchant-aligned pricing with zero surprises.'
+  title: 'Pricing',
+  description: 'Simple, merchant-aligned pricing with zero surprises.',
+  alternates: {
+    canonical: '/pricing',
+  },
 }
 
 export default function PricingPage() {

@@ -4,8 +4,11 @@ import { Section } from '@/components/shared/Section'
 import { CtaBand } from '@/components/shared/CtaBand'
 
 export const metadata: Metadata = {
-  title: 'About | 1-globe.com',
-  description: 'Built by a merchant, not a code factory. Performance technology for ecommerce.'
+  title: 'About',
+  description: 'Built by a merchant, not a code factory. Performance technology for ecommerce.',
+  alternates: {
+    canonical: '/about',
+  },
 }
 
 export default function AboutPage() {

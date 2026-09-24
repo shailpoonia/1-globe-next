@@ -2,8 +2,11 @@ import React from 'react'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Terms of Service | 1-globe.com',
-  description: 'Terms of Service governing the use of 1-globe.com website and our Shopify applications.'
+  title: 'Terms of Service',
+  description: 'Terms of Service governing the use of 1-globe.com website and our Shopify applications.',
+  alternates: {
+    canonical: '/terms',
+  },
 }
 
 export default function TermsPage() {

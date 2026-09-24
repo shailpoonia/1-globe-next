@@ -9,14 +9,21 @@ import { EditorialFeatures } from '@/components/feature-page/EditorialFeatures'
 import { PerformanceProof } from '@/components/home/PerformanceProof'
 import { AppFaqSection } from '@/components/feature-page/AppFaqSection'
 
+import { SoftwareAppSchema, AppBreadcrumbSchema } from '@/components/shared/AppSchemaOrg'
+
 export const metadata: Metadata = {
   title: '1-Optimiser | Shopify Image Optimizer',
-  description: 'Make every product image work harder. Compress, optimize and improve image discoverability across your Shopify catalog.'
+  description: 'Make every product image work harder. Compress, optimize and improve image discoverability across your Shopify catalog.',
+  alternates: {
+    canonical: '/apps/1-optimiser',
+  },
 }
 
 export default function ImageOptimizerPage() {
   return (
     <div className="flex flex-col bg-background text-foreground selection:bg-primary/20 selection:text-primary pt-24">
+      <SoftwareAppSchema />
+      <AppBreadcrumbSchema />
       {/* App Sub-Navigation */}
       <AppSubNav
         appName={

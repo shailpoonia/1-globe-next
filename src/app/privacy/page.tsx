@@ -2,8 +2,11 @@ import React from 'react'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | 1-globe.com',
-  description: 'Privacy Policy for 1-globe.com and our Shopify applications. Fully compliant with Shopify App Store standards, GDPR, and CCPA.'
+  title: 'Privacy Policy',
+  description: 'Privacy Policy for 1-globe.com and our Shopify applications. Fully compliant with Shopify App Store standards, GDPR, and CCPA.',
+  alternates: {
+    canonical: '/privacy',
+  },
 }
 
 export default function PrivacyPage() {

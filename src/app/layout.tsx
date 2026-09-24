@@ -17,12 +17,49 @@ const inter = Inter({
   variable: '--font-sans',
 });
 
+import { siteConfig, getCanonicalUrl } from '@/lib/seo';
+
 export const metadata: Metadata = {
-  title: '1-globe.com - Shopify Performance Apps',
-  description: 'Faster Stores. Zero Code Bloat. More Sales. 1-globe.com builds focused Shopify apps that fix your store\'s foundation.',
+  metadataBase: new URL(siteConfig.url),
+  title: {
+    default: `${siteConfig.name} | ${siteConfig.title}`,
+    template: `%s | ${siteConfig.name}`,
+  },
+  description: siteConfig.description,
   icons: {
-    icon: '/favicon.ico', // Update based on your public folder
-  }
+    icon: '/favicon.jpeg', // Adjusted to match public folder
+  },
+  openGraph: {
+    title: {
+      default: `${siteConfig.name} | ${siteConfig.title}`,
+      template: `%s | ${siteConfig.name}`,
+    },
+    description: siteConfig.description,
+    url: siteConfig.url,
+    siteName: siteConfig.name,
+    locale: 'en_US',
+    type: 'website',
+    images: [
+      {
+        url: siteConfig.ogImage,
+        width: 1200,
+        height: 630,
+        alt: `${siteConfig.name} | ${siteConfig.title}`,
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: {
+      default: `${siteConfig.name} | ${siteConfig.title}`,
+      template: `%s | ${siteConfig.name}`,
+    },
+    description: siteConfig.description,
+    images: [siteConfig.ogImage],
+  },
+  alternates: {
+    canonical: '/',
+  },
 };
 
 export default function RootLayout({

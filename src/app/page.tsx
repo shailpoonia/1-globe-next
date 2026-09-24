@@ -12,14 +12,15 @@ import { BrandPhilosophy } from '@/components/home/BrandPhilosophy'
 import { MerchantStory } from '@/components/home/MerchantStory'
 import { FaqSection } from '@/components/home/FaqSection'
 
-export const metadata: Metadata = {
-  title: '1-globe.com | Shopify Image Optimizer',
-  description: 'Faster Stores. Zero Code Bloat. More Sales. 1-globe.com builds focused Shopify apps that fix your store\'s foundation.'
-}
+
+
+import { OrganizationSchema, WebSiteSchema } from '@/components/shared/SchemaOrg'
 
 export default function HomePage() {
   return (
     <div className="flex flex-col bg-background text-foreground selection:bg-primary/20 selection:text-primary pt-24">
+      <OrganizationSchema />
+      <WebSiteSchema />
       {/* 01: Hero */}
       <EditorialHero />
 
