@@ -1,33 +1,9 @@
-"use client"
-import React, { useState, useEffect } from 'react'
-import { ArrowDown, ArrowUpRight, ArrowRight } from 'lucide-react'
+import React from 'react'
+import { ArrowDown, ArrowRight } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 
 export const EditorialHero: React.FC = () => {
-  const [isMobileOrReducedMotion, setIsMobileOrReducedMotion] = useState(false)
-
-  useEffect(() => {
-    const checkCondition = () => {
-      const isMobile = window.innerWidth < 768
-      const prefersReducedMotion = window.matchMedia(
-        '(prefers-reduced-motion: reduce)'
-      ).matches
-      setIsMobileOrReducedMotion(isMobile || prefersReducedMotion)
-    }
-
-    checkCondition()
-    window.addEventListener('resize', checkCondition)
-
-    const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)')
-    motionQuery.addEventListener('change', checkCondition)
-
-    return () => {
-      window.removeEventListener('resize', checkCondition)
-      motionQuery.removeEventListener('change', checkCondition)
-    }
-  }, [])
-
   return (
     <section
       className="relative w-full min-h-[90vh] max-h-[1100px] flex flex-col justify-center overflow-hidden bg-background"
@@ -35,26 +11,25 @@ export const EditorialHero: React.FC = () => {
     >
       {/* Background Media */}
       <div className="absolute inset-0 w-full h-full overflow-hidden">
-        {isMobileOrReducedMotion ? (
-          <Image
-            src="/hero-poster.jpg"
-            alt="1-globe.com background"
-            fill
-            className="object-cover object-center opacity-100"
-            priority
-          />
-        ) : (
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            poster="/hero-poster.jpg"
-            className="w-full h-full object-cover object-center opacity-100"
-          >
-            <source src="/hero.mp4" type="video/mp4" />
-          </video>
-        )}
+        {/* Optimized LCP Poster Image */}
+        <Image
+          src="/hero-poster.jpg"
+          alt="1-globe.com background"
+          fill
+          className="object-cover object-center opacity-100"
+          priority
+        />
+        
+        {/* Video overlay - only loads on desktop with no reduced motion */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover object-center opacity-100 hidden md:block motion-reduce:hidden"
+        >
+          <source src="/hero.mp4" type="video/mp4" media="(min-width: 768px) and (prefers-reduced-motion: no-preference)" />
+        </video>
 
         {/* Lighter overlays to make the globe more visible, mostly darkening the left side for text readability */}
         <div className="absolute inset-0 bg-background/5 pointer-events-none" />

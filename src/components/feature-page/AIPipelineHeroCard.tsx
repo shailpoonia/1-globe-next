@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import { Image as ImageIcon, Sparkles, CheckCircle2, Search, ArrowDown, Zap, FileText } from 'lucide-react'
 
 export const AIPipelineHeroCard: React.FC = () => {
@@ -72,10 +73,12 @@ export const AIPipelineHeroCard: React.FC = () => {
       {/* Top Image Section with Scanner */}
       <div className="p-5 pb-0">
         <div className="relative rounded-[var(--radius)] overflow-hidden bg-slate-800 border border-slate-700/50 aspect-video isolate">
-          <img 
+          <Image 
             src="/Wall-Clock-Artistic-Wooden-12-Inch.webp" 
             alt="Wooden Wall Clock" 
-            className="w-full h-full object-cover opacity-80"
+            fill
+            sizes="(max-width: 420px) 100vw, 420px"
+            className="object-cover opacity-80"
           />
           {/* Scanning Line */}
           <div className="absolute left-0 w-full h-[2px] bg-cyan-400 shadow-[0_0_8px_2px_rgba(0,213,255,0.6)] animate-scan z-10">

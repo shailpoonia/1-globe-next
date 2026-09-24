@@ -1,5 +1,6 @@
 "use client"
 import React, { useState, useEffect } from 'react'
+import Image from 'next/image'
 import { SectionHeader } from '@/components/shared/SectionHeader'
 import { 
   ChevronLeft, ChevronRight, Image as ImageIcon, Sparkles, CheckCircle2, 
@@ -153,7 +154,7 @@ const Slide1Content: React.FC = () => {
         
         {/* Visual Box */}
         <div className="relative w-full md:w-1/2 bg-slate-800 border border-slate-700/50 rounded-xl overflow-hidden aspect-video shadow-xl">
-          <img src="/demo-product.jpg" alt="Comforter" className="w-full h-full object-cover opacity-80" />
+          <Image src="/demo-product.jpg" alt="Comforter" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover opacity-80" />
           <div className="absolute left-0 w-full h-[2px] bg-cyan-400 shadow-[0_0_8px_2px_rgba(0,213,255,0.6)] s1-animate-scan z-10">
             <div className="absolute top-0 left-0 w-full h-12 bg-gradient-to-b from-cyan-500/20 to-transparent -translate-y-full" />
           </div>
@@ -275,8 +276,8 @@ const Slide2Content: React.FC = () => {
 
         {/* Mock Blog Card */}
         <div className="w-full max-w-md bg-slate-800/80 border border-slate-700 rounded-xl overflow-hidden shadow-xl mb-8 group flex items-start p-4 gap-4">
-           <div className="w-20 h-20 rounded-md bg-slate-700 overflow-hidden shrink-0">
-             <img src="/demo-product.jpg" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+           <div className="relative w-20 h-20 rounded-md bg-slate-700 overflow-hidden shrink-0">
+             <Image src="/demo-product.jpg" alt="Comforter thumbnail" fill sizes="80px" className="object-cover group-hover:scale-110 transition-transform duration-500" />
            </div>
            <div>
              <div className="text-[10px] text-teal-400 font-bold uppercase tracking-wider mb-1">Blog Post Published</div>
