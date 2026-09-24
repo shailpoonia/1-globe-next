@@ -12,7 +12,7 @@ export const AppFaqSection: React.FC = () => {
     },
     {
       q: "Will renaming my files break existing links?",
-      a: "No. 1-Optimiser utilizes the Shopify Admin API to safely update file paths and redirect references internally. Your storefront will not suffer 404 errors or broken image links."
+      a: "No. 1-OPTIMISER utilizes the Shopify Admin API to safely update file paths and redirect references internally. Your storefront will not suffer 404 errors or broken image links."
     },
     {
       q: "How does AI generation handle complex products?",
@@ -57,6 +57,25 @@ export const AppFaqSection: React.FC = () => {
           ))}
         </Accordion.Root>
       </div>
+
+      {/* FAQ Schema for AEO/SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqs.map(faq => ({
+              "@type": "Question",
+              "name": faq.q,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.a
+              }
+            }))
+          })
+        }}
+      />
     </Section>
   )
 }

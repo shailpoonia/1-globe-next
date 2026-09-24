@@ -22,9 +22,9 @@ const products: EcosystemProduct[] = [
     name: "1-OPTIMISER",
     category: "IMAGE PERFORMANCE",
     description: "Make every product image work harder.",
-    status: "available",
+    status: "coming-soon",
     href: "/apps/1-optimiser",
-    ctaLabel: "EXPLORE"
+    ctaLabel: "EXPLORE 1-OPTIMISER"
   },
   {
     number: "02",
@@ -62,7 +62,7 @@ export const ProductEcosystem: React.FC = () => {
 
         <div className="flex flex-col border-t border-border">
           {products.map((product) => {
-            const isLive = product.status === 'available';
+            const isHighlighted = product.name === '1-OPTIMISER';
             
             return (
               <div 
@@ -71,29 +71,29 @@ export const ProductEcosystem: React.FC = () => {
               >
                 {/* Number */}
                 <div className="md:w-20 shrink-0">
-                  <span className={`font-heading text-xl sm:text-2xl tracking-tighter font-bold ${isLive ? 'text-primary' : 'text-neutral-600'}`}>
+                  <span className={`font-heading text-xl sm:text-2xl tracking-tighter font-bold ${isHighlighted ? 'text-primary' : 'text-neutral-600'}`}>
                     {product.number}
                   </span>
                 </div>
                 
                 {/* Core Info */}
                 <div className="flex-1 max-w-xl">
-                  <h3 className={`font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-tighter leading-[0.9] mb-4 uppercase ${isLive ? 'text-foreground' : 'text-neutral-500'}`}>
+                  <h3 className={`font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-tighter leading-[0.9] mb-4 uppercase ${isHighlighted ? 'text-foreground' : 'text-neutral-500'}`}>
                     {product.name}
                   </h3>
-                  <p className={`text-sm sm:text-base font-bold uppercase tracking-widest mb-6 ${isLive ? 'text-neutral-400' : 'text-neutral-600'}`}>
+                  <p className={`text-sm sm:text-base font-bold uppercase tracking-widest mb-6 ${isHighlighted ? 'text-neutral-400' : 'text-neutral-600'}`}>
                     {product.category}
                   </p>
-                  <p className={`text-lg sm:text-xl font-medium leading-relaxed max-w-md ${isLive ? 'text-neutral-300' : 'text-neutral-500'}`}>
+                  <p className={`text-lg sm:text-xl font-medium leading-relaxed max-w-md ${isHighlighted ? 'text-neutral-300' : 'text-neutral-500'}`}>
                     {product.description}
                   </p>
                   
                   {/* Extra Technical Emphasis for Live Products */}
-                  {isLive && product.name === '1-OPTIMISER' && (
+                  {isHighlighted && (
                     <div className="mt-8 bg-secondary/20 border border-white/5 p-4 rounded-sm inline-block">
                       <p className="text-xs uppercase tracking-widest font-bold text-neutral-500 mb-2">Example Optimisation</p>
                       <p className="text-sm font-medium text-foreground tracking-wide">
-                        <span className="font-bold text-primary">18.4 MB → 212 KB</span> — 98% lighter, same quality
+                        <span className="font-bold text-primary">18.4 MB → 212 KB</span> — lighter payload, same quality
                       </p>
                     </div>
                   )}
@@ -101,7 +101,7 @@ export const ProductEcosystem: React.FC = () => {
 
                 {/* CTA & Status */}
                 <div className="md:w-64 shrink-0 mt-8 md:mt-0 flex md:justify-end">
-                  {isLive && product.href ? (
+                  {product.href ? (
                     <Link
                       href={product.href}
                       className="interactive-btn inline-flex items-center justify-center gap-2 px-8 h-12 border border-neutral-700 bg-transparent text-sm font-bold uppercase tracking-widest text-foreground hover:bg-white/5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary w-full md:w-auto"

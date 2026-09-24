@@ -4,8 +4,8 @@ import { Section } from '@/components/shared/Section'
 import { CtaBand } from '@/components/shared/CtaBand'
 
 export const metadata: Metadata = {
-  title: 'About',
-  description: 'Built by a merchant, not a code factory. Performance technology for ecommerce.',
+  title: 'About 1-GLOBE',
+  description: 'Built by a merchant, for merchants. 1-GLOBE builds business-first ecommerce performance technology.',
   alternates: {
     canonical: '/about',
   },

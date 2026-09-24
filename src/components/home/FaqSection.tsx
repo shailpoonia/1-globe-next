@@ -97,6 +97,25 @@ export const FaqSection: React.FC = () => {
           
         </div>
       </div>
+      
+      {/* FAQ Schema for AEO/SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqs.map(faq => ({
+              "@type": "Question",
+              "name": faq.q,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": typeof faq.a === "string" ? faq.a : "Start with the problem you are trying to solve. If image performance and image management are the priority, explore 1-OPTIMISER."
+              }
+            }))
+          })
+        }}
+      />
     </section>
   )
 }

@@ -4,10 +4,10 @@ import { siteConfig } from '@/lib/seo';
 interface SoftwareAppProps {
   name: string;
   description: string;
-  price?: string;
+  offers?: any[];
 }
 
-export function SoftwareAppSchema({ name, description, price = '0' }: SoftwareAppProps) {
+export function SoftwareAppSchema({ name, description, offers }: SoftwareAppProps) {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
@@ -15,11 +15,7 @@ export function SoftwareAppSchema({ name, description, price = '0' }: SoftwareAp
     applicationCategory: 'BusinessApplication',
     operatingSystem: 'Shopify',
     description,
-    offers: {
-      '@type': 'Offer',
-      price,
-      priceCurrency: 'USD'
-    }
+    ...(offers && { offers }),
   };
 
   return (

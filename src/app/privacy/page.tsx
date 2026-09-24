@@ -35,7 +35,7 @@ export default function PrivacyPage() {
                 1. Overview &amp; Scope
               </h2>
               <p>
-                This Privacy Policy describes how <strong className="text-foreground">ONE GLOBE (F.Z.E)</strong> (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) collects, uses, and safeguards information when you visit our website at <strong className="text-foreground">1-globe.com</strong> or install and use any of our applications from the Shopify App Store, including 1-Optimiser.
+                This Privacy Policy describes how <strong className="text-foreground">ONE GLOBE (F.Z.E)</strong> (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) collects, uses, and safeguards information when you visit our website at <strong className="text-foreground">1-globe.com</strong> or install and use any of our applications from the Shopify App Store, including 1-OPTIMISER.
               </p>
               <p>
                 By installing our applications or using our services, you agree to the collection and use of information in accordance with this policy. If you do not agree, please uninstall the application and discontinue use of our services.
@@ -91,7 +91,7 @@ export default function PrivacyPage() {
                 4. AI Vision Processing &amp; Subprocessors
               </h2>
               <p>
-                For automated alt text and filename generation, 1-Optimiser utilizes computer vision machine learning APIs to inspect visual features within product photography.
+                For automated alt text and filename generation, 1-OPTIMISER utilizes computer vision machine learning APIs to inspect visual features within product photography.
               </p>
               <p>
                 Image pixels are processed ephemerally solely to produce descriptive text tags. We do not use your private product catalog or photography to train publicly available AI foundation models.

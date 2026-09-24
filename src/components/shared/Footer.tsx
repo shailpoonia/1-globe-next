@@ -26,12 +26,12 @@ export const Footer: React.FC = () => {
             <ul className="space-y-3">
               <li>
                 <Link href="/apps/1-optimiser" className="text-sm interactive-link text-muted-foreground font-medium">
-                  1-Optimiser
+                  1-OPTIMISER
                 </Link>
               </li>
               <li>
                 <span className="text-sm text-muted-foreground/50 font-medium">
-                  1-Blog <span className="text-[10px] ml-1 uppercase tracking-wider bg-secondary px-1.5 py-0.5">Soon</span>
+                  1-BLOG <span className="text-[10px] ml-1 uppercase tracking-wider bg-secondary px-1.5 py-0.5">Soon</span>
                 </span>
               </li>
             </ul>

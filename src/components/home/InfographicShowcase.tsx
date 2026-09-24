@@ -142,7 +142,7 @@ export const InfographicShowcase: React.FC = () => {
 }
 
 // =========================================================================
-// SLIDE 1: 1-Optimiser
+// SLIDE 1: 1-OPTIMISER
 // =========================================================================
 const Slide1Content: React.FC = () => {
   return (
@@ -215,7 +215,7 @@ const Slide1Content: React.FC = () => {
 }
 
 // =========================================================================
-// SLIDE 2: 1-Blog
+// SLIDE 2: 1-BLOG
 // =========================================================================
 const Slide2Content: React.FC = () => {
   return (
@@ -239,7 +239,7 @@ const Slide2Content: React.FC = () => {
             <div className="w-12 h-12 rounded-full border-2 border-slate-700 bg-slate-800/50 text-slate-500 flex items-center justify-center s2-node-2 shrink-0">
               <PenTool className="w-5 h-5" />
             </div>
-            <span className="text-[10px] font-bold text-slate-400 text-center leading-tight">1-Blog<br/>Drafts Post</span>
+            <span className="text-[10px] font-bold text-slate-400 text-center leading-tight">1-BLOG<br/>Drafts Post</span>
           </div>
 
           <ArrowRight className="w-5 h-5 text-slate-700 shrink-0 s2-arrow-2" />
@@ -288,7 +288,7 @@ const Slide2Content: React.FC = () => {
       </div>
 
       <div className="text-center px-4 md:px-12">
-        <h3 className="text-lg md:text-xl font-bold text-white mb-2 leading-tight">Once your products are readable, 1-Blog will write real content around them.</h3>
+        <h3 className="text-lg md:text-xl font-bold text-white mb-2 leading-tight">Once your products are readable, 1-BLOG will write real content around them.</h3>
         <p className="text-sm text-neutral-400">Content designed to earn backlinks over time and pull shoppers to your store.</p>
       </div>
     </div>

@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: '1-GLOBE',
   title: 'Ecommerce Performance Technology',
-  description: '1-globe.com builds Shopify performance apps that fix your store\'s foundation — so it loads fast, gets found by search and AI, and turns more traffic into buyers.',
+  description: '1-GLOBE builds ecommerce performance technology. Our products help online merchants improve image payloads, content structure, and storefront performance.',
   url: 'https://1-globe.com',
   ogImage: '/hero-poster.jpg',
 };

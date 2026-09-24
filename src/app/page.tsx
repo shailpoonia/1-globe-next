@@ -16,6 +16,14 @@ import { FaqSection } from '@/components/home/FaqSection'
 
 import { OrganizationSchema, WebSiteSchema } from '@/components/shared/SchemaOrg'
 
+export const metadata: Metadata = {
+  title: '1-GLOBE | Ecommerce Performance Technology',
+  description: '1-GLOBE builds ecommerce performance technology. Our products help online merchants improve image payloads, content structure, and storefront performance.',
+  alternates: {
+    canonical: '/',
+  },
+}
+
 export default function HomePage() {
   return (
     <div className="flex flex-col bg-background text-foreground selection:bg-primary/20 selection:text-primary pt-24">

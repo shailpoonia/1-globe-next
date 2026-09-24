@@ -201,7 +201,7 @@ export const GoogleSearchAnimationCard: React.FC = () => {
         <p className={`text-sm md:text-base font-semibold transition-colors duration-500 ${step === 0 ? 'text-rose-400' : 'text-teal-400'}`}>
           {step === 0 
             ? "Google can't read your photo — so shoppers never find you." 
-            : "1-Optimiser makes it readable — now you show up."}
+            : "1-OPTIMISER makes it readable — now you show up."}
         </p>
       </div>
     </div>

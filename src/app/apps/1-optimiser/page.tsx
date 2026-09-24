@@ -12,7 +12,7 @@ import { AppFaqSection } from '@/components/feature-page/AppFaqSection'
 import { SoftwareAppSchema, AppBreadcrumbSchema } from '@/components/shared/AppSchemaOrg'
 
 export const metadata: Metadata = {
-  title: '1-Optimiser | Shopify Image Optimizer',
+  title: '1-OPTIMISER | Shopify Image Optimizer',
   description: 'Make every product image work harder. Compress, optimize and improve image discoverability across your Shopify catalog.',
   alternates: {
     canonical: '/apps/1-optimiser',
@@ -23,15 +23,35 @@ export default function ImageOptimizerPage() {
   return (
     <div className="flex flex-col bg-background text-foreground selection:bg-primary/20 selection:text-primary pt-24">
       <SoftwareAppSchema 
-        name="1-Optimiser" 
+        name="1-OPTIMISER" 
         description="Make every product image work harder. Compress, optimize and improve image discoverability across your Shopify catalog."
+        offers={[
+          {
+            '@type': 'Offer',
+            name: 'Free Starter',
+            price: '0',
+            priceCurrency: 'USD'
+          },
+          {
+            '@type': 'Offer',
+            name: 'Growth',
+            price: '9.99',
+            priceCurrency: 'USD'
+          },
+          {
+            '@type': 'Offer',
+            name: 'Pro Catalog',
+            price: '19.99',
+            priceCurrency: 'USD'
+          }
+        ]}
       />
-      <AppBreadcrumbSchema appName="1-Optimiser" appSlug="1-optimiser" />
+      <AppBreadcrumbSchema appName="1-OPTIMISER" appSlug="1-optimiser" />
       {/* App Sub-Navigation */}
       <AppSubNav
         appName={
           <div className="flex items-baseline gap-2">
-            <span>1-Optimiser</span>
+            <span>1-OPTIMISER</span>
             <span className="hidden sm:inline-block text-xs font-medium text-muted-foreground uppercase tracking-wide">Shopify Image Optimizer</span>
           </div>
         }
@@ -40,13 +60,13 @@ export default function ImageOptimizerPage() {
 
       {/* 1. App Hero with AI Pipeline Card */}
       <AppHero
-        headline={<>You don't have a traffic problem. You have a <span className="text-primary italic">foundation</span> problem.</>}
+        headline={<>Build a stronger <span className="text-primary italic">foundation</span> for your catalog.</>}
         subhead={
           <div className="space-y-6">
-            <p>You're paying for ads and doing SEO — but your store keeps leaking sales. It's not the ads or the SEO that's broken. It's what they're driving traffic to.</p>
+            <p>Marketing drives traffic, but your storefront infrastructure dictates performance. Heavy payloads and missing metadata can undermine your acquisition efforts.</p>
             <div className="bg-secondary/30 p-6 border-l-2 border-primary mt-6">
-              <p className="font-bold text-foreground mb-2">It's like putting a Ferrari engine on a cracked chassis.</p>
-              <p className="text-sm">All that horsepower — your ad spend, your SEO effort — hits a store with heavy images, filenames Google can't read, and photos invisible to AI search. The power has nowhere to go. 1-Optimiser rebuilds the chassis so your ads and SEO finally pay off.</p>
+              <p className="font-bold text-foreground mb-2">Image performance matters.</p>
+              <p className="text-sm">Large image files slow down page speeds, while generic filenames and missing alt text provide limited context for search and AI discovery. 1-OPTIMISER automatically compresses your images and enriches your metadata, helping you build a faster, more discoverable storefront.</p>
             </div>
           </div>
         }

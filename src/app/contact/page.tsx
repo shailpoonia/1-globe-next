@@ -3,8 +3,8 @@ import { Metadata } from 'next'
 import { Section } from '@/components/shared/Section'
 
 export const metadata: Metadata = {
-  title: 'Contact',
-  description: 'Reach out to the 1-globe.com team.',
+  title: 'Contact | 1-GLOBE',
+  description: 'Reach out to the 1-GLOBE team for support or inquiries regarding our ecommerce performance tools.',
   alternates: {
     canonical: '/contact',
   },
