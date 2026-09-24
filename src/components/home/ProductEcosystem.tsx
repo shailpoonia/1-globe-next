@@ -66,8 +66,11 @@ export const ProductEcosystem: React.FC = () => {
                 </div>
 
                 {/* CTA & Status */}
-                <div className="md:w-64 shrink-0 mt-8 md:mt-0 flex md:justify-end">
-                  {product.href ? (
+                <div className="md:w-64 shrink-0 mt-8 md:mt-0 flex flex-col md:items-end justify-center gap-4">
+                  <div className="inline-flex items-center px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-primary border border-primary/20 bg-primary/5 rounded-full">
+                    {product.status.replace('-', ' ')}
+                  </div>
+                  {product.href && (
                     <Link
                       href={product.href}
                       className="interactive-btn inline-flex items-center justify-center gap-2 px-8 h-12 border border-neutral-700 bg-transparent text-sm font-bold uppercase tracking-widest text-foreground hover:bg-white/5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary w-full md:w-auto"
@@ -75,10 +78,6 @@ export const ProductEcosystem: React.FC = () => {
                       <span>{product.ctaLabel || 'EXPLORE'}</span>
                       <ArrowRight className="w-4 h-4" />
                     </Link>
-                  ) : (
-                    <div className="inline-flex items-center h-12 px-2 text-sm font-bold uppercase tracking-widest text-neutral-600">
-                      {product.status === 'coming-soon' ? 'COMING SOON' : 'LAUNCHING SOON'}
-                    </div>
                   )}
                 </div>
               </div>

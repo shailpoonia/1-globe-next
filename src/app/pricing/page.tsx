@@ -24,7 +24,7 @@ export default function PricingPage() {
                 Simple, merchant-aligned pricing with zero <span className="text-primary italic">surprises</span>.
               </h1>
               <p className="text-lead">
-                Free to install, test on your own store, and cancel anytime. Billing is handled securely through the Shopify App Store.
+                Planned pricing for 1-OPTIMISER. Final availability and plan details will be confirmed when the app launches.
               </p>
               <p className="text-lead mt-4">
                 <Link href="/apps/1-optimiser" className="text-primary hover:text-foreground transition-colors underline underline-offset-4 decoration-primary/30">
@@ -58,7 +58,7 @@ export default function PricingPage() {
                   </li>
                 </ul>
                 <div className="w-full inline-flex items-center justify-center h-14 font-bold text-xs uppercase tracking-widest bg-secondary text-muted-foreground cursor-not-allowed select-none">
-                  Start free
+                  COMING TO APP STORE
                 </div>
               </div>
 
@@ -92,7 +92,7 @@ export default function PricingPage() {
                   </li>
                 </ul>
                 <div className="w-full inline-flex items-center justify-center h-14 font-bold text-xs uppercase tracking-widest bg-secondary text-muted-foreground cursor-not-allowed select-none">
-                  Add to Shopify
+                  COMING TO APP STORE
                 </div>
               </div>
 
@@ -123,7 +123,7 @@ export default function PricingPage() {
                   </li>
                 </ul>
                 <div className="w-full inline-flex items-center justify-center h-14 font-bold text-xs uppercase tracking-widest bg-secondary text-muted-foreground cursor-not-allowed select-none">
-                  Add to Shopify
+                  COMING TO APP STORE
                 </div>
               </div>
 

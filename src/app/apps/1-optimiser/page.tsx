@@ -79,7 +79,7 @@ export default function ImageOptimizerPage() {
         headlinePart1="READY FOR"
         italicWord="BETTER"
         headlinePart2="PERFORMANCE?"
-        subhead="Start optimizing your catalog today."
+        subhead="Explore how 1-OPTIMISER is designed to improve image performance across your catalog."
         primaryCtaText="COMING TO APP STORE"
         primaryIsLink={false}
         secondaryCtaText="View pricing"
