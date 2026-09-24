@@ -15,6 +15,14 @@ export interface ResourceItem {
 }
 
 export const RESOURCES: Record<string, ResourceItem> = {
+  'ecommerce-performance': {
+    slug: 'ecommerce-performance',
+    title: 'Ecommerce Performance: A Practical Guide for Online Stores',
+    description: 'Understand how storefront performance, image payloads, and structured content impact usability and discovery.',
+    category: 'Ecommerce Performance',
+    datePublished: '2026-09-24T12:00:00Z',
+    dateModified: '2026-09-24T12:00:00Z',
+  },
   'ecommerce-image-optimization': {
     slug: 'ecommerce-image-optimization',
     title: 'Ecommerce Image Optimization: A Practical Guide',

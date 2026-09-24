@@ -53,7 +53,7 @@ export default function ArticlePage() {
             <div className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">What is ecommerce image optimization?</h2>
               <p className="text-xl text-muted-foreground font-medium leading-relaxed">
-                Ecommerce image optimization is the process of reducing file sizes and structuring image data to help a storefront perform better. It balances visual quality with technical efficiency to reduce image payloads and improve discoverability.
+                Ecommerce image optimization is a critical subset of broader <Link href="/resources/ecommerce-performance" className="text-primary hover:text-foreground transition-colors underline underline-offset-4 decoration-primary/30">ecommerce performance</Link>. It is the process of reducing file sizes and structuring image data to help a storefront perform better, balancing visual quality with technical efficiency to reduce image payloads and improve discoverability.
               </p>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 When a merchant uploads high-resolution photography directly from a camera to a platform like Shopify, the files are typically large and carry unhelpful filenames. Optimization addresses these technical characteristics before they affect the storefront.
