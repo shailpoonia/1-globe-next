@@ -88,7 +88,7 @@ export const JobsDoneSection: React.FC = () => {
           
           {/* Card 1: Compress & Convert */}
           <div className="interactive-card bg-card border border-border p-6 flex flex-col h-64 relative overflow-hidden group">
-            <h4 className="text-sm font-bold uppercase tracking-wider text-foreground mb-2">Compress & convert</h4>
+            <h3 className="text-sm font-bold uppercase tracking-wider text-foreground mb-2">Compress & convert</h3>
             <p className="text-xs font-medium text-muted-foreground mb-8">Heavy JPEGs become featherweight WebP.</p>
             <div className="mt-auto relative w-full h-12 bg-slate-900 border border-border flex flex-col justify-center px-3">
               <div className="absolute left-0 top-0 bottom-0 animate-shrink z-0" />
@@ -101,7 +101,7 @@ export const JobsDoneSection: React.FC = () => {
 
           {/* Card 2: AI names & describes */}
           <div className="interactive-card bg-card border border-border p-6 flex flex-col h-64 relative overflow-hidden group">
-            <h4 className="text-sm font-bold uppercase tracking-wider text-foreground mb-2">AI names & describes</h4>
+            <h3 className="text-sm font-bold uppercase tracking-wider text-foreground mb-2">AI names & describes</h3>
             <p className="text-xs font-medium text-muted-foreground mb-8">Metadata written for SEO automatically.</p>
             <div className="mt-auto space-y-3">
               <div className="flex items-center gap-2">
@@ -117,7 +117,7 @@ export const JobsDoneSection: React.FC = () => {
 
           {/* Card 3: Smart crop */}
           <div className="interactive-card bg-card border border-border p-6 flex flex-col h-64 relative overflow-hidden group">
-            <h4 className="text-sm font-bold uppercase tracking-wider text-foreground mb-2">Smart crop</h4>
+            <h3 className="text-sm font-bold uppercase tracking-wider text-foreground mb-2">Smart crop</h3>
             <p className="text-xs font-medium text-muted-foreground mb-8">Images snap perfectly to your store ratio.</p>
             <div className="mt-auto h-24 w-full flex items-center justify-center bg-slate-900 border border-slate-800 border-dashed">
               <div className="animate-crop border-2 border-primary bg-background overflow-hidden relative">
@@ -133,7 +133,7 @@ export const JobsDoneSection: React.FC = () => {
 
           {/* Card 4: Background cleanup */}
           <div className="interactive-card bg-card border border-border p-6 flex flex-col h-64 relative overflow-hidden group">
-            <h4 className="text-sm font-bold uppercase tracking-wider text-foreground mb-2">Background cleanup</h4>
+            <h3 className="text-sm font-bold uppercase tracking-wider text-foreground mb-2">Background cleanup</h3>
             <p className="text-xs font-medium text-muted-foreground mb-8">Messy product shots made studio-ready.</p>
             <div className="mt-auto h-24 w-full border border-slate-800 overflow-hidden relative animate-cleanup-bg flex items-center justify-center">
               <Image src="/demo-product.jpg" alt="cleanup demo" fill sizes="120px" className="object-cover animate-cleanup scale-125" />
@@ -142,7 +142,7 @@ export const JobsDoneSection: React.FC = () => {
 
           {/* Card 5: Bulk optimize */}
           <div className="interactive-card bg-card border border-border p-6 flex flex-col h-64 relative overflow-hidden group">
-            <h4 className="text-sm font-bold uppercase tracking-wider text-foreground mb-2">Bulk optimize</h4>
+            <h3 className="text-sm font-bold uppercase tracking-wider text-foreground mb-2">Bulk optimize</h3>
             <p className="text-xs font-medium text-muted-foreground mb-8">Your entire catalog in one single click.</p>
             <div className="mt-auto grid grid-cols-3 grid-rows-2 gap-1.5 w-full h-24">
               {[1, 2, 3, 4, 5, 6].map((i) => (

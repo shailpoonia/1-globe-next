@@ -22,7 +22,7 @@ import { siteConfig } from '@/lib/seo';
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} | ${siteConfig.title}`,
+    default: siteConfig.title,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: {
-      default: `${siteConfig.name} | ${siteConfig.title}`,
+      default: siteConfig.title,
       template: `%s | ${siteConfig.name}`,
     },
     description: siteConfig.description,
@@ -44,14 +44,14 @@ export const metadata: Metadata = {
         url: siteConfig.ogImage,
         width: 1200,
         height: 630,
-        alt: `${siteConfig.name} | ${siteConfig.title}`,
+        alt: siteConfig.title,
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
     title: {
-      default: `${siteConfig.name} | ${siteConfig.title}`,
+      default: siteConfig.title,
       template: `%s | ${siteConfig.name}`,
     },
     description: siteConfig.description,
