@@ -37,7 +37,7 @@ export const EditorialHero: React.FC = () => {
           
           <div>
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-neutral-400">
-              ECOMMERCE PERFORMANCE · BY 1-GLOBE
+              1-GLOBE - ECOMMERCE PERFORMANCE TECHNOLOGY
             </span>
           </div>
           

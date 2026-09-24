@@ -8,12 +8,12 @@ export const TheProblem: React.FC = () => {
       <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
         
         <div className="mb-16 max-w-4xl text-left">
-          <span className="text-eyebrow block mb-6">Why 1-globe.com</span>
+          <span className="text-eyebrow block mb-6">WHY 1-GLOBE</span>
           <h2 className="text-section-title mb-6">
             Your ads and SEO aren't broken. Your store's <span className="text-primary italic">foundation</span> is.
           </h2>
           <p className="text-lead">
-            You pay for traffic and work on your SEO — but it leaks away on a store that's slow and invisible to search. It's a Ferrari engine on a cracked chassis: all that power has nowhere to go. 1-globe.com fixes the chassis — one focused app per problem — so every rupee you spend on ads and SEO finally pays off.
+            You pay for traffic and invest in SEO — but the performance of that investment depends on the store it drives traffic to. It's a Ferrari engine on a cracked chassis: all that power has nowhere to go. 1-GLOBE strengthens the foundation — one focused solution for each ecommerce problem — so every dollar you invest in growth has a better foundation to perform on.
           </p>
         </div>
 
