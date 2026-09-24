@@ -1,17 +1,23 @@
 import React from 'react';
 import { siteConfig } from '@/lib/seo';
 
-export function SoftwareAppSchema() {
+interface SoftwareAppProps {
+  name: string;
+  description: string;
+  price?: string;
+}
+
+export function SoftwareAppSchema({ name, description, price = '0' }: SoftwareAppProps) {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
-    name: '1-Optimiser',
+    name,
     applicationCategory: 'BusinessApplication',
     operatingSystem: 'Shopify',
-    description: 'Make every product image work harder. Compress, optimize and improve image discoverability across your Shopify catalog.',
+    description,
     offers: {
       '@type': 'Offer',
-      price: '0',
+      price,
       priceCurrency: 'USD'
     }
   };
@@ -24,7 +30,12 @@ export function SoftwareAppSchema() {
   );
 }
 
-export function AppBreadcrumbSchema() {
+interface AppBreadcrumbProps {
+  appName: string;
+  appSlug: string;
+}
+
+export function AppBreadcrumbSchema({ appName, appSlug }: AppBreadcrumbProps) {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -38,8 +49,8 @@ export function AppBreadcrumbSchema() {
       {
         '@type': 'ListItem',
         position: 2,
-        name: '1-Optimiser',
-        item: `${siteConfig.url}/apps/1-optimiser`
+        name: appName,
+        item: `${siteConfig.url}/apps/${appSlug}`
       }
     ]
   };

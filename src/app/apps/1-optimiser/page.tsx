@@ -22,8 +22,11 @@ export const metadata: Metadata = {
 export default function ImageOptimizerPage() {
   return (
     <div className="flex flex-col bg-background text-foreground selection:bg-primary/20 selection:text-primary pt-24">
-      <SoftwareAppSchema />
-      <AppBreadcrumbSchema />
+      <SoftwareAppSchema 
+        name="1-Optimiser" 
+        description="Make every product image work harder. Compress, optimize and improve image discoverability across your Shopify catalog."
+      />
+      <AppBreadcrumbSchema appName="1-Optimiser" appSlug="1-optimiser" />
       {/* App Sub-Navigation */}
       <AppSubNav
         appName={
