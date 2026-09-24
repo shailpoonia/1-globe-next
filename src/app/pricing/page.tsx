@@ -1,11 +1,11 @@
-﻿import React from 'react'
+import React from 'react'
 import { Metadata } from 'next'
 import { Section } from '@/components/shared/Section'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: '1-OPTIMISER Pricing',
-  description: 'Pricing for 1-OPTIMISER. Simple, merchant-aligned plans starting at $0, with zero surprises.',
+  description: 'Pricing for 1-OPTIMISER. Pay only for what you optimize with one-time image credits.',
   alternates: {
     canonical: '/pricing',
   },
@@ -19,110 +19,93 @@ export default function PricingPage() {
           <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
             
             <div className="text-left mb-20 max-w-3xl">
-              <span className="text-eyebrow block mb-6">Pricing</span>
+              <span className="text-eyebrow block mb-6">1-OPTIMISER</span>
               <h1 className="text-hero mb-6">
-                Simple, merchant-aligned pricing with zero <span className="text-primary italic">surprises</span>.
+                IMAGE PERFORMANCE.<br />
+                <span className="text-primary italic">WITHOUT THE SUBSCRIPTION.</span>
               </h1>
               <p className="text-lead">
-                Planned pricing for 1-OPTIMISER. Final availability and plan details will be confirmed when the app launches.
+                Start with 100 free image optimizations. When you need more, buy one-time image credits that never expire.
               </p>
               <p className="text-lead mt-4">
                 <Link href="/apps/1-optimiser" className="text-primary hover:text-foreground transition-colors underline underline-offset-4 decoration-primary/30">
-                  See how 1-OPTIMISER works
-                </Link> before choosing a plan.
+                  Explore 1-OPTIMISER capabilities
+                </Link>
               </p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               
               {/* Tier 1 */}
-              <div className="border border-border bg-card p-10 flex flex-col">
-                <div className="mb-8 border-b border-border pb-8">
-                  <span className="text-sm font-semibold uppercase tracking-widest text-foreground mb-4 block">Free Starter</span>
+              <div className="border border-border bg-card p-8 flex flex-col">
+                <div className="mb-6 border-b border-border pb-6">
+                  <span className="text-sm font-semibold uppercase tracking-widest text-foreground mb-4 block">100 FREE IMAGES</span>
                   <div className="flex items-baseline gap-2 mb-4">
                     <span className="text-4xl font-heading font-bold text-foreground">$0</span>
                   </div>
-                  <p className="text-muted-foreground leading-relaxed text-sm h-10">
-                    Perfect for new stores testing the infrastructure.
+                  <p className="text-muted-foreground leading-relaxed text-sm h-12">
+                    Every store starts with 100 free image optimizations.
                   </p>
                 </div>
-                <ul className="space-y-4 mb-10 flex-1">
-                  <li className="flex items-center gap-3 text-sm text-foreground font-medium border-b border-border/50 pb-2">
-                    Up to 50 images/month
-                  </li>
-                  <li className="flex items-center gap-3 text-sm text-muted-foreground border-b border-border/50 pb-2">
-                    WebP conversion
-                  </li>
-                  <li className="flex items-center gap-3 text-sm text-muted-foreground border-b border-border/50 pb-2">
-                    Basic alt text
-                  </li>
-                </ul>
-                <div className="w-full inline-flex items-center justify-center h-14 font-bold text-xs uppercase tracking-widest bg-secondary text-muted-foreground cursor-not-allowed select-none">
+                <div className="flex-1"></div>
+                <div className="w-full inline-flex items-center justify-center h-14 font-bold text-xs uppercase tracking-widest bg-secondary text-muted-foreground cursor-not-allowed select-none mt-6">
                   COMING TO APP STORE
                 </div>
               </div>
 
               {/* Tier 2 */}
-              <div className="border-2 border-foreground bg-background p-10 flex flex-col relative transform lg:-translate-y-4">
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-foreground text-background text-[10px] font-bold uppercase tracking-widest px-3 py-1">
-                  Most Popular
-                </div>
-                <div className="mb-8 border-b border-border pb-8">
-                  <span className="text-sm font-semibold uppercase tracking-widest text-foreground mb-4 block">Growth</span>
+              <div className="border border-border bg-card p-8 flex flex-col">
+                <div className="mb-6 border-b border-border pb-6">
+                  <span className="text-sm font-semibold uppercase tracking-widest text-foreground mb-4 block">100 IMAGE CREDITS</span>
                   <div className="flex items-baseline gap-2 mb-4">
-                    <span className="text-4xl font-heading font-bold text-foreground">$9.99</span>
-                    <span className="text-muted-foreground font-medium text-sm">/ month</span>
+                    <span className="text-4xl font-heading font-bold text-foreground">$2</span>
                   </div>
-                  <p className="text-muted-foreground leading-relaxed text-sm h-10">
-                    Full automation for growing catalogs.
+                  <p className="text-muted-foreground leading-relaxed text-sm h-12">
+                    One-time purchase.<br />Credits never expire.
                   </p>
                 </div>
-                <ul className="space-y-4 mb-10 flex-1">
-                  <li className="flex items-center gap-3 text-sm text-foreground font-medium border-b border-border/50 pb-2">
-                    Unlimited images
-                  </li>
-                  <li className="flex items-center gap-3 text-sm text-foreground font-medium border-b border-border/50 pb-2">
-                    AI alt text & filenames
-                  </li>
-                  <li className="flex items-center gap-3 text-sm text-foreground font-medium border-b border-border/50 pb-2">
-                    Bulk collections
-                  </li>
-                  <li className="flex items-center gap-3 text-sm text-foreground font-medium border-b border-border/50 pb-2">
-                    Crop to any size
-                  </li>
-                </ul>
-                <div className="w-full inline-flex items-center justify-center h-14 font-bold text-xs uppercase tracking-widest bg-secondary text-muted-foreground cursor-not-allowed select-none">
+                <div className="flex-1">
+                  <p className="text-sm font-medium text-muted-foreground">$0.02 / image</p>
+                </div>
+                <div className="w-full inline-flex items-center justify-center h-14 font-bold text-xs uppercase tracking-widest bg-secondary text-muted-foreground cursor-not-allowed select-none mt-6">
                   COMING TO APP STORE
                 </div>
               </div>
 
               {/* Tier 3 */}
-              <div className="border border-border bg-card p-10 flex flex-col">
-                <div className="mb-8 border-b border-border pb-8">
-                  <span className="text-sm font-semibold uppercase tracking-widest text-foreground mb-4 block">Pro Catalog</span>
+              <div className="border border-border bg-card p-8 flex flex-col">
+                <div className="mb-6 border-b border-border pb-6">
+                  <span className="text-sm font-semibold uppercase tracking-widest text-foreground mb-4 block">500 IMAGE CREDITS</span>
                   <div className="flex items-baseline gap-2 mb-4">
-                    <span className="text-4xl font-heading font-bold text-foreground">$19.99</span>
-                    <span className="text-muted-foreground font-medium text-sm">/ month</span>
+                    <span className="text-4xl font-heading font-bold text-foreground">$10</span>
                   </div>
-                  <p className="text-muted-foreground leading-relaxed text-sm h-10">
-                    High volume capacity for large inventories.
+                  <p className="text-muted-foreground leading-relaxed text-sm h-12">
+                    One-time purchase.<br />Credits never expire.
                   </p>
                 </div>
-                <ul className="space-y-4 mb-10 flex-1">
-                  <li className="flex items-center gap-3 text-sm text-foreground font-medium border-b border-border/50 pb-2">
-                    Everything in Growth
-                  </li>
-                  <li className="flex items-center gap-3 text-sm text-foreground font-medium border-b border-border/50 pb-2">
-                    Background removal
-                  </li>
-                  <li className="flex items-center gap-3 text-sm text-foreground font-medium border-b border-border/50 pb-2">
-                    Priority processing
-                  </li>
-                  <li className="flex items-center gap-3 text-sm text-foreground font-medium">
-                    Large-catalog support & priority help
-                  </li>
-                </ul>
-                <div className="w-full inline-flex items-center justify-center h-14 font-bold text-xs uppercase tracking-widest bg-secondary text-muted-foreground cursor-not-allowed select-none">
+                <div className="flex-1">
+                  <p className="text-sm font-medium text-muted-foreground">$0.02 / image</p>
+                </div>
+                <div className="w-full inline-flex items-center justify-center h-14 font-bold text-xs uppercase tracking-widest bg-secondary text-muted-foreground cursor-not-allowed select-none mt-6">
+                  COMING TO APP STORE
+                </div>
+              </div>
+
+              {/* Tier 4 */}
+              <div className="border border-border bg-card p-8 flex flex-col">
+                <div className="mb-6 border-b border-border pb-6">
+                  <span className="text-sm font-semibold uppercase tracking-widest text-foreground mb-4 block">1,000 IMAGE CREDITS</span>
+                  <div className="flex items-baseline gap-2 mb-4">
+                    <span className="text-4xl font-heading font-bold text-foreground">$18</span>
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed text-sm h-12">
+                    One-time purchase.<br />Credits never expire.
+                  </p>
+                </div>
+                <div className="flex-1">
+                  <p className="text-sm font-medium text-muted-foreground">$0.018 / image</p>
+                </div>
+                <div className="w-full inline-flex items-center justify-center h-14 font-bold text-xs uppercase tracking-widest bg-secondary text-muted-foreground cursor-not-allowed select-none mt-6">
                   COMING TO APP STORE
                 </div>
               </div>
@@ -130,7 +113,7 @@ export default function PricingPage() {
             </div>
 
             <p className="text-xs text-muted-foreground font-medium uppercase tracking-widest mt-12 text-center">
-              Planned billing through Shopify App Store
+              One-time payment through Shopify Billing. Buy additional image credits when needed.
             </p>
           </div>
         </Section>

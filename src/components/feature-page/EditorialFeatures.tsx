@@ -9,7 +9,7 @@ export const EditorialFeatures: React.FC = () => {
         <SectionHeader
           eyebrow="Capabilities"
           headline="Built for the entire catalog."
-          subhead="Six precise layers of optimization applied automatically to every product photo."
+          subhead="Six layers of optimization and control for your storefront infrastructure."
           align="center"
         />
 
@@ -18,13 +18,13 @@ export const EditorialFeatures: React.FC = () => {
           {/* Feature 1: Visual Left / Text Right */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="aspect-square interactive-card bg-card border border-border flex flex-col items-center justify-center p-12">
-               <span className="font-heading font-bold text-7xl text-foreground">90%</span>
-               <span className="text-eyebrow mt-4">Payload reduction</span>
+               <span className="font-heading font-bold text-7xl text-foreground">01</span>
+               <span className="text-eyebrow mt-4">Optimization</span>
             </div>
             <div className="max-w-xl lg:pl-8">
-              <h3 className="text-section-title mb-6">Deep Compression</h3>
+              <h3 className="text-section-title mb-6">Image Optimization</h3>
               <p className="text-lead">
-                Reduces file weights by up to 90% without visible quality degradation. Lighter payloads drastically decrease Largest Contentful Paint (LCP) times, improving mobile UX and Core Web Vitals.
+                Compress images, resize them and optionally convert them to WebP formats to reduce payload size without compromising visual quality.
               </p>
             </div>
           </div>
@@ -32,69 +32,71 @@ export const EditorialFeatures: React.FC = () => {
           {/* Feature 2: Text Left / Visual Right */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="max-w-xl lg:order-1 order-2">
-              <h3 className="text-section-title mb-6">Auto WebP</h3>
+              <h3 className="text-section-title mb-6">AI Image Metadata</h3>
               <p className="text-lead">
-                Automatically converts standard JPG and PNG assets into next-generation WebP formats, ensuring modern browsers serve the most efficient image architecture available.
+                Generate image-specific ALT text, descriptive filenames, and keyword suggestions to improve contextual metadata across the catalog.
               </p>
             </div>
             <div className="aspect-square interactive-card bg-card border border-border flex flex-col items-center justify-center p-12 lg:order-2 order-1">
-              <div className="flex items-center gap-6 text-2xl font-bold uppercase tracking-widest text-muted-foreground">
-                <span className="line-through">.JPG</span>
-                <span className="text-primary">.WEBP</span>
-              </div>
+               <span className="font-heading font-bold text-7xl text-foreground">02</span>
+               <span className="text-eyebrow mt-4">Metadata</span>
             </div>
           </div>
 
-          {/* Feature 3: Full Width */}
-          <div className="max-w-4xl mx-auto text-center border-y border-border py-20">
-            <h3 className="text-section-title mb-6">Bulk Optimization</h3>
-            <p className="text-lead max-w-2xl mx-auto">
-              Select entire collections or your entire product catalog and optimize thousands of files concurrently. No manual batching required.
-            </p>
-          </div>
-
-          {/* Feature 4: Visual Left / Text Right */}
+          {/* Feature 3: Visual Left / Text Right */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="aspect-video lg:aspect-square interactive-card bg-card border border-border flex flex-col items-center justify-center p-8">
-              <div className="w-full bg-background border border-border p-4 mb-4">
-                <span className="text-xs text-muted-foreground uppercase tracking-widest block mb-2">Original Filename</span>
-                <span className="font-mono text-sm text-foreground">IMG_4837.jpg</span>
-              </div>
-              <div className="w-full bg-background border border-primary/50 p-4">
-                <span className="text-xs text-primary uppercase tracking-widest block mb-2">AI Generated</span>
-                <span className="font-mono text-sm text-foreground">wooden-wall-clock-12-inch.webp</span>
-              </div>
+            <div className="aspect-square interactive-card bg-card border border-border flex flex-col items-center justify-center p-12">
+               <span className="font-heading font-bold text-7xl text-foreground">03</span>
+               <span className="text-eyebrow mt-4">Editing</span>
             </div>
             <div className="max-w-xl lg:pl-8">
-              <h3 className="text-section-title mb-6">AI Filenames</h3>
+              <h3 className="text-section-title mb-6">Image Editing</h3>
               <p className="text-lead">
-                Machine learning analyzes the visual contents of your product imagery to rewrite meaningless filenames into descriptive, indexable strings.
+                Enhance, crop, resize, draw, change backgrounds, and generate images natively within the app.
               </p>
             </div>
           </div>
 
-          {/* Feature 5: Text Left / Visual Right */}
+          {/* Feature 4: Text Left / Visual Right */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="max-w-xl lg:order-1 order-2">
-              <h3 className="text-section-title mb-6">AI Alt Text</h3>
+              <h3 className="text-section-title mb-6">Storefront Performance</h3>
               <p className="text-lead">
-                Automatically generates highly descriptive alt text for every image. Enhances accessibility compliance and provides crucial semantic context for Google Images, ChatGPT, and Perplexity.
+                Use the Shopify theme extension to support lazy loading, responsive images, image preloading, and related storefront optimizations.
               </p>
             </div>
-            <div className="aspect-video lg:aspect-square interactive-card bg-card border border-border flex flex-col items-center justify-center p-8 lg:order-2 order-1">
-              <span className="text-sub-eyebrow mb-4 border-b border-border pb-4 w-full text-center">Generated Alt Text</span>
-              <p className="text-sm font-mono text-muted-foreground text-center">
-                "Handcrafted 12-inch wooden wall clock, minimalist wall décor"
+            <div className="aspect-square interactive-card bg-card border border-border flex flex-col items-center justify-center p-12 lg:order-2 order-1">
+               <span className="font-heading font-bold text-7xl text-foreground">04</span>
+               <span className="text-eyebrow mt-4">Performance</span>
+            </div>
+          </div>
+
+          {/* Feature 5: Visual Left / Text Right */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="aspect-square interactive-card bg-card border border-border flex flex-col items-center justify-center p-12">
+               <span className="font-heading font-bold text-7xl text-foreground">05</span>
+               <span className="text-eyebrow mt-4">Control</span>
+            </div>
+            <div className="max-w-xl lg:pl-8">
+              <h3 className="text-section-title mb-6">Store Control</h3>
+              <p className="text-lead">
+                Choose the store, collection, product, or image scope and explicitly confirm changes before saving them to Shopify.
               </p>
             </div>
           </div>
 
-          {/* Feature 6: Full Width */}
-          <div className="max-w-4xl mx-auto text-center border-t border-border pt-20">
-            <h3 className="text-section-title mb-6">Syncs to Shopify</h3>
-            <p className="text-lead max-w-2xl mx-auto">
-              All optimizations are written directly back to your Shopify store via the Admin API. No external hosting, no injected scripts, and zero broken links.
-            </p>
+          {/* Feature 6: Text Left / Visual Right */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="max-w-xl lg:order-1 order-2">
+              <h3 className="text-section-title mb-6">Measure & Review</h3>
+              <p className="text-lead">
+                Review optimization history, track image savings, and access storefront image measurements to evaluate performance.
+              </p>
+            </div>
+            <div className="aspect-square interactive-card bg-card border border-border flex flex-col items-center justify-center p-12 lg:order-2 order-1">
+               <span className="font-heading font-bold text-7xl text-foreground">06</span>
+               <span className="text-eyebrow mt-4">Review</span>
+            </div>
           </div>
 
         </div>
