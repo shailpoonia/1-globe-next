@@ -14,7 +14,7 @@ export const AppHero: React.FC<AppHeroProps> = ({
   eyebrow = "1-OPTIMISER",
   headline = "Make every product image work harder.",
   subhead = "Compress, optimize and improve image discoverability across your Shopify catalog without touching your code.",
-  primaryCtaText = "Coming to App Store",
+  primaryCtaText = "COMING TO APP STORE",
   secondaryCtaText = "See how it works",
   secondaryCtaUrl = "#how",
   heroMoment

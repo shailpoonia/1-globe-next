@@ -28,7 +28,7 @@ export const CtaBand: React.FC<CtaBandProps> = ({
   italicWord,
   headlinePart2,
   subhead = 'Explore the 1-globe.com ecosystem.',
-  primaryCtaText = 'Coming to App Store',
+  primaryCtaText = 'COMING TO APP STORE',
   primaryCtaUrl = "#",
   primaryIsLink = false,
   secondaryCtaText,

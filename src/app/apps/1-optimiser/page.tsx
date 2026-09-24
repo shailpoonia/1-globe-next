@@ -75,9 +75,9 @@ export default function ImageOptimizerPage() {
             </div>
           </div>
         }
-        primaryCtaText="Coming to App Store"
+        primaryCtaText="COMING TO APP STORE"
         secondaryCtaText="See how it works"
-        secondaryCtaUrl="#how"
+        secondaryCtaUrl="#features"
         heroMoment={<AIPipelineHeroCard />}
       />
 
@@ -99,7 +99,7 @@ export default function ImageOptimizerPage() {
         italicWord="BETTER"
         headlinePart2="PERFORMANCE?"
         subhead="Start optimizing your catalog today."
-        primaryCtaText="Coming to App Store"
+        primaryCtaText="COMING TO APP STORE"
         primaryCtaUrl="#"
         secondaryCtaText="View pricing"
         secondaryCtaUrl="/pricing"
