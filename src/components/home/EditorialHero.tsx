@@ -2,6 +2,7 @@ import React from 'react'
 import { ArrowDown, ArrowRight } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { HeroVideo } from '@/components/home/HeroVideo'
 
 export const EditorialHero: React.FC = () => {
   return (
@@ -20,16 +21,8 @@ export const EditorialHero: React.FC = () => {
           priority
         />
         
-        {/* Video overlay - only loads on desktop with no reduced motion */}
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover object-center opacity-100 hidden md:block motion-reduce:hidden"
-        >
-          <source src="/hero.mp4" type="video/mp4" media="(min-width: 768px) and (prefers-reduced-motion: no-preference)" />
-        </video>
+        {/* Video overlay - only loads on desktop with no reduced motion after idle */}
+        <HeroVideo />
 
         {/* Lighter overlays to make the globe more visible, mostly darkening the left side for text readability */}
         <div className="absolute inset-0 bg-background/5 pointer-events-none" />

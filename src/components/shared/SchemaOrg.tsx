@@ -7,7 +7,7 @@ export function OrganizationSchema() {
     '@type': 'Organization',
     name: siteConfig.name,
     url: siteConfig.url,
-    logo: `${siteConfig.url}/1-globe-brand.png`, // Update if needed
+    logo: `${siteConfig.url}/logo.jpeg`,
     legalName: 'ONE GLOBE (F.Z.E)',
     address: {
       '@type': 'PostalAddress',
