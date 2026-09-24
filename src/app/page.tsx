@@ -17,7 +17,7 @@ import { FaqSection } from '@/components/home/FaqSection'
 import { OrganizationSchema, WebSiteSchema } from '@/components/shared/SchemaOrg'
 
 export const metadata: Metadata = {
-  title: '1-GLOBE | Ecommerce Performance Technology',
+  title: 'Ecommerce Performance Technology',
   description: '1-GLOBE builds ecommerce performance technology. Our products help online merchants improve image payloads, content structure, and storefront performance.',
   alternates: {
     canonical: '/',

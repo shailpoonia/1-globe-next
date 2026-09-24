@@ -8,19 +8,19 @@ export const AppFaqSection: React.FC = () => {
   const faqs = [
     {
       q: "Does compression affect image quality?",
-      a: "Our compression algorithms reduce file size by up to 90% while maintaining perceptual quality. We strip unnecessary metadata and optimize pixel data without introducing visible artifacts to your product photography."
+      a: "Our compression process reduces file size while aiming to maintain perceptual quality. We strip unnecessary metadata and optimize pixel data to help you serve lighter product photography."
     },
     {
       q: "Will renaming my files break existing links?",
-      a: "No. 1-OPTIMISER utilizes the Shopify Admin API to safely update file paths and redirect references internally. Your storefront will not suffer 404 errors or broken image links."
+      a: "1-OPTIMISER uses Shopify's native APIs to update file paths. The platform handles internal references to help maintain image accessibility."
     },
     {
       q: "How does AI generation handle complex products?",
-      a: "Our vision models analyze the visual composition of your image in the context of your product's title and description. It generates descriptive, objective alt text optimized for screen readers and semantic search engines."
+      a: "Our vision models analyze the visual composition of your image in the context of your product's title and description to generate relevant, objective alt text."
     },
     {
       q: "Do I have to optimize images one by one?",
-      a: "You can process images individually, by collection, or across your entire store in a single bulk operation. The process runs asynchronously in the background."
+      a: "You can process images individually, by collection, or across your catalog. Processing runs in the background."
     }
   ]
 

@@ -25,6 +25,7 @@ export default function ImageOptimizerPage() {
       <SoftwareAppSchema 
         name="1-OPTIMISER" 
         description="Make every product image work harder. Compress, optimize and improve image discoverability across your Shopify catalog."
+        slug="1-optimiser"
         offers={[
           {
             '@type': 'Offer',

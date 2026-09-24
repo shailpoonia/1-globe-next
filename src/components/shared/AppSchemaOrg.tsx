@@ -4,17 +4,23 @@ import { siteConfig } from '@/lib/seo';
 interface SoftwareAppProps {
   name: string;
   description: string;
+  slug: string;
   offers?: any[];
 }
 
-export function SoftwareAppSchema({ name, description, offers }: SoftwareAppProps) {
+export function SoftwareAppSchema({ name, description, slug, offers }: SoftwareAppProps) {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
     name,
     applicationCategory: 'BusinessApplication',
-    operatingSystem: 'Shopify',
     description,
+    url: `${siteConfig.url}/apps/${slug}`,
+    provider: {
+      '@type': 'Organization',
+      name: '1-GLOBE',
+      url: siteConfig.url
+    },
     ...(offers && { offers }),
   };
 

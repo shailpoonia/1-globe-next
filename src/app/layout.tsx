@@ -17,7 +17,7 @@ const inter = Inter({
   variable: '--font-sans',
 });
 
-import { siteConfig, getCanonicalUrl } from '@/lib/seo';
+import { siteConfig } from '@/lib/seo';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
