@@ -4,35 +4,34 @@ import { ChevronDown } from 'lucide-react'
 import { Section } from '@/components/shared/Section'
 import { SectionHeader } from '@/components/shared/SectionHeader'
 
-export const AppFaqSection: React.FC = () => {
-  const faqs = [
+export const AppFaqSection: React.FC = () => {  const faqs = [
     {
       q: "What is 1-OPTIMISER?",
-      a: "1-OPTIMISER is an image performance tool designed specifically for Shopify stores. It compresses image assets, rewrites generic filenames, and generates contextual alt text to support storefront performance and image discoverability."
+      a: "1-OPTIMISER is an image performance tool designed for Shopify stores. It helps merchants optimize image files, improve image metadata, and work with image editing and storefront performance tools."
     },
     {
       q: "How does 1-OPTIMISER work?",
-      a: "1-OPTIMISER connects directly to your Shopify catalog. It automatically analyzes your product imagery in the background, optimizes the file size, and writes new metadata back to your store via the Shopify Admin API without injecting external scripts."
+      a: "1-OPTIMISER connects to your Shopify catalog and provides tools to optimize image files and image metadata. Depending on the workflow, merchants can process images individually, by collection, product or broader catalog scope, review changes, and confirm updates before they are saved to Shopify."
     },
     {
       q: "Why do product images matter to ecommerce storefronts?",
-      a: "Product images are critical to ecommerce performance. Heavy image payloads slow down Largest Contentful Paint (LCP) and overall page speed, while missing alt text and generic filenames deprive search engines and AI systems of the context needed for product discovery."
+      a: "Product images are an important part of ecommerce storefront performance and product presentation. Large image payloads can contribute to heavier pages and slower loading experiences, while descriptive alt text and filenames can provide clearer context for accessibility and image-related discovery."
     },
     {
       q: "Does compression affect image quality?",
-      a: "Our compression process reduces file size while aiming to maintain perceptual quality. We strip unnecessary metadata and optimize pixel data to help you serve lighter product photography."
+      a: "Compression can reduce file size while aiming to maintain useful visual quality. 1-OPTIMISER provides optimization controls so merchants can choose settings appropriate for their images and storefront."
     },
     {
       q: "Will renaming my files break existing links?",
-      a: "1-OPTIMISER uses Shopify's native APIs to update file paths. The platform handles internal references to help maintain image accessibility."
+      a: "1-OPTIMISER updates image information through Shopify's APIs. Merchants should review changes before saving them, particularly when filenames or image references are important to an existing workflow."
     },
     {
       q: "How does AI generation handle complex products?",
-      a: "Our vision models analyze the visual composition of your image in the context of your product's title and description to generate relevant, objective alt text."
+      a: "AI-assisted image and metadata workflows use the available product and image context to help generate relevant content. Merchants should review AI-generated results before applying changes to their store."
     },
     {
       q: "Do I have to optimize images one by one?",
-      a: "You can process images individually, by collection, or across your catalog. Processing runs in the background."
+      a: "Merchants can work with images individually, by product or collection, or across broader catalog scopes depending on the workflow. Bulk optimization uses the app's processing workflow, while interactive editing tools can be used on selected images."
     }
   ]
 
@@ -91,3 +90,4 @@ export const AppFaqSection: React.FC = () => {
     </Section>
   )
 }
+
