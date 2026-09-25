@@ -62,7 +62,7 @@ export const EditorialFeatures: React.FC = () => {
             <div className="max-w-xl lg:order-1 order-2">
               <h3 className="text-section-title mb-6">Storefront Performance</h3>
               <p className="text-lead">
-                Use the Shopify theme extension to support lazy loading, responsive images, image preloading, and related storefront optimizations.
+                Includes a Shopify theme extension with configurable performance features to support lazy loading, responsive images, image preloading, and related storefront optimizations.
               </p>
             </div>
             <div className="aspect-square interactive-card bg-card border border-border flex flex-col items-center justify-center p-12 lg:order-2 order-1">
@@ -80,7 +80,7 @@ export const EditorialFeatures: React.FC = () => {
             <div className="max-w-xl lg:pl-8">
               <h3 className="text-section-title mb-6">Store Control</h3>
               <p className="text-lead">
-                Choose the store, collection, product, or image scope and explicitly confirm changes before saving them to Shopify.
+                Merchants can process images individually or across supported product, collection, and catalog scopes, explicitly confirming changes before saving them to Shopify.
               </p>
             </div>
           </div>
@@ -90,7 +90,7 @@ export const EditorialFeatures: React.FC = () => {
             <div className="max-w-xl lg:order-1 order-2">
               <h3 className="text-section-title mb-6">Measure & Review</h3>
               <p className="text-lead">
-                Review optimization history, track image savings, and access storefront image measurements to evaluate performance.
+                Provides storefront performance checks and visibility into selected image and theme-extension performance signals, alongside optimization history.
               </p>
             </div>
             <div className="aspect-square interactive-card bg-card border border-border flex flex-col items-center justify-center p-12 lg:order-2 order-1">

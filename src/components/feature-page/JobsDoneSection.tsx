@@ -77,10 +77,10 @@ export const JobsDoneSection: React.FC = () => {
         
         <div className="mb-16">
           <h2 className="text-section-title mb-6">
-            One image. Five jobs done.
+            Optimization workflows.
           </h2>
           <p className="text-lead max-w-2xl">
-            More than just a compression tool. Every image you upload is instantly transformed, tagged, and standardized.
+            1-OPTIMISER provides tools to compress, edit, and standardize images across your catalog.
           </p>
         </div>
 
@@ -102,7 +102,7 @@ export const JobsDoneSection: React.FC = () => {
           {/* Card 2: AI names & describes */}
           <div className="interactive-card bg-card border border-border p-6 flex flex-col h-64 relative overflow-hidden group">
             <h3 className="text-sm font-bold uppercase tracking-wider text-foreground mb-2">AI names & describes</h3>
-            <p className="text-xs font-medium text-muted-foreground mb-8">Metadata generated automatically to support context.</p>
+            <p className="text-xs font-medium text-muted-foreground mb-8">Metadata generated to support context.</p>
             <div className="mt-auto space-y-3">
               <div className="flex items-center gap-2">
                 <span className="text-[9px] uppercase tracking-widest text-slate-500 font-bold w-6">File</span>
@@ -142,8 +142,8 @@ export const JobsDoneSection: React.FC = () => {
 
           {/* Card 5: Bulk optimize */}
           <div className="interactive-card bg-card border border-border p-6 flex flex-col h-64 relative overflow-hidden group">
-            <h3 className="text-sm font-bold uppercase tracking-wider text-foreground mb-2">Bulk optimize</h3>
-            <p className="text-xs font-medium text-muted-foreground mb-8">Your entire catalog in one single click.</p>
+            <h3 className="text-sm font-bold uppercase tracking-wider text-foreground mb-2">Scope Control</h3>
+            <p className="text-xs font-medium text-muted-foreground mb-8">Process images individually or by broader scopes.</p>
             <div className="mt-auto grid grid-cols-3 grid-rows-2 gap-1.5 w-full h-24">
               {[1, 2, 3, 4, 5, 6].map((i) => (
                 <div key={i} className={`bg-slate-900 border border-slate-800 overflow-hidden relative animate-bulk-${i}`}>
