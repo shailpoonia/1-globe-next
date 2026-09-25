@@ -72,6 +72,14 @@ export const RESOURCES: Record<string, ResourceItem> = {
     category: 'Ecommerce Performance',
     datePublished: '2026-09-25T12:00:00Z',
     dateModified: '2026-09-25T12:00:00Z',
+  },
+  'product-content-structure': {
+    slug: 'product-content-structure',
+    title: 'Product Content Structure: A Practical Guide for Ecommerce',
+    description: 'Learn how to structure ecommerce product content across titles, descriptions, attributes, specifications, FAQs, and supporting information for clearer customer understanding and better search and discovery.',
+    category: PERFORMANCE_CATEGORIES.CONTENT,
+    datePublished: '2026-09-25T12:00:00Z',
+    dateModified: '2026-09-25T12:00:00Z',
   }
 };
 
