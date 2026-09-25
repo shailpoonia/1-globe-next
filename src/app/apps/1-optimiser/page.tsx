@@ -25,7 +25,7 @@ export default function ImageOptimizerPage() {
   const product = ENTITY_PRODUCTS['1-optimiser'];
 
   return (
-    <div className="flex flex-col bg-background text-foreground selection:bg-primary/20 selection:text-primary pt-24">
+    <main className="flex flex-col bg-background text-foreground selection:bg-primary/20 selection:text-primary pt-24">
       <SoftwareAppSchema 
         name={product.name} 
         description={product.description}
@@ -41,7 +41,7 @@ export default function ImageOptimizerPage() {
             <span className="hidden sm:inline-block text-xs font-medium text-muted-foreground uppercase tracking-wide">Shopify Image Optimizer</span>
           </div>
         }
-        ctaText="Coming to App Store"
+        ctaText="COMING SOON TO SHOPIFY"
       />
 
       {/* 1. App Hero with AI Pipeline Card */}
@@ -56,7 +56,7 @@ export default function ImageOptimizerPage() {
             </div>
           </div>
         }
-        primaryCtaText="COMING TO APP STORE"
+        primaryCtaText="COMING SOON TO SHOPIFY"
         secondaryCtaText="See how it works"
         secondaryCtaUrl="#features"
         heroMoment={<AIPipelineHeroCard />}
@@ -80,12 +80,12 @@ export default function ImageOptimizerPage() {
         italicWord="BETTER"
         headlinePart2="PERFORMANCE?"
         subhead="Explore how 1-OPTIMISER is designed to improve image performance across your catalog."
-        primaryCtaText="COMING TO APP STORE"
+        primaryCtaText="COMING SOON TO SHOPIFY"
         primaryIsLink={false}
         secondaryCtaText="View pricing"
         secondaryCtaUrl="/pricing"
         secondaryIsLink={true}
       />
-    </div>
+    </main>
   )
 }

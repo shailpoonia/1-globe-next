@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   return (
-    <div className="flex flex-col bg-background text-foreground selection:bg-primary/20 selection:text-primary pt-24">
+    <main className="flex flex-col bg-background text-foreground selection:bg-primary/20 selection:text-primary pt-24">
       <OrganizationSchema />
       <WebSiteSchema />
       {/* 01: Hero */}
@@ -71,6 +71,6 @@ export default function HomePage() {
         secondaryCtaUrl="/pricing"
         secondaryIsLink={true}
       />
-    </div>
+    </main>
   )
 }

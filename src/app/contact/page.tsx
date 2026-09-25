@@ -51,55 +51,23 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* Right: Form */}
-            <div>
-              <form 
-                className="bg-card border border-border p-8 flex flex-col gap-6 rounded-[var(--radius)]" 
-                action="mailto:support@1-globe.com"
-                method="POST"
-                encType="text/plain"
-              >
+            {/* Right: Direct Email CTA */}
+            <div className="flex flex-col justify-center">
+              <div className="bg-card border border-border p-8 md:p-12 flex flex-col gap-8 rounded-[var(--radius)] h-full justify-center">
+                <div>
+                  <h2 className="text-xl font-heading font-bold text-foreground mb-4">Send us an email</h2>
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-8">
+                    We don't use complicated contact forms. For all inquiries, product questions, or support requests, please email our team directly. We strive to reply within one business day.
+                  </p>
+                </div>
                 
-                <div className="flex flex-col gap-2">
-                  <label htmlFor="name" className="text-xs font-bold uppercase tracking-widest text-foreground">Name</label>
-                  <input 
-                    type="text" 
-                    id="name" 
-                    name="name"
-                    required
-                    className="h-12 px-4 bg-background border border-border focus:outline-none focus:ring-1 focus:ring-primary text-foreground rounded-md"
-                  />
-                </div>
-
-                <div className="flex flex-col gap-2">
-                  <label htmlFor="email" className="text-xs font-bold uppercase tracking-widest text-foreground">Email</label>
-                  <input 
-                    type="email" 
-                    id="email" 
-                    name="email"
-                    required
-                    className="h-12 px-4 bg-background border border-border focus:outline-none focus:ring-1 focus:ring-primary text-foreground rounded-md"
-                  />
-                </div>
-
-                <div className="flex flex-col gap-2">
-                  <label htmlFor="message" className="text-xs font-bold uppercase tracking-widest text-foreground">Message</label>
-                  <textarea 
-                    id="message" 
-                    name="message"
-                    required
-                    rows={5}
-                    className="p-4 bg-background border border-border focus:outline-none focus:ring-1 focus:ring-primary text-foreground resize-none rounded-md"
-                  />
-                </div>
-
-                <button 
-                  type="submit"
-                  className="interactive-btn h-14 font-bold text-sm uppercase tracking-[0.14em] bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary mt-2"
+                <a 
+                  href="mailto:support@1-globe.com"
+                  className="interactive-btn h-14 font-bold text-sm uppercase tracking-[0.14em] bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary flex items-center justify-center w-full"
                 >
-                  Send Message
-                </button>
-              </form>
+                  Email Support
+                </a>
+              </div>
             </div>
 
           </div>

@@ -8,7 +8,7 @@ interface AppSubNavProps {
 
 export const AppSubNav: React.FC<AppSubNavProps> = ({
   appName,
-  ctaText = "Coming to App Store"
+  ctaText = "COMING SOON TO SHOPIFY"
 }) => {
   return (
     <div className="sticky top-[4.5rem] z-40 w-full border-b border-border bg-background">

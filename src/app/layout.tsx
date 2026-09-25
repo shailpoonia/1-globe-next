@@ -66,9 +66,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
-      <body className={`${spaceGrotesk.variable} ${inter.variable} min-h-screen bg-background font-sans text-foreground antialiased`}>
+      <body className={`${spaceGrotesk.variable} ${inter.variable} min-h-screen bg-background font-sans text-foreground antialiased flex flex-col`}>
         <Header />
-        <main className="flex-1">{children}</main>
+        <div className="flex-1 flex flex-col">{children}</div>
         <Footer />
         <Analytics />
       </body>

@@ -49,7 +49,7 @@ export default function PricingPage() {
                 </div>
                 <div className="flex-1"></div>
                 <div className="w-full inline-flex items-center justify-center h-14 font-bold text-xs uppercase tracking-widest bg-secondary text-muted-foreground cursor-not-allowed select-none mt-6">
-                  COMING TO APP STORE
+                  COMING SOON TO SHOPIFY
                 </div>
               </div>
 
@@ -68,7 +68,7 @@ export default function PricingPage() {
                   <p className="text-sm font-medium text-muted-foreground">$0.02 / image</p>
                 </div>
                 <div className="w-full inline-flex items-center justify-center h-14 font-bold text-xs uppercase tracking-widest bg-secondary text-muted-foreground cursor-not-allowed select-none mt-6">
-                  COMING TO APP STORE
+                  COMING SOON TO SHOPIFY
                 </div>
               </div>
 
@@ -87,7 +87,7 @@ export default function PricingPage() {
                   <p className="text-sm font-medium text-muted-foreground">$0.02 / image</p>
                 </div>
                 <div className="w-full inline-flex items-center justify-center h-14 font-bold text-xs uppercase tracking-widest bg-secondary text-muted-foreground cursor-not-allowed select-none mt-6">
-                  COMING TO APP STORE
+                  COMING SOON TO SHOPIFY
                 </div>
               </div>
 
@@ -106,15 +106,28 @@ export default function PricingPage() {
                   <p className="text-sm font-medium text-muted-foreground">$0.018 / image</p>
                 </div>
                 <div className="w-full inline-flex items-center justify-center h-14 font-bold text-xs uppercase tracking-widest bg-secondary text-muted-foreground cursor-not-allowed select-none mt-6">
-                  COMING TO APP STORE
+                  COMING SOON TO SHOPIFY
                 </div>
               </div>
 
             </div>
 
-            <p className="text-xs text-muted-foreground font-medium uppercase tracking-widest mt-12 text-center">
+            <p className="text-xs text-muted-foreground font-medium uppercase tracking-widest mt-12 mb-16 text-center">
               One-time payment through Shopify Billing. Buy additional image credits when needed.
             </p>
+
+            <div className="border-t border-border pt-16 flex flex-col items-center text-center">
+              <h2 className="text-2xl font-heading font-bold text-foreground mb-4">1-OPTIMISER is coming soon.</h2>
+              <p className="text-muted-foreground leading-relaxed mb-8 max-w-lg">
+                We are finalizing our Shopify integration. Explore the full capabilities of 1-OPTIMISER to see how it can help you build a stronger storefront foundation.
+              </p>
+              <Link
+                href="/apps/1-optimiser"
+                className="interactive-btn inline-flex items-center justify-center h-14 px-8 font-bold text-sm uppercase tracking-[0.14em] bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+              >
+                EXPLORE 1-OPTIMISER
+              </Link>
+            </div>
           </div>
         </Section>
       </main>
