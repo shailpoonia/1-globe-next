@@ -13,7 +13,7 @@ const slug = 'bulk-image-optimization'
 const resource = getResourceBySlug(slug)
 
 export const metadata: Metadata = {
-  title: resource?.title ? `${resource.title} | 1-GLOBE` : 'Bulk Image Optimization: A Practical Guide for Ecommerce | 1-GLOBE',
+  title: resource?.title || 'Bulk Image Optimization: A Practical Guide for Ecommerce',
   description: resource?.description,
   alternates: {
     canonical: `/resources/${slug}`,
@@ -193,7 +193,7 @@ export default function ArticlePage() {
                 When working within Shopify, it is important to understand the boundary between the merchant's source catalog (the files uploaded to the admin) and Shopify's storefront delivery (the CDN delivering images to the browser).
               </p>
               <p className="text-lg text-neutral-400 leading-relaxed">
-                Shopify's built-in image delivery infrastructure can automatically serve appropriate formats dynamically based on browser support. A bulk image optimizer does not replace this infrastructure. Instead, it allows merchants to manage their <Link href="/resources/shopify-image-optimization" className="text-primary hover:underline">Shopify image optimization</Link> at the source level—ensuring original assets have logical dimensions, clean metadata, and controlled source compression before they enter Shopify's delivery pipeline.
+                Shopify's built-in image delivery infrastructure can automatically serve appropriate formats dynamically based on browser support. A bulk image optimizer does not replace this infrastructure. Instead, it allows merchants to manage their <Link href="/resources/shopify-image-optimization" className="text-primary hover:underline">Shopify image optimization</Link> at the source levelâ€”ensuring original assets have logical dimensions, clean metadata, and controlled source compression before they enter Shopify's delivery pipeline.
               </p>
             </div>
 
@@ -265,7 +265,7 @@ export default function ArticlePage() {
             <div className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">11. Bulk Image Optimization and SEO</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
-                A streamlined catalog can contribute to a healthier technical foundation. Reducing page payload and establishing clearer contextual signals—such as descriptive filenames and useful alt text—can help machines interpret the store. 
+                A streamlined catalog can contribute to a healthier technical foundation. Reducing page payload and establishing clearer contextual signalsâ€”such as descriptive filenames and useful alt textâ€”can help machines interpret the store. 
               </p>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 However, it must be explicitly stated: image optimization does not guarantee higher search rankings. It is simply one piece of <Link href="/resources/ecommerce-performance" className="text-primary hover:underline">ecommerce performance</Link>. Image SEO operates distinctly from broader page SEO, relying on the intersection of image delivery and surrounding descriptive context.
@@ -288,7 +288,7 @@ export default function ArticlePage() {
                 The success of a bulk optimization effort should be measured through factual signals rather than promised performance improvements. 
               </p>
               <p className="text-lg text-neutral-400 leading-relaxed">
-                Merchants can measure the total reduction in image file size across the processed batch, the final page payload of key collections, and the consistency of the new image dimensions. Operational metrics—such as the number of images optimized, skipped, or failed—help verify the workflow. Finally, the visual quality of the storefront and basic storefront performance signals should be reviewed to ensure the effort yielded a tangible technical benefit without compromising the brand.
+                Merchants can measure the total reduction in image file size across the processed batch, the final page payload of key collections, and the consistency of the new image dimensions. Operational metricsâ€”such as the number of images optimized, skipped, or failedâ€”help verify the workflow. Finally, the visual quality of the storefront and basic storefront performance signals should be reviewed to ensure the effort yielded a tangible technical benefit without compromising the brand.
               </p>
             </div>
 

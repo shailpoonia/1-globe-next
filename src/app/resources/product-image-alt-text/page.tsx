@@ -13,7 +13,7 @@ const slug = 'product-image-alt-text'
 const resource = getResourceBySlug(slug)
 
 export const metadata: Metadata = {
-  title: resource?.title ? `${resource.title} | 1-GLOBE` : 'Product Image Alt Text: A Practical Guide for Ecommerce | 1-GLOBE',
+  title: resource?.title || 'Product Image Alt Text: A Practical Guide for Ecommerce',
   description: resource?.description,
   alternates: {
     canonical: `/resources/${slug}`,
@@ -32,7 +32,7 @@ export default function ArticlePage() {
     },
     {
       q: "What makes good ecommerce alt text?",
-      a: "Good ecommerce alt text accurately describes the meaningful visual details of the product shown in the image—such as its type, color, material, and defining features—while remaining concise and avoiding keyword stuffing."
+      a: "Good ecommerce alt text accurately describes the meaningful visual details of the product shown in the imageâ€”such as its type, color, material, and defining featuresâ€”while remaining concise and avoiding keyword stuffing."
     },
     {
       q: "Should product image alt text contain keywords?",
@@ -40,7 +40,7 @@ export default function ArticlePage() {
     },
     {
       q: "How long should product image alt text be?",
-      a: "There is no strict character limit for SEO, but for accessibility purposes, alt text is typically most useful when kept concise—often around 125 characters or fewer. The priority should always be accuracy and usefulness."
+      a: "There is no strict character limit for SEO, but for accessibility purposes, alt text is typically most useful when kept conciseâ€”often around 125 characters or fewer. The priority should always be accuracy and usefulness."
     },
     {
       q: "Should every product image have different alt text?",
@@ -259,7 +259,7 @@ export default function ArticlePage() {
                 Writing meaningful text alternatives is a pillar of web accessibility. It allows users utilizing assistive technologies to engage with the visual aspects of a storefront.
               </p>
               <p className="text-lg text-neutral-400 leading-relaxed">
-                When an image is purely decorative—meaning it adds no information and is only there for aesthetic reasons—it is often best practice to leave the alt attribute empty (<code className="bg-secondary px-1.5 py-0.5 rounded text-sm text-foreground">alt=""</code>). This tells the screen reader to skip the image entirely, preventing the user from being bogged down by unnecessary repetition. While accurate alt text is critical for accessibility, writing good alt text does not automatically make a store legally compliant; it is merely one necessary step in a broader inclusive design approach.
+                When an image is purely decorativeâ€”meaning it adds no information and is only there for aesthetic reasonsâ€”it is often best practice to leave the alt attribute empty (<code className="bg-secondary px-1.5 py-0.5 rounded text-sm text-foreground">alt=""</code>). This tells the screen reader to skip the image entirely, preventing the user from being bogged down by unnecessary repetition. While accurate alt text is critical for accessibility, writing good alt text does not automatically make a store legally compliant; it is merely one necessary step in a broader inclusive design approach.
               </p>
             </div>
 
