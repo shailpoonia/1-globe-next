@@ -32,6 +32,14 @@ export const RESOURCES: Record<string, ResourceItem> = {
     category: PERFORMANCE_CATEGORIES.IMAGE,
     datePublished: '2026-09-24T12:00:00Z',
     dateModified: '2026-09-24T12:00:00Z',
+  },
+  'shopify-image-optimization': {
+    slug: 'shopify-image-optimization',
+    title: 'Shopify Image Optimization: A Practical Guide',
+    description: 'A practical guide to preparing product and storefront images for Shopify stores, balancing visual quality with file size and performance.',
+    category: PERFORMANCE_CATEGORIES.IMAGE,
+    datePublished: '2026-09-26T12:00:00Z',
+    dateModified: '2026-09-26T12:00:00Z',
   }
 };
 
