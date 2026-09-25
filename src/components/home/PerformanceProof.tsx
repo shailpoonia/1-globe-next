@@ -37,7 +37,7 @@ export const PerformanceProof: React.FC = () => {
                 <span className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary">212 KB</span>
               </div>
               <p className="text-lg text-neutral-400 max-w-xl leading-relaxed">
-                High-resolution source assets converted to optimized WebP formats, balancing visual quality with significantly reduced image weight.
+                One example of how image optimization can substantially reduce image weight.
               </p>
             </div>
           </div>
@@ -58,7 +58,7 @@ export const PerformanceProof: React.FC = () => {
                 </div>
               </div>
               <p className="text-lg text-neutral-400 max-w-xl leading-relaxed">
-                Generic camera strings are rewritten into descriptive, readable filenames that provide clearer context for search indexing.
+                Descriptive filenames can provide clearer context about an image and its subject.
               </p>
             </div>
           </div>
@@ -76,7 +76,7 @@ export const PerformanceProof: React.FC = () => {
                 </p>
               </div>
               <p className="text-lg text-neutral-400 max-w-xl leading-relaxed">
-                Meaningful alt text is generated to provide essential context for accessibility tools and structured product data.
+                AI-assisted alt text can provide descriptive context for accessibility and image-related discovery.
               </p>
             </div>
           </div>

@@ -102,7 +102,7 @@ export const JobsDoneSection: React.FC = () => {
           {/* Card 2: AI names & describes */}
           <div className="interactive-card bg-card border border-border p-6 flex flex-col h-64 relative overflow-hidden group">
             <h3 className="text-sm font-bold uppercase tracking-wider text-foreground mb-2">AI names & describes</h3>
-            <p className="text-xs font-medium text-muted-foreground mb-8">Metadata generated to support context.</p>
+            <p className="text-xs font-medium text-muted-foreground mb-8">AI-assisted metadata generated for review.</p>
             <div className="mt-auto space-y-3">
               <div className="flex items-center gap-2">
                 <span className="text-[9px] uppercase tracking-widest text-slate-500 font-bold w-6">File</span>

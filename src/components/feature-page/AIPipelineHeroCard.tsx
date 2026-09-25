@@ -81,12 +81,15 @@ export const AIPipelineHeroCard: React.FC = () => {
             <div className="absolute top-0 left-0 w-full h-12 bg-gradient-to-b from-primary/20 to-transparent -translate-y-full" />
           </div>
           
-          {/* Secondary stat: Compression */}
-          <div className="absolute bottom-2 right-2 bg-slate-900/80 backdrop-blur-md border border-slate-700/50 rounded-[var(--radius)] px-2.5 py-1 flex items-center gap-2 shadow-lg">
-            <span className="text-[10px] font-medium text-slate-400 line-through">18.4 MB</span>
-            <span className="text-[11px] font-bold text-primary flex items-center gap-1">
-              <Zap className="w-3 h-3 fill-current" /> 212 KB
-            </span>
+                    {/* Secondary stat: Compression */}
+          <div className="absolute bottom-2 right-2 bg-slate-900/80 backdrop-blur-md border border-slate-700/50 rounded-[var(--radius)] px-2.5 py-1.5 flex flex-col shadow-lg">
+            <span className="text-[8px] font-bold text-slate-500 uppercase tracking-widest mb-0.5">Example</span>
+            <div className="flex items-center gap-2">
+              <span className="text-[10px] font-medium text-slate-400 line-through">18.4 MB</span>
+              <span className="text-[11px] font-bold text-primary flex items-center gap-1">
+                <Zap className="w-3 h-3 fill-current" /> 212 KB
+              </span>
+            </div>
           </div>
           
           <div className="absolute top-2 left-2 bg-slate-900/70 backdrop-blur border border-slate-700/50 rounded-md px-2 py-0.5 flex items-center gap-1.5">
@@ -98,10 +101,13 @@ export const AIPipelineHeroCard: React.FC = () => {
 
       {/* AI Rewrite Pipeline Section */}
       <div className="p-5 flex flex-col gap-4 relative z-10">
-        {/* Filename Transformation */}
+                {/* Filename Transformation */}
         <div className="space-y-1.5">
-          <div className="text-[10px] font-bold uppercase tracking-wider text-slate-500 flex items-center gap-1">
-            <ImageIcon className="w-3 h-3" /> Filename
+          <div className="text-[10px] font-bold uppercase tracking-wider text-slate-500 flex items-center justify-between">
+            <div className="flex items-center gap-1">
+              <ImageIcon className="w-3 h-3" /> Filename
+            </div>
+            <span className="text-[8px] bg-slate-800/50 text-slate-500 px-1.5 py-0.5 rounded uppercase">Example</span>
           </div>
           <div className="animate-filename-box border rounded-[var(--radius)] px-3 py-2 text-sm font-mono tracking-tight flex items-center">
             <span className="animate-filename"></span>
@@ -109,10 +115,13 @@ export const AIPipelineHeroCard: React.FC = () => {
           </div>
         </div>
 
-        {/* Alt Text Generation */}
+                {/* Alt Text Generation */}
         <div className="space-y-1.5">
-          <div className="text-[10px] font-bold uppercase tracking-wider text-slate-500 flex items-center gap-1">
-            <FileText className="w-3 h-3" /> AI Alt Text
+          <div className="text-[10px] font-bold uppercase tracking-wider text-slate-500 flex items-center justify-between">
+            <div className="flex items-center gap-1">
+              <FileText className="w-3 h-3" /> AI Alt Text
+            </div>
+            <span className="text-[8px] bg-slate-800/50 text-slate-500 px-1.5 py-0.5 rounded uppercase">Example</span>
           </div>
           <div className="animate-alt-box border rounded-[var(--radius)] px-3 py-2 text-[13px] text-slate-300 min-h-[38px] flex items-center">
             <div className="animate-typewriter">
@@ -130,7 +139,7 @@ export const AIPipelineHeroCard: React.FC = () => {
       {/* Discoverability Badges */}
       <div className="p-5 pt-4 bg-slate-900/40 border-t border-border/50 relative z-10 mt-auto">
         <div className="text-[10px] font-bold uppercase tracking-wider text-slate-500 mb-3 text-center">
-          Provides Context For
+          Image Context
         </div>
         <div className="flex flex-wrap justify-center gap-2">
           <div className="px-2.5 py-1 rounded-full border border-slate-700/50 text-xs font-medium text-slate-500 flex items-center gap-1.5 animate-badge">
@@ -147,3 +156,4 @@ export const AIPipelineHeroCard: React.FC = () => {
     </div>
   )
 }
+
