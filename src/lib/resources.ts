@@ -64,6 +64,14 @@ export const RESOURCES: Record<string, ResourceItem> = {
     category: PERFORMANCE_CATEGORIES.IMAGE,
     datePublished: '2026-09-25T12:00:00Z',
     dateModified: '2026-09-25T12:00:00Z',
+  },
+  'page-payload-critical-resources': {
+    slug: 'page-payload-critical-resources',
+    title: 'Page Payload & Critical Resources: A Practical Guide for Ecommerce',
+    description: 'Learn how ecommerce page payload works, which resources are critical to rendering, how images, CSS and JavaScript contribute to page weight, and how to reduce unnecessary storefront work.',
+    category: 'Ecommerce Performance',
+    datePublished: '2026-09-25T12:00:00Z',
+    dateModified: '2026-09-25T12:00:00Z',
   }
 };
 
