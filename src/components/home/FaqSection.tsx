@@ -133,7 +133,7 @@ export const FaqSection: React.FC = () => {
               "name": faq.q,
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": typeof faq.a === "string" ? faq.a : "Start with the foundation. If image performance and image management are your priority, explore 1-OPTIMISER."
+                "text": typeof faq.a === "string" ? faq.a : "Start with the foundation. If image performance and catalog management are your priority, explore 1-OPTIMISER and read our resources on ecommerce image optimization."
               }
             }))
           })

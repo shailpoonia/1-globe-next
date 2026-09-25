@@ -27,7 +27,7 @@ export const InfographicShowcase: React.FC = () => {
         <SectionHeader
           eyebrow="The Transformation"
           headline="See the difference."
-          subhead="Visualizing the impact of 1-globe.com optimization on standard storefront payloads and indexability."
+          subhead="Visualizing how ecommerce image and content workflows can change the technical foundation of a storefront."
           align="center"
         />
 
