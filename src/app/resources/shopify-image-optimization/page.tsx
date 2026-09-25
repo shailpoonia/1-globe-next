@@ -158,7 +158,7 @@ export default function ArticlePage() {
                 <li><strong className="text-foreground">WebP:</strong> A modern format that supports both transparency and strong compression, making it highly useful for web delivery.</li>
               </ul>
               <p className="text-lg text-neutral-400 leading-relaxed">
-                While WebP is an excellent format for many ecommerce scenarios, it is not a universal replacement for every single image. The best format always depends on the specific visual content. Shopify's built-in image delivery systems often negotiate formats dynamically, but managing the initial format and compression on the merchant side ensures greater control over the source catalog.
+                While WebP is an excellent format for many ecommerce scenarios, it is not a universal replacement for every single image. The best format always depends on the specific visual content. Shopify's image delivery system can handle important aspects of image transformation and responsive delivery at the storefront layer. Merchant-side optimization is a separate concern: it can help maintain a cleaner, more manageable source catalog by addressing image dimensions, source formats, compression, filenames, and metadata before or alongside storefront delivery.
               </p>
             </div>
 
@@ -170,7 +170,7 @@ export default function ArticlePage() {
               <div className="bg-secondary/30 p-6 rounded-md my-8 border border-border">
                 <span className="text-xs font-bold uppercase tracking-widest text-primary block mb-2">Illustrative Example</span>
                 <p className="text-sm text-neutral-400">
-                  An unoptimized raw camera file might start at <strong className="text-foreground">18.4 MB</strong>. By appropriately resizing the dimensions and applying WebP compression, the final delivered asset could be reduced to <strong className="text-foreground">212 KB</strong>, vastly improving the payload weight while maintaining necessary visual fidelity.
+                  An unoptimized raw camera file might start at <strong className="text-foreground">18.4 MB</strong>. By appropriately resizing the dimensions and applying WebP compression, the final delivered asset could be reduced to <strong className="text-foreground">212 KB</strong>. This illustrates how resizing and compression can substantially reduce image payload while allowing the merchant to evaluate the resulting visual quality.
                 </p>
               </div>
               <p className="text-lg text-neutral-400 leading-relaxed">
@@ -221,10 +221,10 @@ export default function ArticlePage() {
             <div className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">10. Accessibility</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
-                Accessibility and technical optimization are deeply intertwined. When a merchant writes meaningful alt text to assist screen readers and structures product descriptions clearly, they are simultaneously providing the structured data that machine-learning models and search indexers rely on.
+                Accessibility and technical optimization are deeply intertwined. Meaningful alt text provides an accessible text alternative for users who cannot see the image and can also provide additional textual context about the image.
               </p>
               <p className="text-lg text-neutral-400 leading-relaxed">
-                Avoiding keyword stuffing is not just an SEO guideline; it is an accessibility requirement to prevent creating a frustrating experience for users relying on assistive technologies.
+                Avoiding keyword stuffing also helps keep alt text useful and understandable for people using screen readers.
               </p>
             </div>
 
@@ -274,7 +274,7 @@ export default function ArticlePage() {
                 1-OPTIMISER is being developed as an image performance tool for Shopify stores. It brings image optimization, AI-assisted image metadata, image editing, catalog scope controls, and selected storefront performance tools into one workflow.
               </p>
               <p className="text-lg text-neutral-400 leading-relaxed mb-6">
-                Capabilities will include compression, resizing, optional WebP conversion, AI-assisted alt text and descriptive filenames for merchant review, keyword suggestions, image editing (including background changes), optimization history logs, and an optional storefront performance theme extension. All image modifications require merchant review before being saved to Shopify.
+                The current 1-OPTIMISER implementation includes compression, resizing, optional WebP conversion, AI-assisted alt text and descriptive filenames for merchant review, keyword suggestions, image editing including background changes, optimization history logs, and an optional storefront performance theme extension. All image modifications require merchant review before being saved to Shopify.
               </p>
               <p className="text-sm font-bold uppercase tracking-widest text-primary mb-8">
                 Note: 1-OPTIMISER is currently coming soon.
