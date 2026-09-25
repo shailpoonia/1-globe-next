@@ -46,8 +46,8 @@ export const RESOURCES: Record<string, ResourceItem> = {
     title: 'Product Image Alt Text: A Practical Guide for Ecommerce',
     description: 'A practical guide to writing useful ecommerce product image alt text for accessibility, image context and search discovery without keyword stuffing.',
     category: PERFORMANCE_CATEGORIES.IMAGE,
-    datePublished: '2026-09-26T12:00:00Z',
-    dateModified: '2026-09-26T12:00:00Z',
+    datePublished: '2026-09-25T12:00:00Z',
+    dateModified: '2026-09-25T12:00:00Z',
   }
 };
 

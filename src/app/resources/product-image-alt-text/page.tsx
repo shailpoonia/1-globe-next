@@ -195,7 +195,7 @@ export default function ArticlePage() {
                 There is no universal, magic character limit mandated by search engines. However, for accessibility, screen readers often read alt text in a continuous stream. Exceedingly long descriptions can become frustrating for users to listen to.
               </p>
               <p className="text-lg text-neutral-400 leading-relaxed">
-                As a practical guideline, aiming for around 125 characters or fewer is often recommended, but this is a heuristic, not a strict rule. Prioritize accuracy, usefulness, and conciseness. If a product requires a massive paragraph to explain, that information should likely exist in the visible product description, not just hidden in the alt attribute.
+                As a practical guideline, keep alt text concise enough to communicate the meaningful visual information without unnecessary detail. There is no universal character target that should override accuracy and usefulness. If a product requires extensive explanation, that information belongs in the visible product content rather than being packed into the alt attribute.
               </p>
             </div>
 
