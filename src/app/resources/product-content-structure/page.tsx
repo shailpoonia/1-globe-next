@@ -28,7 +28,7 @@ export default function ArticlePage() {
   const faqs = [
     {
       q: "What is product content structure?",
-      a: "Product content structure is the intentional organization of product informationâ€”such as titles, descriptions, attributes, and specificationsâ€”into clear, standardized formats that are easily understood by both customers and software systems."
+      a: "Product content structure is the intentional organization of product information—such as titles, descriptions, attributes, and specifications—into clear, standardized formats that are easily understood by both customers and software systems."
     },
     {
       q: "What should an ecommerce product page include?",
@@ -40,7 +40,7 @@ export default function ArticlePage() {
     },
     {
       q: "What is the difference between product descriptions and attributes?",
-      a: "Product descriptions provide narrative context, explaining what a product is, who it is for, and how it is used. Attributes are discrete, structured data pointsâ€”such as dimensions, weight, or materialâ€”that are used for filtering, comparison, and technical specifications."
+      a: "Product descriptions provide narrative context, explaining what a product is, who it is for, and how it is used. Attributes are discrete, structured data points—such as dimensions, weight, or material—that are used for filtering, comparison, and technical specifications."
     },
     {
       q: "Why are consistent product attributes important?",
@@ -121,7 +121,7 @@ export default function ArticlePage() {
                 Product content structure is the organization of product information into distinct, predictable formats. It moves beyond treating a product as merely a title and a single paragraph of copy.
               </p>
               <p className="text-lg text-neutral-400 leading-relaxed">
-                A structured approach categorizes informationâ€”separating narrative descriptions from discrete technical specifications, standardizing variant options, and anticipating common questions. This architectural consistency ensures that data is accessible, comparable, and actionable.
+                A structured approach categorizes information—separating narrative descriptions from discrete technical specifications, standardizing variant options, and anticipating common questions. This architectural consistency ensures that data is accessible, comparable, and actionable.
               </p>
             </div>
 
@@ -166,7 +166,7 @@ export default function ArticlePage() {
                 Merchants often mistake word count for quality. A highly structured, concise description is far more valuable than a lengthy wall of text.
               </p>
               <p className="text-lg text-neutral-400 leading-relaxed">
-                Descriptions should clearly articulate what the product is, who it is intended for, its primary characteristics, and its practical use cases. By formatting information logicallyâ€”using headers, bullet points, and distinct paragraphs for materials and practical detailsâ€”merchants ensure that useful information is easily scannable.
+                Descriptions should clearly articulate what the product is, who it is intended for, its primary characteristics, and its practical use cases. By formatting information logically—using headers, bullet points, and distinct paragraphs for materials and practical details—merchants ensure that useful information is easily scannable.
               </p>
             </div>
 
@@ -196,7 +196,7 @@ export default function ArticlePage() {
                 A single well-structured product page is insufficient if the rest of the catalog is chaotic. Consistency is the foundation of a trustworthy ecommerce site.
               </p>
               <p className="text-lg text-neutral-400 leading-relaxed">
-                This requires consistent naming conventions, standardized units of measurement, uniform formatting, and identical terminology across all categories. Maintaining a single source of truth for product dataâ€”typically within a PIM (Product Information Management) system or a highly organized ecommerce platform backendâ€”prevents conflicting specifications.
+                This requires consistent naming conventions, standardized units of measurement, uniform formatting, and identical terminology across all categories. Maintaining a single source of truth for product data—typically within a PIM (Product Information Management) system or a highly organized ecommerce platform backend—prevents conflicting specifications.
               </p>
             </div>
 

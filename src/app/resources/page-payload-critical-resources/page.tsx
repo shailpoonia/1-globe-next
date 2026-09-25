@@ -28,7 +28,7 @@ export default function ArticlePage() {
   const faqs = [
     {
       q: "What is page payload?",
-      a: "Page payload refers to the total volume and complexity of all resourcesâ€”such as HTML, CSS, JavaScript, images, fonts, and third-party integrationsâ€”that a browser must download, parse, and execute to fully render a page."
+      a: "Page payload refers to the total volume and complexity of all resources—such as HTML, CSS, JavaScript, images, fonts, and third-party integrations—that a browser must download, parse, and execute to fully render a page."
     },
     {
       q: "What resources contribute to page payload?",
@@ -186,7 +186,7 @@ export default function ArticlePage() {
                 Beyond core code and imagery, a storefront fetches web fonts, vector icon sets, embedded videos, and miscellaneous assets. 
               </p>
               <p className="text-lg text-neutral-400 leading-relaxed">
-                Custom fonts are visually striking but can delay text rendering if they block the page or suffer from network delays. The objective is not the total removal of every supporting asset, but rather ensuring they are loaded appropriatelyâ€”such as preloading critical fonts while deferring secondary icon libraries.
+                Custom fonts are visually striking but can delay text rendering if they block the page or suffer from network delays. The objective is not the total removal of every supporting asset, but rather ensuring they are loaded appropriately—such as preloading critical fonts while deferring secondary icon libraries.
               </p>
             </div>
 
@@ -254,7 +254,7 @@ export default function ArticlePage() {
             <div className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">13. Page Payload and Core Web Vitals</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
-                Core Web Vitalsâ€”including Largest Contentful Paint (LCP), Interaction to Next Paint (INP), and Cumulative Layout Shift (CLS)â€”are profoundly influenced by resource delivery. 
+                Core Web Vitals—including Largest Contentful Paint (LCP), Interaction to Next Paint (INP), and Cumulative Layout Shift (CLS)—are profoundly influenced by resource delivery. 
               </p>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 However, it is crucial to understand that page payload alone does not determine these metrics. A page's performance is the culmination of resource size, fetching priority, network conditions, browser rendering work, layout stability, and JavaScript execution overhead. Reducing payload is highly beneficial, but it does not guarantee automatic CWV compliance.

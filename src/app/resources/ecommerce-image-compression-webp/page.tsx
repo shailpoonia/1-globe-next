@@ -131,7 +131,7 @@ export default function ArticlePage() {
                 Ecommerce storefronts rely heavily on visual media. A typical product page might load a primary photograph, several high-resolution variant images, and contextual lifestyle imagery. Across large catalogs, unoptimized images can drastically inflate page payload.
               </p>
               <p className="text-lg text-neutral-400 leading-relaxed">
-                When network transfer requirements are highâ€”especially on mobile connectionsâ€”delivering massive, uncompressed files becomes inefficient. Systematic compression can reduce this image payload and may contribute to more efficient page delivery. However, it should be clearly understood that compressing images does not automatically improve search rankings or guarantee increased conversions.
+                When network transfer requirements are high—especially on mobile connections—delivering massive, uncompressed files becomes inefficient. Systematic compression can reduce this image payload and may contribute to more efficient page delivery. However, it should be clearly understood that compressing images does not automatically improve search rankings or guarantee increased conversions.
               </p>
             </div>
 
@@ -212,7 +212,7 @@ export default function ArticlePage() {
                 Compression is only one optimization layer. Pixel dimensions represent the foundational size of the asset.
               </p>
               <p className="text-lg text-neutral-400 leading-relaxed">
-                A very large source image that is heavily compressed can still be unnecessarily large in pixel dimensions for its intended display. Conversely, a small image with poor visual quality cannot be fixed through compression. Resizing oversized source files to appropriate maximum dimensionsâ€”while ensuring product zoom and high-density displays are supported, and avoiding unnecessary enlargementâ€”must happen alongside compression formatting.
+                A very large source image that is heavily compressed can still be unnecessarily large in pixel dimensions for its intended display. Conversely, a small image with poor visual quality cannot be fixed through compression. Resizing oversized source files to appropriate maximum dimensions—while ensuring product zoom and high-density displays are supported, and avoiding unnecessary enlargement—must happen alongside compression formatting.
               </p>
             </div>
 
@@ -274,7 +274,7 @@ export default function ArticlePage() {
             <div className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">13. How to Measure Image Compression</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
-                Factual measurement requires looking at multiple signals. Merchants can compare the original file size against the compressed file size to calculate percentage reduction, but that percentage is merely a measurementâ€”not the goal itself.
+                Factual measurement requires looking at multiple signals. Merchants can compare the original file size against the compressed file size to calculate percentage reduction, but that percentage is merely a measurement—not the goal itself.
               </p>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 A complete measurement approach evaluates the final image dimensions, the total page image payload, the number of processed, skipped, or failed images during bulk operations, and most importantly, the retained visual quality alongside any page-level performance signals.

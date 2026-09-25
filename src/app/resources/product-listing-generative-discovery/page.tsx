@@ -40,7 +40,7 @@ export default function ArticlePage() {
     },
     {
       q: "Why are product attributes important?",
-      a: "Structured product attributesâ€”such as material, dimensions, and compatibilityâ€”ensure consistency across a catalog. This allows customers to compare products accurately and helps search systems categorize the listing effectively."
+      a: "Structured product attributes—such as material, dimensions, and compatibility—ensure consistency across a catalog. This allows customers to compare products accurately and helps search systems categorize the listing effectively."
     },
     {
       q: "How do product feeds relate to product listings?",
@@ -111,7 +111,7 @@ export default function ArticlePage() {
             
             <div className="space-y-6">
               <p className="text-xl text-foreground font-medium leading-relaxed">
-                As commerce evolves beyond traditional search engines, the way products are discovered is fundamentally changing. To remain accessible across modern <Link href="/resources/ecommerce-performance" className="text-primary hover:underline">ecommerce performance</Link> environmentsâ€”spanning on-site search, external product feeds, answer engines, and generative discovery systemsâ€”product information must be exceptionally clear, structured, and consistent.
+                As commerce evolves beyond traditional search engines, the way products are discovered is fundamentally changing. To remain accessible across modern <Link href="/resources/ecommerce-performance" className="text-primary hover:underline">ecommerce performance</Link> environments—spanning on-site search, external product feeds, answer engines, and generative discovery systems—product information must be exceptionally clear, structured, and consistent.
               </p>
             </div>
 
@@ -184,7 +184,7 @@ export default function ArticlePage() {
             <div className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">7. Product Images as Listing Information</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
-                Product images are a foundational part of the product information systemâ€”they are not merely decorative elements. 
+                Product images are a foundational part of the product information system—they are not merely decorative elements. 
               </p>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 To function as effective listing data, imagery requires appropriate dimensions, highly efficient formats, descriptive filenames, and useful, context-driven alt text. For a deep dive into treating visual assets as structured data, review our guides on <Link href="/resources/product-image-alt-text" className="text-primary hover:underline">product image alt text</Link>, <Link href="/resources/ecommerce-image-optimization" className="text-primary hover:underline">ecommerce image optimization</Link>, and <Link href="/resources/ecommerce-image-compression-webp" className="text-primary hover:underline">ecommerce image compression & WebP</Link>.
