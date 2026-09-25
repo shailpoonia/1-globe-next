@@ -42,7 +42,7 @@ export const ProductDetailHome: React.FC = () => {
               IMAGE PERFORMANCE
             </span>
             <p className="text-base text-neutral-500 leading-relaxed max-w-md">
-              Compress image payloads, generate descriptive SEO filenames, and write contextual alt text automatically. All data is synced directly to the Shopify catalog while keeping existing links completely intact.
+              Compress image payloads and use AI-assisted tools to generate descriptive filenames and contextual alt text for review. Updates are synced directly to the Shopify catalog via the Admin API.
             </p>
           </div>
 

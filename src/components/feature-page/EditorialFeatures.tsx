@@ -34,7 +34,7 @@ export const EditorialFeatures: React.FC = () => {
             <div className="max-w-xl lg:order-1 order-2">
               <h3 className="text-section-title mb-6">AI Image Metadata</h3>
               <p className="text-lead">
-                Generate image-specific ALT text, descriptive filenames, and keyword suggestions to improve contextual metadata across the catalog.
+                AI-assisted tools to generate image-specific ALT text, descriptive filenames, and keyword suggestions for merchant review to support contextual metadata.
               </p>
             </div>
             <div className="aspect-square interactive-card bg-card border border-border flex flex-col items-center justify-center p-12 lg:order-2 order-1">
