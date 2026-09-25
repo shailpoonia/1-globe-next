@@ -56,6 +56,14 @@ export const RESOURCES: Record<string, ResourceItem> = {
     category: PERFORMANCE_CATEGORIES.IMAGE,
     datePublished: '2026-09-25T12:00:00Z',
     dateModified: '2026-09-25T12:00:00Z',
+  },
+  'ecommerce-image-compression-webp': {
+    slug: 'ecommerce-image-compression-webp',
+    title: 'Ecommerce Image Compression & WebP: A Practical Guide',
+    description: 'Learn how ecommerce image compression and WebP affect file size, visual quality, image formats, Shopify delivery, accessibility, and storefront performance.',
+    category: PERFORMANCE_CATEGORIES.IMAGE,
+    datePublished: '2026-09-25T12:00:00Z',
+    dateModified: '2026-09-25T12:00:00Z',
   }
 };
 
