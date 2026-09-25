@@ -38,8 +38,8 @@ export const RESOURCES: Record<string, ResourceItem> = {
     title: 'Shopify Image Optimization: A Practical Guide',
     description: 'A practical guide to preparing product and storefront images for Shopify stores, balancing visual quality with file size and performance.',
     category: PERFORMANCE_CATEGORIES.IMAGE,
-    datePublished: '2026-09-26T12:00:00Z',
-    dateModified: '2026-09-26T12:00:00Z',
+    datePublished: '2026-09-25T12:00:00Z',
+    dateModified: '2026-09-25T12:00:00Z',
   },
   'product-image-alt-text': {
     slug: 'product-image-alt-text',
