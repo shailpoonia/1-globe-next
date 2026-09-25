@@ -39,10 +39,28 @@ export const ProductDetailHome: React.FC = () => {
 
           <div className="mb-10 lg:mt-6 border-t border-border pt-10">
             <span className="text-sm font-bold uppercase tracking-widest text-foreground block mb-4">
-              IMAGE PERFORMANCE
+              CAPABILITIES
             </span>
-            <p className="text-base text-neutral-500 leading-relaxed max-w-md">
-              Compress image payloads and use AI-assisted tools to generate descriptive filenames and contextual alt text for review. Updates are synced directly to the Shopify catalog via the Admin API.
+            <ul className="space-y-2 mb-6">
+              {[
+                'Image optimization — compression, resizing, WebP conversion',
+                'AI-assisted image metadata — alt text, filenames, keyword suggestions',
+                'Image editing — enhance, crop, resize, draw, background, generate',
+                'Storefront performance — optional theme extension for lazy loading and responsive images',
+                'Store control — process images individually or across collections and catalog',
+                'Measure & review — optimization history and storefront performance signals',
+              ].map((cap, i) => (
+                <li key={i} className="flex items-start gap-3 text-sm text-neutral-500 leading-relaxed">
+                  <span className="text-primary font-bold mt-0.5 shrink-0">—</span>
+                  <span>{cap}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="text-sm text-neutral-600 leading-relaxed max-w-md">
+              All image changes require merchant review and confirmation before being saved to Shopify.{' '}
+              <Link href="/resources/ecommerce-image-optimization" className="text-primary hover:text-foreground transition-colors underline underline-offset-4 decoration-primary/30 text-xs font-medium">
+                Read our image optimization guide →
+              </Link>
             </p>
           </div>
 

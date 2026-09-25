@@ -27,7 +27,7 @@ export const FaqSection: React.FC = () => {
     },
     {
       q: "What is 1-OPTIMISER?",
-      a: "1-OPTIMISER is an image performance tool designed specifically for Shopify stores. It compresses image assets, improves filenames, and generates contextual alt text to support storefront performance and image discoverability."
+      a: "1-OPTIMISER is an image performance tool for Shopify stores. It provides tools for image optimization (compression, resizing, WebP conversion), AI-assisted image metadata (alt text, filenames, keyword suggestions for merchant review), image editing, a storefront performance theme extension, store-scope controls, and optimization history."
     },
     {
       q: "What is 1-BLOG?",
@@ -54,13 +54,20 @@ export const FaqSection: React.FC = () => {
       a: "No. 1-GLOBE is designed around focused capabilities rather than requiring merchants to replace their entire ecommerce stack."
     },
     {
+      q: "Where can merchants learn more about image optimization?",
+      a: "1-GLOBE publishes practical resources on image optimization and ecommerce performance. These are designed to help merchants understand the technical context behind the tools we build."
+    },
+    {
       q: "Where should I start?",
       a: (
         <>
-          Start with the foundation. If image performance and image management are your priority, explore 1-OPTIMISER.
-          <div className="mt-6">
+          Start with the foundation. If image performance and catalog management are your priority, explore 1-OPTIMISER and read our resources on ecommerce image optimization.
+          <div className="mt-6 flex flex-col gap-3">
             <Link href="/apps/1-optimiser" className="inline-flex items-center text-sm font-bold uppercase tracking-widest text-primary hover:text-foreground transition-colors">
               Explore 1-OPTIMISER →
+            </Link>
+            <Link href="/resources/ecommerce-image-optimization" className="inline-flex items-center text-sm font-medium text-neutral-500 hover:text-foreground transition-colors">
+              Read: Ecommerce Image Optimization →
             </Link>
           </div>
         </>

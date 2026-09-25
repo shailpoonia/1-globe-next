@@ -55,7 +55,7 @@ export const Header: React.FC = () => {
               onClick={(e) => handleNavClick(e, '#ecosystem')}
               className="text-sm font-semibold text-foreground/80 interactive-link uppercase tracking-[0.1em] whitespace-nowrap"
             >
-              Apps
+              Products
             </a>
             <a
               href="/#why"
@@ -142,7 +142,7 @@ export const Header: React.FC = () => {
               onClick={(e) => handleNavClick(e, '#ecosystem')}
               className="text-2xl font-heading font-bold text-foreground hover:text-primary transition-colors"
             >
-              Apps
+              Products
             </a>
             <a
               href="/#why"

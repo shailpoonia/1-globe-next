@@ -269,7 +269,7 @@ const Slide2Content: React.FC = () => {
             <div className="w-12 h-12 rounded-full border-2 border-slate-700 bg-slate-800/50 text-slate-500 flex items-center justify-center s2-node-5 shrink-0">
               <ShoppingBag className="w-5 h-5" />
             </div>
-            <span className="text-[10px] font-bold text-slate-400 text-center leading-tight">Sale</span>
+            <span className="text-[10px] font-bold text-slate-400 text-center leading-tight">Store Visit</span>
           </div>
 
         </div>
