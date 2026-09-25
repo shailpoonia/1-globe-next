@@ -21,7 +21,7 @@ export const BrandPhilosophy: React.FC = () => {
               Technology should solve a business problem. The goal is not to add more software to an ecommerce store. The goal is to make the store perform better.
             </p>
             <p>
-              1-GLOBE builds the <Link href="/resources/ecommerce-performance" className="text-primary hover:text-foreground transition-colors underline underline-offset-4 decoration-primary/30">ecommerce performance</Link> technology—from image processing to content architecture—that helps online stores operate faster and reach more customers.
+              1-GLOBE builds the <Link href="/resources/ecommerce-performance" className="text-primary hover:text-foreground transition-colors underline underline-offset-4 decoration-primary/30">technical infrastructure</Link> — from image processing to content architecture — that helps online stores operate more efficiently.
             </p>
           </div>
         </div>

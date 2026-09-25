@@ -21,10 +21,10 @@ export const MerchantStory: React.FC = () => {
           <div className="lg:col-span-6 flex flex-col pt-2 lg:pt-4">
             <div className="text-lg md:text-xl text-neutral-400 font-medium leading-relaxed space-y-6 mb-12">
               <p>
-                1-GLOBE was built around the practical problems ecommerce businesses encounter every day. 
+                1-GLOBE was built around the practical problems some ecommerce businesses encounter when managing a growing catalog.
               </p>
               <p>
-                The goal is not to add another layer of software to the store. It is to build focused technology that solves a specific problem, integrates into the existing ecommerce workflow, and improves the underlying experience—removing the friction of unnecessary complexity and disconnected tools.
+                The goal is not to add another layer of software to the store. It is to build focused tools that address specific technical challenges, integrate into existing workflows, and improve the underlying merchant experience.
               </p>
               
             </div>

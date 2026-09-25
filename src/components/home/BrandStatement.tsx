@@ -38,15 +38,15 @@ export const BrandStatement: React.FC = () => {
             </h3>
           </div>
           <div className="lg:col-span-5 lg:pt-6 max-w-lg">
-            <div className="space-y-6">
+                        <div className="space-y-6">
               <p className="text-xl md:text-2xl font-bold text-foreground tracking-wider uppercase">
                 ONE GLOBE 🌍
               </p>
               <p className="text-lg md:text-xl lg:text-2xl text-foreground font-medium leading-relaxed">
-                Building AI-powered, next-generation ecommerce solutions.
+                Business first. Technology second. Performance always.
               </p>
               <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground font-medium leading-relaxed">
-                Building the technology behind the next generation of commerce.
+                We believe in building tools that solve actual technical challenges for online merchants, without sacrificing quality or control.
               </p>
             </div>
           </div>
@@ -56,4 +56,5 @@ export const BrandStatement: React.FC = () => {
     </section>
   )
 }
+
 

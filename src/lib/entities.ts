@@ -51,7 +51,7 @@ export const ENTITY_PRODUCTS: Record<string, EcosystemProduct> = {
     number: '02',
     name: '1-BLOG',
     category: PERFORMANCE_CATEGORIES.CONTENT,
-    description: 'Content performance for the modern store.',
+    description: 'Content performance for online stores, focused on building structured content around product catalogs.',
     status: 'launching-soon',
     href: null,
   },
@@ -60,8 +60,9 @@ export const ENTITY_PRODUCTS: Record<string, EcosystemProduct> = {
     number: '03',
     name: '1-LIST',
     category: PERFORMANCE_CATEGORIES.PRODUCT_LISTING,
-    description: 'Product listing performance for the modern store.',
+    description: 'Build product listings structured for search, answer engines and generative discovery.',
     status: 'launching-soon',
     href: null,
   },
 };
+

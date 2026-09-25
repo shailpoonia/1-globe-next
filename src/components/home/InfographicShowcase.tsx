@@ -155,11 +155,14 @@ const Slide1Content: React.FC = () => {
           <div className="absolute left-0 w-full h-[2px] bg-primary shadow-[0_0_8px_2px_rgba(0,213,255,0.6)] s1-animate-scan z-10">
             <div className="absolute top-0 left-0 w-full h-12 bg-gradient-to-b from-primary/20 to-transparent -translate-y-full" />
           </div>
-          <div className="absolute bottom-2 right-2 bg-slate-900/80 backdrop-blur-md border border-slate-700/50 rounded-lg px-2.5 py-1 flex items-center gap-2 shadow-lg">
-            <span className="text-[10px] font-medium text-slate-400 line-through">8.2 MB</span>
-            <span className="text-[11px] font-bold text-primary flex items-center gap-1">
-              <Zap className="w-3 h-3 fill-current" /> 240 KB
-            </span>
+          <div className="absolute bottom-2 right-2 bg-slate-900/80 backdrop-blur-md border border-slate-700/50 rounded-lg px-2.5 py-1.5 flex flex-col shadow-lg">
+            <span className="text-[8px] font-bold text-slate-500 uppercase tracking-widest mb-0.5">Example</span>
+            <div className="flex items-center gap-2">
+              <span className="text-[10px] font-medium text-slate-400 line-through">8.2 MB</span>
+              <span className="text-[11px] font-bold text-primary flex items-center gap-1">
+                <Zap className="w-3 h-3 fill-current" /> 240 KB
+              </span>
+            </div>
           </div>
           <div className="absolute top-2 left-2 bg-slate-900/70 backdrop-blur border border-slate-700/50 rounded-md px-2 py-0.5 flex items-center gap-1.5">
             <Sparkles className="w-3 h-3 text-primary" />
@@ -190,7 +193,7 @@ const Slide1Content: React.FC = () => {
           </div>
 
           <div className="mt-2">
-            <div className="text-[10px] font-bold uppercase tracking-wider text-slate-500 mb-2">Now Discoverable On</div>
+            <div className="text-[10px] font-bold uppercase tracking-wider text-slate-500 mb-2">Image Context</div>
             <div className="flex flex-wrap gap-2">
               <div className="px-2 py-1 rounded-full border border-slate-700/50 text-[10px] font-medium text-slate-500 flex items-center gap-1 s1-animate-badge">
                 <Search className="w-3 h-3" /> Google
@@ -207,8 +210,8 @@ const Slide1Content: React.FC = () => {
       </div>
       
       <div className="mt-10 text-center px-4 md:px-12">
-        <h3 className="text-xl md:text-2xl font-bold text-white mb-2">Clean images. Readable tags. Now your product can be found.</h3>
-        <p className="text-sm text-slate-400">Sound familiar? Half your catalog is probably named IMG-…-WA….jpg right now.</p>
+        <h3 className="text-xl md:text-2xl font-bold text-white mb-2">Clean images. Readable tags. Meaningful context for your catalog.</h3>
+        <p className="text-sm text-slate-400">Sound familiar? Half your catalog is probably named IMG-2026-WA001.jpg right now.</p>
       </div>
     </div>
   )
@@ -288,8 +291,8 @@ const Slide2Content: React.FC = () => {
       </div>
 
       <div className="text-center px-4 md:px-12">
-        <h3 className="text-lg md:text-xl font-bold text-white mb-2 leading-tight">Once your products are readable, 1-BLOG will write real content around them.</h3>
-        <p className="text-sm text-neutral-400">Content designed to earn backlinks over time and pull shoppers to your store.</p>
+        <h3 className="text-lg md:text-xl font-bold text-white mb-2 leading-tight">Once your products are readable, 1-BLOG is designed to help create structured content around them.</h3>
+        <p className="text-sm text-neutral-400">Content designed to provide useful context for merchants and their audience.</p>
       </div>
     </div>
   )
