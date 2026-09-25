@@ -54,8 +54,8 @@ export const RESOURCES: Record<string, ResourceItem> = {
     title: 'Bulk Image Optimization: A Practical Guide for Ecommerce',
     description: 'Learn how to optimize ecommerce images in bulk, from compression and resizing to formats, metadata, Shopify workflows, quality checks, and performance measurement.',
     category: PERFORMANCE_CATEGORIES.IMAGE,
-    datePublished: '2026-09-26T12:00:00Z',
-    dateModified: '2026-09-26T12:00:00Z',
+    datePublished: '2026-09-25T12:00:00Z',
+    dateModified: '2026-09-25T12:00:00Z',
   }
 };
 
