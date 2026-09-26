@@ -1,15 +1,14 @@
 import React from 'react'
 import { Metadata } from 'next'
+import { buildMetadata } from '@/lib/seo'
 import { Section } from '@/components/shared/Section'
 import Link from 'next/link'
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: '1-OPTIMISER Pricing',
   description: 'Pricing for 1-OPTIMISER. Pay only for what you optimize with one-time image credits.',
-  alternates: {
-    canonical: '/pricing',
-  },
-}
+  path: '/pricing',
+})
 
 export default function PricingPage() {
   return (
@@ -21,7 +20,7 @@ export default function PricingPage() {
             <div className="text-left mb-20 max-w-3xl">
               <span className="text-eyebrow block mb-6">1-OPTIMISER</span>
               <h1 className="text-hero mb-6">
-                IMAGE PERFORMANCE.<br />
+                IMAGE PERFORMANCE.{' '}<br />
                 <span className="text-primary italic">WITHOUT THE SUBSCRIPTION.</span>
               </h1>
               <p className="text-lead">
@@ -61,7 +60,7 @@ export default function PricingPage() {
                     <span className="text-4xl font-heading font-bold text-foreground">$2</span>
                   </div>
                   <p className="text-muted-foreground leading-relaxed text-sm h-12">
-                    One-time purchase.<br />Credits never expire.
+                    One-time purchase.{' '}<br />Credits never expire.
                   </p>
                 </div>
                 <div className="flex-1">
@@ -80,7 +79,7 @@ export default function PricingPage() {
                     <span className="text-4xl font-heading font-bold text-foreground">$10</span>
                   </div>
                   <p className="text-muted-foreground leading-relaxed text-sm h-12">
-                    One-time purchase.<br />Credits never expire.
+                    One-time purchase.{' '}<br />Credits never expire.
                   </p>
                 </div>
                 <div className="flex-1">
@@ -99,7 +98,7 @@ export default function PricingPage() {
                     <span className="text-4xl font-heading font-bold text-foreground">$18</span>
                   </div>
                   <p className="text-muted-foreground leading-relaxed text-sm h-12">
-                    One-time purchase.<br />Credits never expire.
+                    One-time purchase.{' '}<br />Credits never expire.
                   </p>
                 </div>
                 <div className="flex-1">

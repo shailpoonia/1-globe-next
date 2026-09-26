@@ -85,7 +85,7 @@ export const RESOURCES: Record<string, ResourceItem> = {
     slug: 'product-listing-generative-discovery',
     title: 'Product Listing & Generative Discovery: A Practical Guide for Ecommerce',
     description: 'Learn how ecommerce product listings can be structured with clear product information, attributes, specifications and supporting context for search, answer engines and generative discovery.',
-    category: PERFORMANCE_CATEGORIES.CONTENT,
+    category: PERFORMANCE_CATEGORIES.PRODUCT_LISTING,
     datePublished: '2026-09-25T12:00:00Z',
     dateModified: '2026-09-25T12:00:00Z',
   }

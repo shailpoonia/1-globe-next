@@ -101,7 +101,7 @@ export const Header: React.FC = () => {
             <Link
               href="/"
               className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded"
-              aria-label="1-globe.com Home"
+              aria-label="1-GLOBE home"
             >
               <BrandLockup />
             </Link>

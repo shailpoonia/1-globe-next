@@ -29,7 +29,7 @@ export function ArticleSchema({ resource }: ArticleSchemaProps) {
       name: ENTITY_ORGANIZATION.name,
       logo: {
         '@type': 'ImageObject',
-        url: `${siteConfig.url}/logo.jpeg`
+        url: `${siteConfig.url}/logo-square.png`
       }
     },
     mainEntityOfPage: {

@@ -1,18 +1,17 @@
 import React from 'react'
 import { Metadata } from 'next'
+import { buildMetadata } from '@/lib/seo'
 import { Section } from '@/components/shared/Section'
 import Link from 'next/link'
 import { getAllResources } from '@/lib/resources'
 import { ArrowRight } from 'lucide-react'
 import { CtaBand } from '@/components/shared/CtaBand'
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: 'Resources',
   description: 'Learn how ecommerce performance works. 1-GLOBE publishes practical guidance for merchants covering storefront performance, image performance, content, and discovery.',
-  alternates: {
-    canonical: '/resources',
-  },
-}
+  path: '/resources',
+})
 
 export default function ResourcesPage() {
   const resources = getAllResources();

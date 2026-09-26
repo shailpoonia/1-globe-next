@@ -1,5 +1,6 @@
 import React from 'react'
 import { Metadata } from 'next'
+import { buildMetadata } from '@/lib/seo'
 import { Section } from '@/components/shared/Section'
 import Link from 'next/link'
 import { getResourceBySlug } from '@/lib/resources'
@@ -10,13 +11,12 @@ import { CtaBand } from '@/components/shared/CtaBand'
 const slug = 'ecommerce-image-optimization'
 const resource = getResourceBySlug(slug)
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: resource?.title || 'Ecommerce Image Optimization',
   description: resource?.description,
-  alternates: {
-    canonical: `/resources/${slug}`,
-  },
-}
+  path: `/resources/${slug}`,
+  article: resource,
+})
 
 export default function ArticlePage() {
   if (!resource) {

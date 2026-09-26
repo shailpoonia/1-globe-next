@@ -9,12 +9,12 @@ export const BrandStatement: React.FC = () => {
           
           <div className="lg:col-span-5 flex flex-col justify-between h-full">
             <div>
-              <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500 block mb-6">
+              <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-400 block mb-6">
                 THE REALITY
               </span>
               <h2 className="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl tracking-tighter leading-[0.95] text-foreground uppercase mb-6">
-                EVERY STORE<br />
-                CAN PERFORM<br />
+                EVERY STORE{' '}<br />
+                CAN PERFORM{' '}<br />
                 BETTER.
               </h2>
             </div>
@@ -39,8 +39,8 @@ export const BrandStatement: React.FC = () => {
             
             <div className="pt-6 border-t border-neutral-800/50 flex flex-col md:flex-row gap-8">
               <div className="md:w-1/2">
-                <p className="text-sm font-mono text-neutral-500 leading-relaxed">
-                  01 — Marketing creates demand.<br/>
+                <p className="text-sm font-mono text-neutral-400 leading-relaxed">
+                  01 — Marketing creates demand.{' '}<br />
                   02 — The store has to perform.
                 </p>
               </div>

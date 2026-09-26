@@ -1,15 +1,17 @@
-﻿"use client"
+"use client"
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { SectionHeader } from '@/components/shared/SectionHeader'
 import { 
   ChevronLeft, ChevronRight, Image as ImageIcon, Sparkles, CheckCircle2, 
-  Search, FileText, ArrowRight, MousePointerClick, Link as LinkIcon, ShoppingBag, Zap, TrendingUp, PenTool
+  Search, FileText, ArrowRight, MousePointerClick, Link as LinkIcon, ShoppingBag, Zap, TrendingUp, PenTool, Pause, Play
 } from 'lucide-react'
 
 export const InfographicShowcase: React.FC = () => {
   const [activeSlide, setActiveSlide] = useState(0)
-  const [isPaused, setIsPaused] = useState(false)
+  const [isHovered, setIsHovered] = useState(false)
+  const [userPaused, setUserPaused] = useState(false)
+  const isPaused = userPaused || isHovered
 
   // Auto-play logic
   useEffect(() => {
@@ -33,24 +35,32 @@ export const InfographicShowcase: React.FC = () => {
 
         <div 
           className="max-w-4xl mx-auto mt-12 sm:mt-16 relative"
-          onMouseEnter={() => setIsPaused(true)}
-          onMouseLeave={() => setIsPaused(false)}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
         >
           {/* Tab / Dots Navigation */}
           <div className="flex items-center justify-center gap-4 mb-8">
             <button 
               onClick={() => setActiveSlide(0)}
-              className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold transition-all ${activeSlide === 0 ? 'bg-primary/10 text-primary border border-primary/30' : 'bg-secondary/50 text-neutral-500 border border-border hover:text-neutral-300'}`}
+              className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold transition-all ${activeSlide === 0 ? 'bg-primary/10 text-primary border border-primary/30' : 'bg-secondary/50 text-neutral-400 border border-border hover:text-neutral-300'}`}
             >
               <div className={`w-2 h-2 rounded-full ${activeSlide === 0 ? 'bg-primary animate-pulse' : 'bg-neutral-600'}`} />
-              1-OPTIMISER Â· IMAGE PERFORMANCE
+              1-OPTIMISER · IMAGE PERFORMANCE
             </button>
             <button 
               onClick={() => setActiveSlide(1)}
-              className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold transition-all ${activeSlide === 1 ? 'bg-primary/10 text-primary border border-primary/30' : 'bg-secondary/50 text-neutral-500 border border-border hover:text-neutral-300'}`}
+              className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold transition-all ${activeSlide === 1 ? 'bg-primary/10 text-primary border border-primary/30' : 'bg-secondary/50 text-neutral-400 border border-border hover:text-neutral-300'}`}
             >
               <div className={`w-2 h-2 rounded-full ${activeSlide === 1 ? 'bg-primary animate-pulse' : 'bg-neutral-600'}`} />
-              1-BLOG Â· LAUNCHING SOON
+              1-BLOG · LAUNCHING SOON
+            </button>
+            <button
+              type="button"
+              onClick={() => setUserPaused((p) => !p)}
+              aria-label={userPaused ? 'Resume slideshow' : 'Pause slideshow'}
+              className="w-9 h-9 rounded-full flex items-center justify-center bg-secondary/50 border border-border text-neutral-400 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+            >
+              {userPaused ? <Play className="w-4 h-4" aria-hidden="true" /> : <Pause className="w-4 h-4" aria-hidden="true" />}
             </button>
           </div>
 
@@ -58,12 +68,16 @@ export const InfographicShowcase: React.FC = () => {
           <div className="relative w-full rounded-2xl bg-secondary/30 border border-border overflow-hidden min-h-[500px]">
             {/* Nav Arrows */}
             <button 
+              type="button"
+              aria-label="Previous slide"
               onClick={() => setActiveSlide(prev => prev === 0 ? 1 : 0)}
               className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-slate-800/80 border border-slate-700 flex items-center justify-center text-slate-400 hover:text-white hover:bg-slate-700 transition-colors"
             >
               <ChevronLeft className="w-5 h-5" />
             </button>
             <button 
+              type="button"
+              aria-label="Next slide"
               onClick={() => setActiveSlide(prev => prev === 0 ? 1 : 0)}
               className="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-slate-800/80 border border-slate-700 flex items-center justify-center text-slate-400 hover:text-white hover:bg-slate-700 transition-colors"
             >
@@ -83,7 +97,7 @@ export const InfographicShowcase: React.FC = () => {
           
           <div className="text-center mt-8">
             <p className="text-sm font-semibold text-neutral-400">
-              From comforters to sneakers to cookware â€” if your store has product photos, <span className="text-primary">1-GLOBE</span> makes them work.
+              From comforters to sneakers to cookware — if your store has product photos, <span className="text-primary">1-GLOBE</span> makes them work.
             </p>
           </div>
         </div>
@@ -151,7 +165,7 @@ const Slide1Content: React.FC = () => {
         
         {/* Visual Box */}
         <div className="relative w-full md:w-1/2 bg-slate-800 border border-slate-700/50 rounded-xl overflow-hidden aspect-video shadow-xl">
-          <Image src="/demo-product.jpg" alt="Comforter" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover opacity-80" />
+          <Image src="/demo-product.jpg" alt="Ivory quilted comforter with coral block-printed flowers and a blue and coral border, on a bed with white pillows" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover opacity-80" />
           <div className="absolute left-0 w-full h-[2px] bg-primary shadow-[0_0_8px_2px_rgba(0,213,255,0.6)] s1-animate-scan z-10">
             <div className="absolute top-0 left-0 w-full h-12 bg-gradient-to-b from-primary/20 to-transparent -translate-y-full" />
           </div>
@@ -187,7 +201,7 @@ const Slide1Content: React.FC = () => {
             </div>
             <div className="border border-slate-800 bg-slate-900/60 rounded-lg px-3 py-2 text-[12px] text-slate-300 min-h-[50px] flex items-center">
               <div className="s1-animate-typewriter">
-                Cream floral hand block print cotton quilted<br/>comforter with coral and blue border
+                Cream floral hand block print cotton quilted{' '}<br />comforter with coral and blue border
               </div>
             </div>
           </div>
@@ -233,7 +247,7 @@ const Slide2Content: React.FC = () => {
               <ImageIcon className="w-5 h-5" />
               <CheckCircle2 className="w-4 h-4 text-primary absolute -bottom-1 -right-1 bg-slate-900 rounded-full" />
             </div>
-            <span className="text-[10px] font-bold text-slate-400 text-center leading-tight">Optimized<br/>Product</span>
+            <span className="text-[10px] font-bold text-slate-400 text-center leading-tight">Optimized{' '}<br />Product</span>
           </div>
 
           <ArrowRight className="w-5 h-5 text-slate-700 shrink-0 s2-arrow-1" />
@@ -242,7 +256,7 @@ const Slide2Content: React.FC = () => {
             <div className="w-12 h-12 rounded-full border-2 border-slate-700 bg-slate-800/50 text-slate-500 flex items-center justify-center s2-node-2 shrink-0">
               <PenTool className="w-5 h-5" />
             </div>
-            <span className="text-[10px] font-bold text-slate-400 text-center leading-tight">1-BLOG<br/>Drafts Post</span>
+            <span className="text-[10px] font-bold text-slate-400 text-center leading-tight">1-BLOG{' '}<br />Drafts Post</span>
           </div>
 
           <ArrowRight className="w-5 h-5 text-slate-700 shrink-0 s2-arrow-2" />
@@ -251,7 +265,7 @@ const Slide2Content: React.FC = () => {
             <div className="w-12 h-12 rounded-full border-2 border-slate-700 bg-slate-800/50 text-slate-500 flex items-center justify-center s2-node-3 shrink-0">
               <TrendingUp className="w-5 h-5" />
             </div>
-            <span className="text-[10px] font-bold text-slate-400 text-center leading-tight">Discovery &<br/>Context</span>
+            <span className="text-[10px] font-bold text-slate-400 text-center leading-tight">Discovery &{' '}<br />Context</span>
           </div>
 
           <ArrowRight className="w-5 h-5 text-slate-700 shrink-0 s2-arrow-3" />
@@ -260,7 +274,7 @@ const Slide2Content: React.FC = () => {
             <div className="w-12 h-12 rounded-full border-2 border-slate-700 bg-slate-800/50 text-slate-500 flex items-center justify-center s2-node-4 shrink-0">
               <MousePointerClick className="w-5 h-5" />
             </div>
-            <span className="text-[10px] font-bold text-slate-400 text-center leading-tight">Readers<br/>Click</span>
+            <span className="text-[10px] font-bold text-slate-400 text-center leading-tight">Readers{' '}<br />Click</span>
           </div>
 
           <ArrowRight className="w-5 h-5 text-slate-700 shrink-0 s2-arrow-4" />
@@ -277,7 +291,7 @@ const Slide2Content: React.FC = () => {
         {/* Mock Blog Card */}
         <div className="w-full max-w-md bg-slate-800/80 border border-slate-700 rounded-xl overflow-hidden shadow-xl mb-8 group flex items-start p-4 gap-4">
            <div className="relative w-20 h-20 rounded-md bg-slate-700 overflow-hidden shrink-0">
-             <Image src="/demo-product.jpg" alt="Comforter thumbnail" fill sizes="80px" className="object-cover group-hover:scale-110 transition-transform duration-500" />
+             <Image src="/demo-product.jpg" alt="" fill sizes="80px" className="object-cover group-hover:scale-110 transition-transform duration-500" />
            </div>
            <div>
              <div className="text-[10px] text-primary font-bold uppercase tracking-wider mb-1">Blog Post Published</div>

@@ -59,7 +59,7 @@ export const AppFaqSection: React.FC = () => {  const faqs = [
                   />
                 </Accordion.Trigger>
               </Accordion.Header>
-              <Accordion.Content className="overflow-hidden text-sm sm:text-base text-muted-foreground leading-relaxed data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down">
+              <Accordion.Content forceMount className="overflow-hidden text-sm sm:text-base text-muted-foreground leading-relaxed data-[state=closed]:hidden">
                 <div className="pb-6 pr-8 font-medium">
                   {faq.a}
                 </div>

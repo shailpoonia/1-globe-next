@@ -1,5 +1,6 @@
 import React from 'react'
 import { Metadata } from 'next'
+import { buildMetadata } from '@/lib/seo'
 import { Section } from '@/components/shared/Section'
 import Link from 'next/link'
 import { getResourceBySlug } from '@/lib/resources'
@@ -12,13 +13,12 @@ import { ChevronDown } from 'lucide-react'
 const slug = 'product-image-alt-text'
 const resource = getResourceBySlug(slug)
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: resource?.title || 'Product Image Alt Text: A Practical Guide for Ecommerce',
   description: resource?.description,
-  alternates: {
-    canonical: `/resources/${slug}`,
-  },
-}
+  path: `/resources/${slug}`,
+  article: resource,
+})
 
 export default function ArticlePage() {
   if (!resource) {
@@ -103,7 +103,7 @@ export default function ArticlePage() {
             <p className="text-xl md:text-2xl text-muted-foreground font-medium leading-relaxed mb-8">
               {resource.description}
             </p>
-            <div className="flex items-center gap-6 text-sm font-medium text-neutral-500 uppercase tracking-widest">
+            <div className="flex items-center gap-6 text-sm font-medium text-neutral-400 uppercase tracking-widest">
               <span>Published: {new Date(resource.datePublished).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</span>
             </div>
           </div>
@@ -165,25 +165,25 @@ export default function ArticlePage() {
               <div className="space-y-8 mt-8">
                 <div className="bg-secondary/20 p-6 rounded-md border border-border">
                   <h3 className="font-bold text-foreground mb-4">Home Decor</h3>
-                  <p className="text-sm text-neutral-500 mb-1">Poor:</p>
+                  <p className="text-sm text-neutral-400 mb-1">Poor:</p>
                   <p className="text-red-400 mb-4 line-through">"wooden wall clock wooden clock wall clock buy wall clock"</p>
-                  <p className="text-sm text-neutral-500 mb-1">Better:</p>
+                  <p className="text-sm text-neutral-400 mb-1">Better:</p>
                   <p className="text-primary font-medium">"12-inch wooden wall clock with black hands"</p>
                 </div>
 
                 <div className="bg-secondary/20 p-6 rounded-md border border-border">
                   <h3 className="font-bold text-foreground mb-4">Clothing</h3>
-                  <p className="text-sm text-neutral-500 mb-1">Poor:</p>
+                  <p className="text-sm text-neutral-400 mb-1">Poor:</p>
                   <p className="text-red-400 mb-4 line-through">"image of a shirt"</p>
-                  <p className="text-sm text-neutral-500 mb-1">Better:</p>
+                  <p className="text-sm text-neutral-400 mb-1">Better:</p>
                   <p className="text-primary font-medium">"Men's short-sleeve button-down shirt in navy blue floral print"</p>
                 </div>
 
                 <div className="bg-secondary/20 p-6 rounded-md border border-border">
                   <h3 className="font-bold text-foreground mb-4">Electronics</h3>
-                  <p className="text-sm text-neutral-500 mb-1">Poor:</p>
+                  <p className="text-sm text-neutral-400 mb-1">Poor:</p>
                   <p className="text-red-400 mb-4 line-through">"laptop computer"</p>
-                  <p className="text-sm text-neutral-500 mb-1">Better:</p>
+                  <p className="text-sm text-neutral-400 mb-1">Better:</p>
                   <p className="text-primary font-medium">"Silver 15-inch laptop open on a desk, showing a backlit keyboard"</p>
                 </div>
               </div>
@@ -332,7 +332,7 @@ export default function ArticlePage() {
                         <ChevronDown className="w-5 h-5 text-muted-foreground group-data-[state=open]:rotate-180 transition-transform duration-300" />
                       </Accordion.Trigger>
                     </Accordion.Header>
-                    <Accordion.Content className="overflow-hidden data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down">
+                    <Accordion.Content forceMount className="overflow-hidden data-[state=closed]:hidden">
                       <div className="py-5 px-6 pt-0 text-neutral-400 leading-relaxed">
                         {faq.a}
                       </div>

@@ -121,7 +121,7 @@ export const JobsDoneSection: React.FC = () => {
             <p className="text-xs font-medium text-muted-foreground mb-8">Images snap perfectly to your store ratio.</p>
             <div className="mt-auto h-24 w-full flex items-center justify-center bg-slate-900 border border-slate-800 border-dashed">
               <div className="animate-crop border-2 border-primary bg-background overflow-hidden relative">
-                <Image src="/demo-product.jpg" alt="crop demo" fill sizes="120px" className="object-cover opacity-80" />
+                <Image src="/demo-product.jpg" alt="" fill sizes="120px" className="object-cover opacity-80" />
                 <div className="absolute inset-0 border border-white/20 pointer-events-none grid grid-cols-3 grid-rows-3">
                   {[...Array(9)].map((_, i) => (
                     <div key={i} className="border-[0.5px] border-white/10" />
@@ -136,7 +136,7 @@ export const JobsDoneSection: React.FC = () => {
             <h3 className="text-sm font-bold uppercase tracking-wider text-foreground mb-2">Background cleanup</h3>
             <p className="text-xs font-medium text-muted-foreground mb-8">Messy product shots made studio-ready.</p>
             <div className="mt-auto h-24 w-full border border-slate-800 overflow-hidden relative animate-cleanup-bg flex items-center justify-center">
-              <Image src="/demo-product.jpg" alt="cleanup demo" fill sizes="120px" className="object-cover animate-cleanup scale-125" />
+              <Image src="/demo-product.jpg" alt="" fill sizes="120px" className="object-cover animate-cleanup scale-125" />
             </div>
           </div>
 
@@ -147,7 +147,7 @@ export const JobsDoneSection: React.FC = () => {
             <div className="mt-auto grid grid-cols-3 grid-rows-2 gap-1.5 w-full h-24">
               {[1, 2, 3, 4, 5, 6].map((i) => (
                 <div key={i} className={`bg-slate-900 border border-slate-800 overflow-hidden relative animate-bulk-${i}`}>
-                <Image src="/demo-product.jpg" alt="bulk demo" fill sizes="(max-width: 768px) 33vw, 10vw" className="object-cover opacity-60" />
+                <Image src="/demo-product.jpg" alt="" fill sizes="(max-width: 768px) 33vw, 10vw" className="object-cover opacity-60" />
                 </div>
               ))}
             </div>

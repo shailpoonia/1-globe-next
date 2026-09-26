@@ -1,15 +1,14 @@
 import React from 'react'
 import { Metadata } from 'next'
+import { buildMetadata } from '@/lib/seo'
 import { Section } from '@/components/shared/Section'
 import Link from 'next/link'
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: 'Contact',
   description: 'Reach out to the 1-GLOBE team for support or inquiries regarding our ecommerce performance tools.',
-  alternates: {
-    canonical: '/contact',
-  },
-}
+  path: '/contact',
+})
 
 export default function ContactPage() {
   return (
@@ -30,7 +29,7 @@ export default function ContactPage() {
 
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-xs font-bold uppercase tracking-widest text-foreground mb-2">Support & Inquiries</h3>
+                  <p className="text-xs font-bold uppercase tracking-widest text-foreground mb-2">Support & Inquiries</p>
                   <a href="mailto:support@1-globe.com" className="text-primary hover:underline text-lg font-medium">
                     support@1-globe.com
                   </a>

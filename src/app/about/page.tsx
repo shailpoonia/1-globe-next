@@ -1,16 +1,15 @@
 import React from 'react'
 import { Metadata } from 'next'
+import { buildMetadata } from '@/lib/seo'
 import { Section } from '@/components/shared/Section'
 import { CtaBand } from '@/components/shared/CtaBand'
 import Link from 'next/link'
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: 'About',
   description: 'Built by a merchant, for merchants. 1-GLOBE builds business-first ecommerce performance technology.',
-  alternates: {
-    canonical: '/about',
-  },
-}
+  path: '/about',
+})
 
 export default function AboutPage() {
   return (
@@ -21,7 +20,7 @@ export default function AboutPage() {
           <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
             <span className="text-eyebrow block mb-6">About</span>
             <h1 className="text-hero mb-8 max-w-3xl">
-              Built by a merchant,<br />
+              Built by a merchant,{' '}<br />
               not a <span className="text-primary italic">code factory</span>.
             </h1>
             <p className="text-lead max-w-2xl">
