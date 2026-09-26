@@ -3,51 +3,60 @@ import { ArrowDown } from 'lucide-react'
 
 export const BrandStatement: React.FC = () => {
   return (
-    <section id="why" className="bg-background py-24 md:py-32 lg:py-40">
+    <section id="why" className="bg-background py-32 md:py-48">
       <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-16 md:gap-8 items-start">
           
-          <div className="lg:col-span-5 flex flex-col justify-between h-full">
+          <div className="md:col-span-5 flex flex-col justify-between h-full">
             <div>
-              <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500 block mb-6">
-                THE REALITY
-              </span>
-              <h2 className="font-heading font-bold text-4xl sm:text-5xl tracking-tighter leading-[0.95] text-foreground uppercase mb-6">
+              <div className="flex items-center gap-4 mb-8">
+                <div className="w-8 h-[1px] bg-neutral-700" />
+                <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-neutral-500">
+                  THE REALITY
+                </span>
+              </div>
+              <h2 className="font-heading font-bold text-5xl sm:text-6xl md:text-5xl lg:text-7xl tracking-tighter leading-[0.9] text-foreground uppercase">
                 EVERY STORE<br />
                 CAN PERFORM<br />
                 BETTER.
               </h2>
             </div>
             
-            <div className="hidden lg:flex items-center gap-4 text-neutral-600 mt-20">
-              <ArrowDown className="w-5 h-5 animate-pulse" />
+            <div className="hidden md:flex items-center gap-4 text-neutral-600 mt-24">
+              <ArrowDown className="w-4 h-4 animate-bounce" />
               <span className="text-[10px] font-bold uppercase tracking-widest">
                 The Foundation
               </span>
             </div>
           </div>
 
-          <div className="lg:col-span-7 lg:pl-16 space-y-12">
-            <div className="space-y-6">
-              <p className="text-xl md:text-2xl lg:text-3xl text-neutral-400 font-medium leading-tight">
-                Every click, search, campaign and recommendation eventually arrives at the same place: <span className="text-foreground">your store</span>.
+          <div className="md:col-span-7 md:pl-12 lg:pl-24 space-y-16">
+            <div className="space-y-8">
+              <p className="text-2xl sm:text-3xl lg:text-4xl text-neutral-400 font-medium leading-[1.1] tracking-tight">
+                Every click, search, campaign, and recommendation eventually arrives at the same place: <span className="text-white">your store</span>.
               </p>
-              <p className="text-xl md:text-2xl lg:text-3xl text-neutral-400 font-medium leading-tight">
+              <p className="text-2xl sm:text-3xl lg:text-4xl text-neutral-400 font-medium leading-[1.1] tracking-tight">
                 The technology underneath that experience matters.
               </p>
             </div>
             
-            <div className="pt-8 border-t border-neutral-800/50">
-              <p className="text-sm font-mono text-neutral-500 leading-relaxed mb-6">
-                01 — Marketing creates demand.<br/>
-                02 — The store has to perform.
-              </p>
+            <div className="pt-12 border-t border-neutral-800">
+              <div className="flex flex-col gap-2 mb-10">
+                <div className="flex items-center gap-4">
+                  <span className="text-[10px] font-mono text-primary">01</span>
+                  <p className="text-xs font-bold text-neutral-500 uppercase tracking-widest">Marketing creates demand.</p>
+                </div>
+                <div className="flex items-center gap-4">
+                  <span className="text-[10px] font-mono text-primary">02</span>
+                  <p className="text-xs font-bold text-neutral-500 uppercase tracking-widest">The store has to perform.</p>
+                </div>
+              </div>
               
-              <h3 className="font-heading font-bold text-2xl tracking-tight text-foreground uppercase mb-4">
+              <h3 className="font-heading font-bold text-3xl tracking-tighter text-foreground uppercase mb-4">
                 1-GLOBE
               </h3>
-              <p className="text-base text-neutral-400 leading-relaxed max-w-lg">
-                Business first. Technology second. Performance always. We believe in building tools that solve actual technical challenges for online merchants, without sacrificing quality or control.
+              <p className="text-lg text-neutral-400 leading-relaxed max-w-lg">
+                Business first. Technology second. Performance always. We build infrastructure that solves actual technical bottlenecks for online merchants—without sacrificing quality, aesthetics, or control.
               </p>
             </div>
           </div>

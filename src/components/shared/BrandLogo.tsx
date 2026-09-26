@@ -8,15 +8,15 @@ export interface BrandLockupProps {
 export const BrandLockup: React.FC<BrandLockupProps> = ({
   className = '',
 }) => (
-  <div className={`flex items-center gap-3 shrink-0 ${className}`}>
+  <div className={`flex items-center gap-2.5 shrink-0 ${className}`}>
     <Image 
       src="/logo.svg" 
       alt="1-GLOBE Logo" 
-      width={36} 
-      height={36} 
-      className="h-8 w-8 sm:h-9 sm:w-9"
+      width={24} 
+      height={24} 
+      className="h-6 w-6"
     />
-    <span className="font-heading font-bold text-xl sm:text-2xl tracking-tighter text-foreground uppercase">
+    <span className="font-heading font-bold text-lg sm:text-xl tracking-tighter text-foreground uppercase pt-0.5">
       1-GLOBE
     </span>
   </div>

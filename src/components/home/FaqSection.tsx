@@ -1,6 +1,6 @@
 import React from 'react'
 import * as Accordion from '@radix-ui/react-accordion'
-import { ChevronDown } from 'lucide-react'
+import { ChevronDown, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 
 export const FaqSection: React.FC = () => {
@@ -62,12 +62,14 @@ export const FaqSection: React.FC = () => {
       a: (
         <>
           Start with the foundation. If image performance and catalog management are your priority, explore 1-OPTIMISER and read our resources on ecommerce image optimization.
-          <div className="mt-8 flex flex-col gap-4">
-            <Link href="/apps/1-optimiser" className="inline-flex items-center text-[10px] font-bold uppercase tracking-[0.15em] text-foreground border border-neutral-800 bg-neutral-900/50 px-4 py-2 hover:bg-neutral-800 transition-colors w-max">
-              Explore 1-OPTIMISER →
+          <div className="mt-10 flex flex-col gap-6">
+            <Link href="/apps/1-optimiser" className="inline-flex items-center justify-between px-6 py-4 border border-neutral-700 hover:border-neutral-500 hover:text-white transition-colors text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-300 w-full sm:w-80">
+              <span>EXPLORE 1-OPTIMISER</span>
+              <ArrowRight className="w-4 h-4" />
             </Link>
-            <Link href="/resources/ecommerce-image-optimization" className="inline-flex items-center text-[10px] font-bold uppercase tracking-[0.15em] text-neutral-500 hover:text-foreground transition-colors w-max">
-              Read: Ecommerce Image Optimization →
+            <Link href="/resources/ecommerce-image-optimization" className="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500 hover:text-foreground transition-colors group">
+              <span>Read: Ecommerce Image Optimization</span>
+              <ArrowRight className="w-3 h-3 transition-transform group-hover:translate-x-1" />
             </Link>
           </div>
         </>
@@ -76,40 +78,44 @@ export const FaqSection: React.FC = () => {
   ]
 
   return (
-    <section id="faq" className="bg-background py-24 md:py-32 lg:py-40">
+    <section id="faq" className="bg-background py-32 md:py-48">
       <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-start">
           
           <div className="lg:col-span-5 sticky top-32">
-            <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500 block mb-8">
-              COMMON QUESTIONS
-            </span>
-            <h2 className="font-heading font-bold text-5xl sm:text-6xl lg:text-7xl tracking-tighter leading-[0.95] text-foreground uppercase">
+            <div className="flex items-center gap-4 mb-8">
+              <div className="w-8 h-[1px] bg-neutral-700" />
+              <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-neutral-500">
+                COMMON QUESTIONS
+              </span>
+            </div>
+            
+            <h2 className="font-heading font-bold text-5xl sm:text-6xl md:text-7xl tracking-tighter leading-[0.9] text-foreground uppercase">
               QUESTIONS<br />
               WORTH<br />
               ANSWERING.
             </h2>
           </div>
 
-          <div className="lg:col-span-7 pt-4">
+          <div className="lg:col-span-7 pt-4 border-t border-neutral-900">
             <Accordion.Root type="single" collapsible className="w-full">
               {faqs.map((faq, i) => (
                 <Accordion.Item
                   key={i}
                   value={`item-${i}`}
-                  className="border-b border-neutral-800/60 last:border-0"
+                  className="border-b border-neutral-900 last:border-0"
                 >
                   <Accordion.Header className="flex">
-                    <Accordion.Trigger className="group flex flex-1 items-center justify-between py-8 text-left font-heading font-bold text-xl sm:text-2xl text-neutral-300 hover:text-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-sm">
+                    <Accordion.Trigger className="group flex flex-1 items-center justify-between py-10 text-left font-heading font-bold text-2xl sm:text-3xl text-neutral-400 hover:text-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary">
                       {faq.q}
                       <ChevronDown
-                        className="w-5 h-5 text-neutral-600 transition-transform duration-300 ease-in-out group-data-[state=open]:rotate-180 group-data-[state=open]:text-foreground shrink-0 ml-4"
+                        className="w-6 h-6 text-neutral-600 transition-transform duration-300 ease-in-out group-data-[state=open]:rotate-180 group-data-[state=open]:text-foreground shrink-0 ml-4"
                         aria-hidden
                       />
                     </Accordion.Trigger>
                   </Accordion.Header>
-                  <Accordion.Content className="overflow-hidden text-base sm:text-lg text-neutral-500 leading-relaxed data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down">
-                    <div className="pb-10 pr-8 font-medium">
+                  <Accordion.Content className="overflow-hidden text-lg text-neutral-500 leading-relaxed data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down">
+                    <div className="pb-12 pr-8 font-medium">
                       {faq.a}
                     </div>
                   </Accordion.Content>
