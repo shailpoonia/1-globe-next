@@ -55,6 +55,7 @@ export const Footer: React.FC = () => {
             <p className="text-xs text-neutral-500 leading-relaxed">
               Ajman Free Zone C1 Building<br />
               Office C1 - 1F - SF3669, Ajman, UAE<br />
+              Commercial Registration No.: 37795<br />
               TRN: 104933863300003
             </p>
           </div>
