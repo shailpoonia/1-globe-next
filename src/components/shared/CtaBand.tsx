@@ -47,7 +47,7 @@ export const CtaBand: React.FC<CtaBandProps> = ({
           
           <div className="max-w-xl">
             {eyebrow && (
-              <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500 block mb-6">
+              <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-400 block mb-6">
                 {eyebrow}
               </span>
             )}
@@ -57,7 +57,7 @@ export const CtaBand: React.FC<CtaBandProps> = ({
                 headline
               ) : (
                 <>
-                  {headlinePart1}<br />
+                  {headlinePart1}{' '}<br />
                   {italicWord && (
                     <>
                       {' '}
@@ -83,7 +83,7 @@ export const CtaBand: React.FC<CtaBandProps> = ({
                 <ArrowUpRight className="w-4 h-4" />
               </Link>
             ) : primaryCtaUrl === '#' ? (
-              <div className={`${primaryButtonClass} opacity-70 cursor-default bg-neutral-900 text-neutral-500 border border-neutral-800 hover:bg-neutral-900`}>
+              <div className={`${primaryButtonClass} opacity-70 cursor-default bg-neutral-900 text-neutral-400 border border-neutral-800 hover:bg-neutral-900`}>
                 <span>{primaryCtaText}</span>
               </div>
             ) : (

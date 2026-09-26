@@ -4,6 +4,7 @@ import './globals.css';
 import { Header } from '@/components/shared/Header';
 import { Footer } from '@/components/shared/Footer';
 import { Analytics } from '@vercel/analytics/react';
+import { OrganizationSchema, WebSiteSchema } from '@/components/shared/SchemaOrg';
 
 const spaceGrotesk = Space_Grotesk({ 
   subsets: ['latin'], 
@@ -17,7 +18,7 @@ const inter = Inter({
   variable: '--font-sans',
 });
 
-import { siteConfig } from '@/lib/seo';
+import { siteConfig, shareImage } from '@/lib/seo';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -26,9 +27,6 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
-  icons: {
-    icon: '/favicon.jpeg', // Adjusted to match public folder
-  },
   openGraph: {
     title: {
       default: siteConfig.title,
@@ -39,14 +37,7 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     locale: 'en_US',
     type: 'website',
-    images: [
-      {
-        url: siteConfig.ogImage,
-        width: 1200,
-        height: 630,
-        alt: siteConfig.title,
-      },
-    ],
+    images: [shareImage],
   },
   twitter: {
     card: 'summary_large_image',
@@ -55,7 +46,7 @@ export const metadata: Metadata = {
       template: `%s | ${siteConfig.name}`,
     },
     description: siteConfig.description,
-    images: [siteConfig.ogImage],
+    images: [shareImage.url],
   },
 };
 
@@ -67,6 +58,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={`${spaceGrotesk.variable} ${inter.variable} min-h-screen bg-background font-sans text-foreground antialiased flex flex-col`}>
+        <OrganizationSchema />
+        <WebSiteSchema />
         <Header />
         <div className="flex-1 flex flex-col">{children}</div>
         <Footer />

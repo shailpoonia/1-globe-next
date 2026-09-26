@@ -66,7 +66,7 @@ export const FaqSection: React.FC = () => {
             <Link href="/apps/1-optimiser" className="inline-flex items-center text-[10px] font-bold uppercase tracking-[0.15em] text-foreground border border-neutral-800 bg-neutral-900/50 px-4 py-2 hover:bg-neutral-800 transition-colors w-max">
               Explore 1-OPTIMISER →
             </Link>
-            <Link href="/resources/ecommerce-image-optimization" className="inline-flex items-center text-[10px] font-bold uppercase tracking-[0.15em] text-neutral-500 hover:text-foreground transition-colors w-max">
+            <Link href="/resources/ecommerce-image-optimization" className="inline-flex items-center text-[10px] font-bold uppercase tracking-[0.15em] text-neutral-400 hover:text-foreground transition-colors w-max">
               Read: Ecommerce Image Optimization →
             </Link>
           </div>
@@ -81,12 +81,12 @@ export const FaqSection: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           
           <div className="lg:col-span-5 lg:sticky lg:top-32">
-            <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500 block mb-6">
+            <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-400 block mb-6">
               COMMON QUESTIONS
             </span>
             <h2 className="font-heading font-bold text-4xl sm:text-5xl lg:text-6xl tracking-tighter leading-[0.95] text-foreground uppercase">
-              QUESTIONS<br />
-              WORTH<br />
+              QUESTIONS{' '}<br />
+              WORTH{' '}<br />
               ANSWERING.
             </h2>
           </div>
@@ -108,7 +108,7 @@ export const FaqSection: React.FC = () => {
                       />
                     </Accordion.Trigger>
                   </Accordion.Header>
-                  <Accordion.Content className="overflow-hidden text-sm sm:text-base text-neutral-500 leading-relaxed data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down">
+                  <Accordion.Content forceMount className="overflow-hidden text-sm sm:text-base text-neutral-400 leading-relaxed data-[state=closed]:hidden">
                     <div className="pb-8 pr-8 font-medium">
                       {faq.a}
                     </div>

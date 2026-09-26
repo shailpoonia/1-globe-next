@@ -1,0 +1,29 @@
+# 1-GLOBE
+
+> 1-GLOBE is an ecommerce performance technology company building tools for online merchants. Its products focus on storefront image performance, content performance, and product listing performance. The first product, 1-OPTIMISER, is an image performance tool for Shopify stores (coming soon to the Shopify App Store).
+
+1-GLOBE is operated by ONE GLOBE (F.Z.E), Ajman Free Zone, United Arab Emirates. Contact: support@1-globe.com
+
+## Product
+
+- [1-OPTIMISER](https://1-globe.com/apps/1-optimiser): Shopify image optimizer for compression, resizing, WebP conversion, AI-assisted alt text and filenames (for merchant review), image editing and a storefront performance theme extension.
+- [1-OPTIMISER pricing](https://1-globe.com/pricing): 100 free image optimizations per store, then one-time image credits that never expire ($0.018–$0.02 per image), billed through Shopify.
+
+## Guides
+
+- [Ecommerce Performance: A Practical Guide for Online Stores](https://1-globe.com/resources/ecommerce-performance): How storefront performance, image payloads and structured content affect usability and discovery.
+- [Ecommerce Image Optimization: A Practical Guide](https://1-globe.com/resources/ecommerce-image-optimization): How product images affect storefront performance, usability, accessibility and discoverability.
+- [Shopify Image Optimization: A Practical Guide](https://1-globe.com/resources/shopify-image-optimization): Preparing product and storefront images for Shopify, balancing visual quality with file size.
+- [Product Image Alt Text: A Practical Guide for Ecommerce](https://1-globe.com/resources/product-image-alt-text): Writing useful product image alt text for accessibility and search without keyword stuffing.
+- [Bulk Image Optimization: A Practical Guide for Ecommerce](https://1-globe.com/resources/bulk-image-optimization): Optimizing catalog images in bulk: compression, resizing, formats, metadata, Shopify workflows and quality checks.
+- [Ecommerce Image Compression & WebP: A Practical Guide](https://1-globe.com/resources/ecommerce-image-compression-webp): How compression and WebP affect file size, visual quality and storefront performance.
+- [Page Payload & Critical Resources: A Practical Guide for Ecommerce](https://1-globe.com/resources/page-payload-critical-resources): How page payload works and which images, CSS and JavaScript are critical to rendering.
+- [Product Content Structure: A Practical Guide for Ecommerce](https://1-globe.com/resources/product-content-structure): Structuring titles, descriptions, attributes, specifications and FAQs for customers and search.
+- [Product Listing & Generative Discovery: A Practical Guide for Ecommerce](https://1-globe.com/resources/product-listing-generative-discovery): Structuring product listings for search, answer engines and generative discovery.
+
+## Company
+
+- [About 1-GLOBE](https://1-globe.com/about)
+- [Contact](https://1-globe.com/contact)
+- [Privacy Policy](https://1-globe.com/privacy)
+- [Terms of Service](https://1-globe.com/terms)

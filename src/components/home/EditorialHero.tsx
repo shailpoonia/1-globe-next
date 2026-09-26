@@ -14,10 +14,12 @@ export const EditorialHero: React.FC = () => {
       <div className="absolute inset-0 w-full h-full overflow-hidden bg-black">
         <Image
           src="/hero-poster.jpg"
-          alt="1-globe.com background"
+          alt=""
           fill
+          sizes="100vw"
           className="object-cover object-[80%_center] opacity-60"
-          priority
+          loading="eager"
+          fetchPriority="high"
         />
         
         <div className="opacity-70 mix-blend-lighten absolute inset-0">
@@ -41,8 +43,8 @@ export const EditorialHero: React.FC = () => {
           </div>
           
           <h1 className="font-heading font-bold text-6xl sm:text-7xl md:text-8xl lg:text-[6.25rem] tracking-tighter leading-[0.9] uppercase text-white relative z-10">
-            MAKE<br />
-            ECOMMERCE<br />
+            MAKE{' '}<br />
+            ECOMMERCE{' '}<br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-neutral-500">PERFORM.</span>
           </h1>
 
@@ -50,7 +52,7 @@ export const EditorialHero: React.FC = () => {
             <p className="text-lg sm:text-xl lg:text-2xl text-neutral-300 font-medium leading-tight">
               1-GLOBE builds technical tools that make online stores faster, smarter, and easier to grow.
             </p>
-            <p className="text-xs font-bold text-neutral-500 uppercase tracking-widest border-l-2 border-primary pl-4 py-1">
+            <p className="text-xs font-bold text-neutral-400 uppercase tracking-widest border-l-2 border-primary pl-4 py-1">
               Business first. Technology second. Performance always.
             </p>
           </div>

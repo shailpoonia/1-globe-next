@@ -9,14 +9,21 @@ export function OrganizationSchema() {
     '@id': ENTITY_ORGANIZATION['@id'],
     name: ENTITY_ORGANIZATION.name,
     url: ENTITY_ORGANIZATION.website,
-    logo: `${siteConfig.url}/logo.jpeg`,
+    logo: `${siteConfig.url}/logo-square.png`,
+    email: 'support@1-globe.com',
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'customer support',
+      email: 'support@1-globe.com',
+      availableLanguage: ['English'],
+    },
     legalName: 'ONE GLOBE (F.Z.E)',
     description: ENTITY_ORGANIZATION.description,
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Ajman Free Zone C1 Building, Office C1 - 1F - SF3669',
       addressLocality: 'Ajman',
-      addressCountry: 'UAE'
+      addressCountry: 'AE'
     },
     taxID: '104933863300003'
   };

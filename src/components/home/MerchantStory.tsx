@@ -64,7 +64,7 @@ export const MerchantStory: React.FC = () => {
               MERCHANT STORY
             </span>
             <h2 className="font-heading font-bold text-4xl sm:text-5xl md:text-6xl tracking-tighter leading-[0.95] text-background uppercase mb-6">
-              BUILT FOR<br />THE MERCHANTS<br />IN THE TRENCHES.
+              BUILT FOR{' '}<br />THE MERCHANTS{' '}<br />IN THE TRENCHES.
             </h2>
             <div className="space-y-4 text-base md:text-lg text-neutral-600 font-medium leading-relaxed mb-10">
               <p>
@@ -216,12 +216,18 @@ export const MerchantStory: React.FC = () => {
                   {slides.map((slide) => (
                     <button 
                       key={slide} 
+                      type="button"
                       onClick={() => scrollTo(slide)}
-                      className={`h-1 rounded-full transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary ${slide === currentSlide ? 'w-8 bg-primary' : 'w-4 bg-neutral-700 hover:bg-neutral-500'}`}
+                      className="group flex items-center h-6 min-w-6 px-1 rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
                       role="tab"
                       aria-selected={slide === currentSlide}
                       aria-label={`Go to slide ${slide + 1}`}
-                    />
+                    >
+                      <span
+                        aria-hidden="true"
+                        className={`block h-1 rounded-full transition-all duration-300 ${slide === currentSlide ? 'w-8 bg-primary' : 'w-4 bg-neutral-700 group-hover:bg-neutral-500'}`}
+                      />
+                    </button>
                   ))}
                 </div>
                 

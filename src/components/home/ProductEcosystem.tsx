@@ -32,12 +32,12 @@ export const ProductEcosystem: React.FC = () => {
         
         {/* Header */}
         <div className="mb-16 max-w-4xl">
-          <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500 block mb-6">
+          <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-400 block mb-6">
             THE 1-GLOBE ECOSYSTEM
           </span>
           <h2 className="font-heading font-bold text-4xl sm:text-5xl md:text-6xl tracking-tighter leading-[0.95] text-foreground uppercase">
-            EVERY LAYER<br />
-            OF THE STORE<br />
+            EVERY LAYER{' '}<br />
+            OF THE STORE{' '}<br />
             MATTERS.
           </h2>
         </div>
@@ -57,10 +57,10 @@ export const ProductEcosystem: React.FC = () => {
                 
                 <div className="flex-1 max-w-2xl">
                   <div className="flex items-center gap-3 mb-4">
-                    <span className={`font-mono text-xs ${isHighlighted ? 'text-primary' : 'text-neutral-500'}`}>{product.number}</span>
+                    <span className={`font-mono text-xs ${isHighlighted ? 'text-primary' : 'text-neutral-400'}`}>{product.number}</span>
                     <div className="w-1 h-1 rounded-full bg-neutral-700" />
-                    <Icon className={`w-4 h-4 ${isHighlighted ? 'text-primary' : 'text-neutral-500'}`} />
-                    <span className={`text-[10px] font-bold uppercase tracking-[0.2em] ${isHighlighted ? 'text-primary' : 'text-neutral-500'}`}>
+                    <Icon className={`w-4 h-4 ${isHighlighted ? 'text-primary' : 'text-neutral-400'}`} />
+                    <span className={`text-[10px] font-bold uppercase tracking-[0.2em] ${isHighlighted ? 'text-primary' : 'text-neutral-400'}`}>
                       LAYER {product.number} — {product.layerName}
                     </span>
                   </div>
@@ -71,7 +71,7 @@ export const ProductEcosystem: React.FC = () => {
                   <p className={`text-xs font-bold uppercase tracking-widest mb-4 ${isHighlighted ? 'text-neutral-300' : 'text-neutral-600'}`}>
                     {product.category}
                   </p>
-                  <p className={`text-sm md:text-base font-medium leading-relaxed ${isHighlighted ? 'text-neutral-400' : 'text-neutral-500'}`}>
+                  <p className={`text-sm md:text-base font-medium leading-relaxed ${isHighlighted ? 'text-neutral-300' : 'text-neutral-400'}`}>
                     {product.description}
                   </p>
                 </div>
@@ -79,7 +79,7 @@ export const ProductEcosystem: React.FC = () => {
                 {/* Technical visualization / CTA area */}
                 <div className="w-full md:w-64 shrink-0 flex flex-col gap-5 pt-2">
                   <div className={`px-4 py-3 border ${isHighlighted ? 'border-primary/20 bg-primary/5' : 'border-neutral-800 bg-neutral-900/30'} rounded-sm`}>
-                    <span className="text-[9px] font-bold uppercase tracking-widest text-neutral-500 block mb-1.5">
+                    <span className="text-[9px] font-bold uppercase tracking-widest text-neutral-400 block mb-1.5">
                       {isHighlighted ? 'Example Optimization' : 'Focus'}
                     </span>
                     <span className={`font-mono text-xs ${isHighlighted ? 'text-primary' : 'text-neutral-400'}`}>
@@ -96,7 +96,7 @@ export const ProductEcosystem: React.FC = () => {
                     {product.href && (
                       <Link
                         href={product.href}
-                        className={`interactive-btn inline-flex items-center justify-between h-10 px-4 border ${isHighlighted ? 'border-neutral-600 hover:bg-white/5 text-foreground' : 'border-neutral-800 text-neutral-500 pointer-events-none'} bg-transparent text-[10px] font-bold uppercase tracking-widest transition-colors w-full rounded-sm`}
+                        className={`interactive-btn inline-flex items-center justify-between h-10 px-4 border ${isHighlighted ? 'border-neutral-600 hover:bg-white/5 text-foreground' : 'border-neutral-800 text-neutral-400 pointer-events-none'} bg-transparent text-[10px] font-bold uppercase tracking-widest transition-colors w-full rounded-sm`}
                       >
                         <span>{product.ctaLabel || 'EXPLORE'}</span>
                         <ArrowRight className="w-4 h-4" />

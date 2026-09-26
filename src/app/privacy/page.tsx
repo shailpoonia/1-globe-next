@@ -1,13 +1,12 @@
 import React from 'react'
 import { Metadata } from 'next'
+import { buildMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: 'Privacy Policy',
   description: 'Privacy Policy for 1-globe.com and our Shopify applications. Fully compliant with Shopify App Store standards, GDPR, and CCPA.',
-  alternates: {
-    canonical: '/privacy',
-  },
-}
+  path: '/privacy',
+})
 
 export default function PrivacyPage() {
   return (

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Metadata } from 'next'
+import { buildMetadata } from '@/lib/seo'
 import { CtaBand } from '@/components/shared/CtaBand'
 import { EditorialHero } from '@/components/home/EditorialHero'
 import { BrandStatement } from '@/components/home/BrandStatement'
@@ -14,23 +15,17 @@ import { FaqSection } from '@/components/home/FaqSection'
 
 
 
-import { OrganizationSchema, WebSiteSchema } from '@/components/shared/SchemaOrg'
 
-export const metadata: Metadata = {
-  title: {
-    absolute: 'Ecommerce Performance Technology'
-  },
+export const metadata: Metadata = buildMetadata({
+  title: '1-GLOBE — Ecommerce Performance Technology for Shopify Stores',
   description: '1-GLOBE builds ecommerce performance technology. Our products help online merchants improve image payloads, content structure, and storefront performance.',
-  alternates: {
-    canonical: '/',
-  },
-}
+  path: '/',
+  absoluteTitle: true,
+})
 
 export default function HomePage() {
   return (
     <main className="flex flex-col bg-background text-foreground selection:bg-primary/20 selection:text-primary pt-24">
-      <OrganizationSchema />
-      <WebSiteSchema />
       {/* 01: Hero */}
       <EditorialHero />
 

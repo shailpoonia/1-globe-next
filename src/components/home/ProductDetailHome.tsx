@@ -34,14 +34,14 @@ export const ProductDetailHome: React.FC = () => {
           <div className="lg:col-span-6 flex flex-col order-1 lg:order-2">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-6 h-[1px] bg-neutral-700" />
-              <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-neutral-500">
+              <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-neutral-400">
                 1-OPTIMISER
               </span>
             </div>
             
             <h2 className="font-heading font-bold text-3xl sm:text-4xl md:text-5xl tracking-tighter leading-[0.9] text-foreground uppercase mb-6">
-              START WITH<br />
-              THE PRODUCT<br />
+              START WITH{' '}<br />
+              THE PRODUCT{' '}<br />
               IMAGE.
             </h2>
             
@@ -49,7 +49,7 @@ export const ProductDetailHome: React.FC = () => {
               <p>
                 The product image is one of the first technical payloads a customer experiences.
               </p>
-              <p className="text-neutral-500">
+              <p className="text-neutral-400">
                 1-OPTIMISER helps merchants improve the technical quality of those images without turning management into another manual task.
               </p>
             </div>
@@ -59,9 +59,9 @@ export const ProductDetailHome: React.FC = () => {
               <div className="relative">
                 <div className="absolute -left-[29px] top-1.5 w-2 h-2 bg-neutral-700 outline outline-4 outline-background" />
                 <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-foreground flex items-center gap-3 mb-1">
-                  <ImageIcon className="w-3.5 h-3.5 text-neutral-500" /> Product Image
+                  <ImageIcon className="w-3.5 h-3.5 text-neutral-400" /> Product Image
                 </h4>
-                <p className="text-sm text-neutral-500 leading-relaxed">The raw asset delivered to the storefront.</p>
+                <p className="text-sm text-neutral-400 leading-relaxed">The raw asset delivered to the storefront.</p>
               </div>
 
               <div className="relative">
@@ -69,23 +69,23 @@ export const ProductDetailHome: React.FC = () => {
                 <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-foreground flex items-center gap-3 mb-1">
                   <Zap className="w-3.5 h-3.5 text-primary" /> Optimization
                 </h4>
-                <p className="text-sm text-neutral-500 leading-relaxed">Compression, resizing, and WebP format conversion.</p>
+                <p className="text-sm text-neutral-400 leading-relaxed">Compression, resizing, and WebP format conversion.</p>
               </div>
 
               <div className="relative">
                 <div className="absolute -left-[29px] top-1.5 w-2 h-2 bg-neutral-700 outline outline-4 outline-background" />
                 <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-foreground flex items-center gap-3 mb-1">
-                  <FileText className="w-3.5 h-3.5 text-neutral-500" /> AI Metadata
+                  <FileText className="w-3.5 h-3.5 text-neutral-400" /> AI Metadata
                 </h4>
-                <p className="text-sm text-neutral-500 leading-relaxed">Descriptive alt text and filename structuring for context.</p>
+                <p className="text-sm text-neutral-400 leading-relaxed">Descriptive alt text and filename structuring for context.</p>
               </div>
 
               <div className="relative">
                 <div className="absolute -left-[29px] top-1.5 w-2 h-2 bg-neutral-700 outline outline-4 outline-background" />
                 <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-foreground flex items-center gap-3 mb-1">
-                  <LayoutTemplate className="w-3.5 h-3.5 text-neutral-500" /> Storefront Performance
+                  <LayoutTemplate className="w-3.5 h-3.5 text-neutral-400" /> Storefront Performance
                 </h4>
-                <p className="text-sm text-neutral-500 leading-relaxed">Serving appropriate assets to the end user.</p>
+                <p className="text-sm text-neutral-400 leading-relaxed">Serving appropriate assets to the end user.</p>
               </div>
             </div>
 
@@ -99,7 +99,7 @@ export const ProductDetailHome: React.FC = () => {
               </Link>
               <Link 
                 href="/resources/ecommerce-image-optimization" 
-                className="group flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500 hover:text-white transition-colors"
+                className="group flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-400 hover:text-white transition-colors"
               >
                 <span>Read Optimization Guide</span>
                 <ArrowRight className="w-3 h-3 transition-transform group-hover:translate-x-1" />

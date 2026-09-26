@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { Metadata } from 'next'
+import { buildMetadata } from '@/lib/seo'
 import { CtaBand } from '@/components/shared/CtaBand'
 import { AppSubNav } from '@/components/feature-page/AppSubNav'
 import { AppHero } from '@/components/feature-page/AppHero'
@@ -13,13 +14,11 @@ import { AppFaqSection } from '@/components/feature-page/AppFaqSection'
 import { ENTITY_PRODUCTS } from '@/lib/entities'
 import { SoftwareAppSchema, AppBreadcrumbSchema } from '@/components/shared/AppSchemaOrg'
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: '1-OPTIMISER | Shopify Image Optimizer',
   description: ENTITY_PRODUCTS['1-optimiser'].description,
-  alternates: {
-    canonical: '/apps/1-optimiser',
-  },
-}
+  path: '/apps/1-optimiser',
+})
 
 export default function ImageOptimizerPage() {
   const product = ENTITY_PRODUCTS['1-optimiser'];
