@@ -62,11 +62,11 @@ export const FaqSection: React.FC = () => {
       a: (
         <>
           Start with the foundation. If image performance and catalog management are your priority, explore 1-OPTIMISER and read our resources on ecommerce image optimization.
-          <div className="mt-6 flex flex-col gap-3">
-            <Link href="/apps/1-optimiser" className="inline-flex items-center text-sm font-bold uppercase tracking-widest text-primary hover:text-foreground transition-colors">
+          <div className="mt-8 flex flex-col gap-4">
+            <Link href="/apps/1-optimiser" className="inline-flex items-center text-[10px] font-bold uppercase tracking-[0.15em] text-foreground border border-neutral-800 bg-neutral-900/50 px-4 py-2 hover:bg-neutral-800 transition-colors w-max">
               Explore 1-OPTIMISER →
             </Link>
-            <Link href="/resources/ecommerce-image-optimization" className="inline-flex items-center text-sm font-medium text-neutral-500 hover:text-foreground transition-colors">
+            <Link href="/resources/ecommerce-image-optimization" className="inline-flex items-center text-[10px] font-bold uppercase tracking-[0.15em] text-neutral-500 hover:text-foreground transition-colors w-max">
               Read: Ecommerce Image Optimization →
             </Link>
           </div>
@@ -76,40 +76,40 @@ export const FaqSection: React.FC = () => {
   ]
 
   return (
-    <section id="faq" className="bg-background py-24 md:py-32 lg:py-40 border-b border-border">
+    <section id="faq" className="bg-background py-24 md:py-32 lg:py-40">
       <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-start">
           
           <div className="lg:col-span-5 sticky top-32">
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground block mb-6">
+            <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500 block mb-8">
               COMMON QUESTIONS
             </span>
-            <h2 className="font-heading font-bold text-5xl sm:text-6xl tracking-tighter leading-[0.95] text-foreground uppercase">
+            <h2 className="font-heading font-bold text-5xl sm:text-6xl lg:text-7xl tracking-tighter leading-[0.95] text-foreground uppercase">
               QUESTIONS<br />
               WORTH<br />
               ANSWERING.
             </h2>
           </div>
 
-          <div className="lg:col-span-7">
+          <div className="lg:col-span-7 pt-4">
             <Accordion.Root type="single" collapsible className="w-full">
               {faqs.map((faq, i) => (
                 <Accordion.Item
                   key={i}
                   value={`item-${i}`}
-                  className="border-b border-border last:border-0"
+                  className="border-b border-neutral-800/60 last:border-0"
                 >
                   <Accordion.Header className="flex">
-                    <Accordion.Trigger className="group flex flex-1 items-center justify-between py-6 text-left font-heading font-bold text-lg sm:text-xl text-foreground hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded">
+                    <Accordion.Trigger className="group flex flex-1 items-center justify-between py-8 text-left font-heading font-bold text-xl sm:text-2xl text-neutral-300 hover:text-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-sm">
                       {faq.q}
                       <ChevronDown
-                        className="w-5 h-5 text-muted-foreground transition-transform duration-300 ease-in-out group-data-[state=open]:rotate-180 shrink-0 ml-4"
+                        className="w-5 h-5 text-neutral-600 transition-transform duration-300 ease-in-out group-data-[state=open]:rotate-180 group-data-[state=open]:text-foreground shrink-0 ml-4"
                         aria-hidden
                       />
                     </Accordion.Trigger>
                   </Accordion.Header>
-                  <Accordion.Content className="overflow-hidden text-sm sm:text-base text-neutral-400 leading-relaxed data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down">
-                    <div className="pb-8 pr-8 font-medium">
+                  <Accordion.Content className="overflow-hidden text-base sm:text-lg text-neutral-500 leading-relaxed data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down">
+                    <div className="pb-10 pr-8 font-medium">
                       {faq.a}
                     </div>
                   </Accordion.Content>

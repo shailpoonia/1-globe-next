@@ -3,115 +3,75 @@ import Link from 'next/link'
 import { BrandLockup } from './BrandLogo'
 
 export const Footer: React.FC = () => {
+  const currentYear = new Date().getFullYear()
+
   return (
-    <footer className="w-full bg-card border-t border-border overflow-hidden">
-      <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12 pt-20 pb-12">
+    <footer className="bg-background border-t border-neutral-900 pt-24 pb-12">
+      <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
         
-        {/* Main Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-12 lg:gap-8 mb-16">
-          
-          {/* Brand Info */}
-          <div className="lg:col-span-2 space-y-6">
-            <Link href="/" className="inline-block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary">
-              <BrandLockup iconSizeClass="w-8 h-8" textSizeClass="text-xl" />
+        {/* Top Section - Brand Statement */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24">
+          <div>
+            <Link href="/" className="inline-block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary mb-8">
+              <BrandLockup />
             </Link>
-            <p className="text-sm font-medium text-muted-foreground leading-relaxed max-w-xs">
-              Performance technology for ecommerce.
+            <h2 className="font-heading font-bold text-3xl sm:text-4xl tracking-tighter text-foreground uppercase leading-tight mb-6">
+              MAKE ECOMMERCE<br />
+              <span className="text-neutral-500">PERFORM.</span>
+            </h2>
+            <p className="text-sm font-bold uppercase tracking-widest text-neutral-600">
+              ECOMMERCE PERFORMANCE TECHNOLOGY
             </p>
           </div>
+          
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-10 lg:justify-end">
+            <div className="flex flex-col gap-4">
+              <span className="text-[10px] font-bold uppercase tracking-widest text-neutral-600 mb-2">Products</span>
+              <Link href="/apps/1-optimiser" className="text-xs font-bold uppercase tracking-widest text-neutral-400 hover:text-foreground transition-colors">1-OPTIMISER</Link>
+              <span className="text-xs font-bold uppercase tracking-widest text-neutral-700 cursor-default">1-BLOG</span>
+              <span className="text-xs font-bold uppercase tracking-widest text-neutral-700 cursor-default">1-LIST</span>
+            </div>
+            
+            <div className="flex flex-col gap-4">
+              <span className="text-[10px] font-bold uppercase tracking-widest text-neutral-600 mb-2">Company</span>
+              <Link href="/about" className="text-xs font-bold uppercase tracking-widest text-neutral-400 hover:text-foreground transition-colors">About</Link>
+              <Link href="/pricing" className="text-xs font-bold uppercase tracking-widest text-neutral-400 hover:text-foreground transition-colors">Pricing</Link>
+              <Link href="/contact" className="text-xs font-bold uppercase tracking-widest text-neutral-400 hover:text-foreground transition-colors">Contact</Link>
+            </div>
 
-          {/* Column: Products */}
-          <div className="space-y-4">
-            <h4 className="text-xs font-semibold text-foreground uppercase tracking-wider">Products</h4>
-            <ul className="space-y-3">
-              <li>
-                <Link href="/apps/1-optimiser" className="text-sm interactive-link text-muted-foreground font-medium">
-                  1-OPTIMISER
-                </Link>
-              </li>
-              <li>
-                <span className="text-sm text-muted-foreground/50 font-medium flex items-center">
-                  1-BLOG <span className="text-[10px] ml-1.5 uppercase tracking-wider bg-secondary px-1.5 py-0.5 leading-none">Soon</span>
-                </span>
-              </li>
-              <li>
-                <span className="text-sm text-muted-foreground/50 font-medium flex items-center">
-                  1-LIST <span className="text-[10px] ml-1.5 uppercase tracking-wider bg-secondary px-1.5 py-0.5 leading-none">Soon</span>
-                </span>
-              </li>
-            </ul>
+            <div className="flex flex-col gap-4">
+              <span className="text-[10px] font-bold uppercase tracking-widest text-neutral-600 mb-2">Knowledge</span>
+              <Link href="/resources" className="text-xs font-bold uppercase tracking-widest text-neutral-400 hover:text-foreground transition-colors">Resources</Link>
+            </div>
           </div>
-
-          {/* Column: Company */}
-          <div className="space-y-4">
-            <h4 className="text-xs font-semibold text-foreground uppercase tracking-wider">Company</h4>
-            <ul className="space-y-3">
-              <li>
-                <Link href="/about" className="text-sm interactive-link text-muted-foreground font-medium">
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link href="/pricing" className="text-sm interactive-link text-muted-foreground font-medium">
-                  Pricing
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Column: Resources */}
-          <div className="space-y-4">
-            <h4 className="text-xs font-semibold text-foreground uppercase tracking-wider">Resources</h4>
-            <ul className="space-y-3">
-              <li>
-                <Link href="/resources" className="text-sm interactive-link text-muted-foreground font-medium">
-                  Guides
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="text-sm interactive-link text-muted-foreground font-medium">
-                  Help
-                </Link>
-              </li>
-              <li>
-                <Link href="/#ecosystem" className="text-sm interactive-link text-muted-foreground font-medium">
-                  Ecosystem
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Column: Legal */}
-          <div className="space-y-4">
-            <h4 className="text-xs font-semibold text-foreground uppercase tracking-wider">Legal</h4>
-            <ul className="space-y-3">
-              <li>
-                <Link href="/privacy" className="text-sm interactive-link text-muted-foreground font-medium">
-                  Privacy
-                </Link>
-              </li>
-              <li>
-                <Link href="/terms" className="text-sm interactive-link text-muted-foreground font-medium">
-                  Terms
-                </Link>
-              </li>
-            </ul>
-          </div>
-
         </div>
 
-        {/* Bottom Bar with Legal Text */}
-        <div className="flex flex-col md:flex-row justify-between gap-8 pt-8 border-t border-border">
-          <div className="text-xs font-medium text-muted-foreground space-y-2">
-            <p className="text-foreground font-semibold mb-3">1-globe.com is operated by ONE GLOBE (F.Z.E)</p>
-            <p>Ajman Free Zone C1 Building, Office C1 - 1F - SF3669, Ajman, UAE</p>
-            <p>Commercial Registration No.: 37795</p>
-            <p>VAT TRN: 104933863300003</p>
+        {/* Bottom Section - Legal & Info */}
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-10 pt-12 border-t border-neutral-900">
+          <div className="flex flex-col gap-2 max-w-sm">
+            <p className="text-[10px] font-bold uppercase tracking-widest text-neutral-600">
+              ONE GLOBE (F.Z.E)
+            </p>
+            <p className="text-xs text-neutral-500 leading-relaxed">
+              Ajman Free Zone C1 Building<br />
+              Office C1 - 1F - SF3669, Ajman, UAE<br />
+              TRN: 104933863300003
+            </p>
           </div>
-          <p className="text-xs font-medium text-muted-foreground self-start md:self-end">
-            &copy; {new Date().getFullYear()} 1-globe.com. All rights reserved.
-          </p>
+          
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-10">
+            <Link href="/privacy" className="text-[10px] font-bold uppercase tracking-widest text-neutral-600 hover:text-neutral-400 transition-colors">
+              Privacy Policy
+            </Link>
+            <Link href="/terms" className="text-[10px] font-bold uppercase tracking-widest text-neutral-600 hover:text-neutral-400 transition-colors">
+              Terms of Service
+            </Link>
+            <span className="text-[10px] font-bold uppercase tracking-widest text-neutral-700">
+              &copy; {currentYear} 1-GLOBE
+            </span>
+          </div>
         </div>
+
       </div>
     </footer>
   )

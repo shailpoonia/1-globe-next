@@ -103,10 +103,7 @@ export const Header: React.FC = () => {
               className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded"
               aria-label="1-globe.com Home"
             >
-              <BrandLockup
-                iconSizeClass="w-8 h-8 sm:w-9 sm:h-9"
-                textSizeClass="text-lg sm:text-xl"
-              />
+              <BrandLockup />
             </Link>
           </div>
 

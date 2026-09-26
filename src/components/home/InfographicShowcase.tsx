@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { SectionHeader } from '@/components/shared/SectionHeader'
@@ -43,14 +43,14 @@ export const InfographicShowcase: React.FC = () => {
               className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold transition-all ${activeSlide === 0 ? 'bg-primary/10 text-primary border border-primary/30' : 'bg-secondary/50 text-neutral-500 border border-border hover:text-neutral-300'}`}
             >
               <div className={`w-2 h-2 rounded-full ${activeSlide === 0 ? 'bg-primary animate-pulse' : 'bg-neutral-600'}`} />
-              1-OPTIMISER · IMAGE PERFORMANCE
+              1-OPTIMISER Â· IMAGE PERFORMANCE
             </button>
             <button 
               onClick={() => setActiveSlide(1)}
               className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold transition-all ${activeSlide === 1 ? 'bg-primary/10 text-primary border border-primary/30' : 'bg-secondary/50 text-neutral-500 border border-border hover:text-neutral-300'}`}
             >
               <div className={`w-2 h-2 rounded-full ${activeSlide === 1 ? 'bg-primary animate-pulse' : 'bg-neutral-600'}`} />
-              1-BLOG · LAUNCHING SOON
+              1-BLOG Â· LAUNCHING SOON
             </button>
           </div>
 
@@ -83,7 +83,7 @@ export const InfographicShowcase: React.FC = () => {
           
           <div className="text-center mt-8">
             <p className="text-sm font-semibold text-neutral-400">
-              From comforters to sneakers to cookware — if your store has product photos, <span className="text-primary">1-GLOBE</span> makes them work.
+              From comforters to sneakers to cookware â€” if your store has product photos, <span className="text-primary">1-GLOBE</span> makes them work.
             </p>
           </div>
         </div>

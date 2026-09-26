@@ -22,12 +22,12 @@ export interface CtaBandProps {
 
 export const CtaBand: React.FC<CtaBandProps> = ({
   id = 'cta',
-  eyebrow = 'Get Started',
+  eyebrow = 'Take Control',
   headline,
-  headlinePart1 = 'Make your store perform.',
+  headlinePart1 = 'Make your store',
   italicWord,
-  headlinePart2,
-  subhead = 'Explore the 1-globe.com ecosystem.',
+  headlinePart2 = 'perform.',
+  subhead = 'The foundational tools for high-performance ecommerce.',
   primaryCtaText = 'COMING SOON TO SHOPIFY',
   primaryCtaUrl = "#",
   primaryIsLink = false,
@@ -37,97 +37,96 @@ export const CtaBand: React.FC<CtaBandProps> = ({
   noteText = '',
   className = '',
 }) => {
-  const primaryButtonClass = 'interactive-btn inline-flex items-center gap-1.5 h-14 px-8 font-bold text-sm uppercase tracking-[0.14em] bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary'
-  const secondaryButtonClass = 'interactive-btn inline-flex items-center gap-1.5 h-14 px-8 font-bold text-sm uppercase tracking-[0.14em] border border-border bg-transparent text-foreground hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary'
+  const primaryButtonClass = 'interactive-btn inline-flex items-center justify-between h-16 px-8 font-bold text-[11px] uppercase tracking-widest bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-w-[280px]'
+  const secondaryButtonClass = 'interactive-btn inline-flex items-center justify-center h-16 px-8 font-bold text-[11px] uppercase tracking-widest border border-neutral-800 bg-transparent text-foreground hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary'
 
   return (
-    <section id={id} className={`section-spacing relative overflow-hidden bg-background ${className}`}>
-      <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
-        {/* Eyebrow */}
-        {eyebrow && (
-          <div className="mb-6">
-            <span className="text-eyebrow !text-primary">
-              {eyebrow}
-            </span>
-          </div>
-        )}
+    <section id={id} className={`py-32 md:py-48 relative overflow-hidden bg-background border-t border-neutral-900 ${className}`}>
+      <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
+        <div className="flex flex-col md:flex-row items-start md:items-end justify-between gap-16 border-b border-neutral-900 pb-16">
+          
+          <div className="max-w-2xl">
+            {eyebrow && (
+              <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500 block mb-6">
+                {eyebrow}
+              </span>
+            )}
 
-        {/* Headline */}
-        <h2 className="text-section-title mb-6">
-          {headline ? (
-            headline
-          ) : (
-            <>
-              {headlinePart1}
-              {italicWord && (
+            <h2 className="font-heading font-bold text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] tracking-tighter leading-[0.95] text-foreground uppercase mb-8">
+              {headline ? (
+                headline
+              ) : (
                 <>
-                  {' '}
-                  <em className="italic">{italicWord}</em>
+                  {headlinePart1}<br />
+                  {italicWord && (
+                    <>
+                      {' '}
+                      <em className="italic">{italicWord}</em>
+                    </>
+                  )}
+                  {headlinePart2}
                 </>
               )}
-              {headlinePart2}
-            </>
-          )}
-        </h2>
+            </h2>
 
-        {/* Subtext */}
-        {subhead && (
-          <div className="text-lead mb-10 max-w-2xl mx-auto">
-            {subhead}
+            {subhead && (
+              <p className="text-xl md:text-2xl text-neutral-400 font-medium leading-relaxed max-w-lg">
+                {subhead}
+              </p>
+            )}
           </div>
-        )}
 
-        {/* Action Buttons */}
-        <div className="flex flex-wrap items-center justify-center gap-4 mb-6">
-          {primaryIsLink ? (
-            <Link href={primaryCtaUrl} className={primaryButtonClass}>
-              <span>{primaryCtaText}</span>
-              <ArrowUpRight className="w-4 h-4" />
-            </Link>
-          ) : primaryCtaUrl === '#' ? (
-            <div className={`${primaryButtonClass} opacity-80 cursor-default`}>
-              <span>{primaryCtaText}</span>
-            </div>
-          ) : (
-            <a
-              href={primaryCtaUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={primaryButtonClass}
-            >
-              <span>{primaryCtaText}</span>
-              <ArrowUpRight className="w-4 h-4" />
-            </a>
-          )}
-
-          {secondaryCtaText && secondaryCtaUrl && (
-            secondaryIsLink ? (
-              <Link href={secondaryCtaUrl} className={secondaryButtonClass}>
-                <span>{secondaryCtaText}</span>
+          <div className="flex flex-col gap-4 w-full md:w-auto">
+            {primaryIsLink ? (
+              <Link href={primaryCtaUrl} className={primaryButtonClass}>
+                <span>{primaryCtaText}</span>
+                <ArrowUpRight className="w-4 h-4" />
               </Link>
-            ) : secondaryCtaUrl === '#' ? (
-              <div className={`${secondaryButtonClass} opacity-80 cursor-default`}>
-                <span>{secondaryCtaText}</span>
+            ) : primaryCtaUrl === '#' ? (
+              <div className={`${primaryButtonClass} opacity-70 cursor-default bg-neutral-900 text-neutral-500 border border-neutral-800`}>
+                <span>{primaryCtaText}</span>
               </div>
             ) : (
               <a
-                href={secondaryCtaUrl}
+                href={primaryCtaUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={secondaryButtonClass}
+                className={primaryButtonClass}
               >
-                <span>{secondaryCtaText}</span>
+                <span>{primaryCtaText}</span>
+                <ArrowUpRight className="w-4 h-4" />
               </a>
-            )
-          )}
-        </div>
+            )}
 
-        {/* Low-Risk Close Note */}
-        {noteText && (
-          <p className="text-xs text-muted-foreground font-medium uppercase tracking-widest mt-8">
-            {noteText}
-          </p>
-        )}
+            {secondaryCtaText && secondaryCtaUrl && (
+              secondaryIsLink ? (
+                <Link href={secondaryCtaUrl} className={secondaryButtonClass}>
+                  <span>{secondaryCtaText}</span>
+                </Link>
+              ) : secondaryCtaUrl === '#' ? (
+                <div className={`${secondaryButtonClass} opacity-70 cursor-default`}>
+                  <span>{secondaryCtaText}</span>
+                </div>
+              ) : (
+                <a
+                  href={secondaryCtaUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={secondaryButtonClass}
+                >
+                  <span>{secondaryCtaText}</span>
+                </a>
+              )
+            )}
+            
+            {noteText && (
+              <p className="text-[10px] text-neutral-600 font-bold uppercase tracking-widest mt-4 text-center md:text-left">
+                {noteText}
+              </p>
+            )}
+          </div>
+          
+        </div>
       </div>
     </section>
   )
