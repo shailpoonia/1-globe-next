@@ -30,8 +30,8 @@ export const EditorialHero: React.FC = () => {
       </div>
 
       {/* Hero Content - Strong editorial left-alignment */}
-      <div className="relative z-20 w-full max-w-content mx-auto px-6 sm:px-8 lg:px-12 pt-32 pb-24">
-        <div className="max-w-3xl flex flex-col items-start space-y-12">
+      <div className="relative z-20 w-full max-w-content mx-auto px-6 sm:px-8 lg:px-12 pt-28 pb-20">
+        <div className="max-w-3xl flex flex-col items-start space-y-10">
           
           <div className="flex items-center gap-4">
             <div className="w-12 h-px bg-primary/50" />
@@ -40,14 +40,14 @@ export const EditorialHero: React.FC = () => {
             </span>
           </div>
           
-          <h1 className="font-heading font-bold text-6xl sm:text-7xl md:text-8xl lg:text-[7rem] tracking-tighter leading-[0.9] uppercase text-white relative z-10">
+          <h1 className="font-heading font-bold text-6xl sm:text-7xl md:text-8xl lg:text-[6.25rem] tracking-tighter leading-[0.9] uppercase text-white relative z-10">
             MAKE<br />
             ECOMMERCE<br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-neutral-500">PERFORM.</span>
           </h1>
 
           <div className="space-y-8 max-w-2xl">
-            <p className="text-xl sm:text-2xl lg:text-3xl text-neutral-300 font-medium leading-tight">
+            <p className="text-lg sm:text-xl lg:text-2xl text-neutral-300 font-medium leading-tight">
               1-GLOBE builds technical tools that make online stores faster, smarter, and easier to grow.
             </p>
             <p className="text-xs font-bold text-neutral-500 uppercase tracking-widest border-l-2 border-primary pl-4 py-1">
