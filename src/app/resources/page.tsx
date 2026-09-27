@@ -49,8 +49,8 @@ export default function ResourcesPage() {
                   <p className="text-muted-foreground text-sm font-medium leading-relaxed flex-1 mb-8">
                     {resource.description}
                   </p>
-                  <div className="flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-foreground mt-auto">
-                    <span>Read Guide</span>
+                  <div className="flex items-center gap-2 text-sm font-semibold text-foreground mt-auto">
+                    <span>Read guide</span>
                     <ArrowRight className="w-4 h-4" />
                   </div>
                 </Link>

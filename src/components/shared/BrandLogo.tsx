@@ -18,7 +18,7 @@ export const BrandLockup: React.FC<BrandLockupProps> = ({
       unoptimized
       className="h-8 w-auto sm:h-9"
     />
-    <span className="font-heading font-bold text-xl sm:text-2xl tracking-tighter text-foreground uppercase">
+    <span className="font-heading font-bold text-xl sm:text-2xl tracking-tight text-foreground uppercase">
       1-GLOBE
     </span>
   </div>

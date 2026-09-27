@@ -2,6 +2,7 @@ import React from 'react'
 import { Metadata } from 'next'
 import { buildMetadata } from '@/lib/seo'
 import { Section } from '@/components/shared/Section'
+import { ArticleToc } from '@/components/shared/ArticleToc'
 import Link from 'next/link'
 import { getResourceBySlug } from '@/lib/resources'
 import { ArticleSchema, ResourceBreadcrumbSchema } from '@/components/shared/ArticleSchemaOrg'
@@ -24,7 +25,7 @@ export default function EcommercePerformancePage() {
   }
 
   return (
-    <div className="flex flex-col bg-background text-foreground selection:bg-primary/20 selection:text-primary pt-24">
+    <div className="reading-light flex flex-col bg-background text-foreground selection:bg-primary/20 selection:text-primary pt-24">
       <ArticleSchema resource={resource} />
       <ResourceBreadcrumbSchema resource={resource} />
       
@@ -48,10 +49,12 @@ export default function EcommercePerformancePage() {
 
         {/* Article Content */}
         <Section className="py-24 bg-background border-b border-border">
-          <div className="max-w-3xl mx-auto px-6 sm:px-8 space-y-12">
+          <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12 xl:grid xl:grid-cols-[15rem_minmax(0,48rem)] xl:gap-16 xl:justify-center">
+            <ArticleToc items={[{"id": "what-does-ecommerce-performance-mean", "label": "What does ecommerce performance mean?"}, {"id": "why-does-page-loading-performance-matter", "label": "Why does page-loading performance matter?"}, {"id": "how-do-image-payloads-impact-storefront-performance", "label": "How do image payloads impact storefront performance?"}, {"id": "why-is-content-structure-important-for-discovery", "label": "Why is content structure important for discovery?"}, {"id": "how-does-accessibility-intersect-with-ecommerce-performance", "label": "How does accessibility intersect with ecommerce performance?"}, {"id": "what-are-the-considerations-for-generative-discovery-and-ai", "label": "What are the considerations for generative discovery and AI?"}, {"id": "how-does-performance-apply-to-shopify-storefronts", "label": "How does performance apply to Shopify storefronts?"}, {"id": "a-practical-merchant-checklist-for-performance", "label": "A practical merchant checklist for performance"}]} />
+            <div className="max-w-3xl mx-auto xl:mx-0 space-y-12">
             
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">What does ecommerce performance mean?</h2>
+              <h2 id="what-does-ecommerce-performance-mean" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">What does ecommerce performance mean?</h2>
               <p className="text-xl text-muted-foreground font-medium leading-relaxed">
                 Ecommerce performance is the combined efficiency of a storefront's technical infrastructure, page-loading speed, and how effectively its content is structured for both human shoppers and discovery systems.
               </p>
@@ -61,7 +64,7 @@ export default function EcommercePerformancePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">Why does page-loading performance matter?</h2>
+              <h2 id="why-does-page-loading-performance-matter" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">Why does page-loading performance matter?</h2>
               <p className="text-xl text-muted-foreground font-medium leading-relaxed">
                 Page-loading performance matters because a fast, responsive storefront helps provide a frictionless shopping experience and may reduce bounce rates, particularly on mobile devices.
               </p>
@@ -71,7 +74,7 @@ export default function EcommercePerformancePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">How do image payloads impact storefront performance?</h2>
+              <h2 id="how-do-image-payloads-impact-storefront-performance" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">How do image payloads impact storefront performance?</h2>
               <p className="text-xl text-muted-foreground font-medium leading-relaxed">
                 Unoptimized product images are often the largest contributor to heavy page payloads, significantly increasing the time it takes for a page to load fully.
               </p>
@@ -81,7 +84,7 @@ export default function EcommercePerformancePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">Why is content structure important for discovery?</h2>
+              <h2 id="why-is-content-structure-important-for-discovery" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">Why is content structure important for discovery?</h2>
               <p className="text-xl text-muted-foreground font-medium leading-relaxed">
                 Content structure is important because search engines and answer engines rely on well-organized information to understand what a product is and when it is relevant to a query.
               </p>
@@ -91,7 +94,7 @@ export default function EcommercePerformancePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">How does accessibility intersect with ecommerce performance?</h2>
+              <h2 id="how-does-accessibility-intersect-with-ecommerce-performance" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">How does accessibility intersect with ecommerce performance?</h2>
               <p className="text-xl text-muted-foreground font-medium leading-relaxed">
                 Accessibility ensures that your storefront can be used by everyone, and many accessibility practices natively support technical performance and structured discovery.
               </p>
@@ -101,7 +104,7 @@ export default function EcommercePerformancePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">What are the considerations for generative discovery and AI?</h2>
+              <h2 id="what-are-the-considerations-for-generative-discovery-and-ai" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">What are the considerations for generative discovery and AI?</h2>
               <p className="text-xl text-muted-foreground font-medium leading-relaxed">
                 As answer engines and AI generative discovery tools evolve, they increasingly rely on accurate, machine-readable product data rather than simply scanning for keywords.
               </p>
@@ -111,7 +114,7 @@ export default function EcommercePerformancePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">How does performance apply to Shopify storefronts?</h2>
+              <h2 id="how-does-performance-apply-to-shopify-storefronts" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">How does performance apply to Shopify storefronts?</h2>
               <p className="text-xl text-muted-foreground font-medium leading-relaxed">
                 While Shopify provides a robust global infrastructure, merchants are still responsible for the weight of the assets they upload and the quality of the data they input.
               </p>
@@ -125,7 +128,7 @@ export default function EcommercePerformancePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">A practical merchant checklist for performance</h2>
+              <h2 id="a-practical-merchant-checklist-for-performance" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">A practical merchant checklist for performance</h2>
               <ul className="space-y-4 text-lg text-neutral-400 list-disc list-inside">
                 <li><strong className="text-foreground">Compress images:</strong> Reduce unnecessary payload to support faster page loading.</li>
                 <li><strong className="text-foreground">Size appropriately:</strong> Ensure image dimensions match their intended display size.</li>
@@ -140,11 +143,12 @@ export default function EcommercePerformancePage() {
               <p className="text-muted-foreground mb-8 text-lg">
                 Images are often the heaviest part of a storefront. 1-OPTIMISER is designed specifically for Shopify stores to compress image assets, rewrite generic filenames, and generate contextual alt text to support storefront performance.
               </p>
-              <Link href="/apps/1-optimiser" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-bold text-xs uppercase tracking-widest bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors">
+              <Link href="/apps/1-optimiser" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-semibold text-xs bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors">
                 Explore 1-OPTIMISER
               </Link>
             </div>
 
+          </div>
           </div>
         </Section>
 

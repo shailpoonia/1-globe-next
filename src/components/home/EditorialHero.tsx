@@ -7,7 +7,7 @@ import { HeroVideo } from '@/components/home/HeroVideo'
 export const EditorialHero: React.FC = () => {
   return (
     <section
-      className="relative w-full min-h-[90vh] flex flex-col justify-center overflow-hidden bg-background"
+      className="relative w-full min-h-[80vh] flex flex-col justify-center overflow-hidden bg-background"
       aria-label="Editorial Hero"
     >
       {/* Background Media */}
@@ -37,15 +37,15 @@ export const EditorialHero: React.FC = () => {
           
           <div className="flex items-center gap-4">
             <div className="w-12 h-px bg-primary/50" />
-            <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-primary">
+            <span className="text-[13px] font-bold uppercase tracking-[0.12em] text-primary">
               ECOMMERCE PERFORMANCE TECHNOLOGY
             </span>
           </div>
           
-          <h1 className="font-heading font-bold text-6xl sm:text-7xl md:text-8xl lg:text-[6.25rem] tracking-tighter leading-[0.9] uppercase text-white relative z-10">
+          <h1 className="font-heading font-bold text-6xl sm:text-7xl md:text-8xl lg:text-[6.25rem] tracking-tight leading-[1.05] uppercase text-white relative z-10">
             MAKE{' '}<br />
             ECOMMERCE{' '}<br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-neutral-500">PERFORM.</span>
+            <span className="text-primary">PERFORM.</span>
           </h1>
 
           <div className="space-y-8 max-w-2xl">
@@ -61,16 +61,16 @@ export const EditorialHero: React.FC = () => {
           <div className="pt-4 flex flex-col sm:flex-row items-center gap-6 w-full sm:w-auto">
             <Link
               href="#ecosystem"
-              className="interactive-btn inline-flex items-center justify-center gap-3 h-14 px-8 font-bold text-[11px] uppercase tracking-widest bg-white text-black hover:bg-neutral-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary w-full sm:w-auto"
+              className="interactive-btn inline-flex items-center justify-center gap-3 h-14 px-8 font-semibold text-[13px] bg-primary text-primary-foreground hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary w-full sm:w-auto"
             >
-              <span>EXPLORE PRODUCTS</span>
+              <span>Explore products</span>
               <ArrowDown className="w-4 h-4" />
             </Link>
             <Link
               href="/apps/1-optimiser"
-              className="interactive-link inline-flex items-center justify-center gap-3 h-14 px-4 font-bold text-[11px] uppercase tracking-widest text-white hover:text-neutral-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary w-full sm:w-auto"
+              className="interactive-link inline-flex items-center justify-center gap-3 h-14 px-4 font-semibold text-[13px] text-white hover:text-neutral-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary w-full sm:w-auto"
             >
-              <span>DISCOVER 1-OPTIMISER</span>
+              <span>Discover 1-OPTIMISER</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>

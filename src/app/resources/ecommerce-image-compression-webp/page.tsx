@@ -2,6 +2,7 @@ import React from 'react'
 import { Metadata } from 'next'
 import { buildMetadata } from '@/lib/seo'
 import { Section } from '@/components/shared/Section'
+import { ArticleToc } from '@/components/shared/ArticleToc'
 import Link from 'next/link'
 import { getResourceBySlug } from '@/lib/resources'
 import { ArticleSchema, ResourceBreadcrumbSchema } from '@/components/shared/ArticleSchemaOrg'
@@ -61,7 +62,7 @@ export default function ArticlePage() {
   ]
 
   return (
-    <div className="flex flex-col bg-background text-foreground selection:bg-primary/20 selection:text-primary pt-24">
+    <div className="reading-light flex flex-col bg-background text-foreground selection:bg-primary/20 selection:text-primary pt-24">
       <ArticleSchema resource={resource} />
       <ResourceBreadcrumbSchema resource={resource} />
       
@@ -107,7 +108,9 @@ export default function ArticlePage() {
 
         {/* Article Body */}
         <Section className="py-20 md:py-32">
-          <div className="max-w-3xl mx-auto px-6 sm:px-8 space-y-16 md:space-y-24">
+          <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12 xl:grid xl:grid-cols-[15rem_minmax(0,48rem)] xl:gap-16 xl:justify-center">
+            <ArticleToc items={[{"id": "what-is-image-compression", "label": "What Is Image Compression?"}, {"id": "why-image-compression-matters-for-ecommerce", "label": "Why Image Compression Matters for Ecommerce"}, {"id": "lossy-vs-lossless-compression", "label": "Lossy vs Lossless Compression"}, {"id": "what-is-webp", "label": "What Is WebP?"}, {"id": "webp-vs-jpeg-vs-png", "label": "WebP vs JPEG vs PNG"}, {"id": "how-much-should-an-ecommerce-image-be-compressed", "label": "How Much Should an Ecommerce Image Be Compressed?"}, {"id": "image-quality-vs-file-size", "label": "Image Quality vs File Size"}, {"id": "image-dimensions-and-compression-work-together", "label": "Image Dimensions and Compression Work Together"}, {"id": "should-every-ecommerce-image-be-converted-to-webp", "label": "Should Every Ecommerce Image Be Converted to WebP?"}, {"id": "webp-and-shopify", "label": "WebP and Shopify"}, {"id": "how-to-compress-ecommerce-images-safely", "label": "How to Compress Ecommerce Images Safely"}, {"id": "common-image-compression-mistakes", "label": "Common Image Compression Mistakes"}, {"id": "how-to-measure-image-compression", "label": "How to Measure Image Compression"}, {"id": "image-compression-seo-and-accessibility", "label": "Image Compression, SEO and Accessibility"}, {"id": "where-1-optimiser-fits", "label": "Where 1-OPTIMISER Fits"}, {"id": "frequently-asked-questions", "label": "Frequently Asked Questions"}]} />
+            <div className="max-w-3xl mx-auto xl:mx-0 space-y-16 md:space-y-24">
             
             <div className="space-y-6">
               <p className="text-xl text-foreground font-medium leading-relaxed">
@@ -116,7 +119,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">1. What Is Image Compression?</h2>
+              <h2 id="what-is-image-compression" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">1. What Is Image Compression?</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Image compression is the technical process of reducing the file size of an image. It achieves this by mathematically identifying and removing redundant or less critical visual data. 
               </p>
@@ -126,7 +129,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">2. Why Image Compression Matters for Ecommerce</h2>
+              <h2 id="why-image-compression-matters-for-ecommerce" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">2. Why Image Compression Matters for Ecommerce</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Ecommerce storefronts rely heavily on visual media. A typical product page might load a primary photograph, several high-resolution variant images, and contextual lifestyle imagery. Across large catalogs, unoptimized images can drastically inflate page payload.
               </p>
@@ -136,7 +139,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">3. Lossy vs Lossless Compression</h2>
+              <h2 id="lossy-vs-lossless-compression" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">3. Lossy vs Lossless Compression</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 There are two primary categories of image compression, each serving distinct purposes.
               </p>
@@ -162,7 +165,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">4. What Is WebP?</h2>
+              <h2 id="what-is-webp" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">4. What Is WebP?</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 WebP is a modern image format developed by Google specifically for the web. Its primary advantage is versatility: it supports both lossy and lossless compression, and unlike standard JPEG, it supports transparency (alpha channels).
               </p>
@@ -172,7 +175,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">5. WebP vs JPEG vs PNG</h2>
+              <h2 id="webp-vs-jpeg-vs-png" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">5. WebP vs JPEG vs PNG</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Format choice depends entirely on the nature of the image being delivered. There is no universal winner.
               </p>
@@ -184,7 +187,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">6. How Much Should an Ecommerce Image Be Compressed?</h2>
+              <h2 id="how-much-should-an-ecommerce-image-be-compressed" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">6. How Much Should an Ecommerce Image Be Compressed?</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 There is no universal compression percentage, slider setting, or file-size target that applies correctly to every ecommerce image. 
               </p>
@@ -197,7 +200,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">7. Image Quality vs File Size</h2>
+              <h2 id="image-quality-vs-file-size" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">7. Image Quality vs File Size</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Aggressive lossy compression introduces visible degradation. Common issues include compression artifacts, blurriness, "ringing" around sharp edges, color banding in smooth gradients, and the loss of fine product details (like fabric weaves or intricate jewelry facets).
               </p>
@@ -207,7 +210,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">8. Image Dimensions and Compression Work Together</h2>
+              <h2 id="image-dimensions-and-compression-work-together" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">8. Image Dimensions and Compression Work Together</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Compression is only one optimization layer. Pixel dimensions represent the foundational size of the asset.
               </p>
@@ -217,7 +220,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">9. Should Every Ecommerce Image Be Converted to WebP?</h2>
+              <h2 id="should-every-ecommerce-image-be-converted-to-webp" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">9. Should Every Ecommerce Image Be Converted to WebP?</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 No universal rule dictates that every single image must be converted to WebP. 
               </p>
@@ -227,7 +230,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">10. WebP and Shopify</h2>
+              <h2 id="webp-and-shopify" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">10. WebP and Shopify</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Implementing WebP requires understanding the relationship between the merchant's source catalog and Shopify's image delivery infrastructure.
               </p>
@@ -237,7 +240,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">11. How to Compress Ecommerce Images Safely</h2>
+              <h2 id="how-to-compress-ecommerce-images-safely" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">11. How to Compress Ecommerce Images Safely</h2>
               <p className="text-lg text-neutral-400 leading-relaxed mb-4">
                 Before applying a single compression setting to an entire catalog, merchants should follow a practical testing workflow:
               </p>
@@ -257,7 +260,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">12. Common Image Compression Mistakes</h2>
+              <h2 id="common-image-compression-mistakes" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">12. Common Image Compression Mistakes</h2>
               <ul className="space-y-3 text-lg text-neutral-400 list-disc list-inside">
                 <li>Choosing the smallest possible file regardless of visual quality.</li>
                 <li>Applying the exact same quality setting to every diverse image type.</li>
@@ -272,7 +275,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">13. How to Measure Image Compression</h2>
+              <h2 id="how-to-measure-image-compression" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">13. How to Measure Image Compression</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Factual measurement requires looking at multiple signals. Merchants can compare the original file size against the compressed file size to calculate percentage reduction, but that percentage is merely a measurement—not the goal itself.
               </p>
@@ -282,7 +285,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">14. Image Compression, SEO and Accessibility</h2>
+              <h2 id="image-compression-seo-and-accessibility" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">14. Image Compression, SEO and Accessibility</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Compression can reduce an image's payload, while useful filenames and <Link href="/resources/product-image-alt-text" className="text-primary hover:underline">product image alt text</Link> provide descriptive context. Proper accessibility depends on meaningful alternative text and appropriate image semantics.
               </p>
@@ -292,7 +295,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="bg-secondary/30 p-8 md:p-12 mt-16 border border-border rounded-lg">
-              <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-6">15. Where 1-OPTIMISER Fits</h2>
+              <h2 id="where-1-optimiser-fits" className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-6 scroll-mt-28">15. Where 1-OPTIMISER Fits</h2>
               <p className="text-lg text-neutral-400 leading-relaxed mb-6">
                 1-OPTIMISER is being developed to help Shopify merchants work with image optimization systematically and safely.
               </p>
@@ -302,7 +305,7 @@ export default function ArticlePage() {
               <p className="text-sm font-bold uppercase tracking-widest text-primary mb-8">
                 Note: 1-OPTIMISER is currently coming soon.
               </p>
-              <Link href="/apps/1-optimiser" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-bold text-xs uppercase tracking-widest bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors">
+              <Link href="/apps/1-optimiser" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-semibold text-xs bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors">
                 Explore 1-OPTIMISER
               </Link>
             </div>
@@ -313,7 +316,7 @@ export default function ArticlePage() {
 
             {/* FAQ Section */}
             <div className="space-y-8">
-              <h2 className="text-3xl font-heading font-bold text-foreground">Frequently Asked Questions</h2>
+              <h2 id="frequently-asked-questions" className="text-3xl font-heading font-bold text-foreground scroll-mt-28">Frequently Asked Questions</h2>
               <Accordion.Root type="single" collapsible className="w-full space-y-4">
                 {faqs.map((faq, index) => (
                   <Accordion.Item 
@@ -339,7 +342,7 @@ export default function ArticlePage() {
 
             {/* Related Resources */}
             <div className="pt-12 border-t border-border mt-16">
-              <h2 className="text-2xl font-heading font-bold text-foreground mb-6">Related Resources</h2>
+              <h2 id="related-resources" className="text-2xl font-heading font-bold text-foreground mb-6 scroll-mt-28">Related Resources</h2>
               <div className="flex flex-col gap-4">
                 <Link href="/resources/ecommerce-image-optimization" className="text-primary hover:text-foreground transition-colors font-medium text-lg flex items-center gap-2">
                   Ecommerce Image Optimization
@@ -356,6 +359,7 @@ export default function ArticlePage() {
               </div>
             </div>
 
+          </div>
           </div>
         </Section>
 

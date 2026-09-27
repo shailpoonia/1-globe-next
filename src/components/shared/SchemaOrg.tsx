@@ -1,5 +1,5 @@
 import React from 'react';
-import { siteConfig } from '@/lib/seo';
+import { siteConfig, socialLinks } from '@/lib/seo';
 import { ENTITY_ORGANIZATION, ENTITY_WEBSITE } from '@/lib/entities';
 
 export function OrganizationSchema() {
@@ -25,7 +25,8 @@ export function OrganizationSchema() {
       addressLocality: 'Ajman',
       addressCountry: 'AE'
     },
-    taxID: '104933863300003'
+    taxID: '104933863300003',
+    ...(socialLinks.some((s) => s.href) && { sameAs: socialLinks.filter((s) => s.href).map((s) => s.href) })
   };
 
   return (

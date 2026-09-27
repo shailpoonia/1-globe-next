@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { BrandLockup } from './BrandLogo'
+import { SocialLinks } from './SocialLinks'
 
 export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear()
@@ -15,33 +16,34 @@ export const Footer: React.FC = () => {
             <Link href="/" className="inline-block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary mb-6">
               <BrandLockup />
             </Link>
-            <h2 className="font-heading font-bold text-2xl sm:text-3xl tracking-tighter text-foreground uppercase leading-tight mb-4">
-              MAKE ECOMMERCE{' '}<br />
-              <span className="text-neutral-500">PERFORM.</span>
+            <h2 className="font-heading font-bold text-2xl sm:text-3xl tracking-tight text-foreground leading-tight mb-4">
+              Make ecommerce{' '}<br />
+              <span className="text-primary">perform.</span>
             </h2>
-            <p className="text-xs font-bold uppercase tracking-widest text-neutral-400">
+            <p className="text-xs font-bold uppercase tracking-widest text-neutral-400 mb-8">
               ECOMMERCE PERFORMANCE TECHNOLOGY
             </p>
+            <SocialLinks />
           </div>
           
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 lg:justify-end">
             <div className="flex flex-col gap-3">
-              <span className="text-[11px] font-bold uppercase tracking-widest text-neutral-400 mb-1">Products</span>
-              <Link href="/apps/1-optimiser" className="text-xs font-bold uppercase tracking-widest text-neutral-400 hover:text-foreground transition-colors">1-OPTIMISER</Link>
+              <span className="text-[13px] font-bold uppercase tracking-widest text-neutral-400 mb-1">Products</span>
+              <Link href="/apps/1-optimiser" className="text-xs font-semibold text-neutral-400 hover:text-foreground transition-colors">1-OPTIMISER</Link>
               <span className="text-xs font-bold uppercase tracking-widest text-neutral-500 cursor-default">1-BLOG</span>
               <span className="text-xs font-bold uppercase tracking-widest text-neutral-500 cursor-default">1-LIST</span>
             </div>
             
             <div className="flex flex-col gap-3">
-              <span className="text-[11px] font-bold uppercase tracking-widest text-neutral-400 mb-1">Company</span>
-              <Link href="/about" className="text-xs font-bold uppercase tracking-widest text-neutral-400 hover:text-foreground transition-colors">About</Link>
-              <Link href="/pricing" className="text-xs font-bold uppercase tracking-widest text-neutral-400 hover:text-foreground transition-colors">Pricing</Link>
-              <Link href="/contact" className="text-xs font-bold uppercase tracking-widest text-neutral-400 hover:text-foreground transition-colors">Contact</Link>
+              <span className="text-[13px] font-bold uppercase tracking-widest text-neutral-400 mb-1">Company</span>
+              <Link href="/about" className="text-xs font-semibold text-neutral-400 hover:text-foreground transition-colors">About</Link>
+              <Link href="/pricing" className="text-xs font-semibold text-neutral-400 hover:text-foreground transition-colors">Pricing</Link>
+              <Link href="/contact" className="text-xs font-semibold text-neutral-400 hover:text-foreground transition-colors">Contact</Link>
             </div>
 
             <div className="flex flex-col gap-3">
-              <span className="text-[11px] font-bold uppercase tracking-widest text-neutral-400 mb-1">Knowledge</span>
-              <Link href="/resources" className="text-xs font-bold uppercase tracking-widest text-neutral-400 hover:text-foreground transition-colors">Resources</Link>
+              <span className="text-[13px] font-bold uppercase tracking-widest text-neutral-400 mb-1">Knowledge</span>
+              <Link href="/resources" className="text-xs font-semibold text-neutral-400 hover:text-foreground transition-colors">Resources</Link>
             </div>
           </div>
         </div>
@@ -49,7 +51,7 @@ export const Footer: React.FC = () => {
         {/* Bottom Section - Legal & Info */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 pt-8 border-t border-neutral-900">
           <div className="flex flex-col gap-2 max-w-sm">
-            <p className="text-[11px] font-bold uppercase tracking-widest text-neutral-400">
+            <p className="text-[13px] font-bold uppercase tracking-widest text-neutral-400">
               ONE GLOBE (F.Z.E)
             </p>
             <p className="text-xs text-neutral-400 leading-relaxed">
@@ -61,13 +63,13 @@ export const Footer: React.FC = () => {
           </div>
           
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-10">
-            <Link href="/privacy" className="text-[11px] font-bold uppercase tracking-widest text-neutral-400 hover:text-neutral-400 transition-colors">
+            <Link href="/privacy" className="text-[13px] font-bold uppercase tracking-widest text-neutral-400 hover:text-neutral-400 transition-colors">
               Privacy Policy
             </Link>
-            <Link href="/terms" className="text-[11px] font-bold uppercase tracking-widest text-neutral-400 hover:text-neutral-400 transition-colors">
+            <Link href="/terms" className="text-[13px] font-bold uppercase tracking-widest text-neutral-400 hover:text-neutral-400 transition-colors">
               Terms of Service
             </Link>
-            <span className="text-[11px] font-bold uppercase tracking-widest text-neutral-400">
+            <span className="text-[13px] font-bold uppercase tracking-widest text-neutral-400">
               &copy; {currentYear} 1-GLOBE
             </span>
           </div>

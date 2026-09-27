@@ -43,7 +43,7 @@ export const ENTITY_PRODUCTS: Record<string, EcosystemProduct> = {
     description: '1-OPTIMISER is an image performance tool for Shopify stores that helps merchants optimize product images, improve image metadata, and work with image editing and storefront performance tools.',
     status: 'coming-soon',
     href: '/apps/1-optimiser',
-    ctaLabel: 'EXPLORE 1-OPTIMISER',
+    ctaLabel: 'Explore 1-OPTIMISER',
     '@id': `${siteConfig.url}/apps/1-optimiser#software`,
   },
   '1-blog': {

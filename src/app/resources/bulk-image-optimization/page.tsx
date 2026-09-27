@@ -2,6 +2,7 @@ import React from 'react'
 import { Metadata } from 'next'
 import { buildMetadata } from '@/lib/seo'
 import { Section } from '@/components/shared/Section'
+import { ArticleToc } from '@/components/shared/ArticleToc'
 import Link from 'next/link'
 import { getResourceBySlug } from '@/lib/resources'
 import { ArticleSchema, ResourceBreadcrumbSchema } from '@/components/shared/ArticleSchemaOrg'
@@ -61,7 +62,7 @@ export default function ArticlePage() {
   ]
 
   return (
-    <div className="flex flex-col bg-background text-foreground selection:bg-primary/20 selection:text-primary pt-24">
+    <div className="reading-light flex flex-col bg-background text-foreground selection:bg-primary/20 selection:text-primary pt-24">
       <ArticleSchema resource={resource} />
       <ResourceBreadcrumbSchema resource={resource} />
       
@@ -107,7 +108,9 @@ export default function ArticlePage() {
 
         {/* Article Body */}
         <Section className="py-20 md:py-32">
-          <div className="max-w-3xl mx-auto px-6 sm:px-8 space-y-16 md:space-y-24">
+          <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12 xl:grid xl:grid-cols-[15rem_minmax(0,48rem)] xl:gap-16 xl:justify-center">
+            <ArticleToc items={[{"id": "what-is-bulk-image-optimization", "label": "What Is Bulk Image Optimization?"}, {"id": "why-ecommerce-stores-need-bulk-image-optimization", "label": "Why Ecommerce Stores Need Bulk Image Optimization"}, {"id": "what-should-be-optimized", "label": "What Should Be Optimized?"}, {"id": "bulk-compression", "label": "Bulk Compression"}, {"id": "resizing-oversized-ecommerce-images", "label": "Resizing Oversized Ecommerce Images"}, {"id": "choosing-image-formats", "label": "Choosing Image Formats"}, {"id": "bulk-image-optimization-and-shopify", "label": "Bulk Image Optimization and Shopify"}, {"id": "bulk-optimization-vs-manual-optimization", "label": "Bulk Optimization vs Manual Optimization"}, {"id": "how-to-optimize-a-large-catalog-safely", "label": "How to Optimize a Large Catalog Safely"}, {"id": "common-bulk-optimization-mistakes", "label": "Common Bulk Optimization Mistakes"}, {"id": "bulk-image-optimization-and-seo", "label": "Bulk Image Optimization and SEO"}, {"id": "bulk-image-optimization-and-accessibility", "label": "Bulk Image Optimization and Accessibility"}, {"id": "how-to-measure-the-result", "label": "How to Measure the Result"}, {"id": "where-1-optimiser-fits", "label": "Where 1-OPTIMISER Fits"}, {"id": "frequently-asked-questions", "label": "Frequently Asked Questions"}]} />
+            <div className="max-w-3xl mx-auto xl:mx-0 space-y-16 md:space-y-24">
             
             <div className="space-y-6">
               <p className="text-xl text-foreground font-medium leading-relaxed">
@@ -116,7 +119,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">1. What Is Bulk Image Optimization?</h2>
+              <h2 id="what-is-bulk-image-optimization" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">1. What Is Bulk Image Optimization?</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Bulk image optimization is a structured workflow for processing many images simultaneously. It is not simply a command to "compress everything." Instead, it is a systematic approach to reducing unnecessary image payload, resizing oversized files, selecting appropriate file formats, and improving metadata, all while carefully preserving the acceptable visual quality of the products.
               </p>
@@ -126,7 +129,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">2. Why Ecommerce Stores Need Bulk Image Optimization</h2>
+              <h2 id="why-ecommerce-stores-need-bulk-image-optimization" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">2. Why Ecommerce Stores Need Bulk Image Optimization</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Ecommerce stores frequently manage vast product catalogs. A single product might have a primary image, several variant images, and contextual lifestyle shots. Multiplied across hundreds of products and collection pages, a store can easily accumulate thousands of distinct image assets.
               </p>
@@ -136,7 +139,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">3. What Should Be Optimized?</h2>
+              <h2 id="what-should-be-optimized" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">3. What Should Be Optimized?</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 A comprehensive optimization strategy addresses several distinct layers of an image asset:
               </p>
@@ -153,7 +156,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">4. Bulk Compression</h2>
+              <h2 id="bulk-compression" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">4. Bulk Compression</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Compression reduces the file size of an image, typically through either lossy methods (removing data to achieve smaller sizes) or lossless methods (preserving exact visual data). Selecting the right quality settings requires evaluating the visual-quality tradeoffs. Aggressive compression can introduce artifacts that damage the crispness of product photography.
               </p>
@@ -166,7 +169,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">5. Resizing Oversized Ecommerce Images</h2>
+              <h2 id="resizing-oversized-ecommerce-images" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">5. Resizing Oversized Ecommerce Images</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Uploading a massive source file forces the browser or server to expend resources unnecessarily. Appropriate dimensions depend heavily on the specific storefront design and theme requirements for desktop, mobile, and high-density (retina) displays.
               </p>
@@ -176,7 +179,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">6. Choosing Image Formats</h2>
+              <h2 id="choosing-image-formats" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">6. Choosing Image Formats</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 There is no single format that is universally best for every image in a catalog. The appropriate format depends on the content:
               </p>
@@ -188,7 +191,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">7. Bulk Image Optimization and Shopify</h2>
+              <h2 id="bulk-image-optimization-and-shopify" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">7. Bulk Image Optimization and Shopify</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 When working within Shopify, it is important to understand the boundary between the merchant's source catalog (the files uploaded to the admin) and Shopify's storefront delivery (the CDN delivering images to the browser).
               </p>
@@ -198,7 +201,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">8. Bulk Optimization vs Manual Optimization</h2>
+              <h2 id="bulk-optimization-vs-manual-optimization" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">8. Bulk Optimization vs Manual Optimization</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Both manual and bulk workflows have specific uses depending on catalog scale.
               </p>
@@ -227,7 +230,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">9. How to Optimize a Large Catalog Safely</h2>
+              <h2 id="how-to-optimize-a-large-catalog-safely" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">9. How to Optimize a Large Catalog Safely</h2>
               <p className="text-lg text-neutral-400 leading-relaxed mb-4">
                 Applying sweeping changes to thousands of images requires caution. A safe practical workflow includes:
               </p>
@@ -246,7 +249,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">10. Common Bulk Optimization Mistakes</h2>
+              <h2 id="common-bulk-optimization-mistakes" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">10. Common Bulk Optimization Mistakes</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Attempting to automate without oversight often leads to errors. Common mistakes include:
               </p>
@@ -263,7 +266,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">11. Bulk Image Optimization and SEO</h2>
+              <h2 id="bulk-image-optimization-and-seo" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">11. Bulk Image Optimization and SEO</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 A streamlined catalog can contribute to a healthier technical foundation. Reducing page payload and establishing clearer contextual signals—such as descriptive filenames and useful alt text—can help machines interpret the store. 
               </p>
@@ -273,7 +276,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">12. Bulk Image Optimization and Accessibility</h2>
+              <h2 id="bulk-image-optimization-and-accessibility" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">12. Bulk Image Optimization and Accessibility</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 A bulk workflow often includes metadata management. Meaningful <Link href="/resources/product-image-alt-text" className="text-primary hover:underline">product image alt text</Link> is a critical accessibility requirement for screen readers. 
               </p>
@@ -283,7 +286,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">13. How to Measure the Result</h2>
+              <h2 id="how-to-measure-the-result" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">13. How to Measure the Result</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 The success of a bulk optimization effort should be measured through factual signals rather than promised performance improvements. 
               </p>
@@ -293,7 +296,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="bg-secondary/30 p-8 md:p-12 mt-16 border border-border rounded-lg">
-              <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-6">14. Where 1-OPTIMISER Fits</h2>
+              <h2 id="where-1-optimiser-fits" className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-6 scroll-mt-28">14. Where 1-OPTIMISER Fits</h2>
               <p className="text-lg text-neutral-400 leading-relaxed mb-6">
                 1-OPTIMISER is being developed to help Shopify merchants work with image optimization systematically at catalog scale. 
               </p>
@@ -303,7 +306,7 @@ export default function ArticlePage() {
               <p className="text-sm font-bold uppercase tracking-widest text-primary mb-8">
                 Note: 1-OPTIMISER is currently coming soon.
               </p>
-              <Link href="/apps/1-optimiser" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-bold text-xs uppercase tracking-widest bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors">
+              <Link href="/apps/1-optimiser" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-semibold text-xs bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors">
                 Explore 1-OPTIMISER
               </Link>
             </div>
@@ -314,7 +317,7 @@ export default function ArticlePage() {
 
             {/* FAQ Section */}
             <div className="space-y-8">
-              <h2 className="text-3xl font-heading font-bold text-foreground">15. Frequently Asked Questions</h2>
+              <h2 id="frequently-asked-questions" className="text-3xl font-heading font-bold text-foreground scroll-mt-28">15. Frequently Asked Questions</h2>
               <Accordion.Root type="single" collapsible className="w-full space-y-4">
                 {faqs.map((faq, index) => (
                   <Accordion.Item 
@@ -340,7 +343,7 @@ export default function ArticlePage() {
 
             {/* Related Resources */}
             <div className="pt-12 border-t border-border mt-16">
-              <h2 className="text-2xl font-heading font-bold text-foreground mb-6">Related Resources</h2>
+              <h2 id="related-resources" className="text-2xl font-heading font-bold text-foreground mb-6 scroll-mt-28">Related Resources</h2>
               <div className="flex flex-col gap-4">
                 <Link href="/resources/ecommerce-image-optimization" className="text-primary hover:text-foreground transition-colors font-medium text-lg flex items-center gap-2">
                   Ecommerce Image Optimization
@@ -357,6 +360,7 @@ export default function ArticlePage() {
               </div>
             </div>
 
+          </div>
           </div>
         </Section>
 

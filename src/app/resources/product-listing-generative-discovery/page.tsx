@@ -2,6 +2,7 @@ import React from 'react'
 import { Metadata } from 'next'
 import { buildMetadata } from '@/lib/seo'
 import { Section } from '@/components/shared/Section'
+import { ArticleToc } from '@/components/shared/ArticleToc'
 import Link from 'next/link'
 import { getResourceBySlug } from '@/lib/resources'
 import { ArticleSchema, ResourceBreadcrumbSchema } from '@/components/shared/ArticleSchemaOrg'
@@ -61,7 +62,7 @@ export default function ArticlePage() {
   ]
 
   return (
-    <div className="flex flex-col bg-background text-foreground selection:bg-primary/20 selection:text-primary pt-24">
+    <div className="reading-light flex flex-col bg-background text-foreground selection:bg-primary/20 selection:text-primary pt-24">
       <ArticleSchema resource={resource} />
       <ResourceBreadcrumbSchema resource={resource} />
       
@@ -107,7 +108,9 @@ export default function ArticlePage() {
 
         {/* Article Body */}
         <Section className="py-20 md:py-32">
-          <div className="max-w-3xl mx-auto px-6 sm:px-8 space-y-16 md:space-y-24">
+          <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12 xl:grid xl:grid-cols-[15rem_minmax(0,48rem)] xl:gap-16 xl:justify-center">
+            <ArticleToc items={[{"id": "what-is-a-product-listing", "label": "What Is a Product Listing?"}, {"id": "why-product-listing-structure-matters", "label": "Why Product Listing Structure Matters"}, {"id": "the-core-elements-of-a-strong-product-listing", "label": "The Core Elements of a Strong Product Listing"}, {"id": "product-titles-and-product-identity", "label": "Product Titles and Product Identity"}, {"id": "product-attributes-and-specifications", "label": "Product Attributes and Specifications"}, {"id": "product-variants-and-catalog-relationships", "label": "Product Variants and Catalog Relationships"}, {"id": "product-images-as-listing-information", "label": "Product Images as Listing Information"}, {"id": "product-feeds-and-external-discovery", "label": "Product Feeds and External Discovery"}, {"id": "product-listings-and-search", "label": "Product Listings and Search"}, {"id": "product-listings-and-answer-engines", "label": "Product Listings and Answer Engines"}, {"id": "product-listings-and-generative-discovery", "label": "Product Listings and Generative Discovery"}, {"id": "structured-data-and-product-listings", "label": "Structured Data and Product Listings"}, {"id": "common-product-listing-problems", "label": "Common Product Listing Problems"}, {"id": "how-to-audit-product-listings-at-scale", "label": "How to Audit Product Listings at Scale"}, {"id": "where-1-list-fits", "label": "Where 1-LIST Fits"}, {"id": "frequently-asked-questions", "label": "Frequently Asked Questions"}]} />
+            <div className="max-w-3xl mx-auto xl:mx-0 space-y-16 md:space-y-24">
             
             <div className="space-y-6">
               <p className="text-xl text-foreground font-medium leading-relaxed">
@@ -116,7 +119,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">1. What Is a Product Listing?</h2>
+              <h2 id="what-is-a-product-listing" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">1. What Is a Product Listing?</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 A product listing is the structured presentation of a product's identity, attributes, description, specifications, variants, availability, and supporting information. 
               </p>
@@ -126,7 +129,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">2. Why Product Listing Structure Matters</h2>
+              <h2 id="why-product-listing-structure-matters" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">2. Why Product Listing Structure Matters</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Structuring a listing correctly establishes a foundation of truth for the catalog. For human shoppers, it enables immediate customer understanding, facilitates accurate product comparison, and supports a consistent browsing experience.
               </p>
@@ -136,7 +139,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">3. The Core Elements of a Strong Product Listing</h2>
+              <h2 id="the-core-elements-of-a-strong-product-listing" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">3. The Core Elements of a Strong Product Listing</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 A robust listing harmonizes multiple distinct data points. When expanding on basic <Link href="/resources/product-content-structure" className="text-primary hover:underline">product content structure</Link>, the critical elements of a complete listing include:
               </p>
@@ -152,7 +155,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">4. Product Titles and Product Identity</h2>
+              <h2 id="product-titles-and-product-identity" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">4. Product Titles and Product Identity</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 The product title acts as the primary identifier. Titles should explicitly communicate the brand, the exact product name, the product type, the model, and any important differentiating attributes (such as capacity or color) necessary to distinguish it from similar items.
               </p>
@@ -162,7 +165,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">5. Product Attributes and Specifications</h2>
+              <h2 id="product-attributes-and-specifications" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">5. Product Attributes and Specifications</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Structured attributes are the backbone of a functional catalog. Information such as material, physical dimensions, colour, size, capacity, compatibility, and technical specifications must be distinctly categorized.
               </p>
@@ -172,7 +175,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">6. Product Variants and Catalog Relationships</h2>
+              <h2 id="product-variants-and-catalog-relationships" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">6. Product Variants and Catalog Relationships</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Listings with multiple options must carefully manage the relationship between parent products and their variants. 
               </p>
@@ -182,7 +185,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">7. Product Images as Listing Information</h2>
+              <h2 id="product-images-as-listing-information" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">7. Product Images as Listing Information</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Product images are a foundational part of the product information system—they are not merely decorative elements. 
               </p>
@@ -192,7 +195,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">8. Product Feeds and External Discovery</h2>
+              <h2 id="product-feeds-and-external-discovery" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">8. Product Feeds and External Discovery</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 A product feed is a structured digital file that continuously distributes your catalog data to external destinations, including marketplaces, shopping systems, advertising platforms, and search discovery systems.
               </p>
@@ -202,7 +205,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">9. Product Listings and Search</h2>
+              <h2 id="product-listings-and-search" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">9. Product Listings and Search</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Traditional and ecommerce search systems operate by evaluating context. To surface a listing accurately, these systems need to understand exactly what the product is, the category it belongs to, its defining attributes, its relevance to a specific user query, and its current availability.
               </p>
@@ -212,7 +215,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">10. Product Listings and Answer Engines</h2>
+              <h2 id="product-listings-and-answer-engines" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">10. Product Listings and Answer Engines</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Answer engines are systems designed to synthesize information from multiple web sources into a direct, conversational response. 
               </p>
@@ -222,7 +225,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">11. Product Listings and Generative Discovery</h2>
+              <h2 id="product-listings-and-generative-discovery" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">11. Product Listings and Generative Discovery</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Generative discovery is an evolving category encompassing systems that utilize generative models to help users explore products, options, and ideas. 
               </p>
@@ -232,7 +235,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">12. Structured Data and Product Listings</h2>
+              <h2 id="structured-data-and-product-listings" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">12. Structured Data and Product Listings</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 It is vital to understand the distinctions between visible product content, raw catalog data, external product feeds, and structured data (schema markup).
               </p>
@@ -242,7 +245,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">13. Common Product Listing Problems</h2>
+              <h2 id="common-product-listing-problems" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">13. Common Product Listing Problems</h2>
               <p className="text-lg text-neutral-400 leading-relaxed mb-4">
                 The most frequent barriers to clear product discovery include:
               </p>
@@ -260,7 +263,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">14. How to Audit Product Listings at Scale</h2>
+              <h2 id="how-to-audit-product-listings-at-scale" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">14. How to Audit Product Listings at Scale</h2>
               <p className="text-lg text-neutral-400 leading-relaxed mb-4">
                 Maintaining listing integrity across a large store requires a rigorous workflow:
               </p>
@@ -280,7 +283,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="bg-secondary/30 p-8 md:p-12 mt-16 border border-border rounded-lg">
-              <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-6">15. Where 1-LIST Fits</h2>
+              <h2 id="where-1-list-fits" className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-6 scroll-mt-28">15. Where 1-LIST Fits</h2>
               <p className="text-lg text-neutral-400 leading-relaxed mb-6">
                 1-LIST is being developed around product listing performance: helping merchants build product listings structured for search, answer engines, and generative discovery.
               </p>
@@ -291,10 +294,10 @@ export default function ArticlePage() {
                 Note: 1-LIST is currently launching soon.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
-                <Link href="/" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-bold text-xs uppercase tracking-widest bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors">
+                <Link href="/" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-semibold text-xs bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors">
                   Return to 1-GLOBE
                 </Link>
-                <Link href="/apps/1-optimiser" className="inline-flex items-center justify-center h-12 px-8 font-bold text-xs uppercase tracking-widest bg-secondary text-foreground hover:bg-secondary/80 transition-colors">
+                <Link href="/apps/1-optimiser" className="inline-flex items-center justify-center h-12 px-8 font-semibold text-xs bg-secondary text-foreground hover:bg-secondary/80 transition-colors">
                   Explore 1-OPTIMISER
                 </Link>
               </div>
@@ -306,7 +309,7 @@ export default function ArticlePage() {
 
             {/* FAQ Section */}
             <div className="space-y-8">
-              <h2 className="text-3xl font-heading font-bold text-foreground">Frequently Asked Questions</h2>
+              <h2 id="frequently-asked-questions" className="text-3xl font-heading font-bold text-foreground scroll-mt-28">Frequently Asked Questions</h2>
               <Accordion.Root type="single" collapsible className="w-full space-y-4">
                 {faqs.map((faq, index) => (
                   <Accordion.Item 
@@ -332,7 +335,7 @@ export default function ArticlePage() {
 
             {/* Related Resources */}
             <div className="pt-12 border-t border-border mt-16">
-              <h2 className="text-2xl font-heading font-bold text-foreground mb-6">Related Resources</h2>
+              <h2 id="related-resources" className="text-2xl font-heading font-bold text-foreground mb-6 scroll-mt-28">Related Resources</h2>
               <div className="flex flex-col gap-4">
                 <Link href="/resources/product-content-structure" className="text-primary hover:text-foreground transition-colors font-medium text-lg flex items-center gap-2">
                   Product Content Structure
@@ -358,6 +361,7 @@ export default function ArticlePage() {
               </div>
             </div>
 
+          </div>
           </div>
         </Section>
 

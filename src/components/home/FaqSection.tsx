@@ -10,14 +10,6 @@ export const FaqSection: React.FC = () => {
       a: "1-GLOBE is an ecommerce performance technology company building tools for online merchants. Our product ecosystem focuses on storefront image performance, content performance, and product listing performance."
     },
     {
-      q: "What does 1-GLOBE build?",
-      a: "1-GLOBE builds targeted technology that addresses specific operational bottlenecks across an online store. This includes image compression engines, metadata generators, and structural data tools designed to improve the technical foundation of ecommerce sites."
-    },
-    {
-      q: "Who is 1-GLOBE built for?",
-      a: "1-GLOBE builds technology for online merchants and the teams that operate ecommerce businesses, prioritizing practical tools that integrate directly into existing workflows."
-    },
-    {
       q: "What is ecommerce performance technology?",
       a: "Ecommerce performance technology is infrastructure designed to help a storefront perform better for both search systems and human visitors. By optimizing technical assets like image payloads and metadata, these tools support a faster, more structured store."
     },
@@ -30,20 +22,8 @@ export const FaqSection: React.FC = () => {
       a: "1-OPTIMISER is an image performance tool for Shopify stores. It provides tools for image optimization (compression, resizing, WebP conversion), AI-assisted image metadata (alt text, filenames, keyword suggestions for merchant review), image editing, a storefront performance theme extension, store-scope controls, and optimization history."
     },
     {
-      q: "What is 1-BLOG?",
-      a: "1-BLOG is a tool focused on content performance for the modern online store."
-    },
-    {
-      q: "What is 1-LIST?",
-      a: "1-LIST is a tool that helps build product listings structured for search, answer engines, and generative discovery."
-    },
-    {
       q: "Is 1-OPTIMISER available yet?",
       a: "1-OPTIMISER is currently in its final stages and is coming to the Shopify App Store soon."
-    },
-    {
-      q: "Are 1-BLOG and 1-LIST available yet?",
-      a: "No. 1-BLOG and 1-LIST are currently part of the 1-GLOBE roadmap and will be launching soon."
     },
     {
       q: "Does 1-GLOBE work with Shopify?",
@@ -54,19 +34,15 @@ export const FaqSection: React.FC = () => {
       a: "No. 1-GLOBE is designed around focused capabilities rather than requiring merchants to replace their entire ecommerce stack."
     },
     {
-      q: "Where can merchants learn more about image optimization?",
-      a: "1-GLOBE publishes practical resources on image optimization and ecommerce performance. These are designed to help merchants understand the technical context behind the tools we build."
-    },
-    {
       q: "Where should I start?",
       a: (
         <>
           Start with the foundation. If image performance and catalog management are your priority, explore 1-OPTIMISER and read our resources on ecommerce image optimization.
           <div className="mt-8 flex flex-col gap-4">
-            <Link href="/apps/1-optimiser" className="inline-flex items-center text-[10px] font-bold uppercase tracking-[0.15em] text-foreground border border-neutral-800 bg-neutral-900/50 px-4 py-2 hover:bg-neutral-800 transition-colors w-max">
+            <Link href="/apps/1-optimiser" className="inline-flex items-center text-[13px] font-bold uppercase tracking-[0.12em] text-foreground border border-neutral-800 bg-neutral-900/50 px-4 py-2 hover:bg-neutral-800 transition-colors w-max">
               Explore 1-OPTIMISER →
             </Link>
-            <Link href="/resources/ecommerce-image-optimization" className="inline-flex items-center text-[10px] font-bold uppercase tracking-[0.15em] text-neutral-400 hover:text-foreground transition-colors w-max">
+            <Link href="/resources/ecommerce-image-optimization" className="inline-flex items-center text-[13px] font-semibold text-neutral-400 hover:text-foreground transition-colors w-max">
               Read: Ecommerce Image Optimization →
             </Link>
           </div>
@@ -81,13 +57,13 @@ export const FaqSection: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           
           <div className="lg:col-span-5 lg:sticky lg:top-32">
-            <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-400 block mb-6">
+            <span className="text-[13px] font-bold uppercase tracking-[0.12em] text-neutral-400 block mb-6">
               COMMON QUESTIONS
             </span>
-            <h2 className="font-heading font-bold text-4xl sm:text-5xl lg:text-6xl tracking-tighter leading-[0.95] text-foreground uppercase">
-              QUESTIONS{' '}<br />
-              WORTH{' '}<br />
-              ANSWERING.
+            <h2 className="font-heading font-bold text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-[1.08] text-foreground">
+              Questions{' '}<br />
+              worth{' '}<br />
+              answering.
             </h2>
           </div>
 

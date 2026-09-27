@@ -7,6 +7,17 @@ export const siteConfig = {
   url: 'https://1-globe.com',
 };
 
+/**
+ * Official social profiles. Paste each full URL between the quotes, e.g.
+ * 'https://www.linkedin.com/company/your-page'. Profiles with a URL appear in the footer
+ * "Follow us" row and in the Organization schema (sameAs). Empty ones are hidden on the live site.
+ */
+export const socialLinks = [
+  { name: 'LinkedIn', href: '' },
+  { name: 'X', href: '' },
+  { name: 'Instagram', href: '' },
+] as const;
+
 /** Default share image (1200 x 630) in /public. Set explicitly on every page: a page that
  * defines its own openGraph would otherwise drop an image inherited from a parent segment. */
 export const shareImage = {

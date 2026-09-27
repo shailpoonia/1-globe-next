@@ -3,13 +3,10 @@ import { Metadata } from 'next'
 import { buildMetadata } from '@/lib/seo'
 import { CtaBand } from '@/components/shared/CtaBand'
 import { EditorialHero } from '@/components/home/EditorialHero'
-import { BrandStatement } from '@/components/home/BrandStatement'
 
 import { ProductEcosystem } from '@/components/home/ProductEcosystem'
 import { InfographicShowcase } from '@/components/home/InfographicShowcase'
-import { ProductDetailHome } from '@/components/home/ProductDetailHome'
-import { PerformanceProof } from '@/components/home/PerformanceProof'
-import { BrandPhilosophy } from '@/components/home/BrandPhilosophy'
+import { PageWeightProof } from '@/components/home/PageWeightProof'
 import { MerchantStory } from '@/components/home/MerchantStory'
 import { FaqSection } from '@/components/home/FaqSection'
 
@@ -26,40 +23,31 @@ export const metadata: Metadata = buildMetadata({
 export default function HomePage() {
   return (
     <main className="flex flex-col bg-background text-foreground selection:bg-primary/20 selection:text-primary pt-24">
-      {/* 01: Hero */}
+      {/* 1. Hero */}
       <EditorialHero />
 
-      {/* 02: Brand Statement (Includes The Problem narrative) */}
-      <BrandStatement />
-
-      {/* 04: Product Ecosystem */}
+      {/* 2. Products (light) */}
       <ProductEcosystem />
 
-      {/* 05: Keep existing infographics (Visual storytelling) */}
+      {/* 3. Before/after showcase */}
       <InfographicShowcase />
 
-      {/* 06: Product Detail (1-Optimiser intro) */}
-      <ProductDetailHome />
+      {/* 4. Measured proof */}
+      <PageWeightProof />
 
-      {/* 07: Performance Proof */}
-      <PerformanceProof />
-
-      {/* 08: Brand Philosophy */}
-      <BrandPhilosophy />
-
-      {/* 09: Merchant Story */}
+      {/* 5. Why 1-GLOBE (light) */}
       <MerchantStory />
 
-      {/* 10: FAQ */}
+      {/* 6. FAQ */}
       <FaqSection />
 
       {/* 11: Final CTA */}
       <CtaBand
-        headlinePart1="MAKE YOUR STORE"
-        italicWord="PERFORM"
-        headlinePart2="BETTER."
+        headlinePart1="Make your store"
+        italicWord="perform"
+        headlinePart2="better."
         subhead="Start with the performance problem."
-        primaryCtaText="EXPLORE 1-OPTIMISER"
+        primaryCtaText="Explore 1-OPTIMISER"
         primaryCtaUrl="/apps/1-optimiser"
         primaryIsLink={true}
         secondaryCtaText="View pricing"
