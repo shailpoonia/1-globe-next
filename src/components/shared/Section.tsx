@@ -36,7 +36,7 @@ export const Section: React.FC<SectionProps> = ({
   return (
     <section
       id={id}
-      className={`relative w-full overflow-hidden ${variantStyles[variant]} ${spacingStyles[spacing]} ${className}`}
+      className={`relative w-full overflow-clip ${variantStyles[variant]} ${spacingStyles[spacing]} ${className}`}
     >
       {fullWidth ? (
         children

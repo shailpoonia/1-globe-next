@@ -2,6 +2,7 @@ import React from 'react'
 import { Metadata } from 'next'
 import { buildMetadata } from '@/lib/seo'
 import { Section } from '@/components/shared/Section'
+import { ArticleToc } from '@/components/shared/ArticleToc'
 import Link from 'next/link'
 import { getResourceBySlug } from '@/lib/resources'
 import { ArticleSchema, ResourceBreadcrumbSchema } from '@/components/shared/ArticleSchemaOrg'
@@ -24,7 +25,7 @@ export default function ArticlePage() {
   }
 
   return (
-    <div className="flex flex-col bg-background text-foreground selection:bg-primary/20 selection:text-primary pt-24">
+    <div className="reading-light flex flex-col bg-background text-foreground selection:bg-primary/20 selection:text-primary pt-24">
       <ArticleSchema resource={resource} />
       <ResourceBreadcrumbSchema resource={resource} />
       
@@ -48,10 +49,12 @@ export default function ArticlePage() {
 
         {/* Article Content */}
         <Section className="py-24 bg-background border-b border-border">
-          <div className="max-w-3xl mx-auto px-6 sm:px-8 space-y-12">
+          <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12 xl:grid xl:grid-cols-[15rem_minmax(0,48rem)] xl:gap-16 xl:justify-center">
+            <ArticleToc items={[{"id": "what-is-ecommerce-image-optimization", "label": "What is ecommerce image optimization?"}, {"id": "why-should-ecommerce-stores-optimize-product-images", "label": "Why should ecommerce stores optimize product images?"}, {"id": "what-image-format-should-ecommerce-stores-use", "label": "What image format should ecommerce stores use?"}, {"id": "how-should-ecommerce-stores-choose-image-dimensions", "label": "How should ecommerce stores choose image dimensions?"}, {"id": "does-compressing-product-images-affect-quality", "label": "Does compressing product images affect quality?"}, {"id": "should-product-images-have-descriptive-filenames", "label": "Should product images have descriptive filenames?"}, {"id": "should-product-images-have-alt-text", "label": "Should product images have alt text?"}, {"id": "how-does-image-optimization-apply-to-shopify-stores", "label": "How does image optimization apply to Shopify stores?"}, {"id": "practical-optimization-checklist", "label": "Practical optimization checklist"}]} />
+            <div className="max-w-3xl mx-auto xl:mx-0 space-y-12">
             
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">What is ecommerce image optimization?</h2>
+              <h2 id="what-is-ecommerce-image-optimization" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">What is ecommerce image optimization?</h2>
               <p className="text-xl text-muted-foreground font-medium leading-relaxed">
                 Ecommerce image optimization is a critical subset of broader <Link href="/resources/ecommerce-performance" className="text-primary hover:text-foreground transition-colors underline underline-offset-4 decoration-primary/30">ecommerce performance</Link>. It is the process of reducing file sizes and structuring image data to help a storefront perform better, balancing visual quality with technical efficiency to reduce image payloads and improve discoverability.
               </p>
@@ -61,7 +64,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">Why should ecommerce stores optimize product images?</h2>
+              <h2 id="why-should-ecommerce-stores-optimize-product-images" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">Why should ecommerce stores optimize product images?</h2>
               <p className="text-xl text-muted-foreground font-medium leading-relaxed">
                 Ecommerce stores should optimize product images because heavy payloads can degrade the user experience and negatively impact page-loading performance. Simultaneously, poorly structured images may lack the context useful for discovery systems.
               </p>
@@ -71,7 +74,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">What image format should ecommerce stores use?</h2>
+              <h2 id="what-image-format-should-ecommerce-stores-use" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">What image format should ecommerce stores use?</h2>
               <p className="text-xl text-muted-foreground font-medium leading-relaxed">
                 The appropriate format depends on the image, transparency requirements, browser support, and delivery system. Modern formats such as WebP and AVIF can offer useful compression characteristics, while JPEG and PNG still have legitimate use cases.
               </p>
@@ -81,7 +84,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">How should ecommerce stores choose image dimensions?</h2>
+              <h2 id="how-should-ecommerce-stores-choose-image-dimensions" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">How should ecommerce stores choose image dimensions?</h2>
               <p className="text-xl text-muted-foreground font-medium leading-relaxed">
                 Stores should avoid serving dramatically larger images than the display context requires, balancing visual quality with payload size.
               </p>
@@ -91,7 +94,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">Does compressing product images affect quality?</h2>
+              <h2 id="does-compressing-product-images-affect-quality" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">Does compressing product images affect quality?</h2>
               <p className="text-xl text-muted-foreground font-medium leading-relaxed">
                 Proper image compression reduces file size while aiming to maintain perceptual quality, meaning the human eye cannot easily detect the difference.
               </p>
@@ -101,7 +104,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">Should product images have descriptive filenames?</h2>
+              <h2 id="should-product-images-have-descriptive-filenames" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">Should product images have descriptive filenames?</h2>
               <p className="text-xl text-muted-foreground font-medium leading-relaxed">
                 Yes. Generic camera filenames provide little descriptive context about the subject of an image.
               </p>
@@ -111,7 +114,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">Should product images have alt text?</h2>
+              <h2 id="should-product-images-have-alt-text" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">Should product images have alt text?</h2>
               <p className="text-xl text-muted-foreground font-medium leading-relaxed">
                 Yes. Alt text is primarily intended to provide an accessible text alternative for people who cannot see an image, and it can also contribute contextual information for search engines.
               </p>
@@ -121,7 +124,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">How does image optimization apply to Shopify stores?</h2>
+              <h2 id="how-does-image-optimization-apply-to-shopify-stores" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">How does image optimization apply to Shopify stores?</h2>
               <p className="text-xl text-muted-foreground font-medium leading-relaxed">
                 Product images are a core part of the Shopify storefront experience. Merchants should consider how images are uploaded, transformed, and delivered by Shopify and their active theme.
               </p>
@@ -135,7 +138,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">Practical optimization checklist</h2>
+              <h2 id="practical-optimization-checklist" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">Practical optimization checklist</h2>
               <ul className="space-y-4 text-lg text-neutral-400 list-disc list-inside">
                 <li><strong className="text-foreground">Scale properly:</strong> Avoid serving dramatically larger images than the display requires.</li>
                 <li><strong className="text-foreground">Compress consistently:</strong> Ensure images are compressed to reduce payload size.</li>
@@ -150,11 +153,12 @@ export default function ArticlePage() {
               <p className="text-muted-foreground mb-8 text-lg">
                 1-OPTIMISER is an ecommerce performance tool designed specifically for Shopify stores. It compresses image assets, rewrites generic filenames, and generates contextual alt text to support storefront performance.
               </p>
-              <Link href="/apps/1-optimiser" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-bold text-xs uppercase tracking-widest bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors">
+              <Link href="/apps/1-optimiser" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-semibold text-xs bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors">
                 Explore 1-OPTIMISER
               </Link>
             </div>
 
+          </div>
           </div>
         </Section>
 

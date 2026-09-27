@@ -20,8 +20,8 @@ export default function PricingPage() {
             <div className="text-left mb-20 max-w-3xl">
               <span className="text-eyebrow block mb-6">1-OPTIMISER</span>
               <h1 className="text-hero mb-6">
-                IMAGE PERFORMANCE.{' '}<br />
-                <span className="text-primary italic">WITHOUT THE SUBSCRIPTION.</span>
+                Image performance.{' '}<br />
+                <span className="text-primary">Without the subscription.</span>
               </h1>
               <p className="text-lead">
                 Start with 100 free image optimizations. When you need more, buy one-time image credits that never expire.
@@ -47,8 +47,8 @@ export default function PricingPage() {
                   </p>
                 </div>
                 <div className="flex-1"></div>
-                <div className="w-full inline-flex items-center justify-center h-14 font-bold text-xs uppercase tracking-widest bg-secondary text-muted-foreground cursor-not-allowed select-none mt-6">
-                  COMING SOON TO SHOPIFY
+                <div className="w-full inline-flex items-center justify-center h-14 font-semibold text-xs bg-secondary text-muted-foreground cursor-not-allowed select-none mt-6">
+                  Coming soon to Shopify
                 </div>
               </div>
 
@@ -66,8 +66,8 @@ export default function PricingPage() {
                 <div className="flex-1">
                   <p className="text-sm font-medium text-muted-foreground">$0.02 / image</p>
                 </div>
-                <div className="w-full inline-flex items-center justify-center h-14 font-bold text-xs uppercase tracking-widest bg-secondary text-muted-foreground cursor-not-allowed select-none mt-6">
-                  COMING SOON TO SHOPIFY
+                <div className="w-full inline-flex items-center justify-center h-14 font-semibold text-xs bg-secondary text-muted-foreground cursor-not-allowed select-none mt-6">
+                  Coming soon to Shopify
                 </div>
               </div>
 
@@ -85,8 +85,8 @@ export default function PricingPage() {
                 <div className="flex-1">
                   <p className="text-sm font-medium text-muted-foreground">$0.02 / image</p>
                 </div>
-                <div className="w-full inline-flex items-center justify-center h-14 font-bold text-xs uppercase tracking-widest bg-secondary text-muted-foreground cursor-not-allowed select-none mt-6">
-                  COMING SOON TO SHOPIFY
+                <div className="w-full inline-flex items-center justify-center h-14 font-semibold text-xs bg-secondary text-muted-foreground cursor-not-allowed select-none mt-6">
+                  Coming soon to Shopify
                 </div>
               </div>
 
@@ -104,8 +104,8 @@ export default function PricingPage() {
                 <div className="flex-1">
                   <p className="text-sm font-medium text-muted-foreground">$0.018 / image</p>
                 </div>
-                <div className="w-full inline-flex items-center justify-center h-14 font-bold text-xs uppercase tracking-widest bg-secondary text-muted-foreground cursor-not-allowed select-none mt-6">
-                  COMING SOON TO SHOPIFY
+                <div className="w-full inline-flex items-center justify-center h-14 font-semibold text-xs bg-secondary text-muted-foreground cursor-not-allowed select-none mt-6">
+                  Coming soon to Shopify
                 </div>
               </div>
 
@@ -122,9 +122,9 @@ export default function PricingPage() {
               </p>
               <Link
                 href="/apps/1-optimiser"
-                className="interactive-btn inline-flex items-center justify-center h-14 px-8 font-bold text-sm uppercase tracking-[0.14em] bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                className="interactive-btn inline-flex items-center justify-center h-14 px-8 font-semibold text-sm bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
               >
-                EXPLORE 1-OPTIMISER
+                Explore 1-OPTIMISER
               </Link>
             </div>
           </div>

@@ -8,7 +8,7 @@ import { AppHero } from '@/components/feature-page/AppHero'
 import { JobsDoneSection } from '@/components/feature-page/JobsDoneSection'
 import { AIPipelineHeroCard } from '@/components/feature-page/AIPipelineHeroCard'
 import { EditorialFeatures } from '@/components/feature-page/EditorialFeatures'
-import { PerformanceProof } from '@/components/home/PerformanceProof'
+import { ImageProblemSection } from '@/components/feature-page/ImageProblemSection'
 import { AppFaqSection } from '@/components/feature-page/AppFaqSection'
 
 import { ENTITY_PRODUCTS } from '@/lib/entities'
@@ -40,7 +40,7 @@ export default function ImageOptimizerPage() {
             <span className="hidden sm:inline-block text-xs font-medium text-muted-foreground uppercase tracking-wide">Shopify Image Optimizer</span>
           </div>
         }
-        ctaText="COMING SOON TO SHOPIFY"
+        ctaText="Coming soon to Shopify"
       />
 
       {/* 1. App Hero with AI Pipeline Card */}
@@ -55,31 +55,32 @@ export default function ImageOptimizerPage() {
             </div>
           </div>
         }
-        primaryCtaText="COMING SOON TO SHOPIFY"
+        primaryCtaText="Coming soon to Shopify"
         secondaryCtaText="See how it works"
         secondaryCtaUrl="#features"
         heroMoment={<AIPipelineHeroCard />}
       />
 
-      {/* 2. Editorial Features Layout */}
+      {/* 2. The problem messy images cause, and how 1-OPTIMISER fixes it */}
+      <ImageProblemSection />
+
+      {/* 3. Workflows */}
       <JobsDoneSection />
 
       {/* 2. Editorial Features Layout */}
       <EditorialFeatures />
 
-      {/* 3. Proof */}
-      <PerformanceProof />
 
       {/* 4. Objection-Busting App FAQ */}
       <AppFaqSection />
 
       {/* 5. Shared Final CTA Band */}
       <CtaBand 
-        headlinePart1="READY FOR"
-        italicWord="BETTER"
-        headlinePart2="PERFORMANCE?"
+        headlinePart1="Ready for"
+        italicWord="better"
+        headlinePart2="performance?"
         subhead="Explore how 1-OPTIMISER is designed to improve image performance across your catalog."
-        primaryCtaText="COMING SOON TO SHOPIFY"
+        primaryCtaText="Coming soon to Shopify"
         primaryIsLink={false}
         secondaryCtaText="View pricing"
         secondaryCtaUrl="/pricing"

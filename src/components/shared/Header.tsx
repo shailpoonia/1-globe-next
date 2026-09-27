@@ -37,36 +37,40 @@ export const Header: React.FC = () => {
     }
   }
 
+  // Guide pages use the light reading mode, so the header stays solid and opaque there.
+  const onGuide = pathname.startsWith('/resources/')
+  const solidHeader = scrolled || onGuide
+
   return (
     <>
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled
-            ? 'bg-background/80 backdrop-blur-md border-b border-border py-4'
+          solidHeader
+            ? `${onGuide ? 'bg-background' : 'bg-background/80 backdrop-blur-md'} border-b border-border py-4`
             : 'bg-transparent py-6'
         }`}
       >
-        <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12 flex items-center justify-between">
+        <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12 flex items-center justify-between gap-10">
           
           {/* Left: Navigation (Desktop) */}
-          <nav className="hidden xl:flex items-center gap-8 flex-1">
+          <nav className="hidden xl:flex items-center gap-7 flex-1">
             <a
               href="/#ecosystem"
               onClick={(e) => handleNavClick(e, '#ecosystem')}
-              className="text-sm font-semibold text-foreground/80 interactive-link uppercase tracking-[0.1em] whitespace-nowrap"
+              className="text-sm font-semibold text-foreground/80 interactive-link whitespace-nowrap"
             >
               Products
             </a>
             <a
-              href="/#why"
-              onClick={(e) => handleNavClick(e, '#why')}
-              className="text-sm font-semibold text-foreground/80 interactive-link uppercase tracking-[0.1em] whitespace-nowrap"
+              href="/#merchant-story"
+              onClick={(e) => handleNavClick(e, '#merchant-story')}
+              className="text-sm font-semibold text-foreground/80 interactive-link whitespace-nowrap"
             >
               Why 1-GLOBE
             </a>
             <Link
               href="/about"
-              className={`text-sm font-semibold interactive-link uppercase tracking-[0.1em] whitespace-nowrap ${
+              className={`text-sm font-semibold interactive-link whitespace-nowrap ${
                 pathname === '/about'
                   ? '!text-primary'
                   : 'text-foreground/80'
@@ -76,7 +80,7 @@ export const Header: React.FC = () => {
             </Link>
             <Link
               href="/pricing"
-              className={`text-sm font-semibold interactive-link uppercase tracking-[0.1em] whitespace-nowrap ${
+              className={`text-sm font-semibold interactive-link whitespace-nowrap ${
                 pathname === '/pricing'
                   ? '!text-primary'
                   : 'text-foreground/80'
@@ -86,7 +90,7 @@ export const Header: React.FC = () => {
             </Link>
             <Link
               href="/resources"
-              className={`text-sm font-semibold interactive-link uppercase tracking-[0.1em] whitespace-nowrap ${
+              className={`text-sm font-semibold interactive-link whitespace-nowrap ${
                 pathname === '/resources' || pathname.startsWith('/resources/')
                   ? '!text-primary'
                   : 'text-foreground/80'
@@ -111,9 +115,9 @@ export const Header: React.FC = () => {
           <div className="flex items-center justify-end gap-3 sm:gap-4 flex-1">
             <Link
               href="/apps/1-optimiser"
-              className="hidden sm:inline-flex items-center justify-center gap-1.5 h-10 px-6 border border-neutral-700 bg-transparent text-xs font-bold uppercase tracking-widest text-foreground hover:bg-white/5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+              className="hidden sm:inline-flex items-center justify-center gap-1.5 h-10 px-5 rounded-lg border border-neutral-700 bg-transparent text-sm font-semibold text-foreground hover:bg-white/5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
             >
-              <span>EXPLORE 1-OPTIMISER</span>
+              <span>Explore 1-OPTIMISER</span>
             </Link>
 
             {/* Mobile Menu Hamburger */}
@@ -142,8 +146,8 @@ export const Header: React.FC = () => {
               Products
             </a>
             <a
-              href="/#why"
-              onClick={(e) => handleNavClick(e, '#why')}
+              href="/#merchant-story"
+              onClick={(e) => handleNavClick(e, '#merchant-story')}
               className="text-2xl font-heading font-bold text-foreground hover:text-primary transition-colors"
             >
               Why 1-GLOBE
@@ -187,9 +191,9 @@ export const Header: React.FC = () => {
             <Link
               href="/apps/1-optimiser"
               onClick={() => setMobileMenuOpen(false)}
-              className="interactive-btn w-full h-14 border border-neutral-700 bg-transparent text-foreground font-bold uppercase tracking-widest flex items-center justify-center gap-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+              className="interactive-btn w-full h-14 border border-neutral-700 bg-transparent text-foreground font-semibold flex items-center justify-center gap-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
             >
-              <span>EXPLORE 1-OPTIMISER</span>
+              <span>Explore 1-OPTIMISER</span>
             </Link>
           </div>
         </div>

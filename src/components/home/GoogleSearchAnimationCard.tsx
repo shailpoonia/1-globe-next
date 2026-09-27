@@ -89,18 +89,18 @@ export const GoogleSearchAnimationCard: React.FC = () => {
           {/* Metadata Boxes */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-3">
             {/* Filename */}
-            <div className={`p-3.5 rounded-[var(--radius)] border transition-all duration-500 ${step === 1 ? 'border-cyan-500 bg-cyan-500/10 shadow-[0_0_15px_rgba(0,213,255,0.15)]' : step >= 2 ? 'border-slate-600 bg-slate-800/50' : 'border-slate-700 bg-slate-800/50'}`}>
-              <div className="text-[10px] text-slate-500 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
+            <div className={`p-3.5 rounded-[var(--radius)] border transition-all duration-500 ${step === 1 ? 'border-cyan-500 bg-cyan-500/10 shadow-[0_0_15px_rgba(67, 198, 250,0.15)]' : step >= 2 ? 'border-slate-600 bg-slate-800/50' : 'border-slate-700 bg-slate-800/50'}`}>
+              <div className="text-[13px] text-slate-500 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
                 <ImageIcon className="w-3 h-3" /> Filename
               </div>
-              <div className={`font-mono text-[11px] sm:text-[12px] truncate transition-colors duration-300 ${step >= 1 ? 'text-cyan-400' : 'text-slate-400'}`}>
+              <div className={`font-mono text-[13px] sm:text-[12px] truncate transition-colors duration-300 ${step >= 1 ? 'text-cyan-400' : 'text-slate-400'}`}>
                 {step >= 1 ? 'hand-block-print-floral-quilted-comforter-cream-coral.webp' : 'IMG-20260115-WA0032.jpg'}
               </div>
             </div>
 
             {/* Alt Text */}
-            <div className={`p-3.5 rounded-[var(--radius)] border transition-all duration-500 ${step === 1 ? 'border-cyan-500 bg-cyan-500/10 shadow-[0_0_15px_rgba(0,213,255,0.15)]' : step >= 2 ? 'border-slate-600 bg-slate-800/50' : 'border-slate-700 bg-slate-800/50'}`}>
-              <div className="text-[10px] text-slate-500 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
+            <div className={`p-3.5 rounded-[var(--radius)] border transition-all duration-500 ${step === 1 ? 'border-cyan-500 bg-cyan-500/10 shadow-[0_0_15px_rgba(67, 198, 250,0.15)]' : step >= 2 ? 'border-slate-600 bg-slate-800/50' : 'border-slate-700 bg-slate-800/50'}`}>
+              <div className="text-[13px] text-slate-500 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
                 <FileText className="w-3 h-3" /> Alt Text
               </div>
               <div className={`text-[12px] transition-colors duration-300 min-h-[36px] flex items-center ${step >= 1 ? 'text-slate-200' : 'text-slate-600 italic'}`}>
@@ -132,7 +132,7 @@ export const GoogleSearchAnimationCard: React.FC = () => {
           
           <div className="bg-slate-900/80 backdrop-blur border border-slate-700 p-4 sm:p-6 w-full">
             {/* Search Bar */}
-            <div className={`bg-slate-800 border rounded-full h-12 px-4 flex items-center gap-3 mb-8 transition-colors duration-300 ${step === 2 ? 'border-cyan-500/50 shadow-[0_0_10px_rgba(0,213,255,0.1)]' : 'border-slate-600 shadow-inner'}`}>
+            <div className={`bg-slate-800 border rounded-full h-12 px-4 flex items-center gap-3 mb-8 transition-colors duration-300 ${step === 2 ? 'border-cyan-500/50 shadow-[0_0_10px_rgba(67, 198, 250,0.1)]' : 'border-slate-600 shadow-inner'}`}>
               <Search className={`w-5 h-5 transition-colors ${step === 2 ? 'text-cyan-400 animate-pulse' : 'text-slate-400'}`} />
               <div className="text-slate-200 font-medium font-sans w-full">
                 hand block print comforter
@@ -154,7 +154,7 @@ export const GoogleSearchAnimationCard: React.FC = () => {
               {/* Your Product Slot */}
               <div className={`relative overflow-hidden flex items-center gap-4 p-3.5 rounded-[var(--radius)] border transition-all duration-700 ${
                 step < 3 ? 'border-rose-500/20 bg-rose-500/5' :
-                'border-teal-500/50 bg-teal-500/10 shadow-[0_0_20px_rgba(0,245,196,0.15)] scale-[1.02]'
+                'border-teal-500/50 bg-teal-500/10 shadow-[0_0_20px_rgba(94, 211, 176,0.15)] scale-[1.02]'
               }`}>
                 {/* Highlight flash */}
                 <div className={`absolute inset-0 bg-teal-400 mix-blend-overlay transition-opacity duration-500 ${step === 3 ? 'opacity-10' : 'opacity-0'}`} />
@@ -170,7 +170,7 @@ export const GoogleSearchAnimationCard: React.FC = () => {
                 <div className="flex-1 min-w-0">
                   <div className={`text-sm font-bold mb-1.5 flex items-center gap-2 transition-colors duration-500 ${step >= 3 ? 'text-teal-400' : 'text-rose-400'}`}>
                     Your Product: {step >= 3 ? 'Found' : 'Not Found'}
-                    {step >= 3 && <span className="px-1.5 py-0.5 rounded text-[9px] uppercase tracking-wider bg-teal-500/20 text-teal-300 border border-teal-500/30 ml-2">Top Result</span>}
+                    {step >= 3 && <span className="px-1.5 py-0.5 rounded text-xs uppercase tracking-wider bg-teal-500/20 text-teal-300 border border-teal-500/30 ml-2">Top Result</span>}
                   </div>
                   {step >= 3 ? (
                     <div className="text-xs text-slate-300 truncate font-mono">

@@ -2,6 +2,7 @@ import React from 'react'
 import { Metadata } from 'next'
 import { buildMetadata } from '@/lib/seo'
 import { Section } from '@/components/shared/Section'
+import { ArticleToc } from '@/components/shared/ArticleToc'
 import Link from 'next/link'
 import { getResourceBySlug } from '@/lib/resources'
 import { ArticleSchema, ResourceBreadcrumbSchema } from '@/components/shared/ArticleSchemaOrg'
@@ -65,7 +66,7 @@ export default function ArticlePage() {
   ]
 
   return (
-    <div className="flex flex-col bg-background text-foreground selection:bg-primary/20 selection:text-primary pt-24">
+    <div className="reading-light flex flex-col bg-background text-foreground selection:bg-primary/20 selection:text-primary pt-24">
       <ArticleSchema resource={resource} />
       <ResourceBreadcrumbSchema resource={resource} />
       
@@ -111,7 +112,9 @@ export default function ArticlePage() {
 
         {/* Article Body */}
         <Section className="py-20 md:py-32">
-          <div className="max-w-3xl mx-auto px-6 sm:px-8 space-y-16 md:space-y-24">
+          <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12 xl:grid xl:grid-cols-[15rem_minmax(0,48rem)] xl:gap-16 xl:justify-center">
+            <ArticleToc items={[{"id": "what-is-product-image-alt-text", "label": "What is product image alt text?"}, {"id": "why-alt-text-matters-for-ecommerce", "label": "Why alt text matters for ecommerce"}, {"id": "what-should-ecommerce-product-image-alt-text-contain", "label": "What should ecommerce product image alt text contain?"}, {"id": "product-image-alt-text-examples", "label": "Product image alt text examples"}, {"id": "how-long-should-product-image-alt-text-be", "label": "How long should product image alt text be?"}, {"id": "alt-text-vs-product-title-vs-product-description", "label": "Alt text vs product title vs product description"}, {"id": "should-keywords-be-included-in-product-image-alt-text", "label": "Should keywords be included in product image alt text?"}, {"id": "common-product-image-alt-text-mistakes", "label": "Common product image alt text mistakes"}, {"id": "alt-text-for-multiple-product-images", "label": "Alt text for multiple product images"}, {"id": "product-image-alt-text-and-accessibility", "label": "Product image alt text and accessibility"}, {"id": "product-image-alt-text-and-search-discovery", "label": "Product image alt text and search/discovery"}, {"id": "how-to-audit-product-image-alt-text", "label": "How to audit product image alt text"}, {"id": "product-image-alt-text-checklist", "label": "Product image alt text checklist"}, {"id": "how-1-optimiser-approaches-image-metadata", "label": "How 1-OPTIMISER approaches image metadata"}, {"id": "frequently-asked-questions", "label": "Frequently Asked Questions"}]} />
+            <div className="max-w-3xl mx-auto xl:mx-0 space-y-16 md:space-y-24">
             
             <div className="space-y-6">
               <p className="text-xl text-foreground font-medium leading-relaxed">
@@ -120,7 +123,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">1. What is product image alt text?</h2>
+              <h2 id="what-is-product-image-alt-text" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">1. What is product image alt text?</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Alt text (alternative text) is an HTML attribute applied to image tags. Its primary purpose is to provide a text-based alternative for individuals who cannot see the image. 
               </p>
@@ -130,7 +133,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">2. Why alt text matters for ecommerce</h2>
+              <h2 id="why-alt-text-matters-for-ecommerce" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">2. Why alt text matters for ecommerce</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Fundamentally, alt text matters because of accessibility. Every shopper deserves to understand what a product looks like, regardless of how they browse the internet. Providing an inclusive experience is a core part of operating a professional storefront.
               </p>
@@ -140,7 +143,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">3. What should ecommerce product image alt text contain?</h2>
+              <h2 id="what-should-ecommerce-product-image-alt-text-contain" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">3. What should ecommerce product image alt text contain?</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Effective alt text is specific and descriptive. Depending on the product, useful alt text might describe:
               </p>
@@ -157,7 +160,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">4. Product image alt text examples</h2>
+              <h2 id="product-image-alt-text-examples" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">4. Product image alt text examples</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Reviewing practical examples across different product categories illustrates the difference between poor and effective descriptions.
               </p>
@@ -166,7 +169,7 @@ export default function ArticlePage() {
                 <div className="bg-secondary/20 p-6 rounded-md border border-border">
                   <h3 className="font-bold text-foreground mb-4">Home Decor</h3>
                   <p className="text-sm text-neutral-400 mb-1">Poor:</p>
-                  <p className="text-red-400 mb-4 line-through">"wooden wall clock wooden clock wall clock buy wall clock"</p>
+                  <p className="text-destructive mb-4 line-through">"wooden wall clock wooden clock wall clock buy wall clock"</p>
                   <p className="text-sm text-neutral-400 mb-1">Better:</p>
                   <p className="text-primary font-medium">"12-inch wooden wall clock with black hands"</p>
                 </div>
@@ -174,7 +177,7 @@ export default function ArticlePage() {
                 <div className="bg-secondary/20 p-6 rounded-md border border-border">
                   <h3 className="font-bold text-foreground mb-4">Clothing</h3>
                   <p className="text-sm text-neutral-400 mb-1">Poor:</p>
-                  <p className="text-red-400 mb-4 line-through">"image of a shirt"</p>
+                  <p className="text-destructive mb-4 line-through">"image of a shirt"</p>
                   <p className="text-sm text-neutral-400 mb-1">Better:</p>
                   <p className="text-primary font-medium">"Men's short-sleeve button-down shirt in navy blue floral print"</p>
                 </div>
@@ -182,7 +185,7 @@ export default function ArticlePage() {
                 <div className="bg-secondary/20 p-6 rounded-md border border-border">
                   <h3 className="font-bold text-foreground mb-4">Electronics</h3>
                   <p className="text-sm text-neutral-400 mb-1">Poor:</p>
-                  <p className="text-red-400 mb-4 line-through">"laptop computer"</p>
+                  <p className="text-destructive mb-4 line-through">"laptop computer"</p>
                   <p className="text-sm text-neutral-400 mb-1">Better:</p>
                   <p className="text-primary font-medium">"Silver 15-inch laptop open on a desk, showing a backlit keyboard"</p>
                 </div>
@@ -190,7 +193,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">5. How long should product image alt text be?</h2>
+              <h2 id="how-long-should-product-image-alt-text-be" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">5. How long should product image alt text be?</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 There is no universal, magic character limit mandated by search engines. However, for accessibility, screen readers often read alt text in a continuous stream. Exceedingly long descriptions can become frustrating for users to listen to.
               </p>
@@ -200,7 +203,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">6. Alt text vs product title vs product description</h2>
+              <h2 id="alt-text-vs-product-title-vs-product-description" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">6. Alt text vs product title vs product description</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 It is important not to conflate different data structures on an ecommerce page. Each serves a specific purpose:
               </p>
@@ -216,7 +219,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">7. Should keywords be included in product image alt text?</h2>
+              <h2 id="should-keywords-be-included-in-product-image-alt-text" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">7. Should keywords be included in product image alt text?</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Relevant, descriptive terminology should be used when it naturally and accurately describes the image. If you are selling a "leather hiking boot," it is entirely appropriate for those words to appear in the alt text of a photo showing the boot.
               </p>
@@ -226,7 +229,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">8. Common product image alt text mistakes</h2>
+              <h2 id="common-product-image-alt-text-mistakes" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">8. Common product image alt text mistakes</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 When auditing a storefront's alt text, look out for these widespread errors:
               </p>
@@ -241,7 +244,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">9. Alt text for multiple product images</h2>
+              <h2 id="alt-text-for-multiple-product-images" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">9. Alt text for multiple product images</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Most ecommerce products feature multiple images. If every image in a gallery has the exact same alt text, a screen reader user will hear the same phrase repeated endlessly. Instead, descriptions should reflect what is meaningfully different about each image.
               </p>
@@ -254,7 +257,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">10. Product image alt text and accessibility</h2>
+              <h2 id="product-image-alt-text-and-accessibility" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">10. Product image alt text and accessibility</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Writing meaningful text alternatives is a pillar of web accessibility. It allows users utilizing assistive technologies to engage with the visual aspects of a storefront.
               </p>
@@ -264,7 +267,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">11. Product image alt text and search/discovery</h2>
+              <h2 id="product-image-alt-text-and-search-discovery" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">11. Product image alt text and search/discovery</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Search engines use multiple signals to understand a page and its imagery. These signals include the page title, surrounding text, product schema, image filenames, and image alt text.
               </p>
@@ -274,14 +277,14 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">12. How to audit product image alt text</h2>
+              <h2 id="how-to-audit-product-image-alt-text" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">12. How to audit product image alt text</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Reviewing a catalog's alt text requires evaluating both the technical presence of the attribute and the quality of the content. Look closely at your most important product pages and ask whether the text genuinely serves someone who cannot see the screen.
               </p>
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">13. Product image alt text checklist</h2>
+              <h2 id="product-image-alt-text-checklist" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">13. Product image alt text checklist</h2>
               <ul className="space-y-4 text-lg text-neutral-400 list-decimal list-inside bg-secondary/20 p-8 rounded border border-border">
                 <li><strong className="text-foreground">Is the image meaningful?</strong> If no, use an empty alt attribute.</li>
                 <li><strong className="text-foreground">Does the alt text describe what matters?</strong> Focus on the visual reality of the product.</li>
@@ -297,7 +300,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="bg-secondary/30 p-8 md:p-12 mt-16 border border-border rounded-lg">
-              <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-6">14. How 1-OPTIMISER approaches image metadata</h2>
+              <h2 id="how-1-optimiser-approaches-image-metadata" className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-6 scroll-mt-28">14. How 1-OPTIMISER approaches image metadata</h2>
               <p className="text-lg text-neutral-400 leading-relaxed mb-6">
                 1-OPTIMISER is an image performance tool being built for Shopify. Rather than forcing merchants to manually type descriptions for thousands of variants, the current 1-OPTIMISER implementation includes AI-assisted alt text and descriptive filename generation.
               </p>
@@ -307,7 +310,7 @@ export default function ArticlePage() {
               <p className="text-sm font-bold uppercase tracking-widest text-primary mb-8">
                 Note: 1-OPTIMISER is currently coming soon.
               </p>
-              <Link href="/apps/1-optimiser" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-bold text-xs uppercase tracking-widest bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors">
+              <Link href="/apps/1-optimiser" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-semibold text-xs bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors">
                 Explore 1-OPTIMISER
               </Link>
             </div>
@@ -318,7 +321,7 @@ export default function ArticlePage() {
 
             {/* FAQ Section */}
             <div className="space-y-8">
-              <h2 className="text-3xl font-heading font-bold text-foreground">15. Frequently Asked Questions</h2>
+              <h2 id="frequently-asked-questions" className="text-3xl font-heading font-bold text-foreground scroll-mt-28">15. Frequently Asked Questions</h2>
               <Accordion.Root type="single" collapsible className="w-full space-y-4">
                 {faqs.map((faq, index) => (
                   <Accordion.Item 
@@ -344,7 +347,7 @@ export default function ArticlePage() {
 
             {/* Related Resources */}
             <div className="pt-12 border-t border-border mt-16">
-              <h2 className="text-2xl font-heading font-bold text-foreground mb-6">Related Resources</h2>
+              <h2 id="related-resources" className="text-2xl font-heading font-bold text-foreground mb-6 scroll-mt-28">Related Resources</h2>
               <div className="flex flex-col gap-4">
                 <Link href="/resources/shopify-image-optimization" className="text-primary hover:text-foreground transition-colors font-medium text-lg flex items-center gap-2">
                   Shopify Image Optimization
@@ -361,6 +364,7 @@ export default function ArticlePage() {
               </div>
             </div>
 
+          </div>
           </div>
         </Section>
 

@@ -60,13 +60,13 @@ export const MerchantStory: React.FC = () => {
           
           {/* Narrative Text */}
           <div className="lg:col-span-5 flex flex-col items-start order-2 lg:order-1">
-            <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500 block mb-6">
+            <span className="text-[13px] font-bold uppercase tracking-[0.12em] text-neutral-700 block mb-6">
               MERCHANT STORY
             </span>
-            <h2 className="font-heading font-bold text-4xl sm:text-5xl md:text-6xl tracking-tighter leading-[0.95] text-background uppercase mb-6">
-              BUILT FOR{' '}<br />THE MERCHANTS{' '}<br />IN THE TRENCHES.
+            <h2 className="font-heading font-bold text-4xl sm:text-5xl md:text-6xl tracking-tight leading-[1.08] text-background mb-6">
+              Built for{' '}<br />the merchants{' '}<br />in the trenches.
             </h2>
-            <div className="space-y-4 text-base md:text-lg text-neutral-600 font-medium leading-relaxed mb-10">
+            <div className="space-y-4 text-base md:text-lg text-neutral-700 font-medium leading-relaxed mb-10">
               <p>
                 We started 1-GLOBE because we were tired of generic tools that made grand promises but broke the storefront.
               </p>
@@ -77,7 +77,7 @@ export const MerchantStory: React.FC = () => {
             
             <Link
               href="/about"
-              className="group inline-flex items-center gap-4 text-xs font-bold uppercase tracking-widest text-background hover:text-neutral-500 transition-colors"
+              className="group inline-flex items-center gap-4 text-xs font-bold uppercase tracking-widest text-background hover:text-neutral-700 transition-colors"
             >
               <span className="border-b border-background group-hover:border-neutral-500 pb-1 transition-colors">Read our story</span>
               <ArrowRight className="w-4 h-4" aria-hidden="true" />
@@ -101,10 +101,10 @@ export const MerchantStory: React.FC = () => {
                 <div className="flex items-center gap-3">
                   <BarChart3 className="w-4 h-4 text-neutral-500 shrink-0" aria-hidden="true" />
                   <div className="flex flex-col">
-                    <span className="text-[9px] font-bold uppercase tracking-widest text-neutral-400">
+                    <span className="text-xs font-bold uppercase tracking-widest text-neutral-400">
                       Illustrative ecommerce growth scenario
                     </span>
-                    <span className="text-[8px] uppercase tracking-wider text-neutral-600">
+                    <span className="text-[11px] uppercase tracking-wider text-neutral-600">
                       Illustrative scenario — not a customer case study.
                     </span>
                   </div>
@@ -125,7 +125,7 @@ export const MerchantStory: React.FC = () => {
                 
                 {/* Slide 1: THE START */}
                 <div className="min-w-full snap-center p-6 sm:p-8 md:p-12 min-h-[400px] flex flex-col" role="group" aria-roledescription="slide">
-                  <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-primary mb-4 block">01 — THE START</span>
+                  <span className="text-[13px] font-bold uppercase tracking-[0.12em] text-primary mb-4 block">01 — THE START</span>
                   <h3 className="font-heading text-2xl md:text-3xl font-bold uppercase mb-8">Revenue Progression</h3>
                   
                   <div className="flex-1 flex items-end gap-1 sm:gap-2 md:gap-4 h-full pt-8 relative">
@@ -135,7 +135,7 @@ export const MerchantStory: React.FC = () => {
                     {/* Abstract Graph */}
                     {[1, 1.2, 1.1, 1.5, 1.4, 2, 2.5, 3.2, 4.5, 6, 8, 12].map((val, i) => (
                       <div key={i} className="flex-1 bg-neutral-800 hover:bg-neutral-700 transition-colors relative group" style={{ height: `${val * 8}%` }}>
-                        <div className="absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-neutral-900 text-[9px] font-mono px-2 py-1 border border-neutral-700 rounded z-10 whitespace-nowrap hidden sm:block">
+                        <div className="absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-neutral-900 text-xs font-mono px-2 py-1 border border-neutral-700 rounded z-10 whitespace-nowrap hidden sm:block">
                           Mo {i+1}
                         </div>
                       </div>
@@ -151,7 +151,7 @@ export const MerchantStory: React.FC = () => {
 
                 {/* Slide 2: THE CONSTRAINTS */}
                 <div className="min-w-full snap-center p-6 sm:p-8 md:p-12 min-h-[400px] flex flex-col" role="group" aria-roledescription="slide">
-                  <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-500 mb-4 block">02 — WHAT WAS HOLDING IT BACK</span>
+                  <span className="text-[13px] font-bold uppercase tracking-[0.12em] text-neutral-500 mb-4 block">02 — WHAT WAS HOLDING IT BACK</span>
                   <h3 className="font-heading text-2xl md:text-3xl font-bold uppercase mb-8">Technical Constraints</h3>
                   
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 flex-1">
@@ -180,7 +180,7 @@ export const MerchantStory: React.FC = () => {
 
                 {/* Slide 3: WHAT CHANGED */}
                 <div className="min-w-full snap-center p-6 sm:p-8 md:p-12 min-h-[400px] flex flex-col" role="group" aria-roledescription="slide">
-                  <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-primary mb-4 block">03 — WHAT CHANGED</span>
+                  <span className="text-[13px] font-bold uppercase tracking-[0.12em] text-primary mb-4 block">03 — WHAT CHANGED</span>
                   <h3 className="font-heading text-2xl md:text-3xl font-bold uppercase mb-8">Targeted Interventions</h3>
                   
                   <div className="flex-1 flex items-end gap-1 sm:gap-2 md:gap-4 h-full pt-8 relative">
@@ -188,10 +188,10 @@ export const MerchantStory: React.FC = () => {
                     <div className="absolute top-1/3 left-[40%] w-px h-2/3 bg-primary/50 border-l border-dashed border-primary z-0" aria-hidden="true" />
                     <div className="absolute top-1/4 left-[65%] w-px h-3/4 bg-primary/50 border-l border-dashed border-primary z-0" aria-hidden="true" />
                     
-                    <div className="absolute top-[30%] left-[40%] -translate-x-1/2 bg-primary/10 border border-primary/30 text-primary text-[9px] font-bold uppercase px-2 py-1 rounded hidden sm:block">
+                    <div className="absolute top-[30%] left-[40%] -translate-x-1/2 bg-primary/10 border border-primary/30 text-primary text-xs font-bold uppercase px-2 py-1 rounded hidden sm:block">
                       Img Opt
                     </div>
-                    <div className="absolute top-[20%] left-[65%] -translate-x-1/2 bg-primary/10 border border-primary/30 text-primary text-[9px] font-bold uppercase px-2 py-1 rounded hidden sm:block">
+                    <div className="absolute top-[20%] left-[65%] -translate-x-1/2 bg-primary/10 border border-primary/30 text-primary text-xs font-bold uppercase px-2 py-1 rounded hidden sm:block">
                       Data Struct
                     </div>
 

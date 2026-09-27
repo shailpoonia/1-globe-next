@@ -2,6 +2,7 @@ import React from 'react'
 import { Metadata } from 'next'
 import { buildMetadata } from '@/lib/seo'
 import { Section } from '@/components/shared/Section'
+import { ArticleToc } from '@/components/shared/ArticleToc'
 import Link from 'next/link'
 import { getResourceBySlug } from '@/lib/resources'
 import { ArticleSchema, ResourceBreadcrumbSchema } from '@/components/shared/ArticleSchemaOrg'
@@ -61,7 +62,7 @@ export default function ArticlePage() {
   ]
 
   return (
-    <div className="flex flex-col bg-background text-foreground selection:bg-primary/20 selection:text-primary pt-24">
+    <div className="reading-light flex flex-col bg-background text-foreground selection:bg-primary/20 selection:text-primary pt-24">
       <ArticleSchema resource={resource} />
       <ResourceBreadcrumbSchema resource={resource} />
       
@@ -107,7 +108,9 @@ export default function ArticlePage() {
 
         {/* Article Body */}
         <Section className="py-20 md:py-32">
-          <div className="max-w-3xl mx-auto px-6 sm:px-8 space-y-16 md:space-y-24">
+          <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12 xl:grid xl:grid-cols-[15rem_minmax(0,48rem)] xl:gap-16 xl:justify-center">
+            <ArticleToc items={[{"id": "what-is-page-payload", "label": "What Is Page Payload?"}, {"id": "why-page-payload-matters-for-ecommerce", "label": "Why Page Payload Matters for Ecommerce"}, {"id": "what-are-critical-resources", "label": "What Are Critical Resources?"}, {"id": "html-css-and-javascript-payload", "label": "HTML, CSS and JavaScript Payload"}, {"id": "images-and-page-payload", "label": "Images and Page Payload"}, {"id": "third-party-scripts-and-apps", "label": "Third-Party Scripts and Apps"}, {"id": "fonts-and-other-supporting-resources", "label": "Fonts and Other Supporting Resources"}, {"id": "critical-css-and-rendering", "label": "Critical CSS and Rendering"}, {"id": "javascript-loading-and-execution", "label": "JavaScript Loading and Execution"}, {"id": "how-ecommerce-apps-affect-page-payload", "label": "How Ecommerce Apps Affect Page Payload"}, {"id": "how-to-audit-page-payload", "label": "How to Audit Page Payload"}, {"id": "what-should-be-reduced-deferred-or-removed", "label": "What Should Be Reduced, Deferred or Removed?"}, {"id": "page-payload-and-core-web-vitals", "label": "Page Payload and Core Web Vitals"}, {"id": "how-to-measure-improvement", "label": "How to Measure Improvement"}, {"id": "where-1-globe-fits", "label": "Where 1-GLOBE Fits"}, {"id": "frequently-asked-questions", "label": "Frequently Asked Questions"}]} />
+            <div className="max-w-3xl mx-auto xl:mx-0 space-y-16 md:space-y-24">
             
             <div className="space-y-6">
               <p className="text-xl text-foreground font-medium leading-relaxed">
@@ -116,7 +119,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">1. What Is Page Payload?</h2>
+              <h2 id="what-is-page-payload" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">1. What Is Page Payload?</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Page payload represents the entirety of the resources required to construct and operate a web page. This encompasses the initial HTML document, stylesheets (CSS), JavaScript bundles, media (images and video), web fonts, third-party tracking scripts, and other network-delivered assets.
               </p>
@@ -126,7 +129,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">2. Why Page Payload Matters for Ecommerce</h2>
+              <h2 id="why-page-payload-matters-for-ecommerce" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">2. Why Page Payload Matters for Ecommerce</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Ecommerce pages inherently trend toward becoming resource-heavy. A modern product page often features high-resolution primary product images, multiple variant images, recommendation widgets, customer reviews, marketing and analytics tracking, customer support chat tools, personalization integrations, and complex theme code.
               </p>
@@ -136,7 +139,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">3. What Are Critical Resources?</h2>
+              <h2 id="what-are-critical-resources" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">3. What Are Critical Resources?</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 A resource is considered "critical" if the browser requires it immediately to render the visible, above-the-fold portion of the page. 
               </p>
@@ -146,7 +149,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">4. HTML, CSS and JavaScript Payload</h2>
+              <h2 id="html-css-and-javascript-payload" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">4. HTML, CSS and JavaScript Payload</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 The text-based assets of a storefront each serve a distinct role in constructing the page:
               </p>
@@ -161,7 +164,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">5. Images and Page Payload</h2>
+              <h2 id="images-and-page-payload" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">5. Images and Page Payload</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Images routinely account for the vast majority of transferred bytes on an ecommerce page. 
               </p>
@@ -171,7 +174,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">6. Third-Party Scripts and Apps</h2>
+              <h2 id="third-party-scripts-and-apps" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">6. Third-Party Scripts and Apps</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Modern storefronts rely on third-party resources for analytics, advertising pixels, customer reviews, live chat, personalization, and social widgets.
               </p>
@@ -181,7 +184,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">7. Fonts and Other Supporting Resources</h2>
+              <h2 id="fonts-and-other-supporting-resources" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">7. Fonts and Other Supporting Resources</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Beyond core code and imagery, a storefront fetches web fonts, vector icon sets, embedded videos, and miscellaneous assets. 
               </p>
@@ -191,7 +194,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">8. Critical CSS and Rendering</h2>
+              <h2 id="critical-css-and-rendering" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">8. Critical CSS and Rendering</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 By default, CSS is a render-blocking resource; a browser will halt visual rendering until it has downloaded and parsed external stylesheets. 
               </p>
@@ -201,7 +204,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">9. JavaScript Loading and Execution</h2>
+              <h2 id="javascript-loading-and-execution" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">9. JavaScript Loading and Execution</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Optimizing JavaScript payload involves reducing unnecessary code, code-splitting large bundles into smaller chunks, and altering how scripts are fetched using <code className="bg-secondary px-1.5 py-0.5 rounded text-sm text-foreground">defer</code>, <code className="bg-secondary px-1.5 py-0.5 rounded text-sm text-foreground">async</code>, or lazy-loading techniques.
               </p>
@@ -211,7 +214,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">10. How Ecommerce Apps Affect Page Payload</h2>
+              <h2 id="how-ecommerce-apps-affect-page-payload" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">10. How Ecommerce Apps Affect Page Payload</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 For merchants operating on platforms like Shopify, app integrations are a primary source of payload bloat. Apps frequently inject their own styles, structural blocks, tracking pixels, and complex interactive widgets directly into the DOM.
               </p>
@@ -221,7 +224,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">11. How to Audit Page Payload</h2>
+              <h2 id="how-to-audit-page-payload" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">11. How to Audit Page Payload</h2>
               <p className="text-lg text-neutral-400 leading-relaxed mb-4">
                 A practical payload audit requires methodical evaluation. While browser developer tools and specialized performance testing services are useful, no single tool provides a complete diagnosis.
               </p>
@@ -240,7 +243,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">12. What Should Be Reduced, Deferred or Removed?</h2>
+              <h2 id="what-should-be-reduced-deferred-or-removed" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">12. What Should Be Reduced, Deferred or Removed?</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 When evaluating resources, classify them into three practical actions depending on their functional necessity:
               </p>
@@ -252,7 +255,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">13. Page Payload and Core Web Vitals</h2>
+              <h2 id="page-payload-and-core-web-vitals" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">13. Page Payload and Core Web Vitals</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Core Web Vitals—including Largest Contentful Paint (LCP), Interaction to Next Paint (INP), and Cumulative Layout Shift (CLS)—are profoundly influenced by resource delivery. 
               </p>
@@ -262,7 +265,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">14. How to Measure Improvement</h2>
+              <h2 id="how-to-measure-improvement" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">14. How to Measure Improvement</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 The only reliable way to measure technical improvement is to compare before and after. 
               </p>
@@ -272,7 +275,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="bg-secondary/30 p-8 md:p-12 mt-16 border border-border rounded-lg">
-              <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-6">15. Where 1-GLOBE Fits</h2>
+              <h2 id="where-1-globe-fits" className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-6 scroll-mt-28">15. Where 1-GLOBE Fits</h2>
               <p className="text-lg text-neutral-400 leading-relaxed mb-6">
                 1-GLOBE approaches ecommerce performance as a comprehensive system spanning multiple disciplines, without relying on unsupported guarantees regarding rankings, conversions, or automatic Core Web Vitals success.
               </p>
@@ -281,7 +284,7 @@ export default function ArticlePage() {
                 <li><strong className="text-foreground">1-BLOG:</strong> Focused on structured content performance (currently launching soon).</li>
                 <li><strong className="text-foreground">1-LIST:</strong> Focused on product listing performance for complex discovery environments (currently launching soon).</li>
               </ul>
-              <Link href="/apps/1-optimiser" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-bold text-xs uppercase tracking-widest bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors mt-2">
+              <Link href="/apps/1-optimiser" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-semibold text-xs bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors mt-2">
                 Explore 1-OPTIMISER
               </Link>
             </div>
@@ -292,7 +295,7 @@ export default function ArticlePage() {
 
             {/* FAQ Section */}
             <div className="space-y-8">
-              <h2 className="text-3xl font-heading font-bold text-foreground">Frequently Asked Questions</h2>
+              <h2 id="frequently-asked-questions" className="text-3xl font-heading font-bold text-foreground scroll-mt-28">Frequently Asked Questions</h2>
               <Accordion.Root type="single" collapsible className="w-full space-y-4">
                 {faqs.map((faq, index) => (
                   <Accordion.Item 
@@ -318,7 +321,7 @@ export default function ArticlePage() {
 
             {/* Related Resources */}
             <div className="pt-12 border-t border-border mt-16">
-              <h2 className="text-2xl font-heading font-bold text-foreground mb-6">Related Resources</h2>
+              <h2 id="related-resources" className="text-2xl font-heading font-bold text-foreground mb-6 scroll-mt-28">Related Resources</h2>
               <div className="flex flex-col gap-4">
                 <Link href="/resources/ecommerce-performance" className="text-primary hover:text-foreground transition-colors font-medium text-lg flex items-center gap-2">
                   Ecommerce Performance
@@ -338,6 +341,7 @@ export default function ArticlePage() {
               </div>
             </div>
 
+          </div>
           </div>
         </Section>
 

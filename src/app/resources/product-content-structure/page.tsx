@@ -2,6 +2,7 @@ import React from 'react'
 import { Metadata } from 'next'
 import { buildMetadata } from '@/lib/seo'
 import { Section } from '@/components/shared/Section'
+import { ArticleToc } from '@/components/shared/ArticleToc'
 import Link from 'next/link'
 import { getResourceBySlug } from '@/lib/resources'
 import { ArticleSchema, ResourceBreadcrumbSchema } from '@/components/shared/ArticleSchemaOrg'
@@ -61,7 +62,7 @@ export default function ArticlePage() {
   ]
 
   return (
-    <div className="flex flex-col bg-background text-foreground selection:bg-primary/20 selection:text-primary pt-24">
+    <div className="reading-light flex flex-col bg-background text-foreground selection:bg-primary/20 selection:text-primary pt-24">
       <ArticleSchema resource={resource} />
       <ResourceBreadcrumbSchema resource={resource} />
       
@@ -107,7 +108,9 @@ export default function ArticlePage() {
 
         {/* Article Body */}
         <Section className="py-20 md:py-32">
-          <div className="max-w-3xl mx-auto px-6 sm:px-8 space-y-16 md:space-y-24">
+          <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12 xl:grid xl:grid-cols-[15rem_minmax(0,48rem)] xl:gap-16 xl:justify-center">
+            <ArticleToc items={[{"id": "what-is-product-content-structure", "label": "What Is Product Content Structure?"}, {"id": "why-product-content-structure-matters-for-ecommerce", "label": "Why Product Content Structure Matters for Ecommerce"}, {"id": "the-core-elements-of-ecommerce-product-content", "label": "The Core Elements of Ecommerce Product Content"}, {"id": "how-to-structure-a-strong-product-title", "label": "How to Structure a Strong Product Title"}, {"id": "product-descriptions-structure-before-length", "label": "Product Descriptions: Structure Before Length"}, {"id": "product-attributes-and-specifications", "label": "Product Attributes and Specifications"}, {"id": "product-variants-and-option-structure", "label": "Product Variants and Option Structure"}, {"id": "product-content-consistency-across-the-catalog", "label": "Product Content Consistency Across the Catalog"}, {"id": "product-content-for-search-and-discovery", "label": "Product Content for Search and Discovery"}, {"id": "product-content-and-structured-data", "label": "Product Content and Structured Data"}, {"id": "product-faqs-and-supporting-information", "label": "Product FAQs and Supporting Information"}, {"id": "common-product-content-mistakes", "label": "Common Product Content Mistakes"}, {"id": "how-to-audit-product-content-at-scale", "label": "How to Audit Product Content at Scale"}, {"id": "product-content-and-accessibility-usability", "label": "Product Content and Accessibility / Usability"}, {"id": "where-1-list-fits", "label": "Where 1-LIST Fits"}, {"id": "frequently-asked-questions", "label": "Frequently Asked Questions"}]} />
+            <div className="max-w-3xl mx-auto xl:mx-0 space-y-16 md:space-y-24">
             
             <div className="space-y-6">
               <p className="text-xl text-foreground font-medium leading-relaxed">
@@ -116,7 +119,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">1. What Is Product Content Structure?</h2>
+              <h2 id="what-is-product-content-structure" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">1. What Is Product Content Structure?</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Product content structure is the organization of product information into distinct, predictable formats. It moves beyond treating a product as merely a title and a single paragraph of copy.
               </p>
@@ -126,7 +129,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">2. Why Product Content Structure Matters for Ecommerce</h2>
+              <h2 id="why-product-content-structure-matters-for-ecommerce" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">2. Why Product Content Structure Matters for Ecommerce</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 At a human level, clear structure improves customer understanding. When shoppers can easily locate dimensions, materials, and compatibility, they can make informed comparisons. This consistency directly improves the usability of the storefront.
               </p>
@@ -136,7 +139,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">3. The Core Elements of Ecommerce Product Content</h2>
+              <h2 id="the-core-elements-of-ecommerce-product-content" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">3. The Core Elements of Ecommerce Product Content</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 A robust product page relies on an ecosystem of distinct content elements:
               </p>
@@ -151,7 +154,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">4. How to Structure a Strong Product Title</h2>
+              <h2 id="how-to-structure-a-strong-product-title" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">4. How to Structure a Strong Product Title</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 A strong product title prioritizes identity and clarity. It should clearly state what the product is, incorporating the brand, model, product type, and essential differentiators.
               </p>
@@ -161,7 +164,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">5. Product Descriptions: Structure Before Length</h2>
+              <h2 id="product-descriptions-structure-before-length" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">5. Product Descriptions: Structure Before Length</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Merchants often mistake word count for quality. A highly structured, concise description is far more valuable than a lengthy wall of text.
               </p>
@@ -171,7 +174,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">6. Product Attributes and Specifications</h2>
+              <h2 id="product-attributes-and-specifications" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">6. Product Attributes and Specifications</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Attributes are the structured data points that define a product: dimensions, weight, colour, material, capacity, size, and model numbers.
               </p>
@@ -181,7 +184,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">7. Product Variants and Option Structure</h2>
+              <h2 id="product-variants-and-option-structure" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">7. Product Variants and Option Structure</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 When a product comes in multiple sizes, colours, or configurations, the content structure must clearly distinguish the parent product from its individual variants.
               </p>
@@ -191,7 +194,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">8. Product Content Consistency Across the Catalog</h2>
+              <h2 id="product-content-consistency-across-the-catalog" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">8. Product Content Consistency Across the Catalog</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 A single well-structured product page is insufficient if the rest of the catalog is chaotic. Consistency is the foundation of a trustworthy ecommerce site.
               </p>
@@ -201,7 +204,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">9. Product Content for Search and Discovery</h2>
+              <h2 id="product-content-for-search-and-discovery" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">9. Product Content for Search and Discovery</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Clear, highly organized product information can provide useful context for traditional search engines, internal ecommerce search functions, external product feeds, and emerging generative discovery systems.
               </p>
@@ -211,7 +214,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">10. Product Content and Structured Data</h2>
+              <h2 id="product-content-and-structured-data" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">10. Product Content and Structured Data</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 It is important to distinguish between the visible product content a human reads and the structured data (like schema markup) injected into the page code.
               </p>
@@ -221,7 +224,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">11. Product FAQs and Supporting Information</h2>
+              <h2 id="product-faqs-and-supporting-information" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">11. Product FAQs and Supporting Information</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Frequently Asked Questions (FAQs) are highly useful when they address genuine customer concerns regarding compatibility, sizing, materials, installation, care, or specific usage scenarios.
               </p>
@@ -231,7 +234,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">12. Common Product Content Mistakes</h2>
+              <h2 id="common-product-content-mistakes" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">12. Common Product Content Mistakes</h2>
               <p className="text-lg text-neutral-400 leading-relaxed mb-4">
                 When auditing a catalog, watch for these common architectural failures:
               </p>
@@ -248,7 +251,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">13. How to Audit Product Content at Scale</h2>
+              <h2 id="how-to-audit-product-content-at-scale" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">13. How to Audit Product Content at Scale</h2>
               <p className="text-lg text-neutral-400 leading-relaxed mb-4">
                 Managing product content across a large catalog requires a systematic workflow:
               </p>
@@ -267,7 +270,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">14. Product Content and Accessibility / Usability</h2>
+              <h2 id="product-content-and-accessibility-usability" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">14. Product Content and Accessibility / Usability</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Excellent content structure directly supports storefront accessibility. Information should be understandable, logically organized, and highly readable. 
               </p>
@@ -277,7 +280,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="bg-secondary/30 p-8 md:p-12 mt-16 border border-border rounded-lg">
-              <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-6">15. Where 1-LIST Fits</h2>
+              <h2 id="where-1-list-fits" className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-6 scroll-mt-28">15. Where 1-LIST Fits</h2>
               <p className="text-lg text-neutral-400 leading-relaxed mb-6">
                 <Link href="/" className="text-primary hover:underline">1-GLOBE</Link> is building an ecosystem of performance tools to support modern storefront architecture.
               </p>
@@ -295,7 +298,7 @@ export default function ArticlePage() {
 
             {/* FAQ Section */}
             <div className="space-y-8">
-              <h2 className="text-3xl font-heading font-bold text-foreground">Frequently Asked Questions</h2>
+              <h2 id="frequently-asked-questions" className="text-3xl font-heading font-bold text-foreground scroll-mt-28">Frequently Asked Questions</h2>
               <Accordion.Root type="single" collapsible className="w-full space-y-4">
                 {faqs.map((faq, index) => (
                   <Accordion.Item 
@@ -321,7 +324,7 @@ export default function ArticlePage() {
 
             {/* Related Resources */}
             <div className="pt-12 border-t border-border mt-16">
-              <h2 className="text-2xl font-heading font-bold text-foreground mb-6">Related Resources</h2>
+              <h2 id="related-resources" className="text-2xl font-heading font-bold text-foreground mb-6 scroll-mt-28">Related Resources</h2>
               <div className="flex flex-col gap-4">
                 <Link href="/resources/ecommerce-performance" className="text-primary hover:text-foreground transition-colors font-medium text-lg flex items-center gap-2">
                   Ecommerce Performance
@@ -347,6 +350,7 @@ export default function ArticlePage() {
               </div>
             </div>
 
+          </div>
           </div>
         </Section>
 

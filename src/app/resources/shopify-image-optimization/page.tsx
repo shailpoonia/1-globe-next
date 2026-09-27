@@ -2,6 +2,7 @@ import React from 'react'
 import { Metadata } from 'next'
 import { buildMetadata } from '@/lib/seo'
 import { Section } from '@/components/shared/Section'
+import { ArticleToc } from '@/components/shared/ArticleToc'
 import Link from 'next/link'
 import { getResourceBySlug } from '@/lib/resources'
 import { ArticleSchema, ResourceBreadcrumbSchema } from '@/components/shared/ArticleSchemaOrg'
@@ -57,7 +58,7 @@ export default function ArticlePage() {
   ]
 
   return (
-    <div className="flex flex-col bg-background text-foreground selection:bg-primary/20 selection:text-primary pt-24">
+    <div className="reading-light flex flex-col bg-background text-foreground selection:bg-primary/20 selection:text-primary pt-24">
       <ArticleSchema resource={resource} />
       <ResourceBreadcrumbSchema resource={resource} />
       
@@ -103,7 +104,9 @@ export default function ArticlePage() {
 
         {/* Article Body */}
         <Section className="py-20 md:py-32">
-          <div className="max-w-3xl mx-auto px-6 sm:px-8 space-y-16 md:space-y-24">
+          <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12 xl:grid xl:grid-cols-[15rem_minmax(0,48rem)] xl:gap-16 xl:justify-center">
+            <ArticleToc items={[{"id": "why-image-optimization-matters-for-shopify-stores", "label": "Why image optimization matters for Shopify stores"}, {"id": "start-with-image-dimensions", "label": "Start with image dimensions"}, {"id": "responsive-images-srcset-and-sizes", "label": "Responsive images: srcset and sizes"}, {"id": "choose-appropriate-image-formats", "label": "Choose appropriate image formats"}, {"id": "compression-reduce-payload-without-destroying-quality", "label": "Compression: Reduce payload without destroying quality"}, {"id": "lazy-loading-and-image-loading-priority", "label": "Lazy loading and image loading priority"}, {"id": "product-image-alt-text", "label": "Product image alt text"}, {"id": "descriptive-image-filenames", "label": "Descriptive image filenames"}, {"id": "image-context-matters", "label": "Image context matters"}, {"id": "accessibility", "label": "Accessibility"}, {"id": "how-to-audit-your-shopify-image-library", "label": "How to audit your Shopify image library"}, {"id": "common-shopify-image-optimization-mistakes", "label": "Common Shopify image optimization mistakes"}, {"id": "where-1-optimiser-fits", "label": "Where 1-OPTIMISER fits"}, {"id": "frequently-asked-questions", "label": "Frequently Asked Questions"}, {"id": "related-resources", "label": "Related Resources"}]} />
+            <div className="max-w-3xl mx-auto xl:mx-0 space-y-16 md:space-y-24">
             
             <div className="space-y-6">
               <p className="text-xl text-foreground font-medium leading-relaxed">
@@ -118,7 +121,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">1. Why image optimization matters for Shopify stores</h2>
+              <h2 id="why-image-optimization-matters-for-shopify-stores" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">1. Why image optimization matters for Shopify stores</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Product imagery often accounts for the majority of a page's total weight. When a merchant uploads an unnecessarily large image, it can increase the total bytes transferred to the shopper's browser. 
               </p>
@@ -128,7 +131,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">2. Start with image dimensions</h2>
+              <h2 id="start-with-image-dimensions" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">2. Start with image dimensions</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 One of the most common payload issues occurs when a merchant uploads a massive source image, but the storefront only displays it at a fraction of that size. The rendered size (how large the image appears on screen) is often much smaller than the source dimensions (the actual pixel width of the file).
               </p>
@@ -138,7 +141,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">3. Responsive images: srcset and sizes</h2>
+              <h2 id="responsive-images-srcset-and-sizes" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">3. Responsive images: srcset and sizes</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Modern browsers support responsive images using two critical HTML attributes: <code className="bg-secondary px-1.5 py-0.5 rounded text-sm text-foreground">srcset</code> and <code className="bg-secondary px-1.5 py-0.5 rounded text-sm text-foreground">sizes</code>.
               </p>
@@ -148,7 +151,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">4. Choose appropriate image formats</h2>
+              <h2 id="choose-appropriate-image-formats" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">4. Choose appropriate image formats</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Selecting the right file format is foundational. The most common formats are JPEG, PNG, and WebP:
               </p>
@@ -163,7 +166,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">5. Compression: Reduce payload without destroying quality</h2>
+              <h2 id="compression-reduce-payload-without-destroying-quality" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">5. Compression: Reduce payload without destroying quality</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Image compression can be lossy (removing some data to reduce file size) or lossless (reducing size without losing visual data). Finding the right quality settings requires preventing unnecessary enlargement and always checking the final visual output.
               </p>
@@ -179,7 +182,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">6. Lazy loading and image loading priority</h2>
+              <h2 id="lazy-loading-and-image-loading-priority" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">6. Lazy loading and image loading priority</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Not all images need to be loaded the moment a shopper opens a page. Images located below the fold—further down the page—can often be "lazy loaded," meaning the browser delays downloading them until the user scrolls near them.
               </p>
@@ -189,7 +192,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">7. Product image alt text</h2>
+              <h2 id="product-image-alt-text" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">7. Product image alt text</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Alt text is fundamentally an accessibility feature. It provides a text alternative for users relying on screen readers. Alt text should describe the meaningful content or purpose of the image accurately.
               </p>
@@ -199,7 +202,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">8. Descriptive image filenames</h2>
+              <h2 id="descriptive-image-filenames" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">8. Descriptive image filenames</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 A raw filename like <code className="bg-secondary px-1.5 py-0.5 rounded text-sm text-foreground">IMG_4837.jpg</code> offers no descriptive context. Renaming the asset to something precise, such as <code className="bg-secondary px-1.5 py-0.5 rounded text-sm text-foreground">wooden-wall-clock-12-inch.jpg</code>, can provide limited but useful contextual clues about the image subject.
               </p>
@@ -209,7 +212,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">9. Image context matters</h2>
+              <h2 id="image-context-matters" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">9. Image context matters</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 An image does not exist in a vacuum. Search engines and discovery tools use multiple signals to understand an image, including the surrounding text, the product information on the page, useful captions, and the overall relevance of the page content.
               </p>
@@ -219,7 +222,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">10. Accessibility</h2>
+              <h2 id="accessibility" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">10. Accessibility</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 Accessibility and technical optimization are deeply intertwined. Meaningful alt text provides an accessible text alternative for users who cannot see the image and can also provide additional textual context about the image.
               </p>
@@ -233,7 +236,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">11. How to audit your Shopify image library</h2>
+              <h2 id="how-to-audit-your-shopify-image-library" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">11. How to audit your Shopify image library</h2>
               <p className="text-lg text-neutral-400 leading-relaxed mb-4">
                 Merchants can review their catalogs using this practical checklist:
               </p>
@@ -252,7 +255,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">12. Common Shopify image optimization mistakes</h2>
+              <h2 id="common-shopify-image-optimization-mistakes" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">12. Common Shopify image optimization mistakes</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 When auditing a storefront, merchants frequently encounter these common pitfalls:
               </p>
@@ -269,7 +272,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="bg-secondary/30 p-8 md:p-12 mt-16 border border-border rounded-lg">
-              <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-6">13. Where 1-OPTIMISER fits</h2>
+              <h2 id="where-1-optimiser-fits" className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-6 scroll-mt-28">13. Where 1-OPTIMISER fits</h2>
               <p className="text-lg text-neutral-400 leading-relaxed mb-6">
                 1-OPTIMISER is being developed as an image performance tool for Shopify stores. It brings image optimization, AI-assisted image metadata, image editing, catalog scope controls, and selected storefront performance tools into one workflow.
               </p>
@@ -279,7 +282,7 @@ export default function ArticlePage() {
               <p className="text-sm font-bold uppercase tracking-widest text-primary mb-8">
                 Note: 1-OPTIMISER is currently coming soon.
               </p>
-              <Link href="/apps/1-optimiser" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-bold text-xs uppercase tracking-widest bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors">
+              <Link href="/apps/1-optimiser" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-semibold text-xs bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors">
                 Explore 1-OPTIMISER
               </Link>
             </div>
@@ -290,7 +293,7 @@ export default function ArticlePage() {
 
             {/* FAQ Section */}
             <div className="space-y-8">
-              <h2 className="text-3xl font-heading font-bold text-foreground">14. Frequently Asked Questions</h2>
+              <h2 id="frequently-asked-questions" className="text-3xl font-heading font-bold text-foreground scroll-mt-28">14. Frequently Asked Questions</h2>
               <Accordion.Root type="single" collapsible className="w-full space-y-4">
                 {faqs.map((faq, index) => (
                   <Accordion.Item 
@@ -316,7 +319,7 @@ export default function ArticlePage() {
 
             {/* Related Resources */}
             <div className="pt-12 border-t border-border mt-16">
-              <h2 className="text-2xl font-heading font-bold text-foreground mb-6">15. Related Resources</h2>
+              <h2 id="related-resources" className="text-2xl font-heading font-bold text-foreground mb-6 scroll-mt-28">15. Related Resources</h2>
               <div className="flex flex-col gap-4">
                 <Link href="/resources/ecommerce-image-optimization" className="text-primary hover:text-foreground transition-colors font-medium text-lg flex items-center gap-2">
                   Read the broader guide: Ecommerce Image Optimization
@@ -330,6 +333,7 @@ export default function ArticlePage() {
               </div>
             </div>
 
+          </div>
           </div>
         </Section>
 

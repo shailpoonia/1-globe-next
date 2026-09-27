@@ -28,7 +28,7 @@ export const CtaBand: React.FC<CtaBandProps> = ({
   italicWord,
   headlinePart2 = 'perform.',
   subhead = 'The foundational tools for high-performance ecommerce.',
-  primaryCtaText = 'COMING SOON TO SHOPIFY',
+  primaryCtaText = 'Coming soon to Shopify',
   primaryCtaUrl = "#",
   primaryIsLink = false,
   secondaryCtaText,
@@ -37,8 +37,8 @@ export const CtaBand: React.FC<CtaBandProps> = ({
   noteText = '',
   className = '',
 }) => {
-  const primaryButtonClass = 'interactive-btn inline-flex items-center justify-between h-14 px-8 font-bold text-[10px] uppercase tracking-widest bg-foreground text-background hover:bg-neutral-200 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-w-[240px]'
-  const secondaryButtonClass = 'interactive-btn inline-flex items-center justify-center h-14 px-8 font-bold text-[10px] uppercase tracking-widest border border-neutral-800 bg-transparent text-foreground hover:bg-white/5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary'
+  const primaryButtonClass = 'interactive-btn inline-flex items-center justify-between h-14 px-8 font-semibold text-[13px] bg-foreground text-background hover:bg-neutral-200 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-w-[240px]'
+  const secondaryButtonClass = 'interactive-btn inline-flex items-center justify-center h-14 px-8 font-semibold text-[13px] border border-neutral-800 bg-transparent text-foreground hover:bg-white/5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary'
 
   return (
     <section id={id} className={`py-16 md:py-24 relative overflow-hidden bg-background border-t border-neutral-900 ${className}`}>
@@ -47,12 +47,12 @@ export const CtaBand: React.FC<CtaBandProps> = ({
           
           <div className="max-w-xl">
             {eyebrow && (
-              <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-400 block mb-6">
+              <span className="text-[13px] font-bold uppercase tracking-[0.12em] text-neutral-400 block mb-6">
                 {eyebrow}
               </span>
             )}
 
-            <h2 className="font-heading font-bold text-4xl sm:text-5xl md:text-6xl tracking-tighter leading-[0.95] text-foreground uppercase mb-6">
+            <h2 className="font-heading font-bold text-4xl sm:text-5xl md:text-6xl tracking-tight leading-[1.08] text-foreground mb-6">
               {headline ? (
                 headline
               ) : (
@@ -61,7 +61,7 @@ export const CtaBand: React.FC<CtaBandProps> = ({
                   {italicWord && (
                     <>
                       {' '}
-                      <em className="italic">{italicWord}</em>
+                      <em className="italic">{italicWord}</em>{' '}
                     </>
                   )}
                   {headlinePart2}
@@ -120,7 +120,7 @@ export const CtaBand: React.FC<CtaBandProps> = ({
             )}
             
             {noteText && (
-              <p className="text-[9px] text-neutral-600 font-bold uppercase tracking-widest mt-2 text-center md:text-left">
+              <p className="text-xs text-neutral-600 font-bold uppercase tracking-widest mt-2 text-center md:text-left">
                 {noteText}
               </p>
             )}

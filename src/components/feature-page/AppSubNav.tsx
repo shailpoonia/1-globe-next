@@ -8,7 +8,7 @@ interface AppSubNavProps {
 
 export const AppSubNav: React.FC<AppSubNavProps> = ({
   appName,
-  ctaText = "COMING SOON TO SHOPIFY"
+  ctaText = "Coming soon to Shopify"
 }) => {
   return (
     <div className="sticky top-[4.5rem] z-40 w-full border-b border-border bg-background">
@@ -41,7 +41,7 @@ export const AppSubNav: React.FC<AppSubNavProps> = ({
 
         {/* Primary CTA */}
         <div className="hidden sm:block shrink-0">
-          <div className="inline-flex items-center justify-center h-9 px-4 text-[10px] font-bold uppercase tracking-widest bg-secondary text-muted-foreground cursor-not-allowed select-none">
+          <div className="inline-flex items-center justify-center h-9 px-4 text-[13px] font-semibold bg-secondary text-muted-foreground cursor-not-allowed select-none">
             {ctaText}
           </div>
         </div>
