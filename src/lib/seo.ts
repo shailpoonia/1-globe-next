@@ -24,7 +24,7 @@ export const shareImage = {
   url: '/og-image.jpg',
   width: 1200,
   height: 630,
-  alt: '1-GLOBE: Make ecommerce perform. Image, content and product listing performance tools for Shopify merchants.',
+  alt: '1-GLOBE: The performance layer for ecommerce. Image, content and product listing performance tools for Shopify merchants.',
 };
 
 export const getCanonicalUrl = (path: string = '') => {

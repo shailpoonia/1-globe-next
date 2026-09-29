@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { SectionHeader } from '@/components/shared/SectionHeader'
+import { BrandWordmark } from '@/components/shared/BrandLogo'
 import { 
   ChevronLeft, ChevronRight, Image as ImageIcon, Sparkles, CheckCircle2, 
   Search, FileText, ArrowRight, MousePointerClick, Link as LinkIcon, ShoppingBag, Zap, TrendingUp, PenTool, Pause, Play
@@ -28,7 +29,7 @@ export const InfographicShowcase: React.FC = () => {
       <div className="max-w-content mx-auto px-5 sm:px-8 lg:px-12">
         <SectionHeader
           eyebrow="The Transformation"
-          headline="See the difference."
+          headline={<span className="uppercase">See the <span className="text-primary">difference</span></span>}
           subhead="Visualizing how ecommerce image and content workflows can change the technical foundation of a storefront."
           align="center"
         />
@@ -97,7 +98,7 @@ export const InfographicShowcase: React.FC = () => {
           
           <div className="text-center mt-8">
             <p className="text-sm font-semibold text-neutral-400">
-              From comforters to sneakers to cookware — if your store has product photos, <span className="text-primary">1-GLOBE</span> makes them work.
+              From comforters to sneakers to cookware — if your store has product photos, <BrandWordmark /> makes them work.
             </p>
           </div>
         </div>
@@ -224,7 +225,7 @@ const Slide1Content: React.FC = () => {
       </div>
       
       <div className="mt-10 text-center px-4 md:px-12">
-        <h3 className="text-xl md:text-2xl font-bold text-white mb-2">Clean images. Readable tags. Meaningful context for your catalog.</h3>
+        <h3 className="text-xl md:text-2xl font-bold text-white mb-2">Clean images. Readable tags. Meaningful context for your catalog</h3>
         <p className="text-sm text-slate-400">Sound familiar? Half your catalog is probably named IMG-2026-WA001.jpg right now.</p>
       </div>
     </div>
@@ -305,7 +306,7 @@ const Slide2Content: React.FC = () => {
       </div>
 
       <div className="text-center px-4 md:px-12">
-        <h3 className="text-lg md:text-xl font-bold text-white mb-2 leading-tight">Once your products are readable, 1-BLOG is designed to help create structured content around them.</h3>
+        <h3 className="text-lg md:text-xl font-bold text-white mb-2 leading-tight">Once your products are readable, 1-BLOG is designed to help create structured content around them</h3>
         <p className="text-sm text-neutral-400">Content designed to provide useful context for merchants and their audience.</p>
       </div>
     </div>

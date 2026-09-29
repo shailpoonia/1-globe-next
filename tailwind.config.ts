@@ -100,7 +100,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: ['var(--font-sans)', 'sans-serif'],
-        heading: ['var(--font-heading)', 'sans-serif'],
+        heading: ['"1-GLOBE One"', 'var(--font-heading)', 'sans-serif'],
         serif: ['var(--font-serif)', 'serif'],
         mono: ['var(--font-mono)', 'monospace']
       },

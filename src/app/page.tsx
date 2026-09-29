@@ -45,7 +45,7 @@ export default function HomePage() {
       <CtaBand
         headlinePart1="Make your store"
         italicWord="perform"
-        headlinePart2="better."
+        headlinePart2="better"
         subhead="Start with the performance problem."
         primaryCtaText="Explore 1-OPTIMISER"
         primaryCtaUrl="/apps/1-optimiser"
