@@ -18,7 +18,7 @@ export const Footer: React.FC = () => {
             </Link>
             <h2 className="font-heading font-bold text-2xl sm:text-3xl tracking-tight text-foreground leading-tight mb-4">
               Make ecommerce{' '}<br />
-              <span className="text-primary">perform.</span>
+              <span className="text-primary">perform</span>
             </h2>
             <p className="text-xs font-bold uppercase tracking-widest text-neutral-400 mb-8">
               ECOMMERCE PERFORMANCE TECHNOLOGY

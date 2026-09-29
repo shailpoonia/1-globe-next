@@ -19,7 +19,7 @@ export const ProductEcosystem: React.FC = () => {
           <div className="lg:col-span-7 flex flex-col gap-4">
             <span className="text-eyebrow">The 1-GLOBE ecosystem</span>
             <h2 className="font-heading font-bold text-4xl sm:text-5xl tracking-tight leading-[1.1] text-foreground">
-              Every layer of the store matters.
+              Every layer of the store matters
             </h2>
           </div>
           <p className="lg:col-span-5 text-base md:text-lg leading-relaxed text-muted-foreground">

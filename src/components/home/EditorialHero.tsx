@@ -42,10 +42,10 @@ export const EditorialHero: React.FC = () => {
             </span>
           </div>
           
-          <h1 className="font-heading font-bold text-6xl sm:text-7xl md:text-8xl lg:text-[6.25rem] tracking-tight leading-[1.05] uppercase text-white relative z-10">
-            MAKE{' '}<br />
-            ECOMMERCE{' '}<br />
-            <span className="text-primary">PERFORM.</span>
+          <h1 className="font-heading font-bold text-5xl sm:text-[3.5rem] md:text-[4.25rem] lg:text-[4.75rem] tracking-tight leading-[1.05] uppercase text-white relative z-10">
+            THE{' '}<br />
+            <span className="text-primary">PERFORMANCE LAYER</span>{' '}<br />
+            FOR ECOMMERCE
           </h1>
 
           <div className="space-y-8 max-w-2xl">
@@ -68,7 +68,7 @@ export const EditorialHero: React.FC = () => {
             </Link>
             <Link
               href="/apps/1-optimiser"
-              className="interactive-link inline-flex items-center justify-center gap-3 h-14 px-4 font-semibold text-[13px] text-white hover:text-neutral-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary w-full sm:w-auto"
+              className="interactive-btn inline-flex items-center justify-center gap-3 h-14 px-8 font-semibold text-[13px] text-white border border-neutral-500 hover:border-neutral-300 hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary w-full sm:w-auto"
             >
               <span>Discover 1-OPTIMISER</span>
               <ArrowRight className="w-4 h-4" />

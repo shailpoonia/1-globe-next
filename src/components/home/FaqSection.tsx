@@ -63,7 +63,7 @@ export const FaqSection: React.FC = () => {
             <h2 className="font-heading font-bold text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-[1.08] text-foreground">
               Questions{' '}<br />
               worth{' '}<br />
-              answering.
+              answering
             </h2>
           </div>
 

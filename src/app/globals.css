@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Brand "1": the digit 1 from the 1-GLOBE logo, used in place of Space Grotesk's 1 in every heading.
+   unicode-range limits it to the character "1"; all other characters still use Space Grotesk. */
+@font-face {
+  font-family: '1-GLOBE One';
+  src: url(data:font/woff;base64,d09GRgABAAAAAAJ8AAoAAAAAApgAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABPUy8yAAABZAAAADMAAABgSMtGGWNtYXAAAAGgAAAAKQAAADQADACEZ2x5ZgAAAdQAAAA2AAAANtWFerVoZWFkAAAA9AAAADYAAAA2LqfydGhoZWEAAAEsAAAAIAAAACQFqQEGaG10eAAAAZgAAAAIAAAACAPDABlsb2NhAAABzAAAAAYAAAAGABsAAG1heHAAAAFMAAAAFgAAACAABAAPbmFtZQAAAgwAAABeAAAAbGqpoepwb3N0AAACbAAAAA8AAAAmABgAAAABAAAAAQAAIvXur18PPPUAAwPoAAAAAObhV2oAAAAA5uFXagAZAAABtgLAAAAAAwACAAAAAAAAeJxjYGRgYL7x7xsDA+MXBkkGScZtDEARFMAEAH5UBLJ4nGNgZGBgYGLgZQDRIBYaAAAB8wAUAAB4nGNgZnzEOIGBlYGFgTBgRObYAwGQMmQwZL7x7xsDA/MNRi64wi9MB4CUAgMDACROCGwAAfQAAAHPABl4nGNgYGBiYGBgBmIRIMkIplkYFIA0CxCC+Ib//0PI/xfAfAYAUUcGjQAAAAAAAAAAGwAAAAEAGQAAAbYCwAAMAAABBxEHIxEHByMnJTc3AbYWC8cOW0AMAQN8GgK4Kv13BQHiAkoFzlQDAAB4nC2IvQqAIBRGjyVEBA0NzY0tDS09gCAugtAbNIhLOAS+f9fowPcLaA4UFcXweaWhk9WidC/PzPT3hpF135wPxi4hxzOmcl8POxsOT8BgWSQzkVOUKNxcPC+iLwyWAAB4nGNgYsAPQPIiAACOABkA) format('woff');
+  unicode-range: U+0031;
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: block;
+}
+
+
 @layer base {
   :root {
     /* Calmer dark theme: deep blue-grey ground, soft white text, brand blue from the logo (#43C6FA). */
@@ -93,7 +105,7 @@
   }
 
   h1, h2, h3, h4, h5, h6, .font-heading {
-    font-family: var(--font-heading) !important;
+    font-family: '1-GLOBE One', var(--font-heading) !important;
     font-feature-settings: "ss04" 1;
     font-variant-ligatures: none;
   }
