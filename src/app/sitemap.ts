@@ -9,7 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
     '',
     '/about',
-    '/apps/1-optimiser',
+    '/apps/1-optimizer',
     '/pricing',
     '/contact',
     '/privacy',

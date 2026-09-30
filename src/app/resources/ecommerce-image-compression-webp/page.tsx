@@ -109,7 +109,7 @@ export default function ArticlePage() {
         {/* Article Body */}
         <Section className="py-20 md:py-32">
           <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12 xl:grid xl:grid-cols-[15rem_minmax(0,48rem)] xl:gap-16 xl:justify-center">
-            <ArticleToc items={[{"id": "what-is-image-compression", "label": "What Is Image Compression?"}, {"id": "why-image-compression-matters-for-ecommerce", "label": "Why Image Compression Matters for Ecommerce"}, {"id": "lossy-vs-lossless-compression", "label": "Lossy vs Lossless Compression"}, {"id": "what-is-webp", "label": "What Is WebP?"}, {"id": "webp-vs-jpeg-vs-png", "label": "WebP vs JPEG vs PNG"}, {"id": "how-much-should-an-ecommerce-image-be-compressed", "label": "How Much Should an Ecommerce Image Be Compressed?"}, {"id": "image-quality-vs-file-size", "label": "Image Quality vs File Size"}, {"id": "image-dimensions-and-compression-work-together", "label": "Image Dimensions and Compression Work Together"}, {"id": "should-every-ecommerce-image-be-converted-to-webp", "label": "Should Every Ecommerce Image Be Converted to WebP?"}, {"id": "webp-and-shopify", "label": "WebP and Shopify"}, {"id": "how-to-compress-ecommerce-images-safely", "label": "How to Compress Ecommerce Images Safely"}, {"id": "common-image-compression-mistakes", "label": "Common Image Compression Mistakes"}, {"id": "how-to-measure-image-compression", "label": "How to Measure Image Compression"}, {"id": "image-compression-seo-and-accessibility", "label": "Image Compression, SEO and Accessibility"}, {"id": "where-1-optimiser-fits", "label": "Where 1-OPTIMISER Fits"}, {"id": "frequently-asked-questions", "label": "Frequently Asked Questions"}]} />
+            <ArticleToc items={[{"id": "what-is-image-compression", "label": "What Is Image Compression?"}, {"id": "why-image-compression-matters-for-ecommerce", "label": "Why Image Compression Matters for Ecommerce"}, {"id": "lossy-vs-lossless-compression", "label": "Lossy vs Lossless Compression"}, {"id": "what-is-webp", "label": "What Is WebP?"}, {"id": "webp-vs-jpeg-vs-png", "label": "WebP vs JPEG vs PNG"}, {"id": "how-much-should-an-ecommerce-image-be-compressed", "label": "How Much Should an Ecommerce Image Be Compressed?"}, {"id": "image-quality-vs-file-size", "label": "Image Quality vs File Size"}, {"id": "image-dimensions-and-compression-work-together", "label": "Image Dimensions and Compression Work Together"}, {"id": "should-every-ecommerce-image-be-converted-to-webp", "label": "Should Every Ecommerce Image Be Converted to WebP?"}, {"id": "webp-and-shopify", "label": "WebP and Shopify"}, {"id": "how-to-compress-ecommerce-images-safely", "label": "How to Compress Ecommerce Images Safely"}, {"id": "common-image-compression-mistakes", "label": "Common Image Compression Mistakes"}, {"id": "how-to-measure-image-compression", "label": "How to Measure Image Compression"}, {"id": "image-compression-seo-and-accessibility", "label": "Image Compression, SEO and Accessibility"}, {"id": "where-1-optimizer-fits", "label": "Where 1-OPTIMIZER Fits"}, {"id": "frequently-asked-questions", "label": "Frequently Asked Questions"}]} />
             <div className="max-w-3xl mx-auto xl:mx-0 space-y-16 md:space-y-24">
             
             <div className="space-y-6">
@@ -295,18 +295,18 @@ export default function ArticlePage() {
             </div>
 
             <div className="bg-secondary/30 p-8 md:p-12 mt-16 border border-border rounded-lg">
-              <h2 id="where-1-optimiser-fits" className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-6 scroll-mt-28">15. Where 1-OPTIMISER Fits</h2>
+              <h2 id="where-1-optimizer-fits" className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-6 scroll-mt-28">15. Where 1-OPTIMIZER Fits</h2>
               <p className="text-lg text-neutral-400 leading-relaxed mb-6">
-                1-OPTIMISER is being developed to help Shopify merchants work with image optimization systematically and safely.
+                1-OPTIMIZER is being developed to help Shopify merchants work with image optimization systematically and safely.
               </p>
               <p className="text-lg text-neutral-400 leading-relaxed mb-6">
                 The current implementation supports image compression, resizing, WebP conversion, AI-assisted alt text and descriptive filename generation, keyword suggestions, individual processing, and catalog or collection processing. It maintains an optimization history and provides optional theme extension capabilities to monitor storefront performance signals.
               </p>
               <p className="text-sm font-bold uppercase tracking-widest text-primary mb-8">
-                Note: 1-OPTIMISER is currently coming soon.
+                Note: 1-OPTIMIZER is currently coming soon.
               </p>
-              <Link href="/apps/1-optimiser" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-semibold text-xs bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors">
-                Explore 1-OPTIMISER
+              <Link href="/apps/1-optimizer" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-semibold text-xs bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors">
+                Explore 1-OPTIMIZER
               </Link>
             </div>
 

@@ -109,7 +109,7 @@ export default function ArticlePage() {
         {/* Article Body */}
         <Section className="py-20 md:py-32">
           <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12 xl:grid xl:grid-cols-[15rem_minmax(0,48rem)] xl:gap-16 xl:justify-center">
-            <ArticleToc items={[{"id": "what-is-bulk-image-optimization", "label": "What Is Bulk Image Optimization?"}, {"id": "why-ecommerce-stores-need-bulk-image-optimization", "label": "Why Ecommerce Stores Need Bulk Image Optimization"}, {"id": "what-should-be-optimized", "label": "What Should Be Optimized?"}, {"id": "bulk-compression", "label": "Bulk Compression"}, {"id": "resizing-oversized-ecommerce-images", "label": "Resizing Oversized Ecommerce Images"}, {"id": "choosing-image-formats", "label": "Choosing Image Formats"}, {"id": "bulk-image-optimization-and-shopify", "label": "Bulk Image Optimization and Shopify"}, {"id": "bulk-optimization-vs-manual-optimization", "label": "Bulk Optimization vs Manual Optimization"}, {"id": "how-to-optimize-a-large-catalog-safely", "label": "How to Optimize a Large Catalog Safely"}, {"id": "common-bulk-optimization-mistakes", "label": "Common Bulk Optimization Mistakes"}, {"id": "bulk-image-optimization-and-seo", "label": "Bulk Image Optimization and SEO"}, {"id": "bulk-image-optimization-and-accessibility", "label": "Bulk Image Optimization and Accessibility"}, {"id": "how-to-measure-the-result", "label": "How to Measure the Result"}, {"id": "where-1-optimiser-fits", "label": "Where 1-OPTIMISER Fits"}, {"id": "frequently-asked-questions", "label": "Frequently Asked Questions"}]} />
+            <ArticleToc items={[{"id": "what-is-bulk-image-optimization", "label": "What Is Bulk Image Optimization?"}, {"id": "why-ecommerce-stores-need-bulk-image-optimization", "label": "Why Ecommerce Stores Need Bulk Image Optimization"}, {"id": "what-should-be-optimized", "label": "What Should Be Optimized?"}, {"id": "bulk-compression", "label": "Bulk Compression"}, {"id": "resizing-oversized-ecommerce-images", "label": "Resizing Oversized Ecommerce Images"}, {"id": "choosing-image-formats", "label": "Choosing Image Formats"}, {"id": "bulk-image-optimization-and-shopify", "label": "Bulk Image Optimization and Shopify"}, {"id": "bulk-optimization-vs-manual-optimization", "label": "Bulk Optimization vs Manual Optimization"}, {"id": "how-to-optimize-a-large-catalog-safely", "label": "How to Optimize a Large Catalog Safely"}, {"id": "common-bulk-optimization-mistakes", "label": "Common Bulk Optimization Mistakes"}, {"id": "bulk-image-optimization-and-seo", "label": "Bulk Image Optimization and SEO"}, {"id": "bulk-image-optimization-and-accessibility", "label": "Bulk Image Optimization and Accessibility"}, {"id": "how-to-measure-the-result", "label": "How to Measure the Result"}, {"id": "where-1-optimizer-fits", "label": "Where 1-OPTIMIZER Fits"}, {"id": "frequently-asked-questions", "label": "Frequently Asked Questions"}]} />
             <div className="max-w-3xl mx-auto xl:mx-0 space-y-16 md:space-y-24">
             
             <div className="space-y-6">
@@ -296,18 +296,18 @@ export default function ArticlePage() {
             </div>
 
             <div className="bg-secondary/30 p-8 md:p-12 mt-16 border border-border rounded-lg">
-              <h2 id="where-1-optimiser-fits" className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-6 scroll-mt-28">14. Where 1-OPTIMISER Fits</h2>
+              <h2 id="where-1-optimizer-fits" className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-6 scroll-mt-28">14. Where 1-OPTIMIZER Fits</h2>
               <p className="text-lg text-neutral-400 leading-relaxed mb-6">
-                1-OPTIMISER is being developed to help Shopify merchants work with image optimization systematically at catalog scale. 
+                1-OPTIMIZER is being developed to help Shopify merchants work with image optimization systematically at catalog scale. 
               </p>
               <p className="text-lg text-neutral-400 leading-relaxed mb-6">
                 The current implementation includes image compression, resizing, WebP conversion, AI-assisted alt text and descriptive filename generation, keyword suggestions, individual or catalog/collection processing, and image editing capabilities. It provides an optimization history and optional theme extension capabilities to evaluate storefront performance signals.
               </p>
               <p className="text-sm font-bold uppercase tracking-widest text-primary mb-8">
-                Note: 1-OPTIMISER is currently coming soon.
+                Note: 1-OPTIMIZER is currently coming soon.
               </p>
-              <Link href="/apps/1-optimiser" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-semibold text-xs bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors">
-                Explore 1-OPTIMISER
+              <Link href="/apps/1-optimizer" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-semibold text-xs bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors">
+                Explore 1-OPTIMIZER
               </Link>
             </div>
 

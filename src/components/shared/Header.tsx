@@ -114,10 +114,10 @@ export const Header: React.FC = () => {
           {/* Right: Primary CTA */}
           <div className="flex items-center justify-end gap-3 sm:gap-4 flex-1">
             <Link
-              href="/apps/1-optimiser"
+              href="/apps/1-optimizer"
               className="hidden sm:inline-flex items-center justify-center gap-1.5 h-10 px-5 rounded-lg border border-neutral-700 bg-transparent text-sm font-semibold text-foreground hover:bg-white/5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
             >
-              <span>Explore 1-OPTIMISER</span>
+              <span>Explore 1-OPTIMIZER</span>
             </Link>
 
             {/* Mobile Menu Hamburger */}
@@ -189,11 +189,11 @@ export const Header: React.FC = () => {
 
           <div className="pt-6 border-t border-border flex flex-col gap-4">
             <Link
-              href="/apps/1-optimiser"
+              href="/apps/1-optimizer"
               onClick={() => setMobileMenuOpen(false)}
               className="interactive-btn w-full h-14 border border-neutral-700 bg-transparent text-foreground font-semibold flex items-center justify-center gap-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
             >
-              <span>Explore 1-OPTIMISER</span>
+              <span>Explore 1-OPTIMIZER</span>
             </Link>
           </div>
         </div>

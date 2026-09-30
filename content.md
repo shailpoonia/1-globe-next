@@ -7,7 +7,7 @@ The finished copy for the whole site. Drop this in your project root as `content
 ## GLOBAL RULES (apply everywhere)
 
 - **Hub brand:** `1-globe.com` — the company / platform. Never "One Globe" or "one.GLOBE".
-- **App brand names:** `1-Optimiser` (flagship), `1-Blog`, `1-Listings` (coming soon). Always pair a brand name with a plain descriptor on first mention (e.g. **1-Optimiser** — *Shopify Image Optimizer*). After first mention on a page, the brand name alone is fine.
+- **App brand names:** `1-Optimizer` (flagship), `1-Blog`, `1-Listings` (coming soon). Always pair a brand name with a plain descriptor on first mention (e.g. **1-Optimizer** — *Shopify Image Optimizer*). After first mention on a page, the brand name alone is fine.
 - **SEO spelling:** brand name is "1-Optimis**er**", but the *descriptor and all metadata* use the American "image optim**izer**" (that's what merchants search). Keep the phrase "image optimizer" / "Shopify image optimizer" in every page `<title>`, meta description, and at least one heading.
 - **Voice:** talk to a busy Shopify store owner, not a developer. Lead with the outcome, plain words, short sentences. No jargon (LCP, CLS, WebP, alt attribute, schema) without a plain explanation right beside it. Nike-style confidence: bold about what the app *does*, honest about the *outcome*.
 - **The through-line (the spine of the whole site):** *Running ads and SEO on a slow, unreadable store is like putting a Ferrari engine on a cracked chassis — the power leaks out. 1-globe.com fixes the chassis: one focused app per problem, so the ads and SEO you already pay for finally work.*
@@ -24,7 +24,7 @@ The finished copy for the whole site. Drop this in your project root as `content
 - Anchor line (small, under or near headline): `We don't just shrink your images. We make them work.`
 - Subhead: `1-globe.com builds focused Shopify apps that fix your store's foundation — so it loads fast, gets found by search and AI, and turns more of your traffic into buyers. All from inside your admin. No code. No bloat.`
 - Primary CTA: `Explore Apps ↓`
-- Secondary CTA: `See 1-Optimiser →`
+- Secondary CTA: `See 1-Optimizer →`
 - Badges: `Up to 90% lighter images` · `Runs inside Shopify` · `Set up in minutes`
 
 ## App Portfolio — a growing range of focused apps
@@ -32,9 +32,9 @@ The finished copy for the whole site. Drop this in your project root as `content
 - Headline: `One store problem. One focused `*`app`*`.`
 - Intro: `A slow, unreadable store leaks the traffic your ads and SEO bring in. 1-globe.com fixes it one problem at a time — a focused app for each, so nothing is left to chance. This is a platform, and it's growing.`
 
-**Card 1 — 1-Optimiser (LIVE):**
+**Card 1 — 1-Optimizer (LIVE):**
 - Chip: `Live now`
-- Name: `1-Optimiser`  ·  Descriptor: `Shopify Image Optimizer`
+- Name: `1-Optimizer`  ·  Descriptor: `Shopify Image Optimizer`
 - One-liner: `Shrink product photos up to 90%, write SEO filenames and alt text so Google and AI can read them, and sync it all back live — with zero broken links.`
 - Proof: `18.4 MB → 212 KB — 98% lighter, same quality`
 - CTA: `See how it works →`
@@ -91,7 +91,7 @@ Columns: **1-globe.com** · **Doing it manually** · **Bloated 3rd-party apps**
 - **I already run ads and do SEO. Why isn't my store growing?**
   Because you're pouring fuel into a cracked engine. Ads and SEO drive traffic *to* your store — but if that store is slow and unreadable to search, the traffic leaks out before it becomes sales. It's not your marketing that's broken. It's the foundation underneath it. Fix the foundation, and the marketing you already pay for starts working.
 - **You say "one app per problem." Why not one app that does everything?**
-  Because "one app for everything" is exactly why nothing works. A tool that tries to fix your listings, images, speed, and SEO all at once does none of them well — one medicine for every illness never cures anything. We build focused apps — 1-Optimiser for images, 1-Blog for content, more coming — each doing one job properly. That's how you actually fix a store: one solid layer at a time.
+  Because "one app for everything" is exactly why nothing works. A tool that tries to fix your listings, images, speed, and SEO all at once does none of them well — one medicine for every illness never cures anything. We build focused apps — 1-Optimizer for images, 1-Blog for content, more coming — each doing one job properly. That's how you actually fix a store: one solid layer at a time.
 - **Why does everyone else ignore this "foundation" stuff?**
   Because it's invisible and unglamorous. Filenames, alt text, load speed, clean listings — none of it looks exciting in a demo, so most apps chase flashy features and leave the boring, load-bearing basics untouched. But those basics are exactly what decide whether Google and shoppers ever find you.
 - **Who's actually behind these apps?**
@@ -103,7 +103,7 @@ Columns: **1-globe.com** · **Doing it manually** · **Bloated 3rd-party apps**
 - Eyebrow: `Start accelerating today · 1-globe.com`
 - Headline: `Put your whole Shopify catalog on a speed diet — `*`today`*`.`
 - Numbered sequence (build-up):
-  1. `Install 1-Optimiser.`
+  1. `Install 1-Optimizer.`
   2. `Select individual products, whole collections, or your entire store.`
   3. `Watch your files drop from megabytes to kilobytes.`
   4. `Let the AI find the high-ranking keywords hiding in your catalog.`
@@ -115,17 +115,17 @@ Columns: **1-globe.com** · **Doing it manually** · **Bloated 3rd-party apps**
 
 ---
 
-# 1-OPTIMISER FEATURE PAGE  (/apps/1-optimiser)
+# 1-OPTIMIZER FEATURE PAGE  (/apps/1-optimizer)
 
 *Page title / meta must contain "Shopify Image Optimizer" for SEO.*
 
 ## Hero
-- Eyebrow: `1-Optimiser · Shopify Image Optimizer`
+- Eyebrow: `1-Optimizer · Shopify Image Optimizer`
 - Headline: `You don't have a traffic problem. You have a `*`foundation`*` problem.`
 - Subhead: `You're paying for ads and doing SEO — but your store keeps leaking sales. It's not the ads or the SEO that's broken. It's what they're driving traffic to.`
 - Ferrari callout (visually distinct block):
   - `It's like putting a Ferrari engine on a cracked chassis.`
-  - `All that horsepower — your ad spend, your SEO effort — hits a store with heavy images, filenames Google can't read, and photos invisible to AI search. The power has nowhere to go. 1-Optimiser rebuilds the chassis so your ads and SEO finally pay off.`
+  - `All that horsepower — your ad spend, your SEO effort — hits a store with heavy images, filenames Google can't read, and photos invisible to AI search. The power has nowhere to go. 1-Optimizer rebuilds the chassis so your ads and SEO finally pay off.`
 - CTAs: `Add to Shopify — Free to start` · `See how it works`
 - Keep the before/after proof card (18.4 MB → 212 KB).
 
@@ -143,12 +143,12 @@ Columns: **1-globe.com** · **Doing it manually** · **Bloated 3rd-party apps**
 
 ## Why your ads and SEO haven't been working
 1. **Google can't see your photos — it reads their names.**
-   `Every image you upload is named something like IMG_4837.jpg — meaningless to Google, so your products never show up in image search. 1-Optimiser renames each file to describe what's in it (like wooden-wall-clock-12-inch.webp), which Google Images and Bing read as a ranking signal — and ChatGPT's search runs on Bing. No descriptive names = invisible to a whole channel of buyers.`
+   `Every image you upload is named something like IMG_4837.jpg — meaningless to Google, so your products never show up in image search. 1-Optimizer renames each file to describe what's in it (like wooden-wall-clock-12-inch.webp), which Google Images and Bing read as a ranking signal — and ChatGPT's search runs on Bing. No descriptive names = invisible to a whole channel of buyers.`
 2. **Blank alt text = your products don't exist to search or AI.**
-   `Alt text is the hidden description that tells search engines what's in a photo — and most stores leave it blank. 1-Optimiser's AI writes accurate descriptions for every image, so Google and AI answer engines can finally understand and recommend what you sell.`
+   `Alt text is the hidden description that tells search engines what's in a photo — and most stores leave it blank. 1-Optimizer's AI writes accurate descriptions for every image, so Google and AI answer engines can finally understand and recommend what you sell.`
 3. **Renaming without breaking links — the part that matters.**
-   `Rename or re-upload images the normal way and every product URL, ad landing page, and ranking you built shatters. That's why most merchants never fix their images — the fix causes the damage. 1-Optimiser changes filenames and alt text in place, inside Shopify, so your images get discoverable with zero broken links.`
-- Punchline: `You've been paying for traffic through a broken foundation. 1-Optimiser closes the gap — lighter pages, readable images, zero broken links — so the ad spend and SEO effort you're already making finally pays off.`
+   `Rename or re-upload images the normal way and every product URL, ad landing page, and ranking you built shatters. That's why most merchants never fix their images — the fix causes the damage. 1-Optimizer changes filenames and alt text in place, inside Shopify, so your images get discoverable with zero broken links.`
+- Punchline: `You've been paying for traffic through a broken foundation. 1-Optimizer closes the gap — lighter pages, readable images, zero broken links — so the ad spend and SEO effort you're already making finally pays off.`
 
 ## How it works  (4 numbered steps)
 1. `Connect Shopify` — one click, no code.
@@ -156,7 +156,7 @@ Columns: **1-globe.com** · **Doing it manually** · **Bloated 3rd-party apps**
 3. `Optimize` — compress, convert, and let AI write filenames + alt text.
 4. `Sync live` — everything writes back in place, links intact.
 
-## App FAQ  (1-Optimiser — the product questions)
+## App FAQ  (1-Optimizer — the product questions)
 - **Isn't this just another image compression app?**
   No — and that's the whole point. Compression is one small piece. Making an image *work* means three things: it loads fast, it gets found by search, and it never breaks a link. Most apps stop at "smaller." We make your images actually earn their place in your store.
 - **My product photos already look great. Isn't that enough?**
@@ -164,7 +164,7 @@ Columns: **1-globe.com** · **Doing it manually** · **Bloated 3rd-party apps**
 - **I've tried other optimization apps. Why would this be different?**
   Most tools sell one trick and hope. But you can't fix a slow, invisible store with a single feature — it has to be done in order: clean up your listings, then your structure and tags, then your images — and the images need good *names*, not just good quality. We fix the fundamentals in sequence, not with a magic pill.
 - **Will fixing my images break my links or hurt my SEO?**
-  No — and this is why most merchants never fix theirs. Renaming or re-uploading images the normal way shatters your product URLs and wipes out rankings you built over years. 1-Optimiser changes everything *in place*, inside Shopify. Zero broken links. You keep every bit of SEO you've earned, and gain the SEO you were missing.
+  No — and this is why most merchants never fix theirs. Renaming or re-uploading images the normal way shatters your product URLs and wipes out rankings you built over years. 1-Optimizer changes everything *in place*, inside Shopify. Zero broken links. You keep every bit of SEO you've earned, and gain the SEO you were missing.
 - **Do I need to be technical to use it?**
   No. One click to install, and it works across your whole catalog. No code, no exports, no external dashboards. If you can run your Shopify store, you can run this.
 - **Will it slow my store down like other apps do?**
@@ -181,7 +181,7 @@ Columns: **1-globe.com** · **Doing it manually** · **Bloated 3rd-party apps**
 - Eyebrow: `Pricing`
 - Headline: `Simple, merchant-aligned pricing with zero `*`surprises`*`.`
 - Sub: `Free to install, test on your own store, and cancel anytime. Billing is handled securely through the Shopify App Store.`
-- Section label: `1-Optimiser plans`  *(numbers below are suggested — set your final prices):*
+- Section label: `1-Optimizer plans`  *(numbers below are suggested — set your final prices):*
 1. **Free Starter — $0** — Up to 50 images/month · WebP conversion · Basic alt text · CTA `Start free`
 2. **Growth — $9.99/mo** *(Most popular)* — Unlimited images · AI alt text & filenames · Bulk collections · Crop to any size · CTA `Add to Shopify`
 3. **Pro Catalog — $19.99/mo** — Everything in Growth · Background removal · Priority processing · Large-catalog support & priority help · CTA `Add to Shopify`
@@ -219,12 +219,12 @@ Columns: **1-globe.com** · **Doing it manually** · **Bloated 3rd-party apps**
 This section records what is actually live now, and flags copy that drifted back into jargon (with plain-language fixes). Where a section's body copy could not be fully read from the code, it's marked "verify on live site."
 
 ## Home — section order (11 sections)
-1. EditorialHero  2. BrandStatement  3. TheProblem  4. ProductEcosystem  5. InfographicShowcase  6. ProductDetailHome (1-Optimiser)  7. PerformanceProof  8. BrandPhilosophy  9. MerchantStory  10. FaqSection  11. CtaBand
+1. EditorialHero  2. BrandStatement  3. TheProblem  4. ProductEcosystem  5. InfographicShowcase  6. ProductDetailHome (1-Optimizer)  7. PerformanceProof  8. BrandPhilosophy  9. MerchantStory  10. FaqSection  11. CtaBand
 
 ## Confirmed current copy
 - **Hero:** "MAKE ECOMMERCE PERFORM." · CTAs: "Explore Apps", "Explore 1-globe".
-- **Ecosystem:** eyebrow/title "Built for the layers that matter." · intro "Targeted technology that resolves the root causes of poor store performance without adding superficial bloat." · Cards: 1-OPTIMISER (IMAGE PERFORMANCE, Live, "Explore") · 1-BLOG (CONTENT PERFORMANCE, Coming Soon).
-- **Product detail:** "Make every product image work harder." · "Compress, optimize and improve the discoverability of your Shopify images without touching your code." · CTA → /apps/1-optimiser.
+- **Ecosystem:** eyebrow/title "Built for the layers that matter." · intro "Targeted technology that resolves the root causes of poor store performance without adding superficial bloat." · Cards: 1-OPTIMIZER (IMAGE PERFORMANCE, Live, "Explore") · 1-BLOG (CONTENT PERFORMANCE, Coming Soon).
+- **Product detail:** "Make every product image work harder." · "Compress, optimize and improve the discoverability of your Shopify images without touching your code." · CTA → /apps/1-optimizer.
 - **Infographic showcase:** "The Transformation — See the difference." + AI-vision card (IMG-20260115-WA0032.jpg → optimized) + 1-Blog flow (Product → Writes Post → Ranks & Backlinks → Readers).
 - **Proof:** "The difference is measurable." · "Engineering impact backed by verified performance metrics, not abstract claims."
 - **About page:** "Built by a merchant, not a code factory."

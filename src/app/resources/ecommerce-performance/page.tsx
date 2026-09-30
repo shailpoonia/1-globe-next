@@ -141,10 +141,10 @@ export default function EcommercePerformancePage() {
             <div className="bg-secondary/30 p-8 mt-16 border border-border rounded-sm">
               <h3 className="text-lg font-bold uppercase tracking-widest text-foreground mb-4">Start with your image foundation</h3>
               <p className="text-muted-foreground mb-8 text-lg">
-                Images are often the heaviest part of a storefront. 1-OPTIMISER is designed specifically for Shopify stores to compress image assets, rewrite generic filenames, and generate contextual alt text to support storefront performance.
+                Images are often the heaviest part of a storefront. 1-OPTIMIZER is designed specifically for Shopify stores to compress image assets, rewrite generic filenames, and generate contextual alt text to support storefront performance.
               </p>
-              <Link href="/apps/1-optimiser" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-semibold text-xs bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors">
-                Explore 1-OPTIMISER
+              <Link href="/apps/1-optimizer" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-semibold text-xs bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors">
+                Explore 1-OPTIMIZER
               </Link>
             </div>
 

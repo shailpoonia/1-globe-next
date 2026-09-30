@@ -6,12 +6,12 @@ import { SectionHeader } from '@/components/shared/SectionHeader'
 
 export const AppFaqSection: React.FC = () => {  const faqs = [
     {
-      q: "What is 1-OPTIMISER?",
-      a: "1-OPTIMISER is an image performance tool designed for Shopify stores. It helps merchants optimize image files, improve image metadata, and work with image editing and storefront performance tools."
+      q: "What is 1-OPTIMIZER?",
+      a: "1-OPTIMIZER is an image performance tool designed for Shopify stores. It helps merchants optimize image files, improve image metadata, and work with image editing and storefront performance tools."
     },
     {
-      q: "How does 1-OPTIMISER work?",
-      a: "1-OPTIMISER connects to your Shopify catalog and provides tools to optimize image files and image metadata. Depending on the workflow, merchants can process images individually, by collection, product or broader catalog scope, review changes, and confirm updates before they are saved to Shopify."
+      q: "How does 1-OPTIMIZER work?",
+      a: "1-OPTIMIZER connects to your Shopify catalog and provides tools to optimize image files and image metadata. Depending on the workflow, merchants can process images individually, by collection, product or broader catalog scope, review changes, and confirm updates before they are saved to Shopify."
     },
     {
       q: "Why do product images matter to ecommerce storefronts?",
@@ -19,11 +19,11 @@ export const AppFaqSection: React.FC = () => {  const faqs = [
     },
     {
       q: "Does compression affect image quality?",
-      a: "Compression can reduce file size while aiming to maintain useful visual quality. 1-OPTIMISER provides optimization controls so merchants can choose settings appropriate for their images and storefront."
+      a: "Compression can reduce file size while aiming to maintain useful visual quality. 1-OPTIMIZER provides optimization controls so merchants can choose settings appropriate for their images and storefront."
     },
     {
       q: "Will renaming my files break existing links?",
-      a: "1-OPTIMISER updates image information through Shopify's APIs. Merchants should review changes before saving them, particularly when filenames or image references are important to an existing workflow."
+      a: "1-OPTIMIZER updates image information through Shopify's APIs. Merchants should review changes before saving them, particularly when filenames or image references are important to an existing workflow."
     },
     {
       q: "How does AI generation handle complex products?",

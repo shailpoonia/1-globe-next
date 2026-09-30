@@ -105,7 +105,7 @@ export default function ArticlePage() {
         {/* Article Body */}
         <Section className="py-20 md:py-32">
           <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12 xl:grid xl:grid-cols-[15rem_minmax(0,48rem)] xl:gap-16 xl:justify-center">
-            <ArticleToc items={[{"id": "why-image-optimization-matters-for-shopify-stores", "label": "Why image optimization matters for Shopify stores"}, {"id": "start-with-image-dimensions", "label": "Start with image dimensions"}, {"id": "responsive-images-srcset-and-sizes", "label": "Responsive images: srcset and sizes"}, {"id": "choose-appropriate-image-formats", "label": "Choose appropriate image formats"}, {"id": "compression-reduce-payload-without-destroying-quality", "label": "Compression: Reduce payload without destroying quality"}, {"id": "lazy-loading-and-image-loading-priority", "label": "Lazy loading and image loading priority"}, {"id": "product-image-alt-text", "label": "Product image alt text"}, {"id": "descriptive-image-filenames", "label": "Descriptive image filenames"}, {"id": "image-context-matters", "label": "Image context matters"}, {"id": "accessibility", "label": "Accessibility"}, {"id": "how-to-audit-your-shopify-image-library", "label": "How to audit your Shopify image library"}, {"id": "common-shopify-image-optimization-mistakes", "label": "Common Shopify image optimization mistakes"}, {"id": "where-1-optimiser-fits", "label": "Where 1-OPTIMISER fits"}, {"id": "frequently-asked-questions", "label": "Frequently Asked Questions"}, {"id": "related-resources", "label": "Related Resources"}]} />
+            <ArticleToc items={[{"id": "why-image-optimization-matters-for-shopify-stores", "label": "Why image optimization matters for Shopify stores"}, {"id": "start-with-image-dimensions", "label": "Start with image dimensions"}, {"id": "responsive-images-srcset-and-sizes", "label": "Responsive images: srcset and sizes"}, {"id": "choose-appropriate-image-formats", "label": "Choose appropriate image formats"}, {"id": "compression-reduce-payload-without-destroying-quality", "label": "Compression: Reduce payload without destroying quality"}, {"id": "lazy-loading-and-image-loading-priority", "label": "Lazy loading and image loading priority"}, {"id": "product-image-alt-text", "label": "Product image alt text"}, {"id": "descriptive-image-filenames", "label": "Descriptive image filenames"}, {"id": "image-context-matters", "label": "Image context matters"}, {"id": "accessibility", "label": "Accessibility"}, {"id": "how-to-audit-your-shopify-image-library", "label": "How to audit your Shopify image library"}, {"id": "common-shopify-image-optimization-mistakes", "label": "Common Shopify image optimization mistakes"}, {"id": "where-1-optimizer-fits", "label": "Where 1-OPTIMIZER fits"}, {"id": "frequently-asked-questions", "label": "Frequently Asked Questions"}, {"id": "related-resources", "label": "Related Resources"}]} />
             <div className="max-w-3xl mx-auto xl:mx-0 space-y-16 md:space-y-24">
             
             <div className="space-y-6">
@@ -272,18 +272,18 @@ export default function ArticlePage() {
             </div>
 
             <div className="bg-secondary/30 p-8 md:p-12 mt-16 border border-border rounded-lg">
-              <h2 id="where-1-optimiser-fits" className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-6 scroll-mt-28">13. Where 1-OPTIMISER fits</h2>
+              <h2 id="where-1-optimizer-fits" className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-6 scroll-mt-28">13. Where 1-OPTIMIZER fits</h2>
               <p className="text-lg text-neutral-400 leading-relaxed mb-6">
-                1-OPTIMISER is being developed as an image performance tool for Shopify stores. It brings image optimization, AI-assisted image metadata, image editing, catalog scope controls, and selected storefront performance tools into one workflow.
+                1-OPTIMIZER is being developed as an image performance tool for Shopify stores. It brings image optimization, AI-assisted image metadata, image editing, catalog scope controls, and selected storefront performance tools into one workflow.
               </p>
               <p className="text-lg text-neutral-400 leading-relaxed mb-6">
-                The current 1-OPTIMISER implementation includes compression, resizing, optional WebP conversion, AI-assisted alt text and descriptive filenames for merchant review, keyword suggestions, image editing including background changes, optimization history logs, and an optional storefront performance theme extension. All image modifications require merchant review before being saved to Shopify.
+                The current 1-OPTIMIZER implementation includes compression, resizing, optional WebP conversion, AI-assisted alt text and descriptive filenames for merchant review, keyword suggestions, image editing including background changes, optimization history logs, and an optional storefront performance theme extension. All image modifications require merchant review before being saved to Shopify.
               </p>
               <p className="text-sm font-bold uppercase tracking-widest text-primary mb-8">
-                Note: 1-OPTIMISER is currently coming soon.
+                Note: 1-OPTIMIZER is currently coming soon.
               </p>
-              <Link href="/apps/1-optimiser" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-semibold text-xs bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors">
-                Explore 1-OPTIMISER
+              <Link href="/apps/1-optimizer" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-semibold text-xs bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors">
+                Explore 1-OPTIMIZER
               </Link>
             </div>
 

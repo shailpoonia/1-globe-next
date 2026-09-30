@@ -11,7 +11,7 @@ export interface AppHeroProps {
 }
 
 export const AppHero: React.FC<AppHeroProps> = ({
-  eyebrow = "1-OPTIMISER",
+  eyebrow = "1-OPTIMIZER",
   headline = "Make every product image work harder.",
   subhead = "Compress, optimize and support image context across your Shopify catalog.",
   primaryCtaText = "Coming soon to Shopify",

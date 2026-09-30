@@ -163,7 +163,7 @@ const EditingVisual = (
 const PerformanceVisual = (
   <Panel label="Illustrative theme extension settings">
     <div className="flex items-center justify-between">
-      <span className="text-sm font-semibold text-foreground">1-OPTIMISER theme extension</span>
+      <span className="text-sm font-semibold text-foreground">1-OPTIMIZER theme extension</span>
       <span className="inline-flex items-center gap-1 rounded-full bg-primary/10 px-2.5 py-1 text-xs font-semibold text-primary">
         <Check className="w-3.5 h-3.5" aria-hidden="true" /> Active
       </span>

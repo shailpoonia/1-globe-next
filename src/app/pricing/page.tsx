@@ -5,8 +5,8 @@ import { Section } from '@/components/shared/Section'
 import Link from 'next/link'
 
 export const metadata: Metadata = buildMetadata({
-  title: '1-OPTIMISER Pricing',
-  description: 'Pricing for 1-OPTIMISER. Pay only for what you optimize with one-time image credits.',
+  title: '1-OPTIMIZER Pricing',
+  description: 'Pricing for 1-OPTIMIZER. Pay only for what you optimize with one-time image credits.',
   path: '/pricing',
 })
 
@@ -18,7 +18,7 @@ export default function PricingPage() {
           <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
             
             <div className="text-left mb-20 max-w-3xl">
-              <span className="text-eyebrow block mb-6">1-OPTIMISER</span>
+              <span className="text-eyebrow block mb-6">1-OPTIMIZER</span>
               <h1 className="text-hero mb-6">
                 Image performance.{' '}<br />
                 <span className="text-primary">Without the subscription.</span>
@@ -27,8 +27,8 @@ export default function PricingPage() {
                 Start with 100 free image optimizations. When you need more, buy one-time image credits that never expire.
               </p>
               <p className="text-lead mt-4">
-                <Link href="/apps/1-optimiser" className="text-primary hover:text-foreground transition-colors underline underline-offset-4 decoration-primary/30">
-                  Explore 1-OPTIMISER capabilities
+                <Link href="/apps/1-optimizer" className="text-primary hover:text-foreground transition-colors underline underline-offset-4 decoration-primary/30">
+                  Explore 1-OPTIMIZER capabilities
                 </Link>
               </p>
             </div>
@@ -116,15 +116,15 @@ export default function PricingPage() {
             </p>
 
             <div className="border-t border-border pt-16 flex flex-col items-center text-center">
-              <h2 className="text-2xl font-heading font-bold text-foreground mb-4">1-OPTIMISER is coming soon.</h2>
+              <h2 className="text-2xl font-heading font-bold text-foreground mb-4">1-OPTIMIZER is coming soon.</h2>
               <p className="text-muted-foreground leading-relaxed mb-8 max-w-lg">
-                We are finalizing our Shopify integration. Explore the full capabilities of 1-OPTIMISER to see how it can help you build a stronger storefront foundation.
+                We are finalizing our Shopify integration. Explore the full capabilities of 1-OPTIMIZER to see how it can help you build a stronger storefront foundation.
               </p>
               <Link
-                href="/apps/1-optimiser"
+                href="/apps/1-optimizer"
                 className="interactive-btn inline-flex items-center justify-center h-14 px-8 font-semibold text-sm bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
               >
-                Explore 1-OPTIMISER
+                Explore 1-OPTIMIZER
               </Link>
             </div>
           </div>

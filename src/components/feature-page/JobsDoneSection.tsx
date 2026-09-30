@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import { Section } from '@/components/shared/Section'
 
-// What 1-OPTIMISER does, one card per job, each with a small static before/after.
+// What 1-OPTIMIZER does, one card per job, each with a small static before/after.
 // Static on purpose: calmer to read, and it works the same with reduced motion.
 
 function Card({
@@ -41,7 +41,7 @@ export const JobsDoneSection: React.FC = () => {
         <div className="mb-12 md:mb-14 flex flex-col gap-4 max-w-2xl">
           <h2 className="text-section-title">Optimization workflows.</h2>
           <p className="text-lead">
-            1-OPTIMISER provides tools to compress, edit, and standardize images across your catalog.
+            1-OPTIMIZER provides tools to compress, edit, and standardize images across your catalog.
           </p>
         </div>
 

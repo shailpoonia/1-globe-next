@@ -21,7 +21,7 @@ The underlying technical and structural foundation of a high-performing storefro
 ## E. Recommended Future Resource Clusters
 
 ### Priority 1: High-Value Product Support
-*High-value topics directly supporting existing product/resource architecture (1-OPTIMISER).*
+*High-value topics directly supporting existing product/resource architecture (1-OPTIMIZER).*
 
 **1. Shopify Image Optimization**
 - **Proposed Title:** Shopify Image Optimization: A Practical Guide
@@ -29,8 +29,8 @@ The underlying technical and structural foundation of a high-performing storefro
 - **Parent Pillar:** Ecommerce Image Optimization
 - **Primary Search Intent:** Commercial Investigation / Informational
 - **Merchant Problem Addressed:** Store owners struggling with large visual payloads specifically on the Shopify platform.
-- **Related Product:** 1-OPTIMISER
-- **Internal Links to Add:** `/resources/ecommerce-image-optimization`, `/apps/1-optimiser`
+- **Related Product:** 1-OPTIMIZER
+- **Internal Links to Add:** `/resources/ecommerce-image-optimization`, `/apps/1-optimizer`
 
 **2. Image Metadata & Alt Text**
 - **Proposed Title:** How to Write Descriptive Product Image Alt Text
@@ -38,8 +38,8 @@ The underlying technical and structural foundation of a high-performing storefro
 - **Parent Pillar:** Ecommerce Image Optimization
 - **Primary Search Intent:** Informational
 - **Merchant Problem Addressed:** Missing context for accessibility and machine discovery.
-- **Related Product:** 1-OPTIMISER
-- **Internal Links to Add:** `/resources/ecommerce-image-optimization`, `/apps/1-optimiser`
+- **Related Product:** 1-OPTIMIZER
+- **Internal Links to Add:** `/resources/ecommerce-image-optimization`, `/apps/1-optimizer`
 
 **3. Bulk Image Optimization**
 - **Proposed Title:** Bulk Image Optimization Workflows for Large Catalogs
@@ -47,8 +47,8 @@ The underlying technical and structural foundation of a high-performing storefro
 - **Parent Pillar:** Ecommerce Image Optimization
 - **Primary Search Intent:** Commercial Investigation
 - **Merchant Problem Addressed:** Managing manual image optimization across thousands of SKUs.
-- **Related Product:** 1-OPTIMISER
-- **Internal Links to Add:** `/resources/ecommerce-image-optimization`, `/apps/1-optimiser`
+- **Related Product:** 1-OPTIMIZER
+- **Internal Links to Add:** `/resources/ecommerce-image-optimization`, `/apps/1-optimizer`
 
 ### Priority 2: Supporting Educational Topics
 *Supporting educational topics that build topical depth.*
@@ -59,8 +59,8 @@ The underlying technical and structural foundation of a high-performing storefro
 - **Parent Pillar:** Ecommerce Image Optimization
 - **Primary Search Intent:** Informational
 - **Merchant Problem Addressed:** Understanding the technical trade-offs of image formats and compression techniques.
-- **Related Product:** 1-OPTIMISER
-- **Internal Links to Add:** `/resources/ecommerce-image-optimization`, `/apps/1-optimiser`
+- **Related Product:** 1-OPTIMIZER
+- **Internal Links to Add:** `/resources/ecommerce-image-optimization`, `/apps/1-optimizer`
 
 **5. Page Payload & Critical Resources**
 - **Proposed Title:** Understanding Page Payload and Critical Resources in Ecommerce
@@ -97,7 +97,7 @@ The underlying technical and structural foundation of a high-performing storefro
 ## F. Internal Linking Architecture Rules
 1. **Pillar Connection:** Every substantial resource must connect upward to its parent pillar (e.g., `/resources/ecommerce-image-optimization`).
 2. **Sibling Connection:** Resources within a cluster should link to at least one highly relevant sibling resource.
-3. **Product Connection:** Commercial investigation and informational resources should link to the relevant product (e.g., `/apps/1-optimiser`) naturally, where genuinely useful. Do not force links.
+3. **Product Connection:** Commercial investigation and informational resources should link to the relevant product (e.g., `/apps/1-optimizer`) naturally, where genuinely useful. Do not force links.
 4. **Brand Connection:** Link to the 1-GLOBE homepage or About page when explaining company philosophy or broad technical approaches.
 
 ---

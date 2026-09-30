@@ -15,19 +15,19 @@ export const FaqSection: React.FC = () => {
     },
     {
       q: "What products does 1-GLOBE offer?",
-      a: "The 1-GLOBE product ecosystem includes 1-OPTIMISER for image performance, 1-BLOG for content performance, and 1-LIST for product listing performance. 1-OPTIMISER is coming soon, while 1-BLOG and 1-LIST are launching soon."
+      a: "The 1-GLOBE product ecosystem includes 1-OPTIMIZER for image performance, 1-BLOG for content performance, and 1-LIST for product listing performance. 1-OPTIMIZER is coming soon, while 1-BLOG and 1-LIST are launching soon."
     },
     {
-      q: "What is 1-OPTIMISER?",
-      a: "1-OPTIMISER is an image performance tool for Shopify stores. It provides tools for image optimization (compression, resizing, WebP conversion), AI-assisted image metadata (alt text, filenames, keyword suggestions for merchant review), image editing, a storefront performance theme extension, store-scope controls, and optimization history."
+      q: "What is 1-OPTIMIZER?",
+      a: "1-OPTIMIZER is an image performance tool for Shopify stores. It provides tools for image optimization (compression, resizing, WebP conversion), AI-assisted image metadata (alt text, filenames, keyword suggestions for merchant review), image editing, a storefront performance theme extension, store-scope controls, and optimization history."
     },
     {
-      q: "Is 1-OPTIMISER available yet?",
-      a: "1-OPTIMISER is currently in its final stages and is coming to the Shopify App Store soon."
+      q: "Is 1-OPTIMIZER available yet?",
+      a: "1-OPTIMIZER is currently in its final stages and is coming to the Shopify App Store soon."
     },
     {
       q: "Does 1-GLOBE work with Shopify?",
-      a: "1-OPTIMISER is designed specifically for Shopify stores. Future products may have their own platform requirements as they launch."
+      a: "1-OPTIMIZER is designed specifically for Shopify stores. Future products may have their own platform requirements as they launch."
     },
     {
       q: "Do I need to replace my existing ecommerce tools?",
@@ -37,10 +37,10 @@ export const FaqSection: React.FC = () => {
       q: "Where should I start?",
       a: (
         <>
-          Start with the foundation. If image performance and catalog management are your priority, explore 1-OPTIMISER and read our resources on ecommerce image optimization.
+          Start with the foundation. If image performance and catalog management are your priority, explore 1-OPTIMIZER and read our resources on ecommerce image optimization.
           <div className="mt-8 flex flex-col gap-4">
-            <Link href="/apps/1-optimiser" className="inline-flex items-center text-[13px] font-bold uppercase tracking-[0.12em] text-foreground border border-neutral-800 bg-neutral-900/50 px-4 py-2 hover:bg-neutral-800 transition-colors w-max">
-              Explore 1-OPTIMISER →
+            <Link href="/apps/1-optimizer" className="inline-flex items-center text-[13px] font-bold uppercase tracking-[0.12em] text-foreground border border-neutral-800 bg-neutral-900/50 px-4 py-2 hover:bg-neutral-800 transition-colors w-max">
+              Explore 1-OPTIMIZER →
             </Link>
             <Link href="/resources/ecommerce-image-optimization" className="inline-flex items-center text-[13px] font-semibold text-neutral-400 hover:text-foreground transition-colors w-max">
               Read: Ecommerce Image Optimization →
@@ -109,7 +109,7 @@ export const FaqSection: React.FC = () => {
               "name": faq.q,
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": typeof faq.a === "string" ? faq.a : "Start with the foundation. If image performance and catalog management are your priority, explore 1-OPTIMISER and read our resources on ecommerce image optimization."
+                "text": typeof faq.a === "string" ? faq.a : "Start with the foundation. If image performance and catalog management are your priority, explore 1-OPTIMIZER and read our resources on ecommerce image optimization."
               }
             }))
           })

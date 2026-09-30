@@ -280,12 +280,12 @@ export default function ArticlePage() {
                 1-GLOBE approaches ecommerce performance as a comprehensive system spanning multiple disciplines, without relying on unsupported guarantees regarding rankings, conversions, or automatic Core Web Vitals success.
               </p>
               <ul className="space-y-4 text-lg text-neutral-400 mb-6">
-                <li><strong className="text-foreground">1-OPTIMISER:</strong> Focused on image performance and source-catalog technical capabilities (currently coming soon).</li>
+                <li><strong className="text-foreground">1-OPTIMIZER:</strong> Focused on image performance and source-catalog technical capabilities (currently coming soon).</li>
                 <li><strong className="text-foreground">1-BLOG:</strong> Focused on structured content performance (currently launching soon).</li>
                 <li><strong className="text-foreground">1-LIST:</strong> Focused on product listing performance for complex discovery environments (currently launching soon).</li>
               </ul>
-              <Link href="/apps/1-optimiser" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-semibold text-xs bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors mt-2">
-                Explore 1-OPTIMISER
+              <Link href="/apps/1-optimizer" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-semibold text-xs bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors mt-2">
+                Explore 1-OPTIMIZER
               </Link>
             </div>
 

@@ -47,8 +47,8 @@ export default function HomePage() {
         italicWord="perform"
         headlinePart2="better"
         subhead="Start with the performance problem."
-        primaryCtaText="Explore 1-OPTIMISER"
-        primaryCtaUrl="/apps/1-optimiser"
+        primaryCtaText="Explore 1-OPTIMIZER"
+        primaryCtaUrl="/apps/1-optimizer"
         primaryIsLink={true}
         secondaryCtaText="View pricing"
         secondaryCtaUrl="/pricing"
