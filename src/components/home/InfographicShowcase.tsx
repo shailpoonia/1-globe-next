@@ -109,18 +109,18 @@ export const InfographicShowcase: React.FC = () => {
         @keyframes s1-scanLine { 0% { top: 0%; opacity: 0; } 5% { opacity: 1; } 18% { top: 100%; opacity: 1; } 20% { opacity: 0; top: 100%; } 100% { opacity: 0; top: 0%; } }
         @keyframes s1-filenameChange { 
           0%, 23% { content: "IMG-20260115-WA0032.jpg"; color: #94a3b8; } 
-          25%, 32% { content: "hand-block-print-floral-quilted-comforter-cream-coral.webp"; color: #fff; text-shadow: 0 0 10px #43C6FA; } 
-          35%, 100% { content: "hand-block-print-floral-quilted-comforter-cream-coral.webp"; color: #43C6FA; } 
+          25%, 32% { content: "hand-block-print-floral-quilted-comforter-cream-coral.webp"; color: #fff; text-shadow: 0 0 10px #07CAFD; } 
+          35%, 100% { content: "hand-block-print-floral-quilted-comforter-cream-coral.webp"; color: #07CAFD; } 
         }
         @keyframes s1-typewriter { 0%, 40% { width: 0; opacity: 1; } 70%, 100% { width: 100%; opacity: 1; } }
         @keyframes s1-badgeGlow { 
           0%, 76% { border-color: rgba(51, 65, 85, 0.5); color: #64748b; background-color: transparent; } 
-          82%, 100% { border-color: rgba(67, 198, 250, 0.4); color: #fff; background-color: rgba(67, 198, 250, 0.1); box-shadow: 0 0 12px rgba(67, 198, 250,0.15); } 
+          82%, 100% { border-color: rgba(7, 202, 253, 0.4); color: #fff; background-color: rgba(7, 202, 253, 0.1); box-shadow: 0 0 12px rgba(7, 202, 253,0.15); } 
         }
 
         .s1-animate-scan { animation: s1-scanLine 8s linear infinite; }
         .s1-animate-filename::before { content: "IMG-20260115-WA0032.jpg"; animation: s1-filenameChange 8s linear infinite; }
-        .s1-animate-typewriter { animation: s1-typewriter 8s steps(60, end) infinite; overflow: hidden; white-space: nowrap; border-right: 2px solid #43C6FA; }
+        .s1-animate-typewriter { animation: s1-typewriter 8s steps(60, end) infinite; overflow: hidden; white-space: nowrap; border-right: 2px solid #07CAFD; }
         .s1-animate-badge { animation: s1-badgeGlow 8s ease-out infinite; }
         
         /* Slide 2 CSS Animations */
@@ -145,9 +145,9 @@ export const InfographicShowcase: React.FC = () => {
 
         @media (prefers-reduced-motion) {
           .s1-animate-scan, .s1-animate-filename::before, .s1-animate-typewriter, .s1-animate-badge, .s2-node-1, .s2-arrow-1, .s2-node-2, .s2-arrow-2, .s2-node-3, .s2-arrow-3, .s2-node-4, .s2-arrow-4, .s2-node-5 { animation: none !important; }
-          .s1-animate-filename::before { content: "hand-block-print-floral-quilted-comforter-cream-coral.webp"; color: #43C6FA; }
+          .s1-animate-filename::before { content: "hand-block-print-floral-quilted-comforter-cream-coral.webp"; color: #07CAFD; }
           .s1-animate-typewriter { width: 100%; border-right: none; }
-          .s1-animate-badge { border-color: rgba(67, 198, 250, 0.4); color: #fff; background-color: rgba(67, 198, 250, 0.1); }
+          .s1-animate-badge { border-color: rgba(7, 202, 253, 0.4); color: #fff; background-color: rgba(7, 202, 253, 0.1); }
           .s2-node-1, .s2-node-2, .s2-node-3, .s2-node-4, .s2-node-5 { border-color: rgba(94, 211, 176, 0.5); background-color: rgba(94, 211, 176, 0.1); color: #5ED3B0; }
           .s2-arrow-1, .s2-arrow-2, .s2-arrow-3, .s2-arrow-4 { color: #5ED3B0; }
         }
@@ -167,7 +167,7 @@ const Slide1Content: React.FC = () => {
         {/* Visual Box */}
         <div className="relative w-full md:w-1/2 bg-slate-800 border border-slate-700/50 rounded-xl overflow-hidden aspect-video shadow-xl">
           <Image src="/demo-product.jpg" alt="Ivory quilted comforter with coral block-printed flowers and a blue and coral border, on a bed with white pillows" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover opacity-80" />
-          <div className="absolute left-0 w-full h-[2px] bg-primary shadow-[0_0_8px_2px_rgba(67, 198, 250,0.6)] s1-animate-scan z-10">
+          <div className="absolute left-0 w-full h-[2px] bg-primary shadow-[0_0_8px_2px_rgba(7, 202, 253,0.6)] s1-animate-scan z-10">
             <div className="absolute top-0 left-0 w-full h-12 bg-gradient-to-b from-primary/20 to-transparent -translate-y-full" />
           </div>
           <div className="absolute bottom-2 right-2 bg-slate-900/80 backdrop-blur-md border border-slate-700/50 rounded-lg px-2.5 py-1.5 flex flex-col shadow-lg">

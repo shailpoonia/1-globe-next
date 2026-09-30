@@ -64,7 +64,7 @@ export const MerchantStory: React.FC = () => {
               MERCHANT STORY
             </span>
             <h2 className="text-section-title !text-background mb-6">
-              Built for{' '}<br />the <span className="text-[#0A6E99]">merchants</span>{' '}<br />in the trenches
+              Built for{' '}<br />the <span className="text-brand">merchants</span>{' '}<br />in the trenches
             </h2>
             <div className="space-y-4 text-base md:text-lg text-neutral-700 font-medium leading-relaxed mb-10">
               <p>

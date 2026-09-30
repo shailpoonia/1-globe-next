@@ -15,12 +15,12 @@ export const AIPipelineHeroCard: React.FC = () => {
         }
         @keyframes fadeOutIn {
           0%, 23% { content: "IMG_4837.jpg"; color: #94a3b8; text-shadow: none; }
-          25%, 32% { content: "wooden-wall-clock-12-inch.webp"; color: #fff; text-shadow: 0 0 10px #43C6FA, 0 0 20px #43C6FA; }
-          35%, 100% { content: "wooden-wall-clock-12-inch.webp"; color: #43C6FA; text-shadow: none; }
+          25%, 32% { content: "wooden-wall-clock-12-inch.webp"; color: #fff; text-shadow: 0 0 10px #07CAFD, 0 0 20px #07CAFD; }
+          35%, 100% { content: "wooden-wall-clock-12-inch.webp"; color: #07CAFD; text-shadow: none; }
         }
         @keyframes highlightFilenameBox {
           0%, 20% { border-color: rgba(30,41,59,1); box-shadow: none; background-color: rgba(15,23,42,0.6); }
-          24%, 34% { border-color: rgba(67, 198, 250,0.5); box-shadow: 0 0 15px rgba(67, 198, 250,0.15); background-color: rgba(67, 198, 250,0.05); }
+          24%, 34% { border-color: rgba(7, 202, 253,0.5); box-shadow: 0 0 15px rgba(7, 202, 253,0.15); background-color: rgba(7, 202, 253,0.05); }
           38%, 100% { border-color: rgba(30,41,59,1); box-shadow: none; background-color: rgba(15,23,42,0.6); }
         }
         @keyframes typewriter {
@@ -29,7 +29,7 @@ export const AIPipelineHeroCard: React.FC = () => {
         }
         @keyframes highlightAltBox {
           0%, 38% { border-color: rgba(30,41,59,1); box-shadow: none; background-color: rgba(15,23,42,0.6); }
-          40%, 72% { border-color: rgba(67, 198, 250,0.5); box-shadow: 0 0 15px rgba(67, 198, 250,0.15); background-color: rgba(67, 198, 250,0.05); }
+          40%, 72% { border-color: rgba(7, 202, 253,0.5); box-shadow: 0 0 15px rgba(7, 202, 253,0.15); background-color: rgba(7, 202, 253,0.05); }
           76%, 100% { border-color: rgba(30,41,59,1); box-shadow: none; background-color: rgba(15,23,42,0.6); }
         }
         @keyframes arrowFlow {
@@ -38,7 +38,7 @@ export const AIPipelineHeroCard: React.FC = () => {
         }
         @keyframes badgeGlow {
           0%, 76% { border-color: rgba(51, 65, 85, 0.5); color: #64748b; background-color: transparent; }
-          82%, 100% { border-color: rgba(67, 198, 250, 0.4); color: #fff; background-color: rgba(67, 198, 250, 0.1); box-shadow: 0 0 12px rgba(67, 198, 250,0.15); }
+          82%, 100% { border-color: rgba(7, 202, 253, 0.4); color: #fff; background-color: rgba(7, 202, 253, 0.1); box-shadow: 0 0 12px rgba(7, 202, 253,0.15); }
         }
         @keyframes pulseCheck {
           0%, 33% { opacity: 0; transform: scale(0.5); }
@@ -48,7 +48,7 @@ export const AIPipelineHeroCard: React.FC = () => {
         .animate-scan { animation: scanLine 10s linear infinite; }
         .animate-filename::before { content: "IMG_4837.jpg"; animation: fadeOutIn 10s linear infinite; }
         .animate-filename-box { animation: highlightFilenameBox 10s linear infinite; }
-        .animate-typewriter { animation: typewriter 10s steps(40, end) infinite; overflow: hidden; white-space: nowrap; border-right: 2px solid #43C6FA; }
+        .animate-typewriter { animation: typewriter 10s steps(40, end) infinite; overflow: hidden; white-space: nowrap; border-right: 2px solid #07CAFD; }
         .animate-alt-box { animation: highlightAltBox 10s linear infinite; }
         .animate-flow { animation: arrowFlow 10s ease-out infinite; }
         .animate-badge { animation: badgeGlow 10s ease-out infinite; }
@@ -58,9 +58,9 @@ export const AIPipelineHeroCard: React.FC = () => {
           .animate-scan, .animate-filename::before, .animate-typewriter, .animate-flow, .animate-badge, .animate-check, .animate-filename-box, .animate-alt-box {
             animation: none !important;
           }
-          .animate-filename::before { content: "wooden-wall-clock-12-inch.webp"; color: #43C6FA; }
+          .animate-filename::before { content: "wooden-wall-clock-12-inch.webp"; color: #07CAFD; }
           .animate-typewriter { width: 100%; border-right: none; }
-          .animate-badge { border-color: rgba(67, 198, 250, 0.4); color: #fff; background-color: rgba(67, 198, 250, 0.1); }
+          .animate-badge { border-color: rgba(7, 202, 253, 0.4); color: #fff; background-color: rgba(7, 202, 253, 0.1); }
           .animate-check { opacity: 1; transform: scale(1); }
           .animate-filename-box, .animate-alt-box { border-color: rgba(30,41,59,1); background-color: rgba(15,23,42,0.6); }
         }
@@ -77,7 +77,7 @@ export const AIPipelineHeroCard: React.FC = () => {
             className="object-cover opacity-80"
           />
           {/* Scanning Line */}
-          <div className="absolute left-0 w-full h-[2px] bg-primary shadow-[0_0_8px_2px_rgba(67, 198, 250,0.6)] animate-scan z-10">
+          <div className="absolute left-0 w-full h-[2px] bg-primary shadow-[0_0_8px_2px_rgba(7, 202, 253,0.6)] animate-scan z-10">
             <div className="absolute top-0 left-0 w-full h-12 bg-gradient-to-b from-primary/20 to-transparent -translate-y-full" />
           </div>
           

@@ -26,7 +26,7 @@
 
 @layer base {
   :root {
-    /* Calmer dark theme: deep blue-grey ground, soft white text, brand blue from the logo (#43C6FA). */
+    /* Calmer dark theme: deep blue-grey ground, soft white text, brand blue from the logo (#07CAFD). */
     --background: 213 29% 6%; /* #0B0F14 */
     --foreground: 216 26% 92%; /* #E6EAF0 */
 
@@ -37,7 +37,7 @@
     --popover-foreground: 216 26% 92%;
 
     /* 1-GLOBE blue (logo) */
-    --primary: 197 94% 62%; /* #43C6FA */
+    --primary: 192 98% 51%; /* #07CAFD, the 1-GLOBE logo cyan */
     --primary-foreground: 213 29% 6%;
 
     --secondary: 215 26% 15%; /* #1C2430 */
@@ -163,9 +163,6 @@
   }
   .brand-one {
     color: #07CAFD;
-  }
-  .reading-light .brand-one {
-    color: hsl(var(--primary));
   }
   /* Secondary buttons: a light grey fill so they read as buttons on dark backgrounds. */
   .btn-secondary {

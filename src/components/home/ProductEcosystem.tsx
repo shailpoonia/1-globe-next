@@ -20,7 +20,7 @@ export const ProductEcosystem: React.FC = () => {
           <div className="lg:col-span-7 flex flex-col gap-4">
             <span className="text-eyebrow">The <AppName name="1-GLOBE" /> ecosystem</span>
             <h2 className="text-section-title">
-              <span className="text-primary">Every layer</span> of the store matters
+              <span className="text-brand">Every layer</span> of the store matters
             </h2>
           </div>
           <p className="lg:col-span-5 text-base md:text-lg leading-relaxed text-muted-foreground">
@@ -43,7 +43,7 @@ export const ProductEcosystem: React.FC = () => {
                   </span>
                   <span
                     className={`rounded-full px-3 py-1 text-xs font-semibold ${
-                      p.highlight ? 'bg-primary text-primary-foreground' : 'border border-border text-muted-foreground'
+                      p.highlight ? 'bg-brand text-[#0B0F14]' : 'border border-border text-muted-foreground'
                     }`}
                   >
                     {p.status}
@@ -57,9 +57,9 @@ export const ProductEcosystem: React.FC = () => {
                 {p.href ? (
                   <Link
                     href={p.href}
-                    className="mt-auto inline-flex items-center gap-2 text-[15px] font-semibold text-primary hover:gap-3 transition-all"
+                    className="mt-auto inline-flex items-center gap-2 text-[15px] font-semibold text-foreground hover:gap-3 transition-all"
                   >
-                    <BrandText>{p.ctaLabel || 'Explore'}</BrandText> <ArrowRight className="w-4 h-4" aria-hidden="true" />
+                    <BrandText>{p.ctaLabel || 'Explore'}</BrandText> <ArrowRight className="w-4 h-4 text-brand" aria-hidden="true" />
                   </Link>
                 ) : (
                   <span className="mt-auto text-sm text-muted-foreground">More details at launch</span>

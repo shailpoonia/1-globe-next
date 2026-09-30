@@ -89,7 +89,7 @@ export const GoogleSearchAnimationCard: React.FC = () => {
           {/* Metadata Boxes */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-3">
             {/* Filename */}
-            <div className={`p-3.5 rounded-[var(--radius)] border transition-all duration-500 ${step === 1 ? 'border-cyan-500 bg-cyan-500/10 shadow-[0_0_15px_rgba(67, 198, 250,0.15)]' : step >= 2 ? 'border-slate-600 bg-slate-800/50' : 'border-slate-700 bg-slate-800/50'}`}>
+            <div className={`p-3.5 rounded-[var(--radius)] border transition-all duration-500 ${step === 1 ? 'border-cyan-500 bg-cyan-500/10 shadow-[0_0_15px_rgba(7, 202, 253,0.15)]' : step >= 2 ? 'border-slate-600 bg-slate-800/50' : 'border-slate-700 bg-slate-800/50'}`}>
               <div className="text-[13px] text-slate-500 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
                 <ImageIcon className="w-3 h-3" /> Filename
               </div>
@@ -99,7 +99,7 @@ export const GoogleSearchAnimationCard: React.FC = () => {
             </div>
 
             {/* Alt Text */}
-            <div className={`p-3.5 rounded-[var(--radius)] border transition-all duration-500 ${step === 1 ? 'border-cyan-500 bg-cyan-500/10 shadow-[0_0_15px_rgba(67, 198, 250,0.15)]' : step >= 2 ? 'border-slate-600 bg-slate-800/50' : 'border-slate-700 bg-slate-800/50'}`}>
+            <div className={`p-3.5 rounded-[var(--radius)] border transition-all duration-500 ${step === 1 ? 'border-cyan-500 bg-cyan-500/10 shadow-[0_0_15px_rgba(7, 202, 253,0.15)]' : step >= 2 ? 'border-slate-600 bg-slate-800/50' : 'border-slate-700 bg-slate-800/50'}`}>
               <div className="text-[13px] text-slate-500 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
                 <FileText className="w-3 h-3" /> Alt Text
               </div>
@@ -132,7 +132,7 @@ export const GoogleSearchAnimationCard: React.FC = () => {
           
           <div className="bg-slate-900/80 backdrop-blur border border-slate-700 p-4 sm:p-6 w-full">
             {/* Search Bar */}
-            <div className={`bg-slate-800 border rounded-full h-12 px-4 flex items-center gap-3 mb-8 transition-colors duration-300 ${step === 2 ? 'border-cyan-500/50 shadow-[0_0_10px_rgba(67, 198, 250,0.1)]' : 'border-slate-600 shadow-inner'}`}>
+            <div className={`bg-slate-800 border rounded-full h-12 px-4 flex items-center gap-3 mb-8 transition-colors duration-300 ${step === 2 ? 'border-cyan-500/50 shadow-[0_0_10px_rgba(7, 202, 253,0.1)]' : 'border-slate-600 shadow-inner'}`}>
               <Search className={`w-5 h-5 transition-colors ${step === 2 ? 'text-cyan-400 animate-pulse' : 'text-slate-400'}`} />
               <div className="text-slate-200 font-medium font-sans w-full">
                 hand block print comforter
