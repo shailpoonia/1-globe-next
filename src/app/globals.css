@@ -27,8 +27,8 @@
 @layer base {
   :root {
     /* THE brand colour. Change it here only: every cyan on the site (text, buttons, logo "1-",
-       orbit, app names, animations) reads from --brand. Format: R G B. #00A4FF */
-    --brand: 0 164 255;
+       orbit, app names, animations) reads from --brand. Format: R G B. #00B1FF */
+    --brand: 0 177 255;
 
     /* Calmer dark theme: deep blue-grey ground, soft white text. */
     --background: 213 29% 6%; /* #0B0F14 */
