@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 1-GLOBE Brand: the logo lettering for app names (1-OPTIMIZER, 1-BLOG, 1-LIST, 1-GLOBE).
+   G, L, O, B, E, 1 and - are traced from the logo; the other letters are drawn to match. */
+@font-face {
+  font-family: '1-GLOBE Brand';
+  src: url(data:font/woff;base64,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) format('woff');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: block;
+}
+
 /* Brand "1": the digit 1 from the 1-GLOBE logo, used in place of Space Grotesk's 1 in every heading.
    unicode-range limits it to the character "1"; all other characters still use Space Grotesk. */
 @font-face {
@@ -16,7 +26,11 @@
 
 @layer base {
   :root {
-    /* Calmer dark theme: deep blue-grey ground, soft white text, brand blue from the logo (#43C6FA). */
+    /* THE brand colour. Change it here only: every cyan on the site (text, buttons, logo "1-",
+       orbit, app names, animations) reads from --brand. Format: R G B. #00B1FF */
+    --brand: 0 177 255;
+
+    /* Calmer dark theme: deep blue-grey ground, soft white text. */
     --background: 213 29% 6%; /* #0B0F14 */
     --foreground: 216 26% 92%; /* #E6EAF0 */
 
@@ -26,8 +40,8 @@
     --popover: 215 29% 12%;
     --popover-foreground: 216 26% 92%;
 
-    /* 1-GLOBE blue (logo) */
-    --primary: 197 94% 62%; /* #43C6FA */
+    /* Accent colours follow the brand colour. */
+    --primary: var(--brand);
     --primary-foreground: 213 29% 6%;
 
     --secondary: 215 26% 15%; /* #1C2430 */
@@ -36,7 +50,7 @@
     --muted: 215 27% 10%;
     --muted-foreground: 215 16% 75%; /* #B4BCC8 */
 
-    --accent: 197 94% 62%;
+    --accent: var(--brand);
     --accent-foreground: 213 29% 6%;
 
     --destructive: 6 79% 72%; /* soft coral #F08A7E */
@@ -48,12 +62,12 @@
     --warning: 38 92% 60%;
     --warning-foreground: 0 0% 10%;
 
-    --info: 197 94% 62%;
+    --info: var(--brand);
     --info-foreground: 213 29% 6%;
 
     --border: 215 23% 18%; /* #232C38 */
     --input: 215 23% 18%;
-    --ring: 197 94% 62%;
+    --ring: var(--brand);
 
     /* Neutral, white and black used by Tailwind classes (text-neutral-400, bg-white ...).
        RGB triplets so opacity modifiers work. The .reading-light scope below swaps them. */
@@ -111,12 +125,12 @@
   }
 
   ::selection {
-    background-color: hsl(var(--primary) / 0.25);
-    color: hsl(var(--primary));
+    background-color: rgb(var(--primary) / 0.25);
+    color: rgb(var(--primary));
   }
 
   :focus-visible {
-    outline: 2px solid hsl(var(--primary));
+    outline: 2px solid rgb(var(--primary));
     outline-offset: 2px;
   }
 }
@@ -127,8 +141,36 @@
   .text-hero {
     @apply font-heading font-bold text-4xl sm:text-5xl md:text-6xl tracking-tight leading-[1.1] text-foreground;
   }
+  /* Page titles on inner pages (legal pages use .text-hero without capitals). */
+  .text-page-title {
+    @apply text-hero uppercase leading-[1.05];
+  }
+  /* Section headlines: ALL CAPS, one keyword in the brand cyan, no full stop. */
   .text-section-title {
-    @apply font-heading font-bold text-3xl sm:text-4xl md:text-5xl tracking-tight leading-[1.1] text-foreground;
+    @apply font-heading font-bold uppercase text-4xl sm:text-5xl tracking-tight leading-[1.08] text-foreground;
+  }
+  /* Titles of sub-sections inside a section. */
+  .text-subsection-title {
+    @apply font-heading font-bold text-2xl sm:text-3xl tracking-tight leading-tight text-foreground;
+  }
+  /* Titles inside cards and panels. */
+  .text-card-title {
+    @apply font-heading font-bold text-xl sm:text-2xl tracking-tight leading-snug text-foreground;
+  }
+  /* App names in the logo lettering; the "1-" is cyan like the 1-GLOBE logo. */
+  .font-brand {
+    font-family: '1-GLOBE Brand', var(--font-heading);
+    font-weight: 700;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    font-feature-settings: normal;
+  }
+  .brand-one {
+    color: rgb(var(--brand));
+  }
+  /* Secondary buttons: a light grey fill so they read as buttons on dark backgrounds. */
+  .btn-secondary {
+    @apply border border-white/20 bg-white/10 text-foreground hover:bg-white/[0.16] hover:border-white/35;
   }
   .text-eyebrow {
     @apply text-[13px] font-semibold uppercase tracking-[0.12em] text-muted-foreground;
@@ -185,7 +227,7 @@
     margin-bottom: 1.25rem;
   }
   .rich-text a {
-    color: hsl(var(--primary));
+    color: rgb(var(--primary));
     text-decoration: underline;
   }
   .rich-text ul,
@@ -197,7 +239,7 @@
   .rich-text ol { list-style: decimal; }
   .rich-text li { margin-bottom: 0.5rem; }
   .rich-text blockquote {
-    border-left: 3px solid hsl(var(--primary));
+    border-left: 3px solid rgb(var(--primary));
     padding-left: 1rem;
     font-style: italic;
     margin: 1.5rem 0;
@@ -293,23 +335,23 @@ html {
 
 /* Light reading mode for long guides (resource articles). Everything inside inherits light colours. */
 .reading-light {
-  --background: 220 20% 97%; /* #F7F8FA */
+  --background: 216 22% 94%; /* #ECEFF3: a touch deeper so the white cards stand out */
   --foreground: 218 26% 14%; /* #1A202C */
   --card: 0 0% 100%;
   --card-foreground: 218 26% 14%;
-  --primary: 198 88% 32%; /* #0A6E99 */
+  --primary: 10 110 153; /* #0A6E99: darker so small links stay readable on white */
   --primary-foreground: 0 0% 100%;
   --secondary: 216 25% 94%;
   --secondary-foreground: 218 26% 14%;
   --muted: 216 20% 95%;
   --muted-foreground: 217 18% 28%; /* #3A4454 */
-  --accent: 198 88% 32%;
+  --accent: 10 110 153;
   --accent-foreground: 0 0% 100%;
   --destructive: 355 46% 48%; /* #B4424A */
   --destructive-foreground: 0 0% 100%;
   --border: 216 20% 90%; /* #E2E6EC */
   --input: 216 20% 90%;
-  --ring: 198 88% 32%;
+  --ring: 10 110 153;
   --n-50: 17 23 32;
   --n-100: 26 32 44;
   --n-200: 31 39 51;

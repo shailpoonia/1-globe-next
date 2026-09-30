@@ -37,11 +37,12 @@ const config: Config = {
         black: 'rgb(var(--c-black) / <alpha-value>)',
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
-        ring: 'hsl(var(--ring))',
+        ring: 'rgb(var(--ring) / <alpha-value>)',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
+        brand: 'rgb(var(--brand) / <alpha-value>)',
         primary: {
-          DEFAULT: 'hsl(var(--primary))',
+          DEFAULT: 'rgb(var(--primary) / <alpha-value>)',
           foreground: 'hsl(var(--primary-foreground))'
         },
         secondary: {
@@ -57,7 +58,7 @@ const config: Config = {
           foreground: 'hsl(var(--muted-foreground))'
         },
         accent: {
-          DEFAULT: 'hsl(var(--accent))',
+          DEFAULT: 'rgb(var(--accent) / <alpha-value>)',
           foreground: 'hsl(var(--accent-foreground))'
         },
         popover: {
@@ -77,7 +78,7 @@ const config: Config = {
           foreground: 'hsl(var(--warning-foreground))'
         },
         info: {
-          DEFAULT: 'hsl(var(--info))',
+          DEFAULT: 'rgb(var(--info) / <alpha-value>)',
           foreground: 'hsl(var(--info-foreground))'
         }
       },

@@ -22,8 +22,8 @@ export default function ResourcesPage() {
         <Section className="section-spacing border-b border-border bg-secondary/30">
           <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
             <span className="text-eyebrow block mb-6">Resources</span>
-            <h1 className="text-hero mb-8 max-w-3xl">
-              Learn how ecommerce <span className="text-primary italic">performance</span> works.
+            <h1 className="text-page-title mb-8 max-w-3xl">
+              Learn how ecommerce <span className="text-primary">performance</span> works
             </h1>
             <p className="text-lead max-w-2xl">
               1-GLOBE publishes practical guidance for merchants and ecommerce teams covering storefront performance, image performance, content, product listings, search, answer engines, and generative discovery.
@@ -43,7 +43,7 @@ export default function ResourcesPage() {
                   <span className="text-xs font-bold uppercase tracking-widest text-primary mb-4">
                     {resource.category}
                   </span>
-                  <h2 className="text-2xl font-heading font-bold text-foreground mb-4 leading-tight">
+                  <h2 className="text-card-title mb-4">
                     {resource.title}
                   </h2>
                   <p className="text-muted-foreground text-sm font-medium leading-relaxed flex-1 mb-8">

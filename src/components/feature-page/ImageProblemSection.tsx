@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { FileX, VolumeX, Timer, ArrowRight, ArrowDown } from 'lucide-react'
+import { AppName } from '@/components/shared/BrandLogo'
 
 const problems = [
   {
@@ -78,8 +79,8 @@ export const ImageProblemSection: React.FC = () => {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 md:gap-16">
           <div className="max-w-3xl flex flex-col gap-4">
             <span className="text-[13px] font-semibold uppercase tracking-[0.12em] text-destructive">The hidden cost of messy images</span>
-            <h2 className="font-heading font-bold text-4xl sm:text-5xl tracking-tight leading-[1.1] text-foreground">
-              Your photos look great. To search engines, they say almost nothing.
+            <h2 className="text-section-title">
+              Your photos look great. To search engines, they say <span className="text-primary">almost nothing</span>
             </h2>
           </div>
           <p className="text-base md:text-lg leading-relaxed text-neutral-400 md:max-w-sm">
@@ -91,7 +92,7 @@ export const ImageProblemSection: React.FC = () => {
           {problems.map(({ icon: Icon, title, body }) => (
             <li key={title} className="bg-card border border-border rounded-2xl p-7 flex flex-col gap-3">
               <Icon className="w-7 h-7 text-destructive" aria-hidden="true" />
-              <h3 className="font-heading text-xl font-bold text-foreground">{title}</h3>
+              <h3 className="text-card-title">{title}</h3>
               <p className="text-[15px] sm:text-base leading-relaxed text-neutral-400">{body}</p>
             </li>
           ))}
@@ -99,7 +100,7 @@ export const ImageProblemSection: React.FC = () => {
 
         <figure className="m-0 bg-neutral-950 border border-border rounded-2xl p-6 sm:p-10 flex flex-col gap-7">
           <div className="flex flex-wrap items-baseline justify-between gap-2">
-            <span className="font-heading text-xl sm:text-2xl font-bold text-foreground">What machines see, before and after 1-OPTIMIZER</span>
+            <span className="text-card-title">What machines see, before and after <AppName name="1-OPTIMIZER" /></span>
             <span className="text-sm text-neutral-500">Illustrative example</span>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_3rem_minmax(0,1fr)] items-stretch gap-4 lg:gap-0">
@@ -135,7 +136,7 @@ export const ImageProblemSection: React.FC = () => {
         </figure>
 
         <div className="flex flex-col gap-6">
-          <h3 className="font-heading text-xl sm:text-2xl font-bold text-foreground">How 1-OPTIMIZER gets you there</h3>
+          <h3 className="text-card-title">How <AppName name="1-OPTIMIZER" /> gets you there</h3>
           <ol className="m-0 p-0 list-none grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {steps.map((s) => (
               <li

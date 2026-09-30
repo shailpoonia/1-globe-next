@@ -21,7 +21,7 @@ export default function NotFound() {
       </p>
       <Link
         href="/"
-        className="interactive-btn inline-flex items-center justify-center h-12 px-8 border border-neutral-700 bg-transparent text-sm font-semibold text-foreground hover:bg-white/5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+        className="interactive-btn inline-flex items-center justify-center h-12 px-8 btn-secondary text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
       >
         Return to home
       </Link>

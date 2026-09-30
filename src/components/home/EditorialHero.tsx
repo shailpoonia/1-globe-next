@@ -3,6 +3,7 @@ import { ArrowDown, ArrowRight } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { HeroVideo } from '@/components/home/HeroVideo'
+import { AppLockup } from '@/components/shared/BrandLogo'
 
 export const EditorialHero: React.FC = () => {
   return (
@@ -68,9 +69,9 @@ export const EditorialHero: React.FC = () => {
             </Link>
             <Link
               href="/apps/1-optimizer"
-              className="interactive-btn inline-flex items-center justify-center gap-3 h-14 px-8 font-semibold text-[13px] text-white border border-neutral-500 hover:border-neutral-300 hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary w-full sm:w-auto"
+              className="interactive-btn inline-flex items-center justify-center gap-3 h-14 px-8 font-semibold text-[13px] btn-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary w-full sm:w-auto"
             >
-              <span>Discover 1-OPTIMIZER</span>
+              <span className="inline-flex items-center gap-2.5">Discover <AppLockup app="optimizer" name="1-OPTIMIZER" className="text-[15px]" /></span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>

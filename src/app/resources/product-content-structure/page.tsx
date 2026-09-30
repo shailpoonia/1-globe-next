@@ -10,6 +10,7 @@ import { notFound } from 'next/navigation'
 import { CtaBand } from '@/components/shared/CtaBand'
 import * as Accordion from '@radix-ui/react-accordion'
 import { ChevronDown } from 'lucide-react'
+import { AppName } from '@/components/shared/BrandLogo'
 
 const slug = 'product-content-structure'
 const resource = getResourceBySlug(slug)
@@ -280,7 +281,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="bg-secondary/30 p-8 md:p-12 mt-16 border border-border rounded-lg">
-              <h2 id="where-1-list-fits" className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-6 scroll-mt-28">15. Where 1-LIST Fits</h2>
+              <h2 id="where-1-list-fits" className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-6 scroll-mt-28">15. Where <AppName name="1-LIST" /> Fits</h2>
               <p className="text-lg text-neutral-400 leading-relaxed mb-6">
                 <Link href="/" className="text-primary hover:underline">1-GLOBE</Link> is building an ecosystem of performance tools to support modern storefront architecture.
               </p>
@@ -345,7 +346,7 @@ export default function ArticlePage() {
                   Ecommerce Image Optimization
                 </Link>
                 <Link href="/" className="text-muted-foreground hover:text-foreground transition-colors text-sm flex items-center gap-2 mt-4">
-                  Return to 1-GLOBE Homepage
+                  <span>Return to <AppName name="1-GLOBE" /> Homepage</span>
                 </Link>
               </div>
             </div>

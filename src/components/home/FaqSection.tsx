@@ -2,6 +2,7 @@ import React from 'react'
 import * as Accordion from '@radix-ui/react-accordion'
 import { ChevronDown } from 'lucide-react'
 import Link from 'next/link'
+import { BrandText } from '@/components/shared/BrandLogo'
 
 export const FaqSection: React.FC = () => {
   const faqs = [
@@ -60,10 +61,10 @@ export const FaqSection: React.FC = () => {
             <span className="text-[13px] font-bold uppercase tracking-[0.12em] text-neutral-400 block mb-6">
               COMMON QUESTIONS
             </span>
-            <h2 className="font-heading font-bold text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-[1.08] text-foreground">
+            <h2 className="text-section-title">
               Questions{' '}<br />
               worth{' '}<br />
-              answering
+              <span className="text-primary">answering</span>
             </h2>
           </div>
 
@@ -77,7 +78,7 @@ export const FaqSection: React.FC = () => {
                 >
                   <Accordion.Header className="flex">
                     <Accordion.Trigger className="group flex flex-1 items-center justify-between py-6 text-left font-heading font-bold text-lg sm:text-xl text-neutral-300 hover:text-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-sm">
-                      {faq.q}
+                      <BrandText plain>{faq.q}</BrandText>
                       <ChevronDown
                         className="w-5 h-5 text-neutral-600 transition-transform duration-300 ease-in-out group-data-[state=open]:rotate-180 group-data-[state=open]:text-foreground shrink-0 ml-4"
                         aria-hidden

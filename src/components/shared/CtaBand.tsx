@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { ArrowUpRight } from 'lucide-react'
+import { BrandText } from '@/components/shared/BrandLogo'
 
 export interface CtaBandProps {
   id?: string
@@ -26,7 +27,7 @@ export const CtaBand: React.FC<CtaBandProps> = ({
   headline,
   headlinePart1 = 'Make your store',
   italicWord,
-  headlinePart2 = 'perform.',
+  headlinePart2 = 'perform',
   subhead = 'The foundational tools for high-performance ecommerce.',
   primaryCtaText = 'Coming soon to Shopify',
   primaryCtaUrl = "#",
@@ -38,7 +39,7 @@ export const CtaBand: React.FC<CtaBandProps> = ({
   className = '',
 }) => {
   const primaryButtonClass = 'interactive-btn inline-flex items-center justify-between h-14 px-8 font-semibold text-[13px] bg-foreground text-background hover:bg-neutral-200 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-w-[240px]'
-  const secondaryButtonClass = 'interactive-btn inline-flex items-center justify-center h-14 px-8 font-semibold text-[13px] border border-neutral-800 bg-transparent text-foreground hover:bg-white/5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary'
+  const secondaryButtonClass = 'interactive-btn inline-flex items-center justify-center h-14 px-8 font-semibold text-[13px] btn-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary'
 
   return (
     <section id={id} className={`py-16 md:py-24 relative overflow-hidden bg-background border-t border-neutral-900 ${className}`}>
@@ -47,12 +48,12 @@ export const CtaBand: React.FC<CtaBandProps> = ({
           
           <div className="max-w-xl">
             {eyebrow && (
-              <span className="text-[13px] font-bold uppercase tracking-[0.12em] text-neutral-400 block mb-6">
+              <span className="text-eyebrow block mb-6">
                 {eyebrow}
               </span>
             )}
 
-            <h2 className="font-heading font-bold text-4xl sm:text-5xl md:text-6xl tracking-tight leading-[1.08] text-foreground mb-6">
+            <h2 className="text-section-title mb-6">
               {headline ? (
                 headline
               ) : (
@@ -61,7 +62,7 @@ export const CtaBand: React.FC<CtaBandProps> = ({
                   {italicWord && (
                     <>
                       {' '}
-                      <em className="italic">{italicWord}</em>{' '}
+                      <span className="text-primary">{italicWord}</span>{' '}
                     </>
                   )}
                   {headlinePart2}
@@ -79,12 +80,12 @@ export const CtaBand: React.FC<CtaBandProps> = ({
           <div className="flex flex-col gap-4 w-full md:w-auto">
             {primaryIsLink ? (
               <Link href={primaryCtaUrl} className={primaryButtonClass}>
-                <span>{primaryCtaText}</span>
+                <span><BrandText>{primaryCtaText}</BrandText></span>
                 <ArrowUpRight className="w-4 h-4" />
               </Link>
             ) : primaryCtaUrl === '#' ? (
               <div className={`${primaryButtonClass} opacity-70 cursor-default bg-neutral-900 text-neutral-400 border border-neutral-800 hover:bg-neutral-900`}>
-                <span>{primaryCtaText}</span>
+                <span><BrandText>{primaryCtaText}</BrandText></span>
               </div>
             ) : (
               <a
@@ -93,7 +94,7 @@ export const CtaBand: React.FC<CtaBandProps> = ({
                 rel="noopener noreferrer"
                 className={primaryButtonClass}
               >
-                <span>{primaryCtaText}</span>
+                <span><BrandText>{primaryCtaText}</BrandText></span>
                 <ArrowUpRight className="w-4 h-4" />
               </a>
             )}
@@ -101,11 +102,11 @@ export const CtaBand: React.FC<CtaBandProps> = ({
             {secondaryCtaText && secondaryCtaUrl && (
               secondaryIsLink ? (
                 <Link href={secondaryCtaUrl} className={secondaryButtonClass}>
-                  <span>{secondaryCtaText}</span>
+                  <span><BrandText>{secondaryCtaText}</BrandText></span>
                 </Link>
               ) : secondaryCtaUrl === '#' ? (
                 <div className={`${secondaryButtonClass} opacity-70 cursor-default hover:bg-transparent`}>
-                  <span>{secondaryCtaText}</span>
+                  <span><BrandText>{secondaryCtaText}</BrandText></span>
                 </div>
               ) : (
                 <a
@@ -114,7 +115,7 @@ export const CtaBand: React.FC<CtaBandProps> = ({
                   rel="noopener noreferrer"
                   className={secondaryButtonClass}
                 >
-                  <span>{secondaryCtaText}</span>
+                  <span><BrandText>{secondaryCtaText}</BrandText></span>
                 </a>
               )
             )}

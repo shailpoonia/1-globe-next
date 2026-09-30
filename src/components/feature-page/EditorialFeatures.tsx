@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Crop, Scaling, Pencil, Layers, WandSparkles, Sparkles, Check } from 'lucide-react'
 import { Section } from '@/components/shared/Section'
 import { SectionHeader } from '@/components/shared/SectionHeader'
+import { AppName } from '@/components/shared/BrandLogo'
 
 /* Light-theme illustration panel. `reading-light` swaps the colour tokens to the light palette. */
 function Panel({ children, label }: { children: React.ReactNode; label: string }) {
@@ -163,7 +164,7 @@ const EditingVisual = (
 const PerformanceVisual = (
   <Panel label="Illustrative theme extension settings">
     <div className="flex items-center justify-between">
-      <span className="text-sm font-semibold text-foreground">1-OPTIMIZER theme extension</span>
+      <span className="text-sm font-semibold text-foreground"><AppName name="1-OPTIMIZER" /> theme extension</span>
       <span className="inline-flex items-center gap-1 rounded-full bg-primary/10 px-2.5 py-1 text-xs font-semibold text-primary">
         <Check className="w-3.5 h-3.5" aria-hidden="true" /> Active
       </span>
@@ -261,7 +262,7 @@ export const EditorialFeatures: React.FC = () => {
       <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
         <SectionHeader
           eyebrow="Capabilities"
-          headline="Built for the entire catalog."
+          headline={<>Built for the <span className="text-primary">entire catalog</span></>}
           subhead="Six layers of optimization and control for your storefront infrastructure."
           align="center"
         />
@@ -274,7 +275,7 @@ export const EditorialFeatures: React.FC = () => {
                 <div className={visualFirst ? 'lg:order-1' : 'lg:order-2'}>{f.visual}</div>
                 <div className={`max-w-xl flex flex-col gap-5 ${visualFirst ? 'lg:order-2 lg:pl-4' : 'lg:order-1'}`}>
                   <span className="font-heading text-sm font-bold text-primary">{String(i + 1).padStart(2, '0')}</span>
-                  <h3 className="text-section-title">{f.title}</h3>
+                  <h3 className="text-subsection-title">{f.title}</h3>
                   <p className="text-lead">{f.body}</p>
                 </div>
               </div>

@@ -10,6 +10,7 @@ import { notFound } from 'next/navigation'
 import { CtaBand } from '@/components/shared/CtaBand'
 import * as Accordion from '@radix-ui/react-accordion'
 import { ChevronDown } from 'lucide-react'
+import { AppName } from '@/components/shared/BrandLogo'
 
 const slug = 'bulk-image-optimization'
 const resource = getResourceBySlug(slug)
@@ -296,7 +297,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="bg-secondary/30 p-8 md:p-12 mt-16 border border-border rounded-lg">
-              <h2 id="where-1-optimizer-fits" className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-6 scroll-mt-28">14. Where 1-OPTIMIZER Fits</h2>
+              <h2 id="where-1-optimizer-fits" className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-6 scroll-mt-28">14. Where <AppName name="1-OPTIMIZER" /> Fits</h2>
               <p className="text-lg text-neutral-400 leading-relaxed mb-6">
                 1-OPTIMIZER is being developed to help Shopify merchants work with image optimization systematically at catalog scale. 
               </p>
@@ -307,7 +308,7 @@ export default function ArticlePage() {
                 Note: 1-OPTIMIZER is currently coming soon.
               </p>
               <Link href="/apps/1-optimizer" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-semibold text-xs bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors">
-                Explore 1-OPTIMIZER
+                <span>Explore <AppName name="1-OPTIMIZER" /></span>
               </Link>
             </div>
 
@@ -355,7 +356,7 @@ export default function ArticlePage() {
                   Shopify Image Optimization
                 </Link>
                 <Link href="/" className="text-muted-foreground hover:text-foreground transition-colors text-sm flex items-center gap-2 mt-4">
-                  Return to 1-GLOBE Homepage
+                  <span>Return to <AppName name="1-GLOBE" /> Homepage</span>
                 </Link>
               </div>
             </div>

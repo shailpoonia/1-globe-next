@@ -1,13 +1,14 @@
 import React from 'react'
 import Link from 'next/link'
-import { ArrowRight, Image as ImageIcon, FileText, ListChecks } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 
 import { ENTITY_PRODUCTS } from '@/lib/entities'
+import { AppMark, AppName, BrandText } from '@/components/shared/BrandLogo'
 
 const products = [
-  { ...ENTITY_PRODUCTS['1-optimizer'], layer: 'Images', icon: ImageIcon, status: 'Coming soon to Shopify', highlight: true },
-  { ...ENTITY_PRODUCTS['1-blog'], layer: 'Content', icon: FileText, status: 'Launching soon', highlight: false },
-  { ...ENTITY_PRODUCTS['1-list'], layer: 'Product listings', icon: ListChecks, status: 'Launching soon', highlight: false },
+  { ...ENTITY_PRODUCTS['1-optimizer'], layer: 'Images', mark: 'optimizer' as const, status: 'Coming soon to Shopify', highlight: true },
+  { ...ENTITY_PRODUCTS['1-blog'], layer: 'Content', mark: 'blog' as const, status: 'Launching soon', highlight: false },
+  { ...ENTITY_PRODUCTS['1-list'], layer: 'Product listings', mark: 'list' as const, status: 'Launching soon', highlight: false },
 ]
 
 // Light section: `reading-light` swaps the colour tokens to the light palette.
@@ -17,9 +18,9 @@ export const ProductEcosystem: React.FC = () => {
       <div className="max-w-content mx-auto w-full px-6 sm:px-8 lg:px-12 flex flex-col gap-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-end">
           <div className="lg:col-span-7 flex flex-col gap-4">
-            <span className="text-eyebrow">The 1-GLOBE ecosystem</span>
-            <h2 className="font-heading font-bold text-4xl sm:text-5xl tracking-tight leading-[1.1] text-foreground">
-              Every layer of the store matters
+            <span className="text-eyebrow">The <AppName name="1-GLOBE" /> ecosystem</span>
+            <h2 className="text-section-title">
+              <span className="text-brand">Every layer</span> of the store matters
             </h2>
           </div>
           <p className="lg:col-span-5 text-base md:text-lg leading-relaxed text-muted-foreground">
@@ -29,7 +30,6 @@ export const ProductEcosystem: React.FC = () => {
 
         <ul className="m-0 p-0 list-none grid grid-cols-1 md:grid-cols-3 gap-5">
           {products.map((p) => {
-            const Icon = p.icon
             return (
               <li
                 key={p.id}
@@ -38,12 +38,12 @@ export const ProductEcosystem: React.FC = () => {
                 }`}
               >
                 <div className="flex items-center justify-between gap-3">
-                  <span className={`flex items-center justify-center w-11 h-11 rounded-xl ${p.highlight ? 'bg-primary/10 text-primary' : 'bg-secondary text-muted-foreground'}`}>
-                    <Icon className="w-5 h-5" aria-hidden="true" />
+                  <span className={`flex items-center justify-center w-14 h-14 rounded-xl text-foreground ${p.highlight ? 'bg-primary/10' : 'bg-secondary'}`}>
+                    <AppMark app={p.mark} className="h-8 w-auto" />
                   </span>
                   <span
                     className={`rounded-full px-3 py-1 text-xs font-semibold ${
-                      p.highlight ? 'bg-primary text-primary-foreground' : 'border border-border text-muted-foreground'
+                      p.highlight ? 'bg-brand text-[#0B0F14]' : 'border border-border text-muted-foreground'
                     }`}
                   >
                     {p.status}
@@ -52,14 +52,14 @@ export const ProductEcosystem: React.FC = () => {
                 <span className="text-[13px] font-semibold uppercase tracking-[0.08em] text-muted-foreground">
                   {p.number} · {p.layer}
                 </span>
-                <h3 className="font-heading text-2xl font-bold text-foreground">{p.name}</h3>
+                <h3 className="text-card-title"><AppName name={p.name} /></h3>
                 <p className="text-[15px] leading-relaxed text-muted-foreground">{p.description}</p>
                 {p.href ? (
                   <Link
                     href={p.href}
-                    className="mt-auto inline-flex items-center gap-2 text-[15px] font-semibold text-primary hover:gap-3 transition-all"
+                    className="mt-auto inline-flex items-center gap-2 text-[15px] font-semibold text-foreground hover:gap-3 transition-all"
                   >
-                    {p.ctaLabel || 'Explore'} <ArrowRight className="w-4 h-4" aria-hidden="true" />
+                    <BrandText>{p.ctaLabel || 'Explore'}</BrandText> <ArrowRight className="w-4 h-4 text-brand" aria-hidden="true" />
                   </Link>
                 ) : (
                   <span className="mt-auto text-sm text-muted-foreground">More details at launch</span>
