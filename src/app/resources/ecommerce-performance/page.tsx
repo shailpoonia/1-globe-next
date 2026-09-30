@@ -145,7 +145,7 @@ export default function EcommercePerformancePage() {
                 Images are often the heaviest part of a storefront. 1-OPTIMIZER is designed specifically for Shopify stores to compress image assets, rewrite generic filenames, and generate contextual alt text to support storefront performance.
               </p>
               <Link href="/apps/1-optimizer" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-semibold text-xs bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors">
-                Explore <AppName name="1-OPTIMIZER" />
+                <span>Explore <AppName name="1-OPTIMIZER" /></span>
               </Link>
             </div>
 

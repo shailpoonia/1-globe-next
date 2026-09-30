@@ -312,7 +312,7 @@ export default function ArticlePage() {
                 Note: 1-OPTIMIZER is currently coming soon.
               </p>
               <Link href="/apps/1-optimizer" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-semibold text-xs bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors">
-                Explore <AppName name="1-OPTIMIZER" />
+                <span>Explore <AppName name="1-OPTIMIZER" /></span>
               </Link>
             </div>
 
@@ -360,7 +360,7 @@ export default function ArticlePage() {
                   Ecommerce Performance
                 </Link>
                 <Link href="/" className="text-muted-foreground hover:text-foreground transition-colors text-sm flex items-center gap-2 mt-4">
-                  Return to <AppName name="1-GLOBE" /> Homepage
+                  <span>Return to <AppName name="1-GLOBE" /> Homepage</span>
                 </Link>
               </div>
             </div>

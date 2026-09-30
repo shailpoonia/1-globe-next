@@ -346,7 +346,7 @@ export default function ArticlePage() {
                   Ecommerce Image Optimization
                 </Link>
                 <Link href="/" className="text-muted-foreground hover:text-foreground transition-colors text-sm flex items-center gap-2 mt-4">
-                  Return to <AppName name="1-GLOBE" /> Homepage
+                  <span>Return to <AppName name="1-GLOBE" /> Homepage</span>
                 </Link>
               </div>
             </div>

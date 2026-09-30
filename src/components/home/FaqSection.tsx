@@ -78,7 +78,7 @@ export const FaqSection: React.FC = () => {
                 >
                   <Accordion.Header className="flex">
                     <Accordion.Trigger className="group flex flex-1 items-center justify-between py-6 text-left font-heading font-bold text-lg sm:text-xl text-neutral-300 hover:text-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-sm">
-                      <BrandText>{faq.q}</BrandText>
+                      <BrandText plain>{faq.q}</BrandText>
                       <ChevronDown
                         className="w-5 h-5 text-neutral-600 transition-transform duration-300 ease-in-out group-data-[state=open]:rotate-180 group-data-[state=open]:text-foreground shrink-0 ml-4"
                         aria-hidden

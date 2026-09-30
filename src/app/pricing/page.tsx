@@ -125,7 +125,7 @@ export default function PricingPage() {
                 href="/apps/1-optimizer"
                 className="interactive-btn inline-flex items-center justify-center h-14 px-8 font-semibold text-sm bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
               >
-                Explore <AppName name="1-OPTIMIZER" />
+                <span>Explore <AppName name="1-OPTIMIZER" /></span>
               </Link>
             </div>
           </div>

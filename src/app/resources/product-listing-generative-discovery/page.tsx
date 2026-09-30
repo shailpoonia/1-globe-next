@@ -296,10 +296,10 @@ export default function ArticlePage() {
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
                 <Link href="/" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-semibold text-xs bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors">
-                  Return to <AppName name="1-GLOBE" />
+                  <span>Return to <AppName name="1-GLOBE" /></span>
                 </Link>
                 <Link href="/apps/1-optimizer" className="inline-flex items-center justify-center h-12 px-8 font-semibold text-xs bg-secondary text-foreground hover:bg-secondary/80 transition-colors">
-                  Explore <AppName name="1-OPTIMIZER" />
+                  <span>Explore <AppName name="1-OPTIMIZER" /></span>
                 </Link>
               </div>
             </div>
@@ -357,7 +357,7 @@ export default function ArticlePage() {
                   Ecommerce Image Optimization
                 </Link>
                 <Link href="/" className="text-muted-foreground hover:text-foreground transition-colors text-sm flex items-center gap-2 mt-4">
-                  Return to <AppName name="1-GLOBE" /> Homepage
+                  <span>Return to <AppName name="1-GLOBE" /> Homepage</span>
                 </Link>
               </div>
             </div>
