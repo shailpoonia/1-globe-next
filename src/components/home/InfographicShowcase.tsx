@@ -225,7 +225,7 @@ const Slide1Content: React.FC = () => {
       </div>
       
       <div className="mt-10 text-center px-4 md:px-12">
-        <h3 className="text-card-title mb-2">Clean images. Readable tags. Meaningful context for your catalog</h3>
+        <h3 className="text-card-title mb-2">Clean images, readable tags and meaningful context for your catalog</h3>
         <p className="text-sm text-slate-400">Sound familiar? Half your catalog is probably named IMG-2026-WA001.jpg right now.</p>
       </div>
     </div>

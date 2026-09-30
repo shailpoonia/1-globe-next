@@ -80,7 +80,7 @@ export const ImageProblemSection: React.FC = () => {
           <div className="max-w-3xl flex flex-col gap-4">
             <span className="text-[13px] font-semibold uppercase tracking-[0.12em] text-destructive">The hidden cost of messy images</span>
             <h2 className="text-section-title">
-              Your photos look great. To search engines, they say <span className="text-primary">almost nothing</span>
+              Your photos look great{' '}<br />To search engines, they say <span className="text-primary">almost nothing</span>
             </h2>
           </div>
           <p className="text-base md:text-lg leading-relaxed text-neutral-400 md:max-w-sm">
