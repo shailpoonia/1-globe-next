@@ -13,6 +13,7 @@ import { AppFaqSection } from '@/components/feature-page/AppFaqSection'
 
 import { ENTITY_PRODUCTS } from '@/lib/entities'
 import { SoftwareAppSchema, AppBreadcrumbSchema } from '@/components/shared/AppSchemaOrg'
+import { AppName } from '@/components/shared/BrandLogo'
 
 export const metadata: Metadata = buildMetadata({
   title: '1-OPTIMIZER | Shopify Image Optimizer',
@@ -36,7 +37,7 @@ export default function ImageOptimizerPage() {
       <AppSubNav
         appName={
           <div className="flex items-baseline gap-2">
-            <span>1-OPTIMIZER</span>
+            <AppName name="1-OPTIMIZER" />
             <span className="hidden sm:inline-block text-xs font-medium text-muted-foreground uppercase tracking-wide">Shopify Image Optimizer</span>
           </div>
         }
@@ -45,7 +46,7 @@ export default function ImageOptimizerPage() {
 
       {/* 1. App Hero with AI Pipeline Card */}
       <AppHero
-        headline={<>Build a stronger <span className="text-primary italic">foundation</span> for your catalog.</>}
+        headline={<>Faster storefronts.{' '}<br />Better product imagery.{' '}<br /><span className="text-primary">Stronger foundations</span></>}
         subhead={
           <div className="space-y-6">
             <p>Marketing drives traffic, but your storefront infrastructure dictates performance. Heavy payloads and missing metadata can undermine your acquisition efforts.</p>

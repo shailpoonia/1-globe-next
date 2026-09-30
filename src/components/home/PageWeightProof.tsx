@@ -15,7 +15,7 @@ export const PageWeightProof: React.FC = () => {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 md:gap-16">
           <div className="max-w-2xl flex flex-col gap-4">
             <span className="text-eyebrow">Measure the difference</span>
-            <h2 className="font-heading font-bold text-4xl sm:text-5xl tracking-tight leading-[1.1] uppercase text-foreground">
+            <h2 className="text-section-title">
               Performance should be <span className="text-primary">measurable</span>
             </h2>
           </div>

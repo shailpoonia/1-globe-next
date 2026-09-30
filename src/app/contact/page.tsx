@@ -20,8 +20,8 @@ export default function ContactPage() {
             {/* Left: Copy */}
             <div>
               <span className="text-eyebrow block mb-6">Contact</span>
-              <h1 className="text-hero mb-6">
-                Talk to <span className="text-primary italic">us</span>.
+              <h1 className="text-page-title mb-6">
+                Talk to <span className="text-primary">us</span>
               </h1>
               <p className="text-lead max-w-md mb-10">
                 Questions, feedback, or need a hand? We usually reply within one business day.
@@ -54,7 +54,7 @@ export default function ContactPage() {
             <div className="flex flex-col justify-center">
               <div className="bg-card border border-border p-8 md:p-12 flex flex-col gap-8 rounded-[var(--radius)] h-full justify-center">
                 <div>
-                  <h2 className="text-xl font-heading font-bold text-foreground mb-4">Send us an email</h2>
+                  <h2 className="text-card-title mb-4">Send us an email</h2>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-8">
                     We don't use complicated contact forms. For all inquiries, product questions, or support requests, please email our team directly. We strive to reply within one business day.
                   </p>

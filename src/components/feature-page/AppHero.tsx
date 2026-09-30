@@ -1,7 +1,8 @@
 import React from 'react'
+import { BrandText } from '@/components/shared/BrandLogo'
 
 export interface AppHeroProps {
-  eyebrow?: string
+  eyebrow?: React.ReactNode
   headline?: React.ReactNode
   subhead?: React.ReactNode
   primaryCtaText?: string
@@ -29,12 +30,12 @@ export const AppHero: React.FC<AppHeroProps> = ({
             {/* Eyebrow */}
             <div className="mb-6">
               <span className="text-eyebrow">
-                {eyebrow}
+                {typeof eyebrow === 'string' ? <BrandText>{eyebrow}</BrandText> : eyebrow}
               </span>
             </div>
 
             {/* Headline */}
-            <h1 className="text-hero mb-6">
+            <h1 className="text-page-title mb-6">
               {headline}
             </h1>
 
@@ -52,7 +53,7 @@ export const AppHero: React.FC<AppHeroProps> = ({
               </div>
               <a
                 href={secondaryCtaUrl}
-                className="interactive-btn inline-flex items-center justify-center h-14 px-8 font-semibold text-sm border border-border bg-transparent text-foreground hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary w-full sm:w-auto"
+                className="interactive-btn inline-flex items-center justify-center h-14 px-8 font-semibold text-sm btn-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary w-full sm:w-auto"
               >
                 {secondaryCtaText}
               </a>

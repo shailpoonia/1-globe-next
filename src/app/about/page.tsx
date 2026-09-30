@@ -19,9 +19,9 @@ export default function AboutPage() {
         <Section className="section-spacing border-b border-border bg-secondary/30">
           <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
             <span className="text-eyebrow block mb-6">About</span>
-            <h1 className="text-hero mb-8 max-w-3xl">
+            <h1 className="text-page-title mb-8 max-w-3xl">
               Built by a merchant,{' '}<br />
-              not a <span className="text-primary italic">code factory</span>.
+              not a <span className="text-primary">code factory</span>
             </h1>
             <p className="text-lead max-w-2xl">
               1-GLOBE is an ecommerce performance technology company building tools for online merchants. It's built by operators who have run real Shopify stores and spent decades building brands — so every app starts from a problem we've actually lived, not one we imagined from a spec sheet.

@@ -40,7 +40,7 @@ export function SocialLinks() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={`1-GLOBE on ${s.name}`}
-                  className="flex items-center justify-center w-11 h-11 rounded-full border border-border text-neutral-300 hover:text-primary hover:border-primary transition-colors"
+                  className="flex items-center justify-center w-11 h-11 rounded-full btn-secondary text-neutral-200 hover:text-primary hover:border-primary transition-colors"
                 >
                   {icon}
                 </a>

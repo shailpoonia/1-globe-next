@@ -10,6 +10,7 @@ import { notFound } from 'next/navigation'
 import { CtaBand } from '@/components/shared/CtaBand'
 import * as Accordion from '@radix-ui/react-accordion'
 import { ChevronDown } from 'lucide-react'
+import { AppName } from '@/components/shared/BrandLogo'
 
 const slug = 'product-listing-generative-discovery'
 const resource = getResourceBySlug(slug)
@@ -283,7 +284,7 @@ export default function ArticlePage() {
             </div>
 
             <div className="bg-secondary/30 p-8 md:p-12 mt-16 border border-border rounded-lg">
-              <h2 id="where-1-list-fits" className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-6 scroll-mt-28">15. Where 1-LIST Fits</h2>
+              <h2 id="where-1-list-fits" className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-6 scroll-mt-28">15. Where <AppName name="1-LIST" /> Fits</h2>
               <p className="text-lg text-neutral-400 leading-relaxed mb-6">
                 1-LIST is being developed around product listing performance: helping merchants build product listings structured for search, answer engines, and generative discovery.
               </p>
@@ -295,10 +296,10 @@ export default function ArticlePage() {
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
                 <Link href="/" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-semibold text-xs bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors">
-                  Return to 1-GLOBE
+                  Return to <AppName name="1-GLOBE" />
                 </Link>
                 <Link href="/apps/1-optimizer" className="inline-flex items-center justify-center h-12 px-8 font-semibold text-xs bg-secondary text-foreground hover:bg-secondary/80 transition-colors">
-                  Explore 1-OPTIMIZER
+                  Explore <AppName name="1-OPTIMIZER" />
                 </Link>
               </div>
             </div>
@@ -356,7 +357,7 @@ export default function ArticlePage() {
                   Ecommerce Image Optimization
                 </Link>
                 <Link href="/" className="text-muted-foreground hover:text-foreground transition-colors text-sm flex items-center gap-2 mt-4">
-                  Return to 1-GLOBE Homepage
+                  Return to <AppName name="1-GLOBE" /> Homepage
                 </Link>
               </div>
             </div>

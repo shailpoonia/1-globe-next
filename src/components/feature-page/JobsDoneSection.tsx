@@ -19,7 +19,7 @@ function Card({
   return (
     <div className={`bg-card border border-border rounded-2xl p-6 sm:p-7 flex flex-col gap-6 ${className}`}>
       <div className="flex flex-col gap-2">
-        <h3 className="font-heading text-xl font-bold text-foreground">{title}</h3>
+        <h3 className="text-card-title">{title}</h3>
         <p className="text-[15px] leading-relaxed text-neutral-400">{body}</p>
       </div>
       <div className="mt-auto">{children}</div>
@@ -39,7 +39,7 @@ export const JobsDoneSection: React.FC = () => {
     <Section className="section-spacing bg-secondary/20 border-b border-border">
       <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
         <div className="mb-12 md:mb-14 flex flex-col gap-4 max-w-2xl">
-          <h2 className="text-section-title">Optimization workflows.</h2>
+          <h2 className="text-section-title">Optimization <span className="text-primary">workflows</span></h2>
           <p className="text-lead">
             1-OPTIMIZER provides tools to compress, edit, and standardize images across your catalog.
           </p>

@@ -55,7 +55,7 @@ export const SectionHeader: React.FC<SectionHeaderProps> = ({
             {italicWord && (
               <>
                 {' '}
-                <em className="italic text-primary">{italicWord}</em>
+                <span className="text-primary">{italicWord}</span>
               </>
             )}
             {headlinePart2}

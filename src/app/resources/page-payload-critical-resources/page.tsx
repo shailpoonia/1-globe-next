@@ -10,6 +10,7 @@ import { notFound } from 'next/navigation'
 import { CtaBand } from '@/components/shared/CtaBand'
 import * as Accordion from '@radix-ui/react-accordion'
 import { ChevronDown } from 'lucide-react'
+import { AppName } from '@/components/shared/BrandLogo'
 
 const slug = 'page-payload-critical-resources'
 const resource = getResourceBySlug(slug)
@@ -275,17 +276,17 @@ export default function ArticlePage() {
             </div>
 
             <div className="bg-secondary/30 p-8 md:p-12 mt-16 border border-border rounded-lg">
-              <h2 id="where-1-globe-fits" className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-6 scroll-mt-28">15. Where 1-GLOBE Fits</h2>
+              <h2 id="where-1-globe-fits" className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-6 scroll-mt-28">15. Where <AppName name="1-GLOBE" /> Fits</h2>
               <p className="text-lg text-neutral-400 leading-relaxed mb-6">
                 1-GLOBE approaches ecommerce performance as a comprehensive system spanning multiple disciplines, without relying on unsupported guarantees regarding rankings, conversions, or automatic Core Web Vitals success.
               </p>
               <ul className="space-y-4 text-lg text-neutral-400 mb-6">
-                <li><strong className="text-foreground">1-OPTIMIZER:</strong> Focused on image performance and source-catalog technical capabilities (currently coming soon).</li>
-                <li><strong className="text-foreground">1-BLOG:</strong> Focused on structured content performance (currently launching soon).</li>
-                <li><strong className="text-foreground">1-LIST:</strong> Focused on product listing performance for complex discovery environments (currently launching soon).</li>
+                <li><strong className="text-foreground"><AppName name="1-OPTIMIZER" />:</strong> Focused on image performance and source-catalog technical capabilities (currently coming soon).</li>
+                <li><strong className="text-foreground"><AppName name="1-BLOG" />:</strong> Focused on structured content performance (currently launching soon).</li>
+                <li><strong className="text-foreground"><AppName name="1-LIST" />:</strong> Focused on product listing performance for complex discovery environments (currently launching soon).</li>
               </ul>
               <Link href="/apps/1-optimizer" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-semibold text-xs bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors mt-2">
-                Explore 1-OPTIMIZER
+                Explore <AppName name="1-OPTIMIZER" />
               </Link>
             </div>
 
@@ -336,7 +337,7 @@ export default function ArticlePage() {
                   Product Image Alt Text
                 </Link>
                 <Link href="/" className="text-muted-foreground hover:text-foreground transition-colors text-sm flex items-center gap-2 mt-4">
-                  Return to 1-GLOBE Homepage
+                  Return to <AppName name="1-GLOBE" /> Homepage
                 </Link>
               </div>
             </div>

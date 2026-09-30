@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { SectionHeader } from '@/components/shared/SectionHeader'
-import { BrandWordmark } from '@/components/shared/BrandLogo'
+import { AppName, BrandWordmark } from '@/components/shared/BrandLogo'
 import { 
   ChevronLeft, ChevronRight, Image as ImageIcon, Sparkles, CheckCircle2, 
   Search, FileText, ArrowRight, MousePointerClick, Link as LinkIcon, ShoppingBag, Zap, TrendingUp, PenTool, Pause, Play
@@ -46,14 +46,14 @@ export const InfographicShowcase: React.FC = () => {
               className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold transition-all ${activeSlide === 0 ? 'bg-primary/10 text-primary border border-primary/30' : 'bg-secondary/50 text-neutral-400 border border-border hover:text-neutral-300'}`}
             >
               <div className={`w-2 h-2 rounded-full ${activeSlide === 0 ? 'bg-primary animate-pulse' : 'bg-neutral-600'}`} />
-              1-OPTIMIZER · IMAGE PERFORMANCE
+              <AppName name="1-OPTIMIZER" /> · IMAGE PERFORMANCE
             </button>
             <button 
               onClick={() => setActiveSlide(1)}
               className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold transition-all ${activeSlide === 1 ? 'bg-primary/10 text-primary border border-primary/30' : 'bg-secondary/50 text-neutral-400 border border-border hover:text-neutral-300'}`}
             >
               <div className={`w-2 h-2 rounded-full ${activeSlide === 1 ? 'bg-primary animate-pulse' : 'bg-neutral-600'}`} />
-              1-BLOG · LAUNCHING SOON
+              <AppName name="1-BLOG" /> · LAUNCHING SOON
             </button>
             <button
               type="button"
@@ -225,7 +225,7 @@ const Slide1Content: React.FC = () => {
       </div>
       
       <div className="mt-10 text-center px-4 md:px-12">
-        <h3 className="text-xl md:text-2xl font-bold text-white mb-2">Clean images. Readable tags. Meaningful context for your catalog</h3>
+        <h3 className="text-card-title mb-2">Clean images. Readable tags. Meaningful context for your catalog</h3>
         <p className="text-sm text-slate-400">Sound familiar? Half your catalog is probably named IMG-2026-WA001.jpg right now.</p>
       </div>
     </div>
@@ -257,7 +257,7 @@ const Slide2Content: React.FC = () => {
             <div className="w-12 h-12 rounded-full border-2 border-slate-700 bg-slate-800/50 text-slate-400 flex items-center justify-center s2-node-2 shrink-0">
               <PenTool className="w-5 h-5" />
             </div>
-            <span className="text-[13px] font-bold text-slate-400 text-center leading-tight">1-BLOG{' '}<br />Drafts Post</span>
+            <span className="text-[13px] font-bold text-slate-400 text-center leading-tight"><AppName name="1-BLOG" />{' '}<br />Drafts Post</span>
           </div>
 
           <ArrowRight className="w-5 h-5 text-slate-700 shrink-0 s2-arrow-2" />
@@ -306,7 +306,7 @@ const Slide2Content: React.FC = () => {
       </div>
 
       <div className="text-center px-4 md:px-12">
-        <h3 className="text-lg md:text-xl font-bold text-white mb-2 leading-tight">Once your products are readable, 1-BLOG is designed to help create structured content around them</h3>
+        <h3 className="text-card-title mb-2">Once your products are readable, <AppName name="1-BLOG" /> is designed to help create structured content around them</h3>
         <p className="text-sm text-neutral-400">Content designed to provide useful context for merchants and their audience.</p>
       </div>
     </div>
