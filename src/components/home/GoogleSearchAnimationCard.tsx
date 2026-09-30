@@ -53,7 +53,7 @@ export const GoogleSearchAnimationCard: React.FC = () => {
         `}} />
 
         {/* Ambient Glows */}
-        <div className="absolute top-0 right-0 w-[400px] h-[300px] bg-cyan-500/5 blur-[80px] pointer-events-none rounded-full" />
+        <div className="absolute top-0 right-0 w-[400px] h-[300px] bg-brand/5 blur-[80px] pointer-events-none rounded-full" />
         <div className="absolute bottom-0 left-0 w-[400px] h-[300px] bg-teal-500/5 blur-[80px] pointer-events-none rounded-full" />
 
         {/* Left Side: Your Store */}
@@ -89,17 +89,17 @@ export const GoogleSearchAnimationCard: React.FC = () => {
           {/* Metadata Boxes */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-3">
             {/* Filename */}
-            <div className={`p-3.5 rounded-[var(--radius)] border transition-all duration-500 ${step === 1 ? 'border-cyan-500 bg-cyan-500/10 shadow-[0_0_15px_rgba(7, 202, 253,0.15)]' : step >= 2 ? 'border-slate-600 bg-slate-800/50' : 'border-slate-700 bg-slate-800/50'}`}>
+            <div className={`p-3.5 rounded-[var(--radius)] border transition-all duration-500 ${step === 1 ? 'border-brand bg-brand/10 shadow-[0_0_15px_rgb(var(--brand)/0.15)]' : step >= 2 ? 'border-slate-600 bg-slate-800/50' : 'border-slate-700 bg-slate-800/50'}`}>
               <div className="text-[13px] text-slate-500 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
                 <ImageIcon className="w-3 h-3" /> Filename
               </div>
-              <div className={`font-mono text-[13px] sm:text-[12px] truncate transition-colors duration-300 ${step >= 1 ? 'text-cyan-400' : 'text-slate-400'}`}>
+              <div className={`font-mono text-[13px] sm:text-[12px] truncate transition-colors duration-300 ${step >= 1 ? 'text-brand' : 'text-slate-400'}`}>
                 {step >= 1 ? 'hand-block-print-floral-quilted-comforter-cream-coral.webp' : 'IMG-20260115-WA0032.jpg'}
               </div>
             </div>
 
             {/* Alt Text */}
-            <div className={`p-3.5 rounded-[var(--radius)] border transition-all duration-500 ${step === 1 ? 'border-cyan-500 bg-cyan-500/10 shadow-[0_0_15px_rgba(7, 202, 253,0.15)]' : step >= 2 ? 'border-slate-600 bg-slate-800/50' : 'border-slate-700 bg-slate-800/50'}`}>
+            <div className={`p-3.5 rounded-[var(--radius)] border transition-all duration-500 ${step === 1 ? 'border-brand bg-brand/10 shadow-[0_0_15px_rgb(var(--brand)/0.15)]' : step >= 2 ? 'border-slate-600 bg-slate-800/50' : 'border-slate-700 bg-slate-800/50'}`}>
               <div className="text-[13px] text-slate-500 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
                 <FileText className="w-3 h-3" /> Alt Text
               </div>
@@ -124,7 +124,7 @@ export const GoogleSearchAnimationCard: React.FC = () => {
           <div className="text-xs font-bold uppercase tracking-[0.14em] text-slate-500 mb-4 lg:mb-6 flex justify-between items-center h-5">
             <span>Search Engines & AI</span>
             {step === 2 && (
-              <span className="flex items-center gap-1.5 text-cyan-400 bg-cyan-500/10 px-2 py-0.5 rounded border border-cyan-500/20 animate-pulse">
+              <span className="flex items-center gap-1.5 text-brand bg-brand/10 px-2 py-0.5 rounded border border-brand/20 animate-pulse">
                 <RefreshCw className="w-3 h-3 animate-spin" /> Re-scanning...
               </span>
             )}
@@ -132,8 +132,8 @@ export const GoogleSearchAnimationCard: React.FC = () => {
           
           <div className="bg-slate-900/80 backdrop-blur border border-slate-700 p-4 sm:p-6 w-full">
             {/* Search Bar */}
-            <div className={`bg-slate-800 border rounded-full h-12 px-4 flex items-center gap-3 mb-8 transition-colors duration-300 ${step === 2 ? 'border-cyan-500/50 shadow-[0_0_10px_rgba(7, 202, 253,0.1)]' : 'border-slate-600 shadow-inner'}`}>
-              <Search className={`w-5 h-5 transition-colors ${step === 2 ? 'text-cyan-400 animate-pulse' : 'text-slate-400'}`} />
+            <div className={`bg-slate-800 border rounded-full h-12 px-4 flex items-center gap-3 mb-8 transition-colors duration-300 ${step === 2 ? 'border-brand/50 shadow-[0_0_10px_rgb(var(--brand)/0.1)]' : 'border-slate-600 shadow-inner'}`}>
+              <Search className={`w-5 h-5 transition-colors ${step === 2 ? 'text-brand animate-pulse' : 'text-slate-400'}`} />
               <div className="text-slate-200 font-medium font-sans w-full">
                 hand block print comforter
               </div>
