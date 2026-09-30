@@ -22,7 +22,7 @@
 
 1-GLOBE builds focused technology for ecommerce businesses. The current ecosystem includes:
 
-- **01 — 1-OPTIMISER**
+- **01 — 1-OPTIMIZER**
   - Category: Image Performance
   - Status: **AVAILABLE**
   - Description: Compress image payloads, generate descriptive SEO filenames, and write contextual alt text automatically.
@@ -73,12 +73,12 @@ The homepage follows a strict narrative sequence designed to walk a merchant fro
 2. **Brand Statement** (`BrandStatement.tsx`): Outlines the problem ("MARKETING CREATES DEMAND. THE STORE HAS TO PERFORM.")
 3. **Product Ecosystem** (`ProductEcosystem.tsx`): Introduces the 3-part product family.
 4. **Infographic Showcase** (`InfographicShowcase.tsx`): Visualizes the impact of the technology on the storefront payload.
-5. **1-OPTIMISER Product Story** (`ProductDetailHome.tsx`): "START WITH THE PRODUCT IMAGE."
+5. **1-OPTIMIZER Product Story** (`ProductDetailHome.tsx`): "START WITH THE PRODUCT IMAGE."
 6. **Performance Proof** (`PerformanceProof.tsx`): Factual, measurable examples of image payload and metadata optimization.
 7. **Brand Philosophy** (`BrandPhilosophy.tsx`): The three core principles.
 8. **Merchant Story** (`MerchantStory.tsx`): "BUILT FROM THE MERCHANT'S SIDE."
 9. **FAQ** (`FaqSection.tsx`): Genuine questions answered directly.
-10. **Final CTA** (`CtaBand.tsx`): Clear frictionless conversion path to explore 1-OPTIMISER.
+10. **Final CTA** (`CtaBand.tsx`): Clear frictionless conversion path to explore 1-OPTIMIZER.
 
 ---
 

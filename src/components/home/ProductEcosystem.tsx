@@ -5,7 +5,7 @@ import { ArrowRight, Image as ImageIcon, FileText, ListChecks } from 'lucide-rea
 import { ENTITY_PRODUCTS } from '@/lib/entities'
 
 const products = [
-  { ...ENTITY_PRODUCTS['1-optimiser'], layer: 'Images', icon: ImageIcon, status: 'Coming soon to Shopify', highlight: true },
+  { ...ENTITY_PRODUCTS['1-optimizer'], layer: 'Images', icon: ImageIcon, status: 'Coming soon to Shopify', highlight: true },
   { ...ENTITY_PRODUCTS['1-blog'], layer: 'Content', icon: FileText, status: 'Launching soon', highlight: false },
   { ...ENTITY_PRODUCTS['1-list'], layer: 'Product listings', icon: ListChecks, status: 'Launching soon', highlight: false },
 ]

@@ -38,12 +38,12 @@ export default function ContactPage() {
                 <div className="pt-6 border-t border-border mt-8">
                   <p className="text-sm text-muted-foreground leading-relaxed">
                     Looking for product details?{' '}
-                    <Link href="/apps/1-optimiser" className="text-primary hover:text-foreground transition-colors underline underline-offset-4 decoration-primary/30">
-                      Explore 1-OPTIMISER
+                    <Link href="/apps/1-optimizer" className="text-primary hover:text-foreground transition-colors underline underline-offset-4 decoration-primary/30">
+                      Explore 1-OPTIMIZER
                     </Link>{' '}
                     or{' '}
                     <Link href="/pricing" className="text-primary hover:text-foreground transition-colors underline underline-offset-4 decoration-primary/30">
-                      view 1-OPTIMISER pricing
+                      view 1-OPTIMIZER pricing
                     </Link>.
                   </p>
                 </div>

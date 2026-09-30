@@ -8,6 +8,13 @@ const securityHeaders = [
 ];
 
 const nextConfig = {
+  async redirects() {
+    return [
+      // The product was renamed from 1-OPTIMISER to 1-OPTIMIZER; keep old links working.
+      { source: '/apps/1-optimiser', destination: '/apps/1-optimizer', permanent: true },
+      { source: '/apps/1-optimiser/:path*', destination: '/apps/1-optimizer/:path*', permanent: true },
+    ];
+  },
   async headers() {
     return [
       {

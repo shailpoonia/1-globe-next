@@ -15,13 +15,13 @@ import { ENTITY_PRODUCTS } from '@/lib/entities'
 import { SoftwareAppSchema, AppBreadcrumbSchema } from '@/components/shared/AppSchemaOrg'
 
 export const metadata: Metadata = buildMetadata({
-  title: '1-OPTIMISER | Shopify Image Optimizer',
-  description: ENTITY_PRODUCTS['1-optimiser'].description,
-  path: '/apps/1-optimiser',
+  title: '1-OPTIMIZER | Shopify Image Optimizer',
+  description: ENTITY_PRODUCTS['1-optimizer'].description,
+  path: '/apps/1-optimizer',
 })
 
 export default function ImageOptimizerPage() {
-  const product = ENTITY_PRODUCTS['1-optimiser'];
+  const product = ENTITY_PRODUCTS['1-optimizer'];
 
   return (
     <main className="flex flex-col bg-background text-foreground selection:bg-primary/20 selection:text-primary pt-24">
@@ -31,12 +31,12 @@ export default function ImageOptimizerPage() {
         slug={product.id}
         {...(product['@id'] && { '@id': product['@id'] })}
       />
-      <AppBreadcrumbSchema appName="1-OPTIMISER" appSlug="1-optimiser" />
+      <AppBreadcrumbSchema appName="1-OPTIMIZER" appSlug="1-optimizer" />
       {/* App Sub-Navigation */}
       <AppSubNav
         appName={
           <div className="flex items-baseline gap-2">
-            <span>1-OPTIMISER</span>
+            <span>1-OPTIMIZER</span>
             <span className="hidden sm:inline-block text-xs font-medium text-muted-foreground uppercase tracking-wide">Shopify Image Optimizer</span>
           </div>
         }
@@ -51,7 +51,7 @@ export default function ImageOptimizerPage() {
             <p>Marketing drives traffic, but your storefront infrastructure dictates performance. Heavy payloads and missing metadata can undermine your acquisition efforts.</p>
             <div className="bg-secondary/30 p-6 border-l-2 border-primary mt-6">
               <p className="font-bold text-foreground mb-2">Image performance matters.</p>
-              <p className="text-sm">Large image files can contribute to heavier page payloads, while generic filenames and missing alt text provide less context for accessibility and discovery. 1-OPTIMISER provides tools for image optimization, metadata generation, and image editing across your Shopify catalog, alongside a theme extension designed to support storefront performance. <Link href="/resources/ecommerce-image-optimization" className="text-primary hover:text-foreground transition-colors underline underline-offset-4 decoration-primary/30">Read our complete guide to image optimization</Link> and explore our <Link href="/resources/ecommerce-performance" className="text-primary hover:text-foreground transition-colors underline underline-offset-4 decoration-primary/30">ecommerce performance framework</Link>.</p>
+              <p className="text-sm">Large image files can contribute to heavier page payloads, while generic filenames and missing alt text provide less context for accessibility and discovery. 1-OPTIMIZER provides tools for image optimization, metadata generation, and image editing across your Shopify catalog, alongside a theme extension designed to support storefront performance. <Link href="/resources/ecommerce-image-optimization" className="text-primary hover:text-foreground transition-colors underline underline-offset-4 decoration-primary/30">Read our complete guide to image optimization</Link> and explore our <Link href="/resources/ecommerce-performance" className="text-primary hover:text-foreground transition-colors underline underline-offset-4 decoration-primary/30">ecommerce performance framework</Link>.</p>
             </div>
           </div>
         }
@@ -61,7 +61,7 @@ export default function ImageOptimizerPage() {
         heroMoment={<AIPipelineHeroCard />}
       />
 
-      {/* 2. The problem messy images cause, and how 1-OPTIMISER fixes it */}
+      {/* 2. The problem messy images cause, and how 1-OPTIMIZER fixes it */}
       <ImageProblemSection />
 
       {/* 3. Workflows */}
@@ -79,7 +79,7 @@ export default function ImageOptimizerPage() {
         headlinePart1="Ready for"
         italicWord="better"
         headlinePart2="performance?"
-        subhead="Explore how 1-OPTIMISER is designed to improve image performance across your catalog."
+        subhead="Explore how 1-OPTIMIZER is designed to improve image performance across your catalog."
         primaryCtaText="Coming soon to Shopify"
         primaryIsLink={false}
         secondaryCtaText="View pricing"

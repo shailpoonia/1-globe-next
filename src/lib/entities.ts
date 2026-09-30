@@ -35,16 +35,16 @@ export interface EcosystemProduct {
 }
 
 export const ENTITY_PRODUCTS: Record<string, EcosystemProduct> = {
-  '1-optimiser': {
-    id: '1-optimiser',
+  '1-optimizer': {
+    id: '1-optimizer',
     number: '01',
-    name: '1-OPTIMISER',
+    name: '1-OPTIMIZER',
     category: PERFORMANCE_CATEGORIES.IMAGE,
-    description: '1-OPTIMISER is an image performance tool for Shopify stores that helps merchants optimize product images, improve image metadata, and work with image editing and storefront performance tools.',
+    description: '1-OPTIMIZER is an image performance tool for Shopify stores that helps merchants optimize product images, improve image metadata, and work with image editing and storefront performance tools.',
     status: 'coming-soon',
-    href: '/apps/1-optimiser',
-    ctaLabel: 'Explore 1-OPTIMISER',
-    '@id': `${siteConfig.url}/apps/1-optimiser#software`,
+    href: '/apps/1-optimizer',
+    ctaLabel: 'Explore 1-OPTIMIZER',
+    '@id': `${siteConfig.url}/apps/1-optimizer#software`,
   },
   '1-blog': {
     id: '1-blog',

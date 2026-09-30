@@ -29,7 +29,7 @@ export const Footer: React.FC = () => {
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 lg:justify-end">
             <div className="flex flex-col gap-3">
               <span className="text-[13px] font-bold uppercase tracking-widest text-neutral-400 mb-1">Products</span>
-              <Link href="/apps/1-optimiser" className="text-xs font-semibold text-neutral-400 hover:text-foreground transition-colors">1-OPTIMISER</Link>
+              <Link href="/apps/1-optimizer" className="text-xs font-semibold text-neutral-400 hover:text-foreground transition-colors">1-OPTIMIZER</Link>
               <span className="text-xs font-bold uppercase tracking-widest text-neutral-500 cursor-default">1-BLOG</span>
               <span className="text-xs font-bold uppercase tracking-widest text-neutral-500 cursor-default">1-LIST</span>
             </div>

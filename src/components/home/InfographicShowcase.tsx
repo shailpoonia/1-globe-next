@@ -46,7 +46,7 @@ export const InfographicShowcase: React.FC = () => {
               className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold transition-all ${activeSlide === 0 ? 'bg-primary/10 text-primary border border-primary/30' : 'bg-secondary/50 text-neutral-400 border border-border hover:text-neutral-300'}`}
             >
               <div className={`w-2 h-2 rounded-full ${activeSlide === 0 ? 'bg-primary animate-pulse' : 'bg-neutral-600'}`} />
-              1-OPTIMISER · IMAGE PERFORMANCE
+              1-OPTIMIZER · IMAGE PERFORMANCE
             </button>
             <button 
               onClick={() => setActiveSlide(1)}
@@ -157,7 +157,7 @@ export const InfographicShowcase: React.FC = () => {
 }
 
 // =========================================================================
-// SLIDE 1: 1-OPTIMISER
+// SLIDE 1: 1-OPTIMIZER
 // =========================================================================
 const Slide1Content: React.FC = () => {
   return (

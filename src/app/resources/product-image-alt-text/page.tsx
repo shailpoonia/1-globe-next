@@ -113,7 +113,7 @@ export default function ArticlePage() {
         {/* Article Body */}
         <Section className="py-20 md:py-32">
           <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12 xl:grid xl:grid-cols-[15rem_minmax(0,48rem)] xl:gap-16 xl:justify-center">
-            <ArticleToc items={[{"id": "what-is-product-image-alt-text", "label": "What is product image alt text?"}, {"id": "why-alt-text-matters-for-ecommerce", "label": "Why alt text matters for ecommerce"}, {"id": "what-should-ecommerce-product-image-alt-text-contain", "label": "What should ecommerce product image alt text contain?"}, {"id": "product-image-alt-text-examples", "label": "Product image alt text examples"}, {"id": "how-long-should-product-image-alt-text-be", "label": "How long should product image alt text be?"}, {"id": "alt-text-vs-product-title-vs-product-description", "label": "Alt text vs product title vs product description"}, {"id": "should-keywords-be-included-in-product-image-alt-text", "label": "Should keywords be included in product image alt text?"}, {"id": "common-product-image-alt-text-mistakes", "label": "Common product image alt text mistakes"}, {"id": "alt-text-for-multiple-product-images", "label": "Alt text for multiple product images"}, {"id": "product-image-alt-text-and-accessibility", "label": "Product image alt text and accessibility"}, {"id": "product-image-alt-text-and-search-discovery", "label": "Product image alt text and search/discovery"}, {"id": "how-to-audit-product-image-alt-text", "label": "How to audit product image alt text"}, {"id": "product-image-alt-text-checklist", "label": "Product image alt text checklist"}, {"id": "how-1-optimiser-approaches-image-metadata", "label": "How 1-OPTIMISER approaches image metadata"}, {"id": "frequently-asked-questions", "label": "Frequently Asked Questions"}]} />
+            <ArticleToc items={[{"id": "what-is-product-image-alt-text", "label": "What is product image alt text?"}, {"id": "why-alt-text-matters-for-ecommerce", "label": "Why alt text matters for ecommerce"}, {"id": "what-should-ecommerce-product-image-alt-text-contain", "label": "What should ecommerce product image alt text contain?"}, {"id": "product-image-alt-text-examples", "label": "Product image alt text examples"}, {"id": "how-long-should-product-image-alt-text-be", "label": "How long should product image alt text be?"}, {"id": "alt-text-vs-product-title-vs-product-description", "label": "Alt text vs product title vs product description"}, {"id": "should-keywords-be-included-in-product-image-alt-text", "label": "Should keywords be included in product image alt text?"}, {"id": "common-product-image-alt-text-mistakes", "label": "Common product image alt text mistakes"}, {"id": "alt-text-for-multiple-product-images", "label": "Alt text for multiple product images"}, {"id": "product-image-alt-text-and-accessibility", "label": "Product image alt text and accessibility"}, {"id": "product-image-alt-text-and-search-discovery", "label": "Product image alt text and search/discovery"}, {"id": "how-to-audit-product-image-alt-text", "label": "How to audit product image alt text"}, {"id": "product-image-alt-text-checklist", "label": "Product image alt text checklist"}, {"id": "how-1-optimizer-approaches-image-metadata", "label": "How 1-OPTIMIZER approaches image metadata"}, {"id": "frequently-asked-questions", "label": "Frequently Asked Questions"}]} />
             <div className="max-w-3xl mx-auto xl:mx-0 space-y-16 md:space-y-24">
             
             <div className="space-y-6">
@@ -300,18 +300,18 @@ export default function ArticlePage() {
             </div>
 
             <div className="bg-secondary/30 p-8 md:p-12 mt-16 border border-border rounded-lg">
-              <h2 id="how-1-optimiser-approaches-image-metadata" className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-6 scroll-mt-28">14. How 1-OPTIMISER approaches image metadata</h2>
+              <h2 id="how-1-optimizer-approaches-image-metadata" className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-6 scroll-mt-28">14. How 1-OPTIMIZER approaches image metadata</h2>
               <p className="text-lg text-neutral-400 leading-relaxed mb-6">
-                1-OPTIMISER is an image performance tool being built for Shopify. Rather than forcing merchants to manually type descriptions for thousands of variants, the current 1-OPTIMISER implementation includes AI-assisted alt text and descriptive filename generation.
+                1-OPTIMIZER is an image performance tool being built for Shopify. Rather than forcing merchants to manually type descriptions for thousands of variants, the current 1-OPTIMIZER implementation includes AI-assisted alt text and descriptive filename generation.
               </p>
               <p className="text-lg text-neutral-400 leading-relaxed mb-6">
                 The application analyzes the visual contents of the image and proposes descriptive, non-stuffed alt text. However, generated metadata is strictly subject to merchant review. Store owners must approve the suggestions before they are saved to the catalog, ensuring human oversight remains central to the accessibility workflow.
               </p>
               <p className="text-sm font-bold uppercase tracking-widest text-primary mb-8">
-                Note: 1-OPTIMISER is currently coming soon.
+                Note: 1-OPTIMIZER is currently coming soon.
               </p>
-              <Link href="/apps/1-optimiser" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-semibold text-xs bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors">
-                Explore 1-OPTIMISER
+              <Link href="/apps/1-optimizer" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-semibold text-xs bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors">
+                Explore 1-OPTIMIZER
               </Link>
             </div>
 

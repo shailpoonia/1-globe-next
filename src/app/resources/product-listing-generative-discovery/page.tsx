@@ -297,8 +297,8 @@ export default function ArticlePage() {
                 <Link href="/" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-semibold text-xs bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors">
                   Return to 1-GLOBE
                 </Link>
-                <Link href="/apps/1-optimiser" className="inline-flex items-center justify-center h-12 px-8 font-semibold text-xs bg-secondary text-foreground hover:bg-secondary/80 transition-colors">
-                  Explore 1-OPTIMISER
+                <Link href="/apps/1-optimizer" className="inline-flex items-center justify-center h-12 px-8 font-semibold text-xs bg-secondary text-foreground hover:bg-secondary/80 transition-colors">
+                  Explore 1-OPTIMIZER
                 </Link>
               </div>
             </div>

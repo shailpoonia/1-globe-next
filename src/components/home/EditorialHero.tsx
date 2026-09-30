@@ -67,10 +67,10 @@ export const EditorialHero: React.FC = () => {
               <ArrowDown className="w-4 h-4" />
             </Link>
             <Link
-              href="/apps/1-optimiser"
+              href="/apps/1-optimizer"
               className="interactive-btn inline-flex items-center justify-center gap-3 h-14 px-8 font-semibold text-[13px] text-white border border-neutral-500 hover:border-neutral-300 hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary w-full sm:w-auto"
             >
-              <span>Discover 1-OPTIMISER</span>
+              <span>Discover 1-OPTIMIZER</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>

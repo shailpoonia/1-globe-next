@@ -69,7 +69,7 @@ Inspired by clear modern SaaS communication — principles only, never copied wo
 
 ## Brand naming
 - Hub/company brand: **1-globe.com** everywhere (never "1-GLOBE" caps as a name, though nav labels may be uppercased via CSS). Legal entity **ONE GLOBE (F.Z.E)** only in footer fine print / legal pages.
-- Apps: **1-Optimiser** (paired with descriptor "Shopify Image Optimizer" on first mention), **1-Blog**, **1-Listings**. Keep "image optimizer" (American spelling) in titles/meta for SEO.
+- Apps: **1-Optimizer** (paired with descriptor "Shopify Image Optimizer" on first mention), **1-Blog**, **1-Listings**. Keep "image optimizer" (American spelling) in titles/meta for SEO.
 
 ## ⚠️ Current drift to correct (live site)
 These sections drifted into jargon — fix toward plain language:
