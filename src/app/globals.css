@@ -335,7 +335,7 @@ html {
 
 /* Light reading mode for long guides (resource articles). Everything inside inherits light colours. */
 .reading-light {
-  --background: 220 20% 97%; /* #F7F8FA */
+  --background: 216 22% 94%; /* #ECEFF3: a touch deeper so the white cards stand out */
   --foreground: 218 26% 14%; /* #1A202C */
   --card: 0 0% 100%;
   --card-foreground: 218 26% 14%;
