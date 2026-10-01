@@ -13,7 +13,7 @@ The underlying technical and structural foundation of a high-performing storefro
 2. **Ecommerce Image Optimization** (Targeted image performance)
 3. **Ecommerce Content Performance** (Product and catalog content structure)
 4. **Product Listing Performance** (Search, answer engine, and generative structure)
-5. **Social Presence** (Consistent, catalog-led social content; supports 1-SOCIAL, no guides yet)
+5. **Social Media** (Consistent, catalog-led social content; supports 1-SOCIAL, no guides yet)
 
 ## D. Existing Resources
 Published guides (the recommended clusters in section E are all live):

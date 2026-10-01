@@ -91,7 +91,7 @@ export const AppMark: React.FC<{ app: AppMarkName; className?: string }> = ({ ap
 // traced from the logo or drawn to match it, so names stay real, selectable text.
 
 // The brand names written in the logo lettering. Add a new app here.
-const BRAND_NAMES = ['GLOBE', 'OPTIMIZER', 'SOCIAL', 'LISTING', 'BLOG'] as const
+const BRAND_NAMES = ['GLOBE', 'OPTIMIZER', 'LISTING', 'BLOG', 'SOCIAL'] as const
 const BRAND_NAME_PATTERN = new RegExp(`(1-(?:${BRAND_NAMES.join('|')}))`)
 
 // "1-" in the brand cyan, the rest in the surrounding colour.
