@@ -31,8 +31,10 @@ export const company = {
  */
 export const socialLinks = [
   { name: 'LinkedIn', href: '' },
-  { name: 'X', href: '' },
   { name: 'Instagram', href: '' },
+  { name: 'TikTok', href: '' },
+  { name: 'Facebook', href: '' },
+  { name: 'X', href: '' },
 ] as const;
 
 /** Default share image (1200 x 630) in /public. Set explicitly on every page: a page that
