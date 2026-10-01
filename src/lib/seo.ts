@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const siteConfig = {
   name: '1-GLOBE',
   title: 'Ecommerce Performance Technology',
-  description: '1-GLOBE is an ecommerce performance technology company building tools for online merchants. We build products focused on storefront image performance, content performance, and product listing performance.',
+  description: '1-GLOBE is an ecommerce performance technology company building tools for online merchants. We build products focused on storefront image performance, product listing performance, content performance and social presence.',
   url: 'https://1-globe.com',
 };
 
@@ -24,7 +24,7 @@ export const shareImage = {
   url: '/og-image.jpg',
   width: 1200,
   height: 630,
-  alt: '1-GLOBE: The performance layer for ecommerce. Image, content and product listing performance tools for Shopify merchants.',
+  alt: '1-GLOBE: The performance layer for ecommerce. Image, listing, content and social performance tools for Shopify merchants.',
 };
 
 export const getCanonicalUrl = (path: string = '') => {

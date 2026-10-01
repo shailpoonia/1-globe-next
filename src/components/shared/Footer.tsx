@@ -30,8 +30,9 @@ export const Footer: React.FC = () => {
             <div className="flex flex-col gap-3">
               <span className="text-[13px] font-bold uppercase tracking-widest text-neutral-400 mb-1">Products</span>
               <Link href="/apps/1-optimizer" className="text-xs font-semibold text-neutral-400 hover:text-foreground transition-colors"><AppName name="1-OPTIMIZER" /></Link>
+              <span className="text-xs font-semibold text-neutral-500 cursor-default"><AppName name="1-SOCIAL" /></span>
+              <span className="text-xs font-semibold text-neutral-500 cursor-default"><AppName name="1-LISTING" /></span>
               <span className="text-xs font-semibold text-neutral-500 cursor-default"><AppName name="1-BLOG" /></span>
-              <span className="text-xs font-semibold text-neutral-500 cursor-default"><AppName name="1-LIST" /></span>
             </div>
             
             <div className="flex flex-col gap-3">

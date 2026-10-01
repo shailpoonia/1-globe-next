@@ -7,8 +7,9 @@ import { AppMark, AppName, BrandText } from '@/components/shared/BrandLogo'
 
 const products = [
   { ...ENTITY_PRODUCTS['1-optimizer'], layer: 'Images', mark: 'optimizer' as const, status: 'Coming soon to Shopify', highlight: true },
+  { ...ENTITY_PRODUCTS['1-social'], layer: 'Social', mark: 'social' as const, status: 'Launching next', highlight: false },
+  { ...ENTITY_PRODUCTS['1-listing'], layer: 'Product listings', mark: 'list' as const, status: 'Launching soon', highlight: false },
   { ...ENTITY_PRODUCTS['1-blog'], layer: 'Content', mark: 'blog' as const, status: 'Launching soon', highlight: false },
-  { ...ENTITY_PRODUCTS['1-list'], layer: 'Product listings', mark: 'list' as const, status: 'Launching soon', highlight: false },
 ]
 
 // Light section: `reading-light` swaps the colour tokens to the light palette.
@@ -23,12 +24,17 @@ export const ProductEcosystem: React.FC = () => {
               <span className="text-brand">Every layer</span> of the store matters
             </h2>
           </div>
-          <p className="lg:col-span-5 text-base md:text-lg leading-relaxed text-muted-foreground">
-            Every click, search and campaign ends up on your store. We build focused tools for the three layers underneath it.
-          </p>
+          <div className="lg:col-span-5 flex flex-col gap-4 text-base md:text-lg leading-relaxed text-muted-foreground">
+            <p>
+              Every campaign, search result and piece of content sends people to your store. If the foundation is weak, more traffic means more opportunity lost.
+            </p>
+            <p>
+              <AppName name="1-GLOBE" /> builds focused tools for the layers that make that traffic work harder: images, listings, content and, soon, a consistent social presence.
+            </p>
+          </div>
         </div>
 
-        <ul className="m-0 p-0 list-none grid grid-cols-1 md:grid-cols-3 gap-5">
+        <ul className="m-0 p-0 list-none grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5">
           {products.map((p) => {
             return (
               <li
