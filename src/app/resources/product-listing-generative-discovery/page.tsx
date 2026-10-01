@@ -1,4 +1,3 @@
-import React from 'react'
 import { Metadata } from 'next'
 import { buildMetadata } from '@/lib/seo'
 import { Section } from '@/components/shared/Section'
@@ -110,7 +109,7 @@ export default function ArticlePage() {
         {/* Article Body */}
         <Section className="py-20 md:py-32">
           <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12 xl:grid xl:grid-cols-[15rem_minmax(0,48rem)] xl:gap-16 xl:justify-center">
-            <ArticleToc items={[{"id": "what-is-a-product-listing", "label": "What Is a Product Listing?"}, {"id": "why-product-listing-structure-matters", "label": "Why Product Listing Structure Matters"}, {"id": "the-core-elements-of-a-strong-product-listing", "label": "The Core Elements of a Strong Product Listing"}, {"id": "product-titles-and-product-identity", "label": "Product Titles and Product Identity"}, {"id": "product-attributes-and-specifications", "label": "Product Attributes and Specifications"}, {"id": "product-variants-and-catalog-relationships", "label": "Product Variants and Catalog Relationships"}, {"id": "product-images-as-listing-information", "label": "Product Images as Listing Information"}, {"id": "product-feeds-and-external-discovery", "label": "Product Feeds and External Discovery"}, {"id": "product-listings-and-search", "label": "Product Listings and Search"}, {"id": "product-listings-and-answer-engines", "label": "Product Listings and Answer Engines"}, {"id": "product-listings-and-generative-discovery", "label": "Product Listings and Generative Discovery"}, {"id": "structured-data-and-product-listings", "label": "Structured Data and Product Listings"}, {"id": "common-product-listing-problems", "label": "Common Product Listing Problems"}, {"id": "how-to-audit-product-listings-at-scale", "label": "How to Audit Product Listings at Scale"}, {"id": "where-1-list-fits", "label": "Where 1-LIST Fits"}, {"id": "frequently-asked-questions", "label": "Frequently Asked Questions"}]} />
+            <ArticleToc items={[{"id": "what-is-a-product-listing", "label": "What Is a Product Listing?"}, {"id": "why-product-listing-structure-matters", "label": "Why Product Listing Structure Matters"}, {"id": "the-core-elements-of-a-strong-product-listing", "label": "The Core Elements of a Strong Product Listing"}, {"id": "product-titles-and-product-identity", "label": "Product Titles and Product Identity"}, {"id": "product-attributes-and-specifications", "label": "Product Attributes and Specifications"}, {"id": "product-variants-and-catalog-relationships", "label": "Product Variants and Catalog Relationships"}, {"id": "product-images-as-listing-information", "label": "Product Images as Listing Information"}, {"id": "product-feeds-and-external-discovery", "label": "Product Feeds and External Discovery"}, {"id": "product-listings-and-search", "label": "Product Listings and Search"}, {"id": "product-listings-and-answer-engines", "label": "Product Listings and Answer Engines"}, {"id": "product-listings-and-generative-discovery", "label": "Product Listings and Generative Discovery"}, {"id": "structured-data-and-product-listings", "label": "Structured Data and Product Listings"}, {"id": "common-product-listing-problems", "label": "Common Product Listing Problems"}, {"id": "how-to-audit-product-listings-at-scale", "label": "How to Audit Product Listings at Scale"}, {"id": "where-1-listing-fits", "label": "Where 1-LISTING Fits"}, {"id": "frequently-asked-questions", "label": "Frequently Asked Questions"}]} />
             <div className="max-w-3xl mx-auto xl:mx-0 space-y-16 md:space-y-24">
             
             <div className="space-y-6">
@@ -284,15 +283,15 @@ export default function ArticlePage() {
             </div>
 
             <div className="bg-secondary/30 p-8 md:p-12 mt-16 border border-border rounded-lg">
-              <h2 id="where-1-list-fits" className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-6 scroll-mt-28">15. Where <AppName name="1-LIST" /> Fits</h2>
+              <h2 id="where-1-listing-fits" className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-6 scroll-mt-28">15. Where <AppName name="1-LISTING" /> Fits</h2>
               <p className="text-lg text-neutral-400 leading-relaxed mb-6">
-                1-LIST is being developed around product listing performance: helping merchants build product listings structured for search, answer engines, and generative discovery.
+                1-LISTING is being developed around product listing performance: helping merchants build product listings structured for search, answer engines, and generative discovery.
               </p>
               <p className="text-lg text-neutral-400 leading-relaxed mb-6">
                 The core product direction is entirely focused on helping merchants organize complex product information, enforce attribute consistency, and streamline the underlying listing structure. 
               </p>
               <p className="text-sm font-bold uppercase tracking-widest text-primary">
-                Note: 1-LIST is currently launching soon.
+                Note: 1-LISTING is currently launching soon.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
                 <Link href="/" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-semibold text-xs bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors">

@@ -8,15 +8,24 @@ Global ecommerce performance technology company.
 **Ecommerce Performance**  
 The underlying technical and structural foundation of a high-performing storefront.
 
-## C. Four Major Topical Pillars
+## C. Major Topical Pillars
 1. **Ecommerce Performance** (Broad foundation)
 2. **Ecommerce Image Optimization** (Targeted image performance)
 3. **Ecommerce Content Performance** (Product and catalog content structure)
 4. **Product Listing Performance** (Search, answer engine, and generative structure)
+5. **Social Presence** (Consistent, catalog-led social content; supports 1-SOCIAL, no guides yet)
 
 ## D. Existing Resources
-- `/resources/ecommerce-performance` (Pillar 1 foundation)
-- `/resources/ecommerce-image-optimization` (Pillar 2 foundation)
+Published guides (the recommended clusters in section E are all live):
+- `/resources/bulk-image-optimization`
+- `/resources/ecommerce-image-compression-webp`
+- `/resources/ecommerce-image-optimization`
+- `/resources/ecommerce-performance`
+- `/resources/page-payload-critical-resources`
+- `/resources/product-content-structure`
+- `/resources/product-image-alt-text`
+- `/resources/product-listing-generative-discovery`
+- `/resources/shopify-image-optimization`
 
 ## E. Recommended Future Resource Clusters
 
@@ -72,7 +81,7 @@ The underlying technical and structural foundation of a high-performing storefro
 - **Internal Links to Add:** `/resources/ecommerce-performance`
 
 ### Priority 3: Future Foundation
-*Broader future topics supporting 1-BLOG and 1-LIST.*
+*Broader future topics supporting 1-BLOG and 1-LISTING.*
 
 **6. Product Content Structure**
 - **Proposed Title:** Structuring Product Catalog Content for Readability
@@ -89,7 +98,7 @@ The underlying technical and structural foundation of a high-performing storefro
 - **Parent Pillar:** Product Listing Performance
 - **Primary Search Intent:** Informational
 - **Merchant Problem Addressed:** Updating legacy keyword-stuffed listings for modern AI-assisted search paradigms.
-- **Related Product:** 1-LIST (Future)
+- **Related Product:** 1-LISTING (Future)
 - **Internal Links to Add:** `/resources/ecommerce-performance`
 
 ---

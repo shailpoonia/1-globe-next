@@ -3,9 +3,26 @@ import type { Metadata } from 'next';
 export const siteConfig = {
   name: '1-GLOBE',
   title: 'Ecommerce Performance Technology',
-  description: '1-GLOBE is an ecommerce performance technology company building tools for online merchants. We build products focused on storefront image performance, content performance, and product listing performance.',
+  description: '1-GLOBE is an ecommerce performance technology company building tools for online merchants. We build products focused on storefront image performance, product listing performance, content performance and social presence.',
   url: 'https://1-globe.com',
 };
+
+/** Legal company details and contact emails. The footer, legal pages, contact page and the
+ * Organization schema all read from here. */
+export const company = {
+  legalName: 'ONE GLOBE (F.Z.E)',
+  street: 'Ajman Free Zone C1 Building, Office C1 - 1F - SF3669',
+  city: 'Ajman',
+  country: 'UAE',
+  countryCode: 'AE',
+  registrationNo: '37795',
+  trn: '104933863300003',
+  email: {
+    support: 'support@1-globe.com',
+    legal: 'legal@1-globe.com',
+    privacy: 'privacy@1-globe.com',
+  },
+} as const;
 
 /**
  * Official social profiles. Paste each full URL between the quotes, e.g.
@@ -24,11 +41,7 @@ export const shareImage = {
   url: '/og-image.jpg',
   width: 1200,
   height: 630,
-  alt: '1-GLOBE: The performance layer for ecommerce. Image, content and product listing performance tools for Shopify merchants.',
-};
-
-export const getCanonicalUrl = (path: string = '') => {
-  return `${siteConfig.url}${path.startsWith('/') ? path : `/${path}`}`;
+  alt: '1-GLOBE: The performance layer for ecommerce. Image, listing, content and social performance tools for Shopify merchants.',
 };
 
 interface BuildMetadataInput {

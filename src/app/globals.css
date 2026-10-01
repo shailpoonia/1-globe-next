@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 1-GLOBE Brand: the logo lettering for app names (1-OPTIMIZER, 1-BLOG, 1-LIST, 1-GLOBE).
+/* 1-GLOBE Brand: the logo lettering for app names (1-OPTIMIZER, 1-SOCIAL, 1-LISTING, 1-BLOG, 1-GLOBE).
    G, L, O, B, E, 1 and - are traced from the logo; the other letters are drawn to match. */
 @font-face {
   font-family: '1-GLOBE Brand';
-  src: url(data:font/woff;base64,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) format('woff');
+  src: url(data:font/woff;base64,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) format('woff');
   font-weight: 100 900;
   font-style: normal;
   font-display: block;
@@ -29,6 +29,8 @@
     /* THE brand colour. Change it here only: every cyan on the site (text, buttons, logo "1-",
        orbit, app names, animations) reads from --brand. Format: R G B. #00B1FF */
     --brand: 0 177 255;
+    /* Darker shade of the brand colour, for small links and text on light sections. #0A6E99 */
+    --brand-ink: 10 110 153;
 
     /* Calmer dark theme: deep blue-grey ground, soft white text. */
     --background: 213 29% 6%; /* #0B0F14 */
@@ -85,27 +87,15 @@
     --c-white: 230 234 240;
     --c-black: 11 15 20;
 
-    /* Typography */
-    --font-sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-    --font-heading: "Space Grotesk", -apple-system, BlinkMacSystemFont, sans-serif;
-    --font-serif: ui-serif, Georgia, "Times New Roman", serif;
+    /* Typography. --font-sans (Inter) and --font-heading (Space Grotesk) are set by next/font
+       in src/app/layout.tsx; the font stacks themselves live in tailwind.config.ts (fontFamily). */
     --font-mono: ui-monospace, "SF Mono", Monaco, "Cascadia Code", "Roboto Mono", Consolas, "Courier New", monospace;
 
     /* Border Radius */
     --radius: 0.5rem;
-    /* Button radius: defaults to shadcn `rounded-md` (calc(var(--radius) - 2px)).
-       Consumed by the Button `cva` via `rounded-[var(--radius-button)]`. */
+    /* Button corner radius, used by .interactive-btn. */
     --radius-button: calc(var(--radius) - 2px);
 
-    /* Shadows */
-    --shadow-2xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
-    --shadow-xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
-    --shadow-sm: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 1px 2px -1px hsl(0 0% 0% / 0.10);
-    --shadow: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 1px 2px -1px hsl(0 0% 0% / 0.10);
-    --shadow-md: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 2px 4px -1px hsl(0 0% 0% / 0.10);
-    --shadow-lg: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 4px 6px -1px hsl(0 0% 0% / 0.10);
-    --shadow-xl: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 8px 10px -1px hsl(0 0% 0% / 0.10);
-    --shadow-2xl: 0 1px 3px 0px hsl(0 0% 0% / 0.25);
   }
 
   * {
@@ -114,12 +104,13 @@
 
   body {
     @apply bg-background text-foreground font-sans;
-
-    font-family: var(--font-sans);
   }
 
+  /* Every heading uses the heading font (with the logo's "1"), whatever its classes say. */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading !important;
+  }
   h1, h2, h3, h4, h5, h6, .font-heading {
-    font-family: '1-GLOBE One', var(--font-heading) !important;
     font-feature-settings: "ss04" 1;
     font-variant-ligatures: none;
   }
@@ -159,7 +150,7 @@
   }
   /* App names in the logo lettering; the "1-" is cyan like the 1-GLOBE logo. */
   .font-brand {
-    font-family: '1-GLOBE Brand', var(--font-heading);
+    @apply font-brand-face;
     font-weight: 700;
     letter-spacing: 0;
     text-transform: uppercase;
@@ -178,107 +169,10 @@
   .text-lead {
     @apply text-lg sm:text-xl text-muted-foreground font-medium leading-relaxed;
   }
-  .text-sub-eyebrow {
-    @apply text-[13px] font-semibold uppercase tracking-[0.1em] text-foreground;
-  }
 
   /* Consistent Section spacing */
   .section-spacing {
     @apply py-24 md:py-32;
-  }
-
-  /* Page title fallback */
-  .rich-text {
-    color: hsl(var(--muted-foreground));
-    font-size: 1rem;
-    line-height: 1.75;
-  }
-  .rich-text h1 {
-    font-size: clamp(1.5rem, 1.5vw + 1rem, 1.875rem);
-    font-weight: 700;
-    line-height: 1.3;
-    color: hsl(var(--foreground));
-    margin-top: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  .rich-text h2 {
-    font-size: clamp(1.5rem, 1.5vw + 1rem, 1.875rem);
-    font-weight: 700;
-    line-height: 1.3;
-    color: hsl(var(--foreground));
-    margin-top: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  .rich-text h3 {
-    font-size: clamp(1.25rem, 1vw + 0.9rem, 1.5rem);
-    font-weight: 700;
-    color: hsl(var(--foreground));
-    margin-top: 2rem;
-    margin-bottom: 0.75rem;
-  }
-  .rich-text h4 {
-    font-size: 1.125rem;
-    font-weight: 600;
-    color: hsl(var(--foreground));
-    margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
-  }
-  .rich-text p {
-    margin-bottom: 1.25rem;
-  }
-  .rich-text a {
-    color: rgb(var(--primary));
-    text-decoration: underline;
-  }
-  .rich-text ul,
-  .rich-text ol {
-    margin: 1.25rem 0;
-    padding-left: 1.5rem;
-  }
-  .rich-text ul { list-style: disc; }
-  .rich-text ol { list-style: decimal; }
-  .rich-text li { margin-bottom: 0.5rem; }
-  .rich-text blockquote {
-    border-left: 3px solid rgb(var(--primary));
-    padding-left: 1rem;
-    font-style: italic;
-    margin: 1.5rem 0;
-    color: hsl(var(--foreground));
-  }
-  .rich-text code {
-    font-family: var(--font-mono);
-    font-size: 0.9em;
-    background: hsl(var(--muted));
-    padding: 0.15rem 0.35rem;
-    border-radius: 0.25rem;
-  }
-  .rich-text pre {
-    background: hsl(var(--muted));
-    padding: 1rem;
-    border-radius: 0.5rem;
-    overflow-x: auto;
-    margin: 1.5rem 0;
-  }
-  .rich-text pre code {
-    background: transparent;
-    padding: 0;
-  }
-  .rich-text img {
-    border-radius: 0.5rem;
-    margin: 1.5rem 0;
-    max-width: 100%;
-    height: auto;
-  }
-  .rich-text table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 1.5rem 0;
-  }
-  .rich-text th,
-  .rich-text td {
-    border: 1px solid hsl(var(--border));
-    padding: 0.5rem 0.75rem;
-    text-align: left;
   }
 }
 
@@ -308,24 +202,6 @@
   .interactive-link {
     @apply transition-colors duration-200 ease-out hover:text-primary relative;
   }
-  
-  .animate-in {
-    animation-duration: 0.2s;
-    animation-fill-mode: both;
-  }
-
-  .fade-in {
-    animation-name: fadeIn;
-  }
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
 }
 
 /* Smooth scrolling */
@@ -339,19 +215,19 @@ html {
   --foreground: 218 26% 14%; /* #1A202C */
   --card: 0 0% 100%;
   --card-foreground: 218 26% 14%;
-  --primary: 10 110 153; /* #0A6E99: darker so small links stay readable on white */
+  --primary: var(--brand-ink); /* darker so small links stay readable on white */
   --primary-foreground: 0 0% 100%;
   --secondary: 216 25% 94%;
   --secondary-foreground: 218 26% 14%;
   --muted: 216 20% 95%;
   --muted-foreground: 217 18% 28%; /* #3A4454 */
-  --accent: 10 110 153;
+  --accent: var(--brand-ink);
   --accent-foreground: 0 0% 100%;
   --destructive: 355 46% 48%; /* #B4424A */
   --destructive-foreground: 0 0% 100%;
   --border: 216 20% 90%; /* #E2E6EC */
   --input: 216 20% 90%;
-  --ring: 10 110 153;
+  --ring: var(--brand-ink);
   --n-50: 17 23 32;
   --n-100: 26 32 44;
   --n-200: 31 39 51;

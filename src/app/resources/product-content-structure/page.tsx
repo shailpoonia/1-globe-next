@@ -1,4 +1,3 @@
-import React from 'react'
 import { Metadata } from 'next'
 import { buildMetadata } from '@/lib/seo'
 import { Section } from '@/components/shared/Section'
@@ -110,7 +109,7 @@ export default function ArticlePage() {
         {/* Article Body */}
         <Section className="py-20 md:py-32">
           <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12 xl:grid xl:grid-cols-[15rem_minmax(0,48rem)] xl:gap-16 xl:justify-center">
-            <ArticleToc items={[{"id": "what-is-product-content-structure", "label": "What Is Product Content Structure?"}, {"id": "why-product-content-structure-matters-for-ecommerce", "label": "Why Product Content Structure Matters for Ecommerce"}, {"id": "the-core-elements-of-ecommerce-product-content", "label": "The Core Elements of Ecommerce Product Content"}, {"id": "how-to-structure-a-strong-product-title", "label": "How to Structure a Strong Product Title"}, {"id": "product-descriptions-structure-before-length", "label": "Product Descriptions: Structure Before Length"}, {"id": "product-attributes-and-specifications", "label": "Product Attributes and Specifications"}, {"id": "product-variants-and-option-structure", "label": "Product Variants and Option Structure"}, {"id": "product-content-consistency-across-the-catalog", "label": "Product Content Consistency Across the Catalog"}, {"id": "product-content-for-search-and-discovery", "label": "Product Content for Search and Discovery"}, {"id": "product-content-and-structured-data", "label": "Product Content and Structured Data"}, {"id": "product-faqs-and-supporting-information", "label": "Product FAQs and Supporting Information"}, {"id": "common-product-content-mistakes", "label": "Common Product Content Mistakes"}, {"id": "how-to-audit-product-content-at-scale", "label": "How to Audit Product Content at Scale"}, {"id": "product-content-and-accessibility-usability", "label": "Product Content and Accessibility / Usability"}, {"id": "where-1-list-fits", "label": "Where 1-LIST Fits"}, {"id": "frequently-asked-questions", "label": "Frequently Asked Questions"}]} />
+            <ArticleToc items={[{"id": "what-is-product-content-structure", "label": "What Is Product Content Structure?"}, {"id": "why-product-content-structure-matters-for-ecommerce", "label": "Why Product Content Structure Matters for Ecommerce"}, {"id": "the-core-elements-of-ecommerce-product-content", "label": "The Core Elements of Ecommerce Product Content"}, {"id": "how-to-structure-a-strong-product-title", "label": "How to Structure a Strong Product Title"}, {"id": "product-descriptions-structure-before-length", "label": "Product Descriptions: Structure Before Length"}, {"id": "product-attributes-and-specifications", "label": "Product Attributes and Specifications"}, {"id": "product-variants-and-option-structure", "label": "Product Variants and Option Structure"}, {"id": "product-content-consistency-across-the-catalog", "label": "Product Content Consistency Across the Catalog"}, {"id": "product-content-for-search-and-discovery", "label": "Product Content for Search and Discovery"}, {"id": "product-content-and-structured-data", "label": "Product Content and Structured Data"}, {"id": "product-faqs-and-supporting-information", "label": "Product FAQs and Supporting Information"}, {"id": "common-product-content-mistakes", "label": "Common Product Content Mistakes"}, {"id": "how-to-audit-product-content-at-scale", "label": "How to Audit Product Content at Scale"}, {"id": "product-content-and-accessibility-usability", "label": "Product Content and Accessibility / Usability"}, {"id": "where-1-listing-fits", "label": "Where 1-LISTING Fits"}, {"id": "frequently-asked-questions", "label": "Frequently Asked Questions"}]} />
             <div className="max-w-3xl mx-auto xl:mx-0 space-y-16 md:space-y-24">
             
             <div className="space-y-6">
@@ -281,15 +280,15 @@ export default function ArticlePage() {
             </div>
 
             <div className="bg-secondary/30 p-8 md:p-12 mt-16 border border-border rounded-lg">
-              <h2 id="where-1-list-fits" className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-6 scroll-mt-28">15. Where <AppName name="1-LIST" /> Fits</h2>
+              <h2 id="where-1-listing-fits" className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-6 scroll-mt-28">15. Where <AppName name="1-LISTING" /> Fits</h2>
               <p className="text-lg text-neutral-400 leading-relaxed mb-6">
                 <Link href="/" className="text-primary hover:underline">1-GLOBE</Link> is building an ecosystem of performance tools to support modern storefront architecture.
               </p>
               <p className="text-lg text-neutral-400 leading-relaxed mb-6">
-                1-LIST is being developed around product listing performance: helping merchants build product listings with structured content for search, answer engines, and generative discovery. By focusing on data consistency and clear information architecture, it aims to streamline how catalogs are presented to complex systems.
+                1-LISTING is being developed around product listing performance: helping merchants build product listings with structured content for search, answer engines, and generative discovery. By focusing on data consistency and clear information architecture, it aims to streamline how catalogs are presented to complex systems.
               </p>
               <p className="text-sm font-bold uppercase tracking-widest text-primary">
-                Note: 1-LIST is currently launching soon.
+                Note: 1-LISTING is currently launching soon.
               </p>
             </div>
 

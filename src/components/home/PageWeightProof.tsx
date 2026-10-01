@@ -42,7 +42,7 @@ export const PageWeightProof: React.FC = () => {
               <span className="sm:order-1 text-sm sm:text-base font-semibold uppercase tracking-wide text-foreground">BEFORE</span>
               <span className="sm:order-3 font-heading text-lg sm:text-2xl font-bold text-foreground text-right">{BEFORE_MB} MB</span>
               <div className="col-span-2 sm:col-span-1 sm:order-2 flex h-9 sm:h-11 rounded-lg overflow-hidden">
-                <div className="bg-[#EF4444]" style={{ width: pct(BEFORE_MB - OTHER_MB) }} />
+                <div className="bg-red-500" style={{ width: pct(BEFORE_MB - OTHER_MB) }} />
                 <div className="bg-neutral-600" style={{ width: pct(OTHER_MB) }} />
               </div>
             </div>
@@ -51,7 +51,7 @@ export const PageWeightProof: React.FC = () => {
               <span className="sm:order-3 font-heading text-lg sm:text-2xl font-bold text-foreground text-right">{AFTER_MB} MB</span>
               <div className="col-span-2 sm:col-span-1 sm:order-2 flex h-9 sm:h-11">
                 <div className="flex rounded-lg overflow-hidden" style={{ width: pct(AFTER_MB), minWidth: '1.5rem' }}>
-                  <div className="bg-[#22C55E]" style={{ width: `${((AFTER_MB - OTHER_MB) / AFTER_MB) * 100}%` }} />
+                  <div className="bg-green-500" style={{ width: `${((AFTER_MB - OTHER_MB) / AFTER_MB) * 100}%` }} />
                   <div className="bg-neutral-600" style={{ width: `${(OTHER_MB / AFTER_MB) * 100}%` }} />
                 </div>
               </div>
@@ -59,8 +59,8 @@ export const PageWeightProof: React.FC = () => {
           </div>
 
           <ul className="m-0 p-0 list-none flex flex-wrap gap-x-10 gap-y-3 border-t border-border pt-6 text-sm sm:text-base text-neutral-400">
-            <li className="flex items-center gap-2.5"><span aria-hidden="true" className="w-3.5 h-3.5 rounded bg-[#EF4444]" />Hero video before: 13.8 MB</li>
-            <li className="flex items-center gap-2.5"><span aria-hidden="true" className="w-3.5 h-3.5 rounded bg-[#22C55E]" />Hero video after: 1.0 MB</li>
+            <li className="flex items-center gap-2.5"><span aria-hidden="true" className="w-3.5 h-3.5 rounded bg-red-500" />Hero video before: 13.8 MB</li>
+            <li className="flex items-center gap-2.5"><span aria-hidden="true" className="w-3.5 h-3.5 rounded bg-green-500" />Hero video after: 1.0 MB</li>
             <li className="flex items-center gap-2.5"><span aria-hidden="true" className="w-3.5 h-3.5 rounded bg-neutral-600" />Everything else, unchanged: about 0.5 MB</li>
           </ul>
         </figure>

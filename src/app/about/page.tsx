@@ -1,4 +1,3 @@
-import React from 'react'
 import { Metadata } from 'next'
 import { buildMetadata } from '@/lib/seo'
 import { Section } from '@/components/shared/Section'
@@ -33,7 +32,7 @@ export default function AboutPage() {
         <Section className="section-spacing bg-background border-b border-border">
           <div className="max-w-3xl mx-auto px-6 sm:px-8 lg:px-12 space-y-8 text-lead">
             <p>
-              We focus our technology on three core areas of the modern storefront: image performance, content performance, and product listing performance. We hit these exact walls ourselves: a heavy, slow catalog lacking proper structure, and legacy setups we were afraid to touch in case we broke the storefront.
+              We focus our technology on the core layers of the modern storefront: image performance, product listings, content and, soon, a consistent social presence. We hit these exact walls ourselves: a heavy, slow catalog lacking proper structure, and legacy setups we were afraid to touch in case we broke the storefront.
             </p>
             <p>
               We'd spent careers making brands desirable—so we weren't about to let a broken technical foundation quietly cost us momentum. We built the fix—starting with <Link href="/apps/1-optimizer" className="text-primary hover:text-foreground transition-colors underline underline-offset-4 decoration-primary/30">1-OPTIMIZER image performance</Link>.

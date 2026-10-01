@@ -1,4 +1,3 @@
-import React from 'react'
 import { Metadata } from 'next'
 import { buildMetadata } from '@/lib/seo'
 import { Section } from '@/components/shared/Section'
@@ -21,7 +20,7 @@ export default function PricingPage() {
             <div className="text-left mb-20 max-w-3xl">
               <span className="text-eyebrow block mb-6"><AppName name="1-OPTIMIZER" /></span>
               <h1 className="text-page-title mb-6">
-                Image performance.{' '}<br />
+                Image performance{' '}<br />
                 <span className="text-primary">Without the subscription</span>
               </h1>
               <p className="text-lead">

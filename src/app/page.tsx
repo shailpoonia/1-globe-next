@@ -1,4 +1,3 @@
-import React from 'react'
 import { Metadata } from 'next'
 import { buildMetadata } from '@/lib/seo'
 import { CtaBand } from '@/components/shared/CtaBand'

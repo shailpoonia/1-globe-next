@@ -1,6 +1,6 @@
-import React from 'react'
 import { Metadata } from 'next'
-import { buildMetadata } from '@/lib/seo'
+import { buildMetadata, company } from '@/lib/seo'
+import { LegalContact } from '@/components/shared/LegalContact'
 
 export const metadata: Metadata = buildMetadata({
   title: 'Terms of Service',
@@ -27,14 +27,14 @@ export default function TermsPage() {
           </div>
 
           {/* Terms Content */}
-          <div className="prose prose-invert max-w-none space-y-10 text-sm leading-relaxed text-muted-foreground">
+          <div className="space-y-10 text-sm leading-relaxed text-muted-foreground">
             {/* Section 1 */}
             <section className="space-y-3">
               <h2 className="font-heading font-bold text-xl sm:text-2xl text-foreground">
                 1. Agreement to Terms
               </h2>
               <p>
-                These Terms of Service (&ldquo;Terms&rdquo;) constitute a legally binding agreement between you (&ldquo;Merchant,&rdquo; &ldquo;you,&rdquo; or &ldquo;your&rdquo;) and <strong className="text-foreground">ONE GLOBE (F.Z.E)</strong> (&ldquo;1-globe.com,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;), governing your access to and use of our website at 1-globe.com and any applications published by us on the Shopify App Store.
+                These Terms of Service (&ldquo;Terms&rdquo;) constitute a legally binding agreement between you (&ldquo;Merchant,&rdquo; &ldquo;you,&rdquo; or &ldquo;your&rdquo;) and <strong className="text-foreground">{company.legalName}</strong> (&ldquo;1-globe.com,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;), governing your access to and use of our website at 1-globe.com and any applications published by us on the Shopify App Store.
               </p>
               <p>
                 By installing our applications on your Shopify store, you agree to be bound by these Terms. If you do not agree to these Terms, you may not install or use our services.
@@ -127,22 +127,7 @@ export default function TermsPage() {
               <p>
                 For any questions regarding these Terms of Service, please reach out to:
               </p>
-              <div className="rounded-xl border border-border bg-card p-6 space-y-2 text-xs">
-                <div>
-                  <strong className="text-foreground block">Legal Entity:</strong>
-                  <span>ONE GLOBE (F.Z.E)</span>
-                </div>
-                <div>
-                  <strong className="text-foreground block">Registered Address:</strong>
-                  <span>Ajman Free Zone C1 Building, Office C1 - 1F - SF3669, Ajman, UAE</span></div><div><strong className="text-foreground block mt-2">Commercial Registration No.:</strong><span>37795</span></div><div><strong className="text-foreground block mt-2">VAT TRN:</strong><span>104933863300003</span>
-                </div>
-                <div>
-                  <strong className="text-foreground block">Legal Contact Email:</strong>
-                  <a href="mailto:legal@1-globe.com" className="text-primary hover:underline">
-                    legal@1-globe.com
-                  </a>
-                </div>
-              </div>
+              <LegalContact emailLabel="Legal Contact Email:" email={company.email.legal} />
             </section>
           </div>
         </div>

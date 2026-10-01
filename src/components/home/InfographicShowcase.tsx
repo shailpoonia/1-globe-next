@@ -126,11 +126,11 @@ export const InfographicShowcase: React.FC = () => {
         /* Slide 2 CSS Animations */
         @keyframes s2-nodeActive {
           0%, 10% { border-color: rgba(51, 65, 85, 1); background-color: rgba(30, 41, 59, 0.5); color: #64748b; }
-          15%, 100% { border-color: rgba(94, 211, 176, 0.5); background-color: rgba(94, 211, 176, 0.1); color: #5ED3B0; box-shadow: 0 0 15px rgba(94, 211, 176,0.2); }
+          15%, 100% { border-color: hsl(var(--success) / 0.5); background-color: hsl(var(--success) / 0.1); color: hsl(var(--success)); box-shadow: 0 0 15px hsl(var(--success) / 0.2); }
         }
         @keyframes s2-arrowFlow {
           0%, 10% { color: #334155; }
-          15%, 100% { color: #5ED3B0; filter: drop-shadow(0 0 5px rgba(94, 211, 176,0.5)); }
+          15%, 100% { color: hsl(var(--success)); filter: drop-shadow(0 0 5px hsl(var(--success) / 0.5)); }
         }
 
         .s2-node-1 { animation: s2-nodeActive 10s ease-out infinite; animation-delay: 0s; }
@@ -148,8 +148,8 @@ export const InfographicShowcase: React.FC = () => {
           .s1-animate-filename::before { content: "hand-block-print-floral-quilted-comforter-cream-coral.webp"; color: rgb(var(--brand)); }
           .s1-animate-typewriter { width: 100%; border-right: none; }
           .s1-animate-badge { border-color: rgb(var(--brand) / 0.4); color: #fff; background-color: rgb(var(--brand) / 0.1); }
-          .s2-node-1, .s2-node-2, .s2-node-3, .s2-node-4, .s2-node-5 { border-color: rgba(94, 211, 176, 0.5); background-color: rgba(94, 211, 176, 0.1); color: #5ED3B0; }
-          .s2-arrow-1, .s2-arrow-2, .s2-arrow-3, .s2-arrow-4 { color: #5ED3B0; }
+          .s2-node-1, .s2-node-2, .s2-node-3, .s2-node-4, .s2-node-5 { border-color: hsl(var(--success) / 0.5); background-color: hsl(var(--success) / 0.1); color: hsl(var(--success)); }
+          .s2-arrow-1, .s2-arrow-2, .s2-arrow-3, .s2-arrow-4 { color: hsl(var(--success)); }
         }
       `}} />
     </section>
@@ -225,7 +225,7 @@ const Slide1Content: React.FC = () => {
       </div>
       
       <div className="mt-10 text-center px-4 md:px-12">
-        <h3 className="text-card-title mb-2">Clean images. Readable tags. Meaningful context for your catalog</h3>
+        <h3 className="text-card-title mb-2">Clean images, readable tags and meaningful context for your catalog</h3>
         <p className="text-sm text-slate-400">Sound familiar? Half your catalog is probably named IMG-2026-WA001.jpg right now.</p>
       </div>
     </div>

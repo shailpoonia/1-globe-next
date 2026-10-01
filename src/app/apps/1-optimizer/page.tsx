@@ -1,4 +1,3 @@
-import React from 'react'
 import Link from 'next/link'
 import { Metadata } from 'next'
 import { buildMetadata } from '@/lib/seo'
@@ -46,7 +45,7 @@ export default function ImageOptimizerPage() {
 
       {/* 1. App Hero with AI Pipeline Card */}
       <AppHero
-        headline={<>Faster storefronts.{' '}<br />Better product imagery.{' '}<br /><span className="text-primary">Stronger foundations</span></>}
+        headline={<>Faster storefronts{' '}<br />Better product imagery{' '}<br /><span className="text-primary">Stronger foundations</span></>}
         subhead={
           <div className="space-y-6">
             <p>Marketing drives traffic, but your storefront infrastructure dictates performance. Heavy payloads and missing metadata can undermine your acquisition efforts.</p>

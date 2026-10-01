@@ -1,6 +1,5 @@
-import React from 'react'
 import { Metadata } from 'next'
-import { buildMetadata } from '@/lib/seo'
+import { buildMetadata, company } from '@/lib/seo'
 import { Section } from '@/components/shared/Section'
 import Link from 'next/link'
 
@@ -30,8 +29,8 @@ export default function ContactPage() {
               <div className="space-y-6">
                 <div>
                   <p className="text-xs font-bold uppercase tracking-widest text-foreground mb-2">Support & Inquiries</p>
-                  <a href="mailto:support@1-globe.com" className="text-primary hover:underline text-lg font-medium">
-                    support@1-globe.com
+                  <a href={`mailto:${company.email.support}`} className="text-primary hover:underline text-lg font-medium">
+                    {company.email.support}
                   </a>
                 </div>
                 
@@ -61,7 +60,7 @@ export default function ContactPage() {
                 </div>
                 
                 <a 
-                  href="mailto:support@1-globe.com"
+                  href={`mailto:${company.email.support}`}
                   className="interactive-btn h-14 font-semibold text-sm bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary flex items-center justify-center w-full"
                 >
                   Email Support

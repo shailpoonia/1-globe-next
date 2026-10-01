@@ -1,6 +1,6 @@
-import React from 'react'
 import { Metadata } from 'next'
-import { buildMetadata } from '@/lib/seo'
+import { buildMetadata, company } from '@/lib/seo'
+import { LegalContact } from '@/components/shared/LegalContact'
 
 export const metadata: Metadata = buildMetadata({
   title: 'Privacy Policy',
@@ -27,14 +27,14 @@ export default function PrivacyPage() {
           </div>
 
           {/* Policy Content */}
-          <div className="prose prose-invert max-w-none space-y-10 text-sm leading-relaxed text-muted-foreground">
+          <div className="space-y-10 text-sm leading-relaxed text-muted-foreground">
             {/* Section 1 */}
             <section className="space-y-3">
               <h2 className="font-heading font-bold text-xl sm:text-2xl text-foreground">
                 1. Overview &amp; Scope
               </h2>
               <p>
-                This Privacy Policy describes how <strong className="text-foreground">ONE GLOBE (F.Z.E)</strong> (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) collects, uses, and safeguards information when you visit our website at <strong className="text-foreground">1-globe.com</strong> or install and use any of our applications from the Shopify App Store, including 1-OPTIMIZER.
+                This Privacy Policy describes how <strong className="text-foreground">{company.legalName}</strong> (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) collects, uses, and safeguards information when you visit our website at <strong className="text-foreground">1-globe.com</strong> or install and use any of our applications from the Shopify App Store, including 1-OPTIMIZER.
               </p>
               <p>
                 By installing our applications or using our services, you agree to the collection and use of information in accordance with this policy. If you do not agree, please uninstall the application and discontinue use of our services.
@@ -149,22 +149,7 @@ export default function PrivacyPage() {
               <p>
                 If you have questions, concerns, or requests regarding this Privacy Policy, please contact our designated privacy team:
               </p>
-              <div className="rounded-xl border border-border bg-card p-6 space-y-2 text-xs">
-                <div>
-                  <strong className="text-foreground block">Legal Entity:</strong>
-                  <span>ONE GLOBE (F.Z.E)</span>
-                </div>
-                <div>
-                  <strong className="text-foreground block">Registered Address:</strong>
-                  <span>Ajman Free Zone C1 Building, Office C1 - 1F - SF3669, Ajman, UAE</span></div><div><strong className="text-foreground block mt-2">Commercial Registration No.:</strong><span>37795</span></div><div><strong className="text-foreground block mt-2">VAT TRN:</strong><span>104933863300003</span>
-                </div>
-                <div>
-                  <strong className="text-foreground block">Privacy &amp; Data Protection Officer Email:</strong>
-                  <a href="mailto:privacy@1-globe.com" className="text-primary hover:underline">
-                    privacy@1-globe.com
-                  </a>
-                </div>
-              </div>
+              <LegalContact emailLabel="Privacy & Data Protection Officer Email:" email={company.email.privacy} />
             </section>
           </div>
         </div>

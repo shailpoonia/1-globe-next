@@ -2,14 +2,15 @@ import React from 'react'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 
-import { ENTITY_PRODUCTS } from '@/lib/entities'
-import { AppMark, AppName, BrandText } from '@/components/shared/BrandLogo'
+import { PRODUCT_LIST } from '@/lib/entities'
+import { AppMark, AppName, BrandText, type AppMarkName } from '@/components/shared/BrandLogo'
 
-const products = [
-  { ...ENTITY_PRODUCTS['1-optimizer'], layer: 'Images', mark: 'optimizer' as const, status: 'Coming soon to Shopify', highlight: true },
-  { ...ENTITY_PRODUCTS['1-blog'], layer: 'Content', mark: 'blog' as const, status: 'Launching soon', highlight: false },
-  { ...ENTITY_PRODUCTS['1-list'], layer: 'Product listings', mark: 'list' as const, status: 'Launching soon', highlight: false },
-]
+// Cards come from the single app list in entities.ts; the live app (with a page) is highlighted.
+const products = PRODUCT_LIST.map((p) => ({
+  ...p,
+  mark: p.id.replace(/^1-/, '') as AppMarkName,
+  highlight: p.href !== null,
+}))
 
 // Light section: `reading-light` swaps the colour tokens to the light palette.
 export const ProductEcosystem: React.FC = () => {
@@ -23,12 +24,17 @@ export const ProductEcosystem: React.FC = () => {
               <span className="text-brand">Every layer</span> of the store matters
             </h2>
           </div>
-          <p className="lg:col-span-5 text-base md:text-lg leading-relaxed text-muted-foreground">
-            Every click, search and campaign ends up on your store. We build focused tools for the three layers underneath it.
-          </p>
+          <div className="lg:col-span-5 flex flex-col gap-4 text-base md:text-lg leading-relaxed text-muted-foreground">
+            <p>
+              Every campaign, search result and piece of content sends people to your store. If the foundation is weak, more traffic means more opportunity lost.
+            </p>
+            <p>
+              <AppName name="1-GLOBE" /> builds focused tools for the layers that make that traffic work harder: images, listings, content and, soon, a consistent social presence.
+            </p>
+          </div>
         </div>
 
-        <ul className="m-0 p-0 list-none grid grid-cols-1 md:grid-cols-3 gap-5">
+        <ul className="m-0 p-0 list-none grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5">
           {products.map((p) => {
             return (
               <li
@@ -43,10 +49,10 @@ export const ProductEcosystem: React.FC = () => {
                   </span>
                   <span
                     className={`rounded-full px-3 py-1 text-xs font-semibold ${
-                      p.highlight ? 'bg-brand text-[#0B0F14]' : 'border border-border text-muted-foreground'
+                      p.highlight ? 'bg-brand text-foreground' : 'border border-border text-muted-foreground'
                     }`}
                   >
-                    {p.status}
+                    {p.badge}
                   </span>
                 </div>
                 <span className="text-[13px] font-semibold uppercase tracking-[0.08em] text-muted-foreground">

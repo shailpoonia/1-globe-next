@@ -34,7 +34,7 @@ export const AIPipelineHeroCard: React.FC = () => {
         }
         @keyframes arrowFlow {
           0%, 72% { opacity: 0.2; transform: translateY(-5px); color: #475569; }
-          78%, 100% { opacity: 1; transform: translateY(0); color: #5ED3B0; }
+          78%, 100% { opacity: 1; transform: translateY(0); color: hsl(var(--success)); }
         }
         @keyframes badgeGlow {
           0%, 76% { border-color: rgba(51, 65, 85, 0.5); color: #64748b; background-color: transparent; }

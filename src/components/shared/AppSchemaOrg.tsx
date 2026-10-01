@@ -1,4 +1,3 @@
-import React from 'react';
 import { siteConfig } from '@/lib/seo';
 
 import { ENTITY_ORGANIZATION } from '@/lib/entities';
