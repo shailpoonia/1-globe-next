@@ -281,9 +281,9 @@ export default function ArticlePage() {
               </p>
               <ul className="space-y-4 text-lg text-neutral-400 mb-6">
                 <li><strong className="text-foreground"><AppName name="1-OPTIMIZER" />:</strong> Focused on image performance and source-catalog technical capabilities (currently coming soon).</li>
-                <li><strong className="text-foreground"><AppName name="1-SOCIAL" />:</strong> Focused on a consistent social presence built from your product catalog (launching next).</li>
+                <li><strong className="text-foreground"><AppName name="1-LISTING" />:</strong> Focused on product listing performance for complex discovery environments (launching next).</li>
                 <li><strong className="text-foreground"><AppName name="1-BLOG" />:</strong> Focused on structured content performance (currently launching soon).</li>
-                <li><strong className="text-foreground"><AppName name="1-LISTING" />:</strong> Focused on product listing performance for complex discovery environments (currently launching soon).</li>
+                <li><strong className="text-foreground"><AppName name="1-SOCIAL" />:</strong> Focused on social media: consistent, on-brand posts built from your product catalog (currently launching soon).</li>
               </ul>
               <Link href="/apps/1-optimizer" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-semibold text-xs bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors mt-2">
                 <span>Explore <AppName name="1-OPTIMIZER" /></span>

@@ -16,7 +16,7 @@ export const FaqSection: React.FC = () => {
     },
     {
       q: "What products does 1-GLOBE offer?",
-      a: "The 1-GLOBE product ecosystem includes 1-OPTIMIZER for image performance, 1-SOCIAL for a consistent social presence, 1-LISTING for product listing performance and 1-BLOG for content performance. 1-OPTIMIZER is coming soon to Shopify, 1-SOCIAL launches next, and 1-LISTING and 1-BLOG are launching soon."
+      a: "The 1-GLOBE product ecosystem includes 1-OPTIMIZER for image performance, 1-LISTING for product listing performance, 1-BLOG for content performance and 1-SOCIAL for social media. 1-OPTIMIZER is coming soon to Shopify, 1-LISTING launches next, followed by 1-BLOG and 1-SOCIAL."
     },
     {
       q: "What is 1-OPTIMIZER?",

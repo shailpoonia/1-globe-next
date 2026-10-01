@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 1-GLOBE Brand: the logo lettering for app names (1-OPTIMIZER, 1-SOCIAL, 1-LISTING, 1-BLOG, 1-GLOBE).
+/* 1-GLOBE Brand: the logo lettering for app names (1-GLOBE, 1-OPTIMIZER, 1-LISTING, 1-BLOG, 1-SOCIAL).
    G, L, O, B, E, 1 and - are traced from the logo; the other letters are drawn to match. */
 @font-face {
   font-family: '1-GLOBE Brand';

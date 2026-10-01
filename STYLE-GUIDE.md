@@ -45,7 +45,7 @@ Rules:
 
 - Headings: Space Grotesk 500/700, with the logo's "1". Body: Inter 400/500.
 - Headline rule on every page except guides and legal pages: ALL CAPS, one keyword in brand cyan (`<span className="text-primary">`), no full stops.
-- App names (1-GLOBE, 1-OPTIMIZER, 1-SOCIAL, 1-LISTING, 1-BLOG) are written in the logo lettering with a cyan "1-" in titles, buttons and labels: `<AppName name="1-OPTIMIZER" />`, or `<BrandText>` for a string that contains names. In running text (FAQ questions, paragraphs) use `<BrandText plain>` to keep the normal font and colour only the "1-".
+- App names (1-GLOBE, 1-OPTIMIZER, 1-LISTING, 1-BLOG, 1-SOCIAL) are written in the logo lettering with a cyan "1-" in titles, buttons and labels: `<AppName name="1-OPTIMIZER" />`, or `<BrandText>` for a string that contains names. In running text (FAQ questions, paragraphs) use `<BrandText plain>` to keep the normal font and colour only the "1-".
 
 ## 4. Layout and components
 
@@ -72,6 +72,6 @@ Talk to a busy Shopify store owner, not a developer.
 ## 6. Naming
 
 - Company and hub brand: 1-GLOBE (domain 1-globe.com). Legal entity ONE GLOBE (F.Z.E) only in the footer and legal pages.
-- Apps, in launch order: 01 1-OPTIMIZER (image performance), 02 1-SOCIAL (social presence), 03 1-LISTING (product listings), 04 1-BLOG (content).
+- Apps, in launch order: 01 1-OPTIMIZER (image performance), 02 1-LISTING (product listing performance), 03 1-BLOG (content performance), 04 1-SOCIAL (social media).
 - Spelling is American ("optimize", "optimizer"). The old `/apps/1-optimiser` address redirects to `/apps/1-optimizer`.
 - Positioning: THE PERFORMANCE LAYER FOR ECOMMERCE. Philosophy: business first, technology second, performance always.

@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const siteConfig = {
   name: '1-GLOBE',
   title: 'Ecommerce Performance Technology',
-  description: '1-GLOBE is an ecommerce performance technology company building tools for online merchants. We build products focused on storefront image performance, product listing performance, content performance and social presence.',
+  description: '1-GLOBE is an ecommerce performance technology company building tools for online merchants. We build products focused on storefront image performance, product listing performance, content performance and social media.',
   url: 'https://1-globe.com',
 };
 
@@ -31,8 +31,10 @@ export const company = {
  */
 export const socialLinks = [
   { name: 'LinkedIn', href: '' },
-  { name: 'X', href: '' },
   { name: 'Instagram', href: '' },
+  { name: 'TikTok', href: '' },
+  { name: 'Facebook', href: '' },
+  { name: 'X', href: '' },
 ] as const;
 
 /** Default share image (1200 x 630) in /public. Set explicitly on every page: a page that
