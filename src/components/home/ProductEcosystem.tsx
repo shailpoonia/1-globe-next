@@ -2,15 +2,15 @@ import React from 'react'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 
-import { ENTITY_PRODUCTS } from '@/lib/entities'
-import { AppMark, AppName, BrandText } from '@/components/shared/BrandLogo'
+import { PRODUCT_LIST } from '@/lib/entities'
+import { AppMark, AppName, BrandText, type AppMarkName } from '@/components/shared/BrandLogo'
 
-const products = [
-  { ...ENTITY_PRODUCTS['1-optimizer'], layer: 'Images', mark: 'optimizer' as const, status: 'Coming soon to Shopify', highlight: true },
-  { ...ENTITY_PRODUCTS['1-social'], layer: 'Social', mark: 'social' as const, status: 'Launching next', highlight: false },
-  { ...ENTITY_PRODUCTS['1-listing'], layer: 'Product listings', mark: 'list' as const, status: 'Launching soon', highlight: false },
-  { ...ENTITY_PRODUCTS['1-blog'], layer: 'Content', mark: 'blog' as const, status: 'Launching soon', highlight: false },
-]
+// Cards come from the single app list in entities.ts; the live app (with a page) is highlighted.
+const products = PRODUCT_LIST.map((p) => ({
+  ...p,
+  mark: p.id.replace(/^1-/, '') as AppMarkName,
+  highlight: p.href !== null,
+}))
 
 // Light section: `reading-light` swaps the colour tokens to the light palette.
 export const ProductEcosystem: React.FC = () => {
@@ -49,10 +49,10 @@ export const ProductEcosystem: React.FC = () => {
                   </span>
                   <span
                     className={`rounded-full px-3 py-1 text-xs font-semibold ${
-                      p.highlight ? 'bg-brand text-[#0B0F14]' : 'border border-border text-muted-foreground'
+                      p.highlight ? 'bg-brand text-foreground' : 'border border-border text-muted-foreground'
                     }`}
                   >
-                    {p.status}
+                    {p.badge}
                   </span>
                 </div>
                 <span className="text-[13px] font-semibold uppercase tracking-[0.08em] text-muted-foreground">

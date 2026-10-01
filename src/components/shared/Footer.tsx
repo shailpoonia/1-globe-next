@@ -2,6 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 import { AppName, BrandLockup } from './BrandLogo'
 import { SocialLinks } from './SocialLinks'
+import { PRODUCT_LIST } from '@/lib/entities'
+import { company } from '@/lib/seo'
 
 export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear()
@@ -29,10 +31,13 @@ export const Footer: React.FC = () => {
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 lg:justify-end">
             <div className="flex flex-col gap-3">
               <span className="text-[13px] font-bold uppercase tracking-widest text-neutral-400 mb-1">Products</span>
-              <Link href="/apps/1-optimizer" className="text-xs font-semibold text-neutral-400 hover:text-foreground transition-colors"><AppName name="1-OPTIMIZER" /></Link>
-              <span className="text-xs font-semibold text-neutral-500 cursor-default"><AppName name="1-SOCIAL" /></span>
-              <span className="text-xs font-semibold text-neutral-500 cursor-default"><AppName name="1-LISTING" /></span>
-              <span className="text-xs font-semibold text-neutral-500 cursor-default"><AppName name="1-BLOG" /></span>
+              {PRODUCT_LIST.map((p) =>
+                p.href ? (
+                  <Link key={p.id} href={p.href} className="text-xs font-semibold text-neutral-400 hover:text-foreground transition-colors"><AppName name={p.name} /></Link>
+                ) : (
+                  <span key={p.id} className="text-xs font-semibold text-neutral-500 cursor-default"><AppName name={p.name} /></span>
+                )
+              )}
             </div>
             
             <div className="flex flex-col gap-3">
@@ -53,13 +58,12 @@ export const Footer: React.FC = () => {
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 pt-8 border-t border-neutral-900">
           <div className="flex flex-col gap-2 max-w-sm">
             <p className="text-[13px] font-bold uppercase tracking-widest text-neutral-400">
-              ONE GLOBE (F.Z.E)
+              {company.legalName}
             </p>
             <p className="text-xs text-neutral-400 leading-relaxed">
-              Ajman Free Zone C1 Building{' '}<br />
-              Office C1 - 1F - SF3669, Ajman, UAE{' '}<br />
-              Commercial Registration No.: 37795{' '}<br />
-              TRN: 104933863300003
+              {company.street}, {company.city}, {company.country}{' '}<br />
+              Commercial Registration No.: {company.registrationNo}{' '}<br />
+              TRN: {company.trn}
             </p>
           </div>
           
