@@ -52,8 +52,29 @@ export const Header: React.FC = () => {
       >
         <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12 flex items-center justify-between gap-10">
           
-          {/* Left: Navigation (Desktop) */}
-          <nav className="hidden xl:flex items-center gap-7 flex-1">
+          {/* Left: Brand Lockup (links home) */}
+          <div className="flex-shrink-0">
+            <Link
+              href="/"
+              className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded"
+              aria-label="1-GLOBE home"
+            >
+              <BrandLockup />
+            </Link>
+          </div>
+
+          {/* Center: Navigation (Desktop) */}
+          <nav className="hidden xl:flex items-center justify-center gap-7 flex-1">
+            <Link
+              href="/"
+              className={`text-sm font-semibold interactive-link whitespace-nowrap ${
+                pathname === '/'
+                  ? '!text-primary'
+                  : 'text-foreground/80'
+              }`}
+            >
+              Home
+            </Link>
             <a
               href="/#ecosystem"
               onClick={(e) => handleNavClick(e, '#ecosystem')}
@@ -100,19 +121,8 @@ export const Header: React.FC = () => {
             </Link>
           </nav>
 
-          {/* Center: Brand Lockup */}
-          <div className="flex justify-start xl:justify-center flex-shrink-0">
-            <Link
-              href="/"
-              className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded"
-              aria-label="1-GLOBE home"
-            >
-              <BrandLockup />
-            </Link>
-          </div>
-
           {/* Right: Primary CTA */}
-          <div className="flex items-center justify-end gap-3 sm:gap-4 flex-1">
+          <div className="flex items-center justify-end gap-3 sm:gap-4 flex-shrink-0 ml-auto xl:ml-0">
             <Link
               href="/apps/1-optimizer"
               className="hidden sm:inline-flex items-center justify-center gap-1.5 h-10 px-5 rounded-lg btn-secondary text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
@@ -138,6 +148,17 @@ export const Header: React.FC = () => {
       {mobileMenuOpen && (
         <div className="xl:hidden fixed inset-0 z-40 bg-background pt-24 px-6 pb-10 flex flex-col justify-between animate-in fade-in slide-in-from-top-4 duration-200">
           <nav className="flex flex-col space-y-6 pt-4">
+            <Link
+              href="/"
+              onClick={() => setMobileMenuOpen(false)}
+              className={`text-2xl font-heading font-bold transition-colors ${
+                pathname === '/'
+                  ? 'text-primary'
+                  : 'text-foreground hover:text-primary'
+              }`}
+            >
+              Home
+            </Link>
             <a
               href="/#ecosystem"
               onClick={(e) => handleNavClick(e, '#ecosystem')}
