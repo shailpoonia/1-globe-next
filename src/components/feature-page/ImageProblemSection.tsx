@@ -9,7 +9,7 @@ const problems = [
     title: 'Meaningless file names',
     body: (
       <>
-        <code className="font-mono text-foreground">IMG_4837.jpg</code> tells Google Images and AI search nothing about the product in the photo.
+        <code className="font-mono text-foreground">IMG_4837.jpg</code> says nothing about the product in the photo. Descriptive metadata provides additional context and can support accessibility and discovery.
       </>
     ),
   },

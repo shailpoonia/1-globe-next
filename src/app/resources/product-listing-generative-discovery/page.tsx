@@ -291,7 +291,7 @@ export default function ArticlePage() {
                 The core product direction is entirely focused on helping merchants organize complex product information, enforce attribute consistency, and streamline the underlying listing structure. 
               </p>
               <p className="text-sm font-bold uppercase tracking-widest text-primary">
-                Note: 1-LISTING is currently launching soon.
+                Note: 1-LISTING is launching next.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
                 <Link href="/" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-semibold text-xs bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors">

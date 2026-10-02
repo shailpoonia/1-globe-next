@@ -10,6 +10,7 @@ import { CtaBand } from '@/components/shared/CtaBand'
 import * as Accordion from '@radix-ui/react-accordion'
 import { ChevronDown } from 'lucide-react'
 import { AppName } from '@/components/shared/BrandLogo'
+import { OPTIMIZER_STATUS } from '@/lib/entities'
 
 const slug = 'shopify-image-optimization'
 const resource = getResourceBySlug(slug)
@@ -280,7 +281,7 @@ export default function ArticlePage() {
                 The current 1-OPTIMIZER implementation includes compression, resizing, optional WebP conversion, AI-assisted alt text and descriptive filenames for merchant review, keyword suggestions, image editing including background changes, optimization history logs, and an optional storefront performance theme extension. All image modifications require merchant review before being saved to Shopify.
               </p>
               <p className="text-sm font-bold uppercase tracking-widest text-primary mb-8">
-                Note: 1-OPTIMIZER is currently coming soon.
+                Note: {OPTIMIZER_STATUS.full}
               </p>
               <Link href="/apps/1-optimizer" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-semibold text-xs bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors">
                 <span>Explore <AppName name="1-OPTIMIZER" /></span>

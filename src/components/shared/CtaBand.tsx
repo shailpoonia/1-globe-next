@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import { ArrowUpRight } from 'lucide-react'
 import { BrandText } from '@/components/shared/BrandLogo'
+import { OPTIMIZER_STATUS } from '@/lib/entities'
 
 export interface CtaBandProps {
   id?: string
@@ -25,11 +26,11 @@ export const CtaBand: React.FC<CtaBandProps> = ({
   id = 'cta',
   eyebrow = 'Take Control',
   headline,
-  headlinePart1 = 'Make your store',
-  italicWord,
-  headlinePart2 = 'perform',
+  headlinePart1 = 'Build',
+  italicWord = 'every layer',
+  headlinePart2 = 'for performance',
   subhead = 'The foundational tools for high-performance ecommerce.',
-  primaryCtaText = 'Coming soon to Shopify',
+  primaryCtaText = OPTIMIZER_STATUS.short,
   primaryCtaUrl = "#",
   primaryIsLink = false,
   secondaryCtaText,

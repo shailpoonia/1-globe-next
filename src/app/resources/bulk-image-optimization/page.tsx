@@ -10,6 +10,7 @@ import { CtaBand } from '@/components/shared/CtaBand'
 import * as Accordion from '@radix-ui/react-accordion'
 import { ChevronDown } from 'lucide-react'
 import { AppName } from '@/components/shared/BrandLogo'
+import { OPTIMIZER_STATUS } from '@/lib/entities'
 
 const slug = 'bulk-image-optimization'
 const resource = getResourceBySlug(slug)
@@ -304,7 +305,7 @@ export default function ArticlePage() {
                 The current implementation includes image compression, resizing, WebP conversion, AI-assisted alt text and descriptive filename generation, keyword suggestions, individual or catalog/collection processing, and image editing capabilities. It provides an optimization history and optional theme extension capabilities to evaluate storefront performance signals.
               </p>
               <p className="text-sm font-bold uppercase tracking-widest text-primary mb-8">
-                Note: 1-OPTIMIZER is currently coming soon.
+                Note: {OPTIMIZER_STATUS.full}
               </p>
               <Link href="/apps/1-optimizer" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-semibold text-xs bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors">
                 <span>Explore <AppName name="1-OPTIMIZER" /></span>

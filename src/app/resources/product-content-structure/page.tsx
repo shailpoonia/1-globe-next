@@ -288,7 +288,7 @@ export default function ArticlePage() {
                 1-LISTING is being developed around product listing performance: helping merchants build product listings with structured content for search, answer engines, and generative discovery. By focusing on data consistency and clear information architecture, it aims to streamline how catalogs are presented to complex systems.
               </p>
               <p className="text-sm font-bold uppercase tracking-widest text-primary">
-                Note: 1-LISTING is currently launching soon.
+                Note: 1-LISTING is launching next.
               </p>
             </div>
 

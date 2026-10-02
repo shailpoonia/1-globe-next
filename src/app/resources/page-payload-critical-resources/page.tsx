@@ -280,7 +280,7 @@ export default function ArticlePage() {
                 1-GLOBE approaches ecommerce performance as a comprehensive system spanning multiple disciplines, without relying on unsupported guarantees regarding rankings, conversions, or automatic Core Web Vitals success.
               </p>
               <ul className="space-y-4 text-lg text-neutral-400 mb-6">
-                <li><strong className="text-foreground"><AppName name="1-OPTIMIZER" />:</strong> Focused on image performance and source-catalog technical capabilities (currently coming soon).</li>
+                <li><strong className="text-foreground"><AppName name="1-OPTIMIZER" />:</strong> Focused on image performance and source-catalog technical capabilities (live on Shopify).</li>
                 <li><strong className="text-foreground"><AppName name="1-LISTING" />:</strong> Focused on product listing performance for complex discovery environments (launching next).</li>
                 <li><strong className="text-foreground"><AppName name="1-BLOG" />:</strong> Focused on structured content performance (currently launching soon).</li>
                 <li><strong className="text-foreground"><AppName name="1-SOCIAL" />:</strong> Focused on social media: consistent, on-brand posts built from your product catalog (currently launching soon).</li>

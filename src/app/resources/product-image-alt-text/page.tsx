@@ -10,6 +10,7 @@ import { CtaBand } from '@/components/shared/CtaBand'
 import * as Accordion from '@radix-ui/react-accordion'
 import { ChevronDown } from 'lucide-react'
 import { AppName } from '@/components/shared/BrandLogo'
+import { OPTIMIZER_STATUS } from '@/lib/entities'
 
 const slug = 'product-image-alt-text'
 const resource = getResourceBySlug(slug)
@@ -308,7 +309,7 @@ export default function ArticlePage() {
                 The application analyzes the visual contents of the image and proposes descriptive, non-stuffed alt text. However, generated metadata is strictly subject to merchant review. Store owners must approve the suggestions before they are saved to the catalog, ensuring human oversight remains central to the accessibility workflow.
               </p>
               <p className="text-sm font-bold uppercase tracking-widest text-primary mb-8">
-                Note: 1-OPTIMIZER is currently coming soon.
+                Note: {OPTIMIZER_STATUS.full}
               </p>
               <Link href="/apps/1-optimizer" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-semibold text-xs bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors">
                 <span>Explore <AppName name="1-OPTIMIZER" /></span>

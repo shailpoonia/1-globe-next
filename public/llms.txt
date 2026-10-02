@@ -1,6 +1,6 @@
 # 1-GLOBE
 
-> 1-GLOBE is an ecommerce performance technology company building tools for online merchants. Its products focus on storefront image performance, product listing performance, content performance and social media. Launch order: 1-OPTIMIZER first, then 1-LISTING, 1-BLOG and 1-SOCIAL. 1-OPTIMIZER is an image performance tool for Shopify stores (coming soon to the Shopify App Store).
+> 1-GLOBE is an ecommerce performance technology company building tools for online merchants. Its products focus on storefront image performance, product listing performance, content performance and social media. Launch order: 1-OPTIMIZER first, then 1-LISTING, 1-BLOG and 1-SOCIAL. 1-OPTIMIZER is an image performance tool for Shopify stores. It is live on Shopify, with installation activation currently being finalized.
 
 1-GLOBE is operated by ONE GLOBE (F.Z.E), Ajman Free Zone, United Arab Emirates. Contact: support@1-globe.com
 
