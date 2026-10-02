@@ -21,7 +21,7 @@ export const ProductEcosystem: React.FC = () => {
           <div className="lg:col-span-7 flex flex-col gap-4">
             <span className="text-eyebrow">The <AppName name="1-GLOBE" /> ecosystem</span>
             <h2 className="text-section-title">
-              <span className="text-brand">Every layer</span> of the store matters
+              Build <span className="text-brand">every layer</span> for performance
             </h2>
           </div>
           <div className="lg:col-span-5 flex flex-col gap-4 text-base md:text-lg leading-relaxed text-muted-foreground">

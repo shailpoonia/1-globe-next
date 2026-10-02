@@ -3,6 +3,7 @@ import { buildMetadata } from '@/lib/seo'
 import { Section } from '@/components/shared/Section'
 import Link from 'next/link'
 import { AppName } from '@/components/shared/BrandLogo'
+import { OPTIMIZER_STATUS } from '@/lib/entities'
 
 export const metadata: Metadata = buildMetadata({
   title: '1-OPTIMIZER Pricing',
@@ -20,8 +21,8 @@ export default function PricingPage() {
             <div className="text-left mb-20 max-w-3xl">
               <span className="text-eyebrow block mb-6"><AppName name="1-OPTIMIZER" /></span>
               <h1 className="text-page-title mb-6">
-                Image performance{' '}<br />
-                <span className="text-primary">Without the subscription</span>
+                Pay for{' '}<br />
+                <span className="text-primary">what you use</span>
               </h1>
               <p className="text-lead">
                 Start with 100 free image optimizations. When you need more, buy one-time image credits that never expire.
@@ -48,7 +49,7 @@ export default function PricingPage() {
                 </div>
                 <div className="flex-1"></div>
                 <div className="w-full inline-flex items-center justify-center h-14 font-semibold text-xs bg-secondary text-muted-foreground cursor-not-allowed select-none mt-6">
-                  Coming soon to Shopify
+                  {OPTIMIZER_STATUS.short}
                 </div>
               </div>
 
@@ -67,7 +68,7 @@ export default function PricingPage() {
                   <p className="text-sm font-medium text-muted-foreground">$0.02 / image</p>
                 </div>
                 <div className="w-full inline-flex items-center justify-center h-14 font-semibold text-xs bg-secondary text-muted-foreground cursor-not-allowed select-none mt-6">
-                  Coming soon to Shopify
+                  {OPTIMIZER_STATUS.short}
                 </div>
               </div>
 
@@ -86,7 +87,7 @@ export default function PricingPage() {
                   <p className="text-sm font-medium text-muted-foreground">$0.02 / image</p>
                 </div>
                 <div className="w-full inline-flex items-center justify-center h-14 font-semibold text-xs bg-secondary text-muted-foreground cursor-not-allowed select-none mt-6">
-                  Coming soon to Shopify
+                  {OPTIMIZER_STATUS.short}
                 </div>
               </div>
 
@@ -105,7 +106,7 @@ export default function PricingPage() {
                   <p className="text-sm font-medium text-muted-foreground">$0.018 / image</p>
                 </div>
                 <div className="w-full inline-flex items-center justify-center h-14 font-semibold text-xs bg-secondary text-muted-foreground cursor-not-allowed select-none mt-6">
-                  Coming soon to Shopify
+                  {OPTIMIZER_STATUS.short}
                 </div>
               </div>
 
@@ -116,9 +117,9 @@ export default function PricingPage() {
             </p>
 
             <div className="border-t border-border pt-16 flex flex-col items-center text-center">
-              <h2 className="text-card-title uppercase mb-4"><AppName name="1-OPTIMIZER" /> is <span className="text-primary">coming soon</span></h2>
+              <h2 className="text-card-title uppercase mb-4"><AppName name="1-OPTIMIZER" /> is <span className="text-primary">live on Shopify</span></h2>
               <p className="text-muted-foreground leading-relaxed mb-8 max-w-lg">
-                We are finalizing our Shopify integration. Explore the full capabilities of 1-OPTIMIZER to see how it can help you build a stronger storefront foundation.
+                Installation activation is currently being finalized. Explore the full capabilities of 1-OPTIMIZER to see how it can help you build a stronger storefront foundation.
               </p>
               <Link
                 href="/apps/1-optimizer"

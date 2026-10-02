@@ -10,6 +10,7 @@ import { CtaBand } from '@/components/shared/CtaBand'
 import * as Accordion from '@radix-ui/react-accordion'
 import { ChevronDown } from 'lucide-react'
 import { AppName } from '@/components/shared/BrandLogo'
+import { OPTIMIZER_STATUS } from '@/lib/entities'
 
 const slug = 'ecommerce-image-compression-webp'
 const resource = getResourceBySlug(slug)
@@ -134,7 +135,7 @@ export default function ArticlePage() {
                 Ecommerce storefronts rely heavily on visual media. A typical product page might load a primary photograph, several high-resolution variant images, and contextual lifestyle imagery. Across large catalogs, unoptimized images can drastically inflate page payload.
               </p>
               <p className="text-lg text-neutral-400 leading-relaxed">
-                When network transfer requirements are high—especially on mobile connections—delivering massive, uncompressed files becomes inefficient. Systematic compression can reduce this image payload and may contribute to more efficient page delivery. However, it should be clearly understood that compressing images does not automatically improve search rankings or guarantee increased conversions.
+                When network transfer requirements are high, especially on mobile connections, delivering massive, uncompressed files becomes inefficient. Systematic compression can reduce this image payload and may contribute to more efficient page delivery. However, it should be clearly understood that compressing images does not automatically improve search rankings or guarantee increased conversions.
               </p>
             </div>
 
@@ -215,7 +216,7 @@ export default function ArticlePage() {
                 Compression is only one optimization layer. Pixel dimensions represent the foundational size of the asset.
               </p>
               <p className="text-lg text-neutral-400 leading-relaxed">
-                A very large source image that is heavily compressed can still be unnecessarily large in pixel dimensions for its intended display. Conversely, a small image with poor visual quality cannot be fixed through compression. Resizing oversized source files to appropriate maximum dimensions—while ensuring product zoom and high-density displays are supported, and avoiding unnecessary enlargement—must happen alongside compression formatting.
+                A very large source image that is heavily compressed can still be unnecessarily large in pixel dimensions for its intended display. Conversely, a small image with poor visual quality cannot be fixed through compression. Resizing oversized source files to appropriate maximum dimensions (while supporting product zoom and high-density displays, and avoiding unnecessary enlargement) must happen alongside compression formatting.
               </p>
             </div>
 
@@ -277,7 +278,7 @@ export default function ArticlePage() {
             <div className="space-y-6">
               <h2 id="how-to-measure-image-compression" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">13. How to Measure Image Compression</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
-                Factual measurement requires looking at multiple signals. Merchants can compare the original file size against the compressed file size to calculate percentage reduction, but that percentage is merely a measurement—not the goal itself.
+                Factual measurement requires looking at multiple signals. Merchants can compare the original file size against the compressed file size to calculate percentage reduction, but that percentage is merely a measurement, not the goal itself.
               </p>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 A complete measurement approach evaluates the final image dimensions, the total page image payload, the number of processed, skipped, or failed images during bulk operations, and most importantly, the retained visual quality alongside any page-level performance signals.
@@ -303,7 +304,7 @@ export default function ArticlePage() {
                 The current implementation supports image compression, resizing, WebP conversion, AI-assisted alt text and descriptive filename generation, keyword suggestions, individual processing, and catalog or collection processing. It maintains an optimization history and provides optional theme extension capabilities to monitor storefront performance signals.
               </p>
               <p className="text-sm font-bold uppercase tracking-widest text-primary mb-8">
-                Note: 1-OPTIMIZER is currently coming soon.
+                Note: {OPTIMIZER_STATUS.full}
               </p>
               <Link href="/apps/1-optimizer" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-semibold text-xs bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors">
                 <span>Explore <AppName name="1-OPTIMIZER" /></span>

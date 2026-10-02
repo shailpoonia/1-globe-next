@@ -3,6 +3,7 @@ import * as Accordion from '@radix-ui/react-accordion'
 import { ChevronDown } from 'lucide-react'
 import Link from 'next/link'
 import { BrandText } from '@/components/shared/BrandLogo'
+import { OPTIMIZER_STATUS } from '@/lib/entities'
 
 export const FaqSection: React.FC = () => {
   const faqs = [
@@ -16,7 +17,7 @@ export const FaqSection: React.FC = () => {
     },
     {
       q: "What products does 1-GLOBE offer?",
-      a: "The 1-GLOBE product ecosystem includes 1-OPTIMIZER for image performance, 1-LISTING for product listing performance, 1-BLOG for content performance and 1-SOCIAL for social media. 1-OPTIMIZER is coming soon to Shopify, 1-LISTING launches next, followed by 1-BLOG and 1-SOCIAL."
+      a: "The 1-GLOBE product ecosystem includes 1-OPTIMIZER for image performance, 1-LISTING for product listing performance, 1-BLOG for content performance and 1-SOCIAL for social media. 1-OPTIMIZER has already launched on Shopify, 1-LISTING launches next, followed by 1-BLOG and 1-SOCIAL."
     },
     {
       q: "What is 1-OPTIMIZER?",
@@ -24,7 +25,7 @@ export const FaqSection: React.FC = () => {
     },
     {
       q: "Is 1-OPTIMIZER available yet?",
-      a: "1-OPTIMIZER is currently in its final stages and is coming to the Shopify App Store soon."
+      a: `1-OPTIMIZER has already launched. ${OPTIMIZER_STATUS.full}`
     },
     {
       q: "Does 1-GLOBE work with Shopify?",

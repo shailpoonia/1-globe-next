@@ -41,7 +41,7 @@ export default function ArticlePage() {
     },
     {
       q: "Why are product attributes important?",
-      a: "Structured product attributes—such as material, dimensions, and compatibility—ensure consistency across a catalog. This allows customers to compare products accurately and helps search systems categorize the listing effectively."
+      a: "Structured product attributes (such as material, dimensions, and compatibility) ensure consistency across a catalog. This allows customers to compare products accurately and helps search systems categorize the listing effectively."
     },
     {
       q: "How do product feeds relate to product listings?",
@@ -114,7 +114,7 @@ export default function ArticlePage() {
             
             <div className="space-y-6">
               <p className="text-xl text-foreground font-medium leading-relaxed">
-                As commerce evolves beyond traditional search engines, the way products are discovered is fundamentally changing. To remain accessible across modern <Link href="/resources/ecommerce-performance" className="text-primary hover:underline">ecommerce performance</Link> environments—spanning on-site search, external product feeds, answer engines, and generative discovery systems—product information must be exceptionally clear, structured, and consistent.
+                As commerce evolves beyond traditional search engines, the way products are discovered is fundamentally changing. To remain accessible across modern <Link href="/resources/ecommerce-performance" className="text-primary hover:underline">ecommerce performance</Link> environments, spanning on-site search, external product feeds, answer engines, and generative discovery systems, product information must be exceptionally clear, structured, and consistent.
               </p>
             </div>
 
@@ -187,7 +187,7 @@ export default function ArticlePage() {
             <div className="space-y-6">
               <h2 id="product-images-as-listing-information" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">7. Product Images as Listing Information</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
-                Product images are a foundational part of the product information system—they are not merely decorative elements. 
+                Product images are a foundational part of the product information system. They are not merely decorative elements. 
               </p>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 To function as effective listing data, imagery requires appropriate dimensions, highly efficient formats, descriptive filenames, and useful, context-driven alt text. For a deep dive into treating visual assets as structured data, review our guides on <Link href="/resources/product-image-alt-text" className="text-primary hover:underline">product image alt text</Link>, <Link href="/resources/ecommerce-image-optimization" className="text-primary hover:underline">ecommerce image optimization</Link>, and <Link href="/resources/ecommerce-image-compression-webp" className="text-primary hover:underline">ecommerce image compression & WebP</Link>.
@@ -291,7 +291,7 @@ export default function ArticlePage() {
                 The core product direction is entirely focused on helping merchants organize complex product information, enforce attribute consistency, and streamline the underlying listing structure. 
               </p>
               <p className="text-sm font-bold uppercase tracking-widest text-primary">
-                Note: 1-LISTING is currently launching soon.
+                Note: 1-LISTING is launching next.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
                 <Link href="/" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-semibold text-xs bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors">

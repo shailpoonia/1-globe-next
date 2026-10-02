@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import { OPTIMIZER_STATUS } from '@/lib/entities'
 
 interface AppSubNavProps {
   appName: React.ReactNode
@@ -8,7 +9,7 @@ interface AppSubNavProps {
 
 export const AppSubNav: React.FC<AppSubNavProps> = ({
   appName,
-  ctaText = "Coming soon to Shopify"
+  ctaText = OPTIMIZER_STATUS.short
 }) => {
   return (
     <div className="sticky top-[4.5rem] z-40 w-full border-b border-border bg-background">

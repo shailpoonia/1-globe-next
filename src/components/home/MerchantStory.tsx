@@ -2,7 +2,16 @@
 
 import React, { useState, useRef, useEffect, useCallback } from 'react'
 import Link from 'next/link'
-import { ArrowRight, ChevronLeft, ChevronRight, Pause, Play, BarChart3, Image as ImageIcon, LayoutTemplate, Database, Zap } from 'lucide-react'
+import { ArrowRight, ChevronLeft, ChevronRight, Pause, Play, Layers } from 'lucide-react'
+import { ENTITY_PRODUCTS } from '@/lib/entities'
+import { AppMark, AppName, type AppMarkName } from '@/components/shared/BrandLogo'
+
+// The ecosystem journey: each slide is a layer of the store, with the 1-GLOBE app that serves it.
+const journey = [
+  { label: '01 · Image', title: 'Where it starts', apps: [ENTITY_PRODUCTS['1-optimizer']], note: 'Product images are often the heaviest part of a storefront, and the first layer 1-GLOBE works on.' },
+  { label: '02 · Listing · Content', title: 'What comes next', apps: [ENTITY_PRODUCTS['1-listing'], ENTITY_PRODUCTS['1-blog']], note: 'Clear product listings and structured content build on readable product images.' },
+  { label: '03 · Social media · Store experience', title: 'Where it leads', apps: [ENTITY_PRODUCTS['1-social']], note: '1-GLOBE builds tools for each of these layers.' },
+]
 
 export const MerchantStory: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -99,13 +108,13 @@ export const MerchantStory: React.FC = () => {
               {/* Top Bar */}
               <div className="flex flex-col sm:flex-row sm:items-center justify-between px-4 sm:px-6 py-4 border-b border-neutral-800 bg-neutral-900/30 gap-2">
                 <div className="flex items-center gap-3">
-                  <BarChart3 className="w-4 h-4 text-neutral-500 shrink-0" aria-hidden="true" />
+                  <Layers className="w-4 h-4 text-neutral-500 shrink-0" aria-hidden="true" />
                   <div className="flex flex-col">
                     <span className="text-xs font-bold uppercase tracking-widest text-neutral-400">
-                      Illustrative ecommerce growth scenario
+                      Image → Listing → Content → Social media → Store experience
                     </span>
                     <span className="text-[11px] uppercase tracking-wider text-neutral-600">
-                      Illustrative scenario — not a customer case study.
+                      Every layer contributes to the performance of the store.
                     </span>
                   </div>
                 </div>
@@ -120,94 +129,29 @@ export const MerchantStory: React.FC = () => {
                 onScroll={handleScroll}
                 className="flex overflow-x-auto snap-x snap-mandatory no-scrollbar"
                 style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-                aria-label="Illustrative case study slides"
+                aria-label="1-GLOBE ecosystem slides"
               >
-                
-                {/* Slide 1: THE START */}
-                <div className="min-w-full snap-center p-6 sm:p-8 md:p-12 min-h-[400px] flex flex-col" role="group" aria-roledescription="slide">
-                  <span className="text-[13px] font-bold uppercase tracking-[0.12em] text-primary mb-4 block">01 — THE START</span>
-                  <h3 className="text-subsection-title !text-inherit uppercase mb-8">Revenue Progression</h3>
-                  
-                  <div className="flex-1 flex items-end gap-1 sm:gap-2 md:gap-4 h-full pt-8 relative">
-                    <div className="absolute top-0 left-0 w-full h-px border-t border-dashed border-neutral-800" aria-hidden="true" />
-                    <div className="absolute top-1/2 left-0 w-full h-px border-t border-dashed border-neutral-800" aria-hidden="true" />
-                    
-                    {/* Abstract Graph */}
-                    {[1, 1.2, 1.1, 1.5, 1.4, 2, 2.5, 3.2, 4.5, 6, 8, 12].map((val, i) => (
-                      <div key={i} className="flex-1 bg-neutral-800 hover:bg-neutral-700 transition-colors relative group" style={{ height: `${val * 8}%` }}>
-                        <div className="absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-neutral-900 text-xs font-mono px-2 py-1 border border-neutral-700 rounded z-10 whitespace-nowrap hidden sm:block">
-                          Mo {i+1}
+                {journey.map((step, i) => (
+                  <div key={step.label} className="min-w-full snap-center p-6 sm:p-8 md:p-12 min-h-[400px] flex flex-col" role="group" aria-roledescription="slide">
+                    <span className={`text-[13px] font-bold uppercase tracking-[0.12em] mb-4 block ${i === 0 ? 'text-primary' : 'text-neutral-500'}`}>{step.label}</span>
+                    <h3 className="text-subsection-title !text-inherit uppercase mb-8">{step.title}</h3>
+
+                    <div className={`grid grid-cols-1 gap-4 flex-1 ${step.apps.length > 1 ? 'sm:grid-cols-2' : ''}`}>
+                      {step.apps.map((app) => (
+                        <div key={app.id} className="border border-neutral-800 bg-neutral-900/20 p-4 md:p-6 flex flex-col justify-center">
+                          <AppMark app={app.id.replace(/^1-/, '') as AppMarkName} className="h-8 w-auto text-foreground mb-3 sm:mb-4" />
+                          <h4 className="text-sm font-bold uppercase tracking-widest mb-1 sm:mb-2"><AppName name={app.name} /></h4>
+                          <p className="text-xs text-neutral-400 leading-relaxed">{app.description}</p>
+                          <span className={`mt-4 text-[13px] font-bold uppercase tracking-[0.12em] ${app.href ? 'text-primary' : 'text-neutral-500'}`}>{app.badge}</span>
                         </div>
-                      </div>
-                    ))}
-                  </div>
-                  
-                  <div className="flex justify-between items-center mt-6 pt-4 border-t border-neutral-800/50">
-                    <span className="font-mono text-sm sm:text-base text-neutral-400">$400 / mo</span>
-                    <ArrowRight className="w-4 h-4 text-neutral-600 hidden sm:block" aria-hidden="true" />
-                    <span className="font-mono text-lg sm:text-xl md:text-2xl font-bold text-foreground">$30,000 / mo</span>
-                  </div>
-                </div>
-
-                {/* Slide 2: THE CONSTRAINTS */}
-                <div className="min-w-full snap-center p-6 sm:p-8 md:p-12 min-h-[400px] flex flex-col" role="group" aria-roledescription="slide">
-                  <span className="text-[13px] font-bold uppercase tracking-[0.12em] text-neutral-500 mb-4 block">02 — WHAT WAS HOLDING IT BACK</span>
-                  <h3 className="text-subsection-title !text-inherit uppercase mb-8">Technical Constraints</h3>
-                  
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 flex-1">
-                    <div className="border border-neutral-800 bg-neutral-900/20 p-4 md:p-6 flex flex-col justify-center">
-                      <ImageIcon className="w-5 h-5 text-neutral-500 mb-3 sm:mb-4" aria-hidden="true" />
-                      <h4 className="text-sm font-bold uppercase tracking-widest mb-1 sm:mb-2">Image Payload</h4>
-                      <p className="text-xs text-neutral-400 leading-relaxed">Massive uncompressed assets slowing down initial render.</p>
-                    </div>
-                    <div className="border border-neutral-800 bg-neutral-900/20 p-4 md:p-6 flex flex-col justify-center">
-                      <LayoutTemplate className="w-5 h-5 text-neutral-500 mb-3 sm:mb-4" aria-hidden="true" />
-                      <h4 className="text-sm font-bold uppercase tracking-widest mb-1 sm:mb-2">Content Structure</h4>
-                      <p className="text-xs text-neutral-400 leading-relaxed">Poor editorial hierarchy reducing search visibility.</p>
-                    </div>
-                    <div className="border border-neutral-800 bg-neutral-900/20 p-4 md:p-6 flex flex-col justify-center">
-                      <Database className="w-5 h-5 text-neutral-500 mb-3 sm:mb-4" aria-hidden="true" />
-                      <h4 className="text-sm font-bold uppercase tracking-widest mb-1 sm:mb-2">Product Data</h4>
-                      <p className="text-xs text-neutral-400 leading-relaxed">Missing attributes creating discoverability gaps.</p>
-                    </div>
-                    <div className="border border-neutral-800 bg-neutral-900/20 p-4 md:p-6 flex flex-col justify-center">
-                      <Zap className="w-5 h-5 text-neutral-500 mb-3 sm:mb-4" aria-hidden="true" />
-                      <h4 className="text-sm font-bold uppercase tracking-widest mb-1 sm:mb-2">Storefront Perf</h4>
-                      <p className="text-xs text-neutral-400 leading-relaxed">Storefront performance constraints affecting the mobile experience.</p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Slide 3: WHAT CHANGED */}
-                <div className="min-w-full snap-center p-6 sm:p-8 md:p-12 min-h-[400px] flex flex-col" role="group" aria-roledescription="slide">
-                  <span className="text-[13px] font-bold uppercase tracking-[0.12em] text-primary mb-4 block">03 — WHAT CHANGED</span>
-                  <h3 className="text-subsection-title !text-inherit uppercase mb-8">Targeted Interventions</h3>
-                  
-                  <div className="flex-1 flex items-end gap-1 sm:gap-2 md:gap-4 h-full pt-8 relative">
-                    {/* Intervention markers */}
-                    <div className="absolute top-1/3 left-[40%] w-px h-2/3 bg-primary/50 border-l border-dashed border-primary z-0" aria-hidden="true" />
-                    <div className="absolute top-1/4 left-[65%] w-px h-3/4 bg-primary/50 border-l border-dashed border-primary z-0" aria-hidden="true" />
-                    
-                    <div className="absolute top-[30%] left-[40%] -translate-x-1/2 bg-primary/10 border border-primary/30 text-primary text-xs font-bold uppercase px-2 py-1 rounded hidden sm:block">
-                      Img Opt
-                    </div>
-                    <div className="absolute top-[20%] left-[65%] -translate-x-1/2 bg-primary/10 border border-primary/30 text-primary text-xs font-bold uppercase px-2 py-1 rounded hidden sm:block">
-                      Data Struct
+                      ))}
                     </div>
 
-                    {/* Abstract Graph */}
-                    {[1, 1.2, 1.1, 1.5, 1.4, 2, 3.5, 5.2, 7.5, 9, 10.5, 12].map((val, i) => (
-                      <div key={i} className={`flex-1 transition-colors relative z-10 ${i >= 6 ? 'bg-primary/80 hover:bg-primary' : 'bg-neutral-800 hover:bg-neutral-700'}`} style={{ height: `${val * 8}%` }} />
-                    ))}
+                    <div className="mt-6 pt-4 border-t border-neutral-800/50">
+                      <p className="text-xs text-neutral-400 leading-relaxed">{step.note}</p>
+                    </div>
                   </div>
-                  
-                  <div className="mt-6 pt-4 border-t border-neutral-800/50">
-                    <p className="text-xs text-neutral-400 leading-relaxed">
-                      Addressing technical constraints can strengthen the foundation on which acquisition and growth efforts operate.
-                    </p>
-                  </div>
-                </div>
-
+                ))}
               </div>
               
               {/* Controls */}

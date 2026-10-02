@@ -43,7 +43,7 @@ export const shareImage = {
   url: '/og-image.jpg',
   width: 1200,
   height: 630,
-  alt: '1-GLOBE: The performance layer for ecommerce. Image, listing, content and social performance tools for Shopify merchants.',
+  alt: "1-GLOBE: Build a store that's built to perform. Ecommerce performance technology for online stores: images, listings, content and social media.",
 };
 
 interface BuildMetadataInput {

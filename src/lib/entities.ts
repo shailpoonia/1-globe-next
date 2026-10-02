@@ -21,7 +21,13 @@ export const PERFORMANCE_CATEGORIES = {
   SOCIAL: 'Social Media',
 } as const;
 
-export type ProductStatus = 'available' | 'launching-soon' | 'coming-soon';
+export type ProductStatus = 'live' | 'launching-soon';
+
+// 1-OPTIMIZER launch state. Every page that mentions it reads these two lines.
+export const OPTIMIZER_STATUS = {
+  short: 'Live on Shopify',
+  full: '1-OPTIMIZER is live on Shopify, with installation activation currently being finalized.',
+} as const;
 
 export interface EcosystemProduct {
   id: string;
@@ -50,8 +56,8 @@ export const ENTITY_PRODUCTS: Record<string, EcosystemProduct> = {
     layer: 'Images',
     category: PERFORMANCE_CATEGORIES.IMAGE,
     description: '1-OPTIMIZER is an image performance tool for Shopify stores that helps merchants optimize product images, improve image metadata, and work with image editing and storefront performance tools.',
-    status: 'coming-soon',
-    badge: 'Coming soon to Shopify',
+    status: 'live',
+    badge: OPTIMIZER_STATUS.short,
     href: '/apps/1-optimizer',
     ctaLabel: 'Explore 1-OPTIMIZER',
     '@id': `${siteConfig.url}/apps/1-optimizer#software`,

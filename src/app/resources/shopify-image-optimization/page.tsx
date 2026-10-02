@@ -10,6 +10,7 @@ import { CtaBand } from '@/components/shared/CtaBand'
 import * as Accordion from '@radix-ui/react-accordion'
 import { ChevronDown } from 'lucide-react'
 import { AppName } from '@/components/shared/BrandLogo'
+import { OPTIMIZER_STATUS } from '@/lib/entities'
 
 const slug = 'shopify-image-optimization'
 const resource = getResourceBySlug(slug)
@@ -45,7 +46,7 @@ export default function ArticlePage() {
     },
     {
       q: "Should all Shopify images be lazy loaded?",
-      a: "No. While lazy loading is beneficial for images below the fold, critical above-the-fold images—like the main hero banner or primary product image—should generally be loaded immediately to improve the Largest Contentful Paint (LCP) performance metric."
+      a: "No. While lazy loading is beneficial for images below the fold, critical above-the-fold images, like the main hero banner or primary product image, should generally be loaded immediately to improve the Largest Contentful Paint (LCP) performance metric."
     },
     {
       q: "Does alt text help with accessibility?",
@@ -126,7 +127,7 @@ export default function ArticlePage() {
                 Product imagery often accounts for the majority of a page's total weight. When a merchant uploads an unnecessarily large image, it can increase the total bytes transferred to the shopper's browser. 
               </p>
               <p className="text-lg text-neutral-400 leading-relaxed">
-                This payload matters. Oversized images can delay rendering, consuming bandwidth that could be used for other critical resources. This is especially true on mobile devices, where connection speeds may vary. However, visual quality remains crucial for ecommerce. True optimization is a careful balance—reducing file sizes while retaining the crispness and detail shoppers expect, rather than simply making every image as small as possible.
+                This payload matters. Oversized images can delay rendering, consuming bandwidth that could be used for other critical resources. This is especially true on mobile devices, where connection speeds may vary. However, visual quality remains crucial for ecommerce. True optimization is a careful balance: reducing file sizes while retaining the crispness and detail shoppers expect, rather than simply making every image as small as possible.
               </p>
             </div>
 
@@ -184,7 +185,7 @@ export default function ArticlePage() {
             <div className="space-y-6">
               <h2 id="lazy-loading-and-image-loading-priority" className="text-3xl md:text-4xl font-heading font-bold text-foreground scroll-mt-28">6. Lazy loading and image loading priority</h2>
               <p className="text-lg text-neutral-400 leading-relaxed">
-                Not all images need to be loaded the moment a shopper opens a page. Images located below the fold—further down the page—can often be "lazy loaded," meaning the browser delays downloading them until the user scrolls near them.
+                Not all images need to be loaded the moment a shopper opens a page. Images located below the fold (further down the page) can often be "lazy loaded," meaning the browser delays downloading them until the user scrolls near them.
               </p>
               <p className="text-lg text-neutral-400 leading-relaxed">
                 However, indiscriminate lazy loading can be counterproductive. Important above-the-fold imagery, particularly the image responsible for the Largest Contentful Paint (LCP) metric like a main product photo, should typically load as quickly as possible. Merchants should consult current Shopify and Google developer guidance to understand which critical images to prioritize.
@@ -280,7 +281,7 @@ export default function ArticlePage() {
                 The current 1-OPTIMIZER implementation includes compression, resizing, optional WebP conversion, AI-assisted alt text and descriptive filenames for merchant review, keyword suggestions, image editing including background changes, optimization history logs, and an optional storefront performance theme extension. All image modifications require merchant review before being saved to Shopify.
               </p>
               <p className="text-sm font-bold uppercase tracking-widest text-primary mb-8">
-                Note: 1-OPTIMIZER is currently coming soon.
+                Note: {OPTIMIZER_STATUS.full}
               </p>
               <Link href="/apps/1-optimizer" className="interactive-btn inline-flex items-center justify-center h-12 px-8 font-semibold text-xs bg-foreground text-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary hover:bg-foreground/90 transition-colors">
                 <span>Explore <AppName name="1-OPTIMIZER" /></span>

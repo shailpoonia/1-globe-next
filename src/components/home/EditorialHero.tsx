@@ -44,17 +44,14 @@ export const EditorialHero: React.FC = () => {
           </div>
           
           <h1 className="font-heading font-bold text-5xl sm:text-[3.5rem] md:text-[4.25rem] lg:text-[4.75rem] tracking-tight leading-[1.05] uppercase text-white relative z-10">
-            THE{' '}<br />
-            <span className="text-primary">PERFORMANCE LAYER</span>{' '}<br />
-            FOR ECOMMERCE
+            BUILD A STORE{' '}<br />
+            THAT&rsquo;S{' '}<span className="text-primary">BUILT</span>{' '}<br />
+            <span className="text-primary">TO PERFORM</span>
           </h1>
 
           <div className="space-y-8 max-w-2xl">
             <p className="text-lg sm:text-xl lg:text-2xl text-neutral-300 font-medium leading-tight">
-              1-GLOBE builds technical tools that make online stores faster, smarter, and easier to grow.
-            </p>
-            <p className="text-xs font-bold text-neutral-400 uppercase tracking-widest border-l-2 border-primary pl-4 py-1">
-              Business first. Technology second. Performance always.
+              Ecommerce performance is rarely about one thing. Your images, product listings, content, storefront and social media presence all work together. 1-GLOBE helps you understand and strengthen the layers that matter, so you can build a stronger foundation instead of solving problems one at a time.
             </p>
           </div>
 
@@ -64,14 +61,14 @@ export const EditorialHero: React.FC = () => {
               href="#ecosystem"
               className="interactive-btn inline-flex items-center justify-center gap-3 h-14 px-8 font-semibold text-[13px] bg-primary text-primary-foreground hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary w-full sm:w-auto"
             >
-              <span>Explore products</span>
+              <span>Explore the ecosystem</span>
               <ArrowDown className="w-4 h-4" />
             </Link>
             <Link
               href="/apps/1-optimizer"
               className="interactive-btn inline-flex items-center justify-center gap-3 h-14 px-8 font-semibold text-[13px] btn-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary w-full sm:w-auto"
             >
-              <span className="inline-flex items-center gap-2.5">Discover <AppLockup app="optimizer" name="1-OPTIMIZER" className="text-[15px]" /></span>
+              <span className="inline-flex items-center gap-2.5">Explore <AppLockup app="optimizer" name="1-OPTIMIZER" className="text-[15px]" /></span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>

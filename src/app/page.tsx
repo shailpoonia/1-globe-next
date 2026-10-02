@@ -13,7 +13,7 @@ import { FaqSection } from '@/components/home/FaqSection'
 
 
 export const metadata: Metadata = buildMetadata({
-  title: '1-GLOBE — Ecommerce Performance Technology for Shopify Stores',
+  title: '1-GLOBE | Ecommerce Performance Technology for Online Stores',
   description: '1-GLOBE builds ecommerce performance technology. Our products help online merchants improve image payloads, content structure, and storefront performance.',
   path: '/',
   absoluteTitle: true,
@@ -42,9 +42,9 @@ export default function HomePage() {
 
       {/* 11: Final CTA */}
       <CtaBand
-        headlinePart1="Make your store"
-        italicWord="perform"
-        headlinePart2="better"
+        headlinePart1="Build"
+        italicWord="every layer"
+        headlinePart2="for performance"
         subhead="Start with the performance problem."
         primaryCtaText="Explore 1-OPTIMIZER"
         primaryCtaUrl="/apps/1-optimizer"

@@ -10,7 +10,7 @@ import { EditorialFeatures } from '@/components/feature-page/EditorialFeatures'
 import { ImageProblemSection } from '@/components/feature-page/ImageProblemSection'
 import { AppFaqSection } from '@/components/feature-page/AppFaqSection'
 
-import { ENTITY_PRODUCTS } from '@/lib/entities'
+import { ENTITY_PRODUCTS, OPTIMIZER_STATUS } from '@/lib/entities'
 import { SoftwareAppSchema, AppBreadcrumbSchema } from '@/components/shared/AppSchemaOrg'
 import { AppName } from '@/components/shared/BrandLogo'
 
@@ -40,12 +40,12 @@ export default function ImageOptimizerPage() {
             <span className="hidden sm:inline-block text-xs font-medium text-muted-foreground uppercase tracking-wide">Shopify Image Optimizer</span>
           </div>
         }
-        ctaText="Coming soon to Shopify"
+        ctaText={OPTIMIZER_STATUS.short}
       />
 
       {/* 1. App Hero with AI Pipeline Card */}
       <AppHero
-        headline={<>Faster storefronts{' '}<br />Better product imagery{' '}<br /><span className="text-primary">Stronger foundations</span></>}
+        headline={<>A great product photo{' '}<br />needs <span className="text-primary">great context</span> too</>}
         subhead={
           <div className="space-y-6">
             <p>Marketing drives traffic, but your storefront infrastructure dictates performance. Heavy payloads and missing metadata can undermine your acquisition efforts.</p>
@@ -55,7 +55,7 @@ export default function ImageOptimizerPage() {
             </div>
           </div>
         }
-        primaryCtaText="Coming soon to Shopify"
+        primaryCtaText={OPTIMIZER_STATUS.short}
         secondaryCtaText="See how it works"
         secondaryCtaUrl="#features"
         heroMoment={<AIPipelineHeroCard />}
@@ -80,7 +80,7 @@ export default function ImageOptimizerPage() {
         italicWord="better"
         headlinePart2="performance?"
         subhead="Explore how 1-OPTIMIZER is designed to improve image performance across your catalog."
-        primaryCtaText="Coming soon to Shopify"
+        primaryCtaText={OPTIMIZER_STATUS.short}
         primaryIsLink={false}
         secondaryCtaText="View pricing"
         secondaryCtaUrl="/pricing"

@@ -1,5 +1,6 @@
 import React from 'react'
 import { BrandText } from '@/components/shared/BrandLogo'
+import { OPTIMIZER_STATUS } from '@/lib/entities'
 
 export interface AppHeroProps {
   eyebrow?: React.ReactNode
@@ -15,7 +16,7 @@ export const AppHero: React.FC<AppHeroProps> = ({
   eyebrow = "1-OPTIMIZER",
   headline = "Make every product image work harder.",
   subhead = "Compress, optimize and support image context across your Shopify catalog.",
-  primaryCtaText = "Coming soon to Shopify",
+  primaryCtaText = OPTIMIZER_STATUS.short,
   secondaryCtaText = "See how it works",
   secondaryCtaUrl = "#how",
   heroMoment

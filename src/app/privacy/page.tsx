@@ -107,13 +107,13 @@ export default function PrivacyPage() {
               </p>
               <ul className="list-disc pl-6 space-y-2">
                 <li>
-                  <code className="text-xs text-primary bg-primary/10 px-1.5 py-0.5 rounded">customers/data_request</code> &mdash; If a customer requests their data from your store, Shopify forwards the request to us. Because our apps process catalog image metadata rather than customer PII, we confirm whether any relevant records exist.
+                  <code className="text-xs text-primary bg-primary/10 px-1.5 py-0.5 rounded">customers/data_request</code>: If a customer requests their data from your store, Shopify forwards the request to us. Because our apps process catalog image metadata rather than customer PII, we confirm whether any relevant records exist.
                 </li>
                 <li>
-                  <code className="text-xs text-primary bg-primary/10 px-1.5 py-0.5 rounded">customers/redact</code> &mdash; If a customer requests erasure of their personal information, we remove any corresponding data if present.
+                  <code className="text-xs text-primary bg-primary/10 px-1.5 py-0.5 rounded">customers/redact</code>: If a customer requests erasure of their personal information, we remove any corresponding data if present.
                 </li>
                 <li>
-                  <code className="text-xs text-primary bg-primary/10 px-1.5 py-0.5 rounded">shop/redact</code> &mdash; Within 48 hours of receiving notification that you have uninstalled our app or closed your Shopify store, we purge all store tokens, API credentials, and cached asset records from our database.
+                  <code className="text-xs text-primary bg-primary/10 px-1.5 py-0.5 rounded">shop/redact</code>: Within 48 hours of receiving notification that you have uninstalled our app or closed your Shopify store, we purge all store tokens, API credentials, and cached asset records from our database.
                 </li>
               </ul>
             </section>
