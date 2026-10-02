@@ -34,7 +34,7 @@ export default function ArticlePage() {
     },
     {
       q: "What makes good ecommerce alt text?",
-      a: "Good ecommerce alt text accurately describes the meaningful visual details of the product shown in the image—such as its type, color, material, and defining features—while remaining concise and avoiding keyword stuffing."
+      a: "Good ecommerce alt text accurately describes the meaningful visual details of the product shown in the image (such as its type, color, material, and defining features) while remaining concise and avoiding keyword stuffing."
     },
     {
       q: "Should product image alt text contain keywords?",
@@ -263,7 +263,7 @@ export default function ArticlePage() {
                 Writing meaningful text alternatives is a pillar of web accessibility. It allows users utilizing assistive technologies to engage with the visual aspects of a storefront.
               </p>
               <p className="text-lg text-neutral-400 leading-relaxed">
-                When an image is purely decorative—meaning it adds no information and is only there for aesthetic reasons—it is often best practice to leave the alt attribute empty (<code className="bg-secondary px-1.5 py-0.5 rounded text-sm text-foreground">alt=""</code>). This tells the screen reader to skip the image entirely, preventing the user from being bogged down by unnecessary repetition. While accurate alt text is critical for accessibility, writing good alt text does not automatically make a store legally compliant; it is merely one necessary step in a broader inclusive design approach.
+                When an image is purely decorative, meaning it adds no information and is only there for aesthetic reasons, it is often best practice to leave the alt attribute empty (<code className="bg-secondary px-1.5 py-0.5 rounded text-sm text-foreground">alt=""</code>). This tells the screen reader to skip the image entirely, preventing the user from being bogged down by unnecessary repetition. While accurate alt text is critical for accessibility, writing good alt text does not automatically make a store legally compliant; it is merely one necessary step in a broader inclusive design approach.
               </p>
             </div>
 
@@ -303,7 +303,7 @@ export default function ArticlePage() {
             <div className="bg-secondary/30 p-8 md:p-12 mt-16 border border-border rounded-lg">
               <h2 id="how-1-optimizer-approaches-image-metadata" className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-6 scroll-mt-28">14. How <AppName name="1-OPTIMIZER" /> approaches image metadata</h2>
               <p className="text-lg text-neutral-400 leading-relaxed mb-6">
-                1-OPTIMIZER is an image performance tool being built for Shopify. Rather than forcing merchants to manually type descriptions for thousands of variants, the current 1-OPTIMIZER implementation includes AI-assisted alt text and descriptive filename generation.
+                1-OPTIMIZER is an image performance tool for Shopify. Rather than forcing merchants to manually type descriptions for thousands of variants, the current 1-OPTIMIZER implementation includes AI-assisted alt text and descriptive filename generation.
               </p>
               <p className="text-lg text-neutral-400 leading-relaxed mb-6">
                 The application analyzes the visual contents of the image and proposes descriptive, non-stuffed alt text. However, generated metadata is strictly subject to merchant review. Store owners must approve the suggestions before they are saved to the catalog, ensuring human oversight remains central to the accessibility workflow.

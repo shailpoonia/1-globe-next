@@ -13,7 +13,7 @@ import { FaqSection } from '@/components/home/FaqSection'
 
 
 export const metadata: Metadata = buildMetadata({
-  title: '1-GLOBE — Ecommerce Performance Technology for Online Stores',
+  title: '1-GLOBE | Ecommerce Performance Technology for Online Stores',
   description: '1-GLOBE builds ecommerce performance technology. Our products help online merchants improve image payloads, content structure, and storefront performance.',
   path: '/',
   absoluteTitle: true,

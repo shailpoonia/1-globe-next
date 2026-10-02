@@ -119,7 +119,7 @@ export default function EcommercePerformancePage() {
                 While Shopify provides a robust global infrastructure, merchants are still responsible for the weight of the assets they upload and the quality of the data they input.
               </p>
               <p className="text-lg text-neutral-400 leading-relaxed">
-                Shopify's CDN handles delivery efficiently, but an uncompressed 5MB image still requires a 5MB transfer. Likewise, Shopify's theme engine outputs the metadata you provide—if your filenames are generic and your alt text is missing, the platform cannot invent context for you. Apps and customizations should complement the core platform without introducing unnecessary render-blocking scripts or heavy tracking payloads.
+                Shopify's CDN handles delivery efficiently, but an uncompressed 5MB image still requires a 5MB transfer. Likewise, Shopify's theme engine outputs the metadata you provide. If your filenames are generic and your alt text is missing, the platform cannot invent context for you. Apps and customizations should complement the core platform without introducing unnecessary render-blocking scripts or heavy tracking payloads.
               </p>
             </div>
 

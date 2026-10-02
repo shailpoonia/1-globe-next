@@ -51,7 +51,7 @@ export const EditorialHero: React.FC = () => {
 
           <div className="space-y-8 max-w-2xl">
             <p className="text-lg sm:text-xl lg:text-2xl text-neutral-300 font-medium leading-tight">
-              Ecommerce performance is rarely about one thing. Your images, product listings, content, storefront and social media presence all work together. 1-GLOBE helps you understand and strengthen the layers that matter — so you can build a stronger foundation instead of solving problems one at a time.
+              Ecommerce performance is rarely about one thing. Your images, product listings, content, storefront and social media presence all work together. 1-GLOBE helps you understand and strengthen the layers that matter, so you can build a stronger foundation instead of solving problems one at a time.
             </p>
           </div>
 

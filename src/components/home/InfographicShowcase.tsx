@@ -98,7 +98,7 @@ export const InfographicShowcase: React.FC = () => {
           
           <div className="text-center mt-8">
             <p className="text-sm font-semibold text-neutral-400">
-              From comforters to sneakers to cookware — if your store has product photos, <BrandWordmark /> makes them work.
+              From comforters to sneakers to cookware, if your store has product photos, <BrandWordmark /> makes them work.
             </p>
           </div>
         </div>
@@ -296,7 +296,7 @@ const Slide2Content: React.FC = () => {
            </div>
            <div>
              <div className="text-[13px] text-primary font-bold uppercase tracking-wider mb-1">Blog Post Published</div>
-             <h4 className="text-sm font-semibold text-slate-200 leading-tight mb-2">The Art of Sanganer Hand Block Printing — A Bedroom Story</h4>
+             <h4 className="text-sm font-semibold text-slate-200 leading-tight mb-2">The Art of Sanganer Hand Block Printing: A Bedroom Story</h4>
              <div className="text-[13px] text-slate-400 flex items-center gap-1">
                <LinkIcon className="w-3 h-3" /> Links directly to product
              </div>

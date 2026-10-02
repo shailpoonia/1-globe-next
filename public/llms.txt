@@ -7,7 +7,7 @@
 ## Product
 
 - [1-OPTIMIZER](https://1-globe.com/apps/1-optimizer): Shopify image optimizer for compression, resizing, WebP conversion, AI-assisted alt text and filenames (for merchant review), image editing and a storefront performance theme extension.
-- [1-OPTIMIZER pricing](https://1-globe.com/pricing): 100 free image optimizations per store, then one-time image credits that never expire ($0.018–$0.02 per image), billed through Shopify.
+- [1-OPTIMIZER pricing](https://1-globe.com/pricing): 100 free image optimizations per store, then one-time image credits that never expire ($0.018 to $0.02 per image), billed through Shopify.
 
 ## Guides
 

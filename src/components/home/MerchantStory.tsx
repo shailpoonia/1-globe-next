@@ -105,7 +105,7 @@ export const MerchantStory: React.FC = () => {
                       Illustrative ecommerce growth scenario
                     </span>
                     <span className="text-[11px] uppercase tracking-wider text-neutral-600">
-                      Illustrative scenario — not a customer case study.
+                      Illustrative scenario, not a customer case study.
                     </span>
                   </div>
                 </div>
@@ -125,7 +125,7 @@ export const MerchantStory: React.FC = () => {
                 
                 {/* Slide 1: THE START */}
                 <div className="min-w-full snap-center p-6 sm:p-8 md:p-12 min-h-[400px] flex flex-col" role="group" aria-roledescription="slide">
-                  <span className="text-[13px] font-bold uppercase tracking-[0.12em] text-primary mb-4 block">01 — THE START</span>
+                  <span className="text-[13px] font-bold uppercase tracking-[0.12em] text-primary mb-4 block">01 · THE START</span>
                   <h3 className="text-subsection-title !text-inherit uppercase mb-8">Revenue Progression</h3>
                   
                   <div className="flex-1 flex items-end gap-1 sm:gap-2 md:gap-4 h-full pt-8 relative">
@@ -151,7 +151,7 @@ export const MerchantStory: React.FC = () => {
 
                 {/* Slide 2: THE CONSTRAINTS */}
                 <div className="min-w-full snap-center p-6 sm:p-8 md:p-12 min-h-[400px] flex flex-col" role="group" aria-roledescription="slide">
-                  <span className="text-[13px] font-bold uppercase tracking-[0.12em] text-neutral-500 mb-4 block">02 — WHAT WAS HOLDING IT BACK</span>
+                  <span className="text-[13px] font-bold uppercase tracking-[0.12em] text-neutral-500 mb-4 block">02 · WHAT WAS HOLDING IT BACK</span>
                   <h3 className="text-subsection-title !text-inherit uppercase mb-8">Technical Constraints</h3>
                   
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 flex-1">
@@ -180,7 +180,7 @@ export const MerchantStory: React.FC = () => {
 
                 {/* Slide 3: WHAT CHANGED */}
                 <div className="min-w-full snap-center p-6 sm:p-8 md:p-12 min-h-[400px] flex flex-col" role="group" aria-roledescription="slide">
-                  <span className="text-[13px] font-bold uppercase tracking-[0.12em] text-primary mb-4 block">03 — WHAT CHANGED</span>
+                  <span className="text-[13px] font-bold uppercase tracking-[0.12em] text-primary mb-4 block">03 · WHAT CHANGED</span>
                   <h3 className="text-subsection-title !text-inherit uppercase mb-8">Targeted Interventions</h3>
                   
                   <div className="flex-1 flex items-end gap-1 sm:gap-2 md:gap-4 h-full pt-8 relative">
