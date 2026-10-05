@@ -4,10 +4,12 @@
 
 1-GLOBE is operated by ONE GLOBE (F.Z.E), Ajman Free Zone, United Arab Emirates. Contact: support@1-globe.com
 
-## Product
+## Products
 
 - [1-OPTIMIZER](https://1-globe.com/apps/1-optimizer): Shopify image optimizer for compression, resizing, WebP conversion, AI-assisted alt text and filenames (for merchant review), image editing and a storefront performance theme extension.
 - [1-OPTIMIZER pricing](https://1-globe.com/pricing): 100 free image optimizations per store, then one-time image credits that never expire ($0.018 to $0.02 per image), billed through Shopify.
+- [1-BLOG](https://1-globe.com/apps/1-blog): Launching soon. Designed to generate structured blog posts from a store's own product catalog, for the merchant to review and edit.
+- [1-SOCIAL](https://1-globe.com/apps/1-social): Launching soon. Designed to generate social posts from a store's product catalog, then schedule and auto-publish them across platforms from one dashboard.
 
 ## Guides
 

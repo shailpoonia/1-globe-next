@@ -82,7 +82,8 @@ export const ENTITY_PRODUCTS: Record<string, EcosystemProduct> = {
     description: 'Content performance for online stores, focused on building structured content around product catalogs.',
     status: 'launching-soon',
     badge: 'Launching soon',
-    href: null,
+    href: '/apps/1-blog',
+    ctaLabel: 'Explore 1-BLOG',
   },
   '1-social': {
     id: '1-social',
@@ -93,7 +94,8 @@ export const ENTITY_PRODUCTS: Record<string, EcosystemProduct> = {
     description: "Keep your store's social presence consistent, with on-brand posts built from your product catalog.",
     status: 'launching-soon',
     badge: 'Launching soon',
-    href: null,
+    href: '/apps/1-social',
+    ctaLabel: 'Explore 1-SOCIAL',
   },
 };
 

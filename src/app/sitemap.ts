@@ -10,6 +10,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '',
     '/about',
     '/apps/1-optimizer',
+    '/apps/1-blog',
+    '/apps/1-social',
     '/pricing',
     '/contact',
     '/privacy',

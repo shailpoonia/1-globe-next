@@ -142,7 +142,7 @@ export const MerchantStory: React.FC = () => {
                           <AppMark app={app.id.replace(/^1-/, '') as AppMarkName} className="h-8 w-auto text-foreground mb-3 sm:mb-4" />
                           <h4 className="text-sm font-bold uppercase tracking-widest mb-1 sm:mb-2"><AppName name={app.name} /></h4>
                           <p className="text-xs text-neutral-400 leading-relaxed">{app.description}</p>
-                          <span className={`mt-4 text-[13px] font-bold uppercase tracking-[0.12em] ${app.href ? 'text-primary' : 'text-neutral-500'}`}>{app.badge}</span>
+                          <span className={`mt-4 text-[13px] font-bold uppercase tracking-[0.12em] ${app.status === 'live' ? 'text-primary' : 'text-neutral-500'}`}>{app.badge}</span>
                         </div>
                       ))}
                     </div>

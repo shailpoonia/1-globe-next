@@ -5,11 +5,11 @@ import { ArrowRight } from 'lucide-react'
 import { PRODUCT_LIST } from '@/lib/entities'
 import { AppMark, AppName, BrandText, type AppMarkName } from '@/components/shared/BrandLogo'
 
-// Cards come from the single app list in entities.ts; the live app (with a page) is highlighted.
+// Cards come from the single app list in entities.ts; the live app is highlighted.
 const products = PRODUCT_LIST.map((p) => ({
   ...p,
   mark: p.id.replace(/^1-/, '') as AppMarkName,
-  highlight: p.href !== null,
+  highlight: p.status === 'live',
 }))
 
 // Light section: `reading-light` swaps the colour tokens to the light palette.
