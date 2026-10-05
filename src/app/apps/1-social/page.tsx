@@ -74,8 +74,8 @@ export default function SocialAppPage() {
       <AppFeatureCards
         id="authentic"
         eyebrow="Authentic content"
-        background="bg-secondary/20"
-        headline={<>Your data{' '}<br />Your story{' '}<br />Your <span className="text-primary">voice</span></>}
+        background="reading-light"
+        headline={<>Your data{' '}<br />Your story{' '}<br />Your <span className="text-brand">voice</span></>}
         subhead="1-SOCIAL uses AI to create posts, but they are not generic AI posts. They come from your own products, your own data and your own story, so what you share sounds like you and stays true to what you sell."
         features={[
           { icon: Fingerprint, title: 'Authentic by design', body: 'Every post is built from your catalog and your brand story, not from recycled templates or whatever is trending.' },
