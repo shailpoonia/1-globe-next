@@ -1,5 +1,5 @@
 import { Metadata } from 'next'
-import { LayoutDashboard, Sparkles, CalendarDays, Send } from 'lucide-react'
+import { LayoutDashboard, Sparkles, CalendarDays, Send, Fingerprint, Database, Gauge, Megaphone } from 'lucide-react'
 import { buildMetadata } from '@/lib/seo'
 import { ENTITY_PRODUCTS } from '@/lib/entities'
 import { CtaBand } from '@/components/shared/CtaBand'
@@ -27,6 +27,10 @@ const faqs = [
   {
     q: 'Do I have to write the posts myself?',
     a: 'No. 1-SOCIAL generates posts and captions from your products. You can review and edit them before they are scheduled.',
+  },
+  {
+    q: 'Is this just AI-generated content?',
+    a: 'AI does the writing, but the substance comes from you: your products, your data and your story. Each post shows a confidence level for how well it is backed by your own data, so what you publish is authentic rather than generic.',
   },
   {
     q: 'Which platforms will 1-SOCIAL support?',
@@ -67,7 +71,22 @@ export default function SocialAppPage() {
         heroMoment={<SocialHeroCard />}
       />
 
+      <AppFeatureCards
+        id="authentic"
+        eyebrow="Authentic content"
+        background="bg-secondary/20"
+        headline={<>Your data{' '}<br />Your story{' '}<br />Your <span className="text-primary">voice</span></>}
+        subhead="1-SOCIAL uses AI to create posts, but they are not generic AI posts. They come from your own products, your own data and your own story, so what you share sounds like you and stays true to what you sell."
+        features={[
+          { icon: Fingerprint, title: 'Authentic by design', body: 'Every post is built from your catalog and your brand story, not from recycled templates or whatever is trending.' },
+          { icon: Database, title: 'Clean, consistent facts', body: 'Product names and details come straight from your catalog, so every post matches your listings on every platform.' },
+          { icon: Gauge, title: 'A confidence level for every post', body: 'Each post shows how well it is backed by your own data, so you know what to check before it is scheduled.' },
+          { icon: Megaphone, title: 'One voice everywhere', body: 'The same story on every platform, so your followers recognise your brand and trust what they see.' },
+        ]}
+      />
+
       <AppSteps
+        background="bg-background"
         headline={<>How it <span className="text-primary">works</span></>}
         lead="From a product in your catalog to a published post, in one place."
         steps={[
@@ -80,6 +99,7 @@ export default function SocialAppPage() {
       <AppFeatureCards
         headline={<>Consistent on <span className="text-primary">every platform</span></>}
         subhead="What 1-SOCIAL is designed to do."
+        background="bg-secondary/20"
         features={[
           { icon: Sparkles, title: 'Content from your catalog', body: 'Posts and captions are generated from your own products and brand story, not generic templates, so what you share is authentic and matches what you sell.' },
           { icon: CalendarDays, title: 'Scheduling calendar', body: 'See your week at a glance and plan posts ahead instead of posting day by day.' },

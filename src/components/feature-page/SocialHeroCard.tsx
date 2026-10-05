@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import { CalendarDays, CheckCircle2, Clock } from 'lucide-react'
+import { CalendarDays, CheckCircle2, Clock, Gauge } from 'lucide-react'
 
 // Static illustration for the 1-SOCIAL page: one dashboard with a week of posts across channels.
 const week = [
@@ -52,14 +52,20 @@ export const SocialHeroCard: React.FC = () => (
 
     {/* Next post */}
     <div className="px-5 pb-5 flex flex-col gap-3">
-      <div className="text-[13px] font-bold uppercase tracking-wider text-slate-400">Next post · Wed 10:00</div>
+      <div className="text-[13px] font-bold uppercase tracking-wider text-slate-400 flex items-center justify-between gap-3">
+        <span>Next post · Wed 10:00</span>
+        <span className="flex items-center gap-1.5 text-[11px] text-success"><Gauge className="w-3 h-3" aria-hidden="true" /> Confidence: high</span>
+      </div>
       <div className="border border-primary/40 bg-primary/5 rounded-[var(--radius)] p-3 flex gap-3">
         <div className="relative w-20 h-20 rounded-md overflow-hidden shrink-0 border border-slate-700/50">
           <Image src="/demo-product.jpg" alt="" fill sizes="80px" className="object-cover" />
         </div>
-        <p className="m-0 text-[13px] leading-relaxed text-slate-300">
-          Hand block printed in Sanganer. Our ivory quilted comforter brings soft colour to any bedroom.
-        </p>
+        <div className="flex flex-col gap-2">
+          <p className="m-0 text-[13px] leading-relaxed text-slate-300">
+            Hand block printed in Sanganer. Our ivory quilted comforter brings soft colour to any bedroom.
+          </p>
+          <span className="text-[11px] text-slate-500">Source: your catalog</span>
+        </div>
       </div>
     </div>
 
