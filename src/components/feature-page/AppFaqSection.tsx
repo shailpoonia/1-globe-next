@@ -5,7 +5,13 @@ import { Section } from '@/components/shared/Section'
 import { SectionHeader } from '@/components/shared/SectionHeader'
 import { BrandText } from '@/components/shared/BrandLogo'
 
-export const AppFaqSection: React.FC = () => {  const faqs = [
+export interface AppFaq {
+  q: string
+  a: string
+}
+
+// 1-OPTIMIZER answers by default; other app pages pass their own.
+const OPTIMIZER_FAQS: AppFaq[] = [
     {
       q: "What is 1-OPTIMIZER?",
       a: "1-OPTIMIZER is an image performance tool designed for Shopify stores. It helps merchants optimize image files, improve image metadata, and work with image editing and storefront performance tools."
@@ -34,8 +40,9 @@ export const AppFaqSection: React.FC = () => {  const faqs = [
       q: "Do I have to optimize images one by one?",
       a: "Merchants can work with images individually, by product or collection, or across broader catalog scopes depending on the workflow. Bulk optimization uses the app's processing workflow, while interactive editing tools can be used on selected images."
     }
-  ]
+]
 
+export const AppFaqSection: React.FC<{ faqs?: AppFaq[] }> = ({ faqs = OPTIMIZER_FAQS }) => {
   return (
     <Section id="faq" className="section-spacing bg-background border-b border-border">
       <div className="max-w-3xl mx-auto px-6 sm:px-8 lg:px-12">
