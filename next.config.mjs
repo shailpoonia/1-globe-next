@@ -22,8 +22,8 @@ const nextConfig = {
         headers: securityHeaders,
       },
       {
-        // Versioned file name: change the name (hero-v3.mp4) when the video changes.
-        source: '/hero-v2.mp4',
+        // Versioned file name: change the name (ecommerce-performance-globe-v3.mp4) when the video changes.
+        source: '/ecommerce-performance-globe-v2.mp4',
         headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }],
       },
       {

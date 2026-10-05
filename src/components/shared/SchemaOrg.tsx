@@ -8,7 +8,7 @@ export function OrganizationSchema() {
     '@id': ENTITY_ORGANIZATION['@id'],
     name: ENTITY_ORGANIZATION.name,
     url: ENTITY_ORGANIZATION.website,
-    logo: `${siteConfig.url}/logo-square.png`,
+    logo: `${siteConfig.url}/1-globe-logo.png`,
     email: company.email.support,
     contactPoint: {
       '@type': 'ContactPoint',

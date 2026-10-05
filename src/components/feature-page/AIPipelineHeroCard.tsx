@@ -70,8 +70,8 @@ export const AIPipelineHeroCard: React.FC = () => {
       <div className="p-5 pb-0">
         <div className="relative rounded-[var(--radius)] overflow-hidden bg-slate-800 border border-slate-700/50 aspect-video isolate">
           <Image 
-            src="/Wall-Clock-Artistic-Wooden-12-Inch.webp" 
-            alt="Wooden Wall Clock" 
+            src="/wooden-wall-clock-12-inch.webp" 
+            alt="Handcrafted 12-inch wooden wall clock, minimalist wall decor" 
             fill
             sizes="(max-width: 420px) 100vw, 420px"
             className="object-cover opacity-80"

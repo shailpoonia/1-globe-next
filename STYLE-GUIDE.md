@@ -21,7 +21,7 @@ copied or hard-coded.
 
 Rules:
 - Never write a colour as a hex code in a component. Use a token. To change the brand cyan, edit `--brand` and nothing else.
-- Image files cannot read CSS: `src/app/icon.svg`, `favicon.ico`, `apple-icon.png`, `public/logo-square.png` and `public/og-image.jpg` carry the cyan baked in. Re-export them when the brand colour changes.
+- Image files cannot read CSS: `src/app/icon.svg`, `favicon.ico`, `apple-icon.png`, `public/1-globe-logo.png` and `public/1-globe-share-image.jpg` carry the cyan baked in. Re-export them when the brand colour changes.
 - To add an app: add it to `ENTITY_PRODUCTS` in `entities.ts`, its name to `BRAND_NAMES` and its mark to `MARK_SHAPES` in `BrandLogo.tsx`. Any new letters in its name must exist in the `'1-GLOBE Brand'` font.
 
 ## 2. Colour

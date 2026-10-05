@@ -40,7 +40,7 @@ export const socialLinks = [
 /** Default share image (1200 x 630) in /public. Set explicitly on every page: a page that
  * defines its own openGraph would otherwise drop an image inherited from a parent segment. */
 export const shareImage = {
-  url: '/og-image.jpg',
+  url: '/1-globe-share-image.jpg',
   width: 1200,
   height: 630,
   alt: "1-GLOBE: Build a store that's built to perform. Ecommerce performance technology for online stores: images, listings, content and social media.",
@@ -61,7 +61,7 @@ interface BuildMetadataInput {
  * Page metadata with its own Open Graph and Twitter tags.
  * Next.js merges metadata shallowly, so a page that sets only title/description
  * would otherwise inherit the root layout's openGraph object unchanged.
- * The share image comes from src/app/opengraph-image.jpg and twitter-image.jpg.
+ * The share image is public/1-globe-share-image.jpg (shareImage above).
  */
 export function buildMetadata({
   title,

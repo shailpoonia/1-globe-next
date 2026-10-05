@@ -14,7 +14,7 @@ export const EditorialHero: React.FC = () => {
       {/* Background Media */}
       <div className="absolute inset-0 w-full h-full overflow-hidden bg-black">
         <Image
-          src="/hero-poster.jpg"
+          src="/ecommerce-performance-globe.webp"
           alt=""
           fill
           sizes="100vw"
