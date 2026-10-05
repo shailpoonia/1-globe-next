@@ -36,7 +36,7 @@ export const HeroVideo: React.FC = () => {
       aria-hidden="true"
       className="absolute inset-0 w-full h-full object-cover object-center opacity-100 hidden md:block motion-reduce:hidden animate-in fade-in duration-1000"
     >
-      <source src="/hero-v2.mp4" type="video/mp4" />
+      <source src="/ecommerce-performance-globe-v2.mp4" type="video/mp4" />
     </video>
   )
 }

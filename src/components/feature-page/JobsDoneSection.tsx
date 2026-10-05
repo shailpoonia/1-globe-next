@@ -99,9 +99,9 @@ export const JobsDoneSection: React.FC = () => {
             body="Images are cropped to your store's aspect ratio, keeping the product in frame."
           >
             <div className="relative h-36 rounded-xl overflow-hidden bg-neutral-950 border border-border">
-              <Image src="/demo-product.jpg" alt="" fill sizes="(max-width: 1024px) 100vw, 360px" className="object-cover opacity-35" />
+              <Image src="/ivory-quilted-comforter-block-printed.webp" alt="" fill sizes="(max-width: 1024px) 100vw, 360px" className="object-cover opacity-35" />
               <div className="absolute inset-y-3 left-1/2 -translate-x-1/2 aspect-square rounded-lg overflow-hidden border-2 border-primary">
-                <Image src="/demo-product.jpg" alt="" fill sizes="140px" className="object-cover" />
+                <Image src="/ivory-quilted-comforter-block-printed.webp" alt="Comforter photo cropped to a 1:1 square with the product in frame" fill sizes="140px" className="object-cover" />
               </div>
               <span className="absolute bottom-2 right-2 rounded-md bg-neutral-950/80 px-2 py-0.5 text-xs font-semibold text-primary">1:1</span>
             </div>
@@ -116,13 +116,13 @@ export const JobsDoneSection: React.FC = () => {
             <div className="grid grid-cols-2 gap-3">
               <figure className="m-0 flex flex-col gap-2">
                 <div className="relative h-28 rounded-xl overflow-hidden border border-border">
-                  <Image src="/demo-product.jpg" alt="" fill sizes="180px" className="object-cover [filter:brightness(0.6)_sepia(0.5)_contrast(0.85)]" />
+                  <Image src="/ivory-quilted-comforter-block-printed.webp" alt="Before: comforter photo with a dull, uneven tone" fill sizes="180px" className="object-cover [filter:brightness(0.6)_sepia(0.5)_contrast(0.85)]" />
                 </div>
                 <figcaption className="text-xs text-neutral-500">Before</figcaption>
               </figure>
               <figure className="m-0 flex flex-col gap-2">
                 <div className="relative h-28 rounded-xl overflow-hidden border border-primary/40">
-                  <Image src="/demo-product.jpg" alt="" fill sizes="180px" className="object-cover" />
+                  <Image src="/ivory-quilted-comforter-block-printed.webp" alt="After: the same comforter photo with clean, even colour" fill sizes="180px" className="object-cover" />
                 </div>
                 <figcaption className="text-xs text-primary">After</figcaption>
               </figure>

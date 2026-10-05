@@ -166,7 +166,7 @@ const Slide1Content: React.FC = () => {
         
         {/* Visual Box */}
         <div className="relative w-full md:w-1/2 bg-slate-800 border border-slate-700/50 rounded-xl overflow-hidden aspect-video shadow-xl">
-          <Image src="/demo-product.jpg" alt="Ivory quilted comforter with coral block-printed flowers and a blue and coral border, on a bed with white pillows" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover opacity-80" />
+          <Image src="/ivory-quilted-comforter-block-printed.webp" alt="Ivory quilted comforter with coral block-printed flowers and a blue and coral border, on a bed with white pillows" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover opacity-80" />
           <div className="absolute left-0 w-full h-[2px] bg-primary shadow-[0_0_8px_2px_rgb(var(--brand)/0.6)] s1-animate-scan z-10">
             <div className="absolute top-0 left-0 w-full h-12 bg-gradient-to-b from-primary/20 to-transparent -translate-y-full" />
           </div>
@@ -292,10 +292,10 @@ const Slide2Content: React.FC = () => {
         {/* Mock Blog Card */}
         <div className="w-full max-w-md bg-slate-800/80 border border-slate-700 rounded-xl overflow-hidden shadow-xl mb-8 group flex items-start p-4 gap-4">
            <div className="relative w-20 h-20 rounded-md bg-slate-700 overflow-hidden shrink-0">
-             <Image src="/demo-product.jpg" alt="" fill sizes="80px" className="object-cover group-hover:scale-110 transition-transform duration-500" />
+             <Image src="/ivory-quilted-comforter-block-printed.webp" alt="Ivory quilted comforter with coral block-printed flowers and a blue and coral border" fill sizes="80px" className="object-cover group-hover:scale-110 transition-transform duration-500" />
            </div>
            <div>
-             <div className="text-[13px] text-primary font-bold uppercase tracking-wider mb-1">Blog Post Published</div>
+             <div className="text-[13px] text-primary font-bold uppercase tracking-wider mb-1">Example blog post</div>
              <h4 className="text-sm font-semibold text-slate-200 leading-tight mb-2">The Art of Sanganer Hand Block Printing: A Bedroom Story</h4>
              <div className="text-[13px] text-slate-400 flex items-center gap-1">
                <LinkIcon className="w-3 h-3" /> Links directly to product

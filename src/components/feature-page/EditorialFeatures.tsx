@@ -44,7 +44,7 @@ function Chip({ children, active = false }: { children: React.ReactNode; active?
 
 const thumb = (
   <div className="relative w-16 h-16 rounded-lg overflow-hidden shrink-0 border border-border">
-    <Image src="/Wall-Clock-Artistic-Wooden-12-Inch.webp" alt="" fill sizes="64px" className="object-cover" />
+    <Image src="/wooden-wall-clock-12-inch.webp" alt="" fill sizes="64px" className="object-cover" />
   </div>
 )
 
@@ -152,9 +152,9 @@ const EditingVisual = (
       ))}
     </ul>
     <div className="relative h-48 sm:h-56 rounded-lg overflow-hidden bg-secondary">
-      <Image src="/demo-product.jpg" alt="" fill sizes="(max-width: 1024px) 100vw, 520px" className="object-cover opacity-40" />
+      <Image src="/ivory-quilted-comforter-block-printed.webp" alt="" fill sizes="(max-width: 1024px) 100vw, 520px" className="object-cover opacity-40" />
       <div className="absolute inset-y-4 left-1/2 -translate-x-1/2 aspect-square rounded-md overflow-hidden border-2 border-primary">
-        <Image src="/demo-product.jpg" alt="" fill sizes="220px" className="object-cover" />
+        <Image src="/ivory-quilted-comforter-block-printed.webp" alt="Comforter photo cropped to a 1:1 square" fill sizes="220px" className="object-cover" />
       </div>
       <span className="absolute bottom-3 right-3 rounded-md bg-card px-2 py-1 text-xs font-semibold text-primary">1:1 square</span>
     </div>

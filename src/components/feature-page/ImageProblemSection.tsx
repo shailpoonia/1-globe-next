@@ -107,7 +107,8 @@ export const ImageProblemSection: React.FC = () => {
             <div className="bg-card border border-destructive/30 rounded-xl p-6 flex flex-col gap-5">
               <div className="flex items-center gap-5">
                 <div className="relative w-20 h-20 rounded-lg overflow-hidden shrink-0">
-                  <Image src="/Wall-Clock-Artistic-Wooden-12-Inch.webp" alt="" fill sizes="80px" className="object-cover" />
+                  {/* Deliberately no alt text: this is the "before" state being illustrated. */}
+                  <Image src="/wooden-wall-clock-12-inch.webp" alt="" fill sizes="80px" className="object-cover" />
                 </div>
                 <div className="flex flex-col gap-1">
                   <span className="text-[13px] font-semibold uppercase tracking-[0.08em] text-destructive">Before</span>
@@ -123,7 +124,7 @@ export const ImageProblemSection: React.FC = () => {
             <div className="bg-card border border-primary/30 rounded-xl p-6 flex flex-col gap-5">
               <div className="flex items-center gap-5">
                 <div className="relative w-20 h-20 rounded-lg overflow-hidden shrink-0">
-                  <Image src="/Wall-Clock-Artistic-Wooden-12-Inch.webp" alt="Handcrafted 12-inch wooden wall clock on a white wall" fill sizes="80px" className="object-cover" />
+                  <Image src="/wooden-wall-clock-12-inch.webp" alt="Handcrafted 12-inch wooden wall clock on a white wall" fill sizes="80px" className="object-cover" />
                 </div>
                 <div className="flex flex-col gap-1">
                   <span className="text-[13px] font-semibold uppercase tracking-[0.08em] text-primary">After</span>

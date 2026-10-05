@@ -4,10 +4,10 @@ import { ArrowDown, CheckCircle2, FileText, Gauge, Package } from 'lucide-react'
 
 // Static illustration for the 1-BLOG page: one catalog product becomes a structured draft.
 const outline = [
-  { h: 'Where Sanganer block printing comes from', confidence: 'High' },
-  { h: 'How each pattern is printed by hand', confidence: 'High' },
-  { h: 'Styling a block-printed comforter', confidence: 'High' },
-  { h: 'Caring for hand-printed cotton', confidence: 'Check' },
+  { h: "Moradabad's woodcraft tradition", confidence: 'High' },
+  { h: 'Why every platter edge is different', confidence: 'High' },
+  { h: 'Styling a platter set for entertaining', confidence: 'High' },
+  { h: 'Caring for mango wood', confidence: 'Check' },
 ]
 
 export const BlogHeroCard: React.FC = () => (
@@ -20,11 +20,11 @@ export const BlogHeroCard: React.FC = () => (
       </div>
       <div className="flex items-center gap-4 border border-slate-700/50 bg-slate-900/40 rounded-[var(--radius)] p-3">
         <div className="relative w-14 h-14 rounded-md overflow-hidden shrink-0 border border-slate-700/50">
-          <Image src="/demo-product.jpg" alt="" fill sizes="56px" className="object-cover" />
+          <Image src="/round-tree-mango-wood-platter-set-of-3.webp" alt="Round Tree Mango Wood Platter Set of 3 with natural bark-style edges" fill sizes="56px" className="object-cover" />
         </div>
         <div className="flex flex-col min-w-0">
-          <span className="text-sm font-semibold text-slate-200 truncate">Ivory Quilted Comforter</span>
-          <span className="text-xs text-slate-400 truncate">Hand block printed · Cotton · Queen</span>
+          <span className="text-sm font-semibold text-slate-200 truncate">Round Tree Mango Wood Platter Set of 3</span>
+          <span className="text-xs text-slate-400 truncate">Mango wood · Made in Moradabad · Set of 3</span>
         </div>
       </div>
     </div>
@@ -39,7 +39,7 @@ export const BlogHeroCard: React.FC = () => (
         <FileText className="w-3.5 h-3.5" aria-hidden="true" /> Blog draft
       </div>
       <div className="border border-primary/40 bg-primary/5 rounded-[var(--radius)] p-4 flex flex-col gap-3">
-        <h4 className="text-[15px] font-semibold leading-snug text-slate-100">The Art of Sanganer Hand Block Printing: A Bedroom Story</h4>
+        <h4 className="text-[15px] font-semibold leading-snug text-slate-100">From Moradabad to Your Table: The Story Behind Our Mango Wood Platters</h4>
         <ol className="m-0 p-0 list-none flex flex-col gap-2">
           {outline.map(({ h, confidence }) => (
             <li key={h} className="flex items-start gap-2.5 text-[13px] text-slate-300">

@@ -58,11 +58,11 @@ export const SocialHeroCard: React.FC = () => (
       </div>
       <div className="border border-primary/40 bg-primary/5 rounded-[var(--radius)] p-3 flex gap-3">
         <div className="relative w-20 h-20 rounded-md overflow-hidden shrink-0 border border-slate-700/50">
-          <Image src="/demo-product.jpg" alt="" fill sizes="80px" className="object-cover" />
+          <Image src="/round-blue-mango-wood-serving-tray.webp" alt="Round Blue Mango Wood Serving Tray with a blue and white floral enamel base and cut-out handles" fill sizes="80px" className="object-cover" />
         </div>
         <div className="flex flex-col gap-2">
           <p className="m-0 text-[13px] leading-relaxed text-slate-300">
-            Hand block printed in Sanganer. Our ivory quilted comforter brings soft colour to any bedroom.
+            Solid mango wood with a blue and white floral enamel finish. Our round serving tray brings colour to every table.
           </p>
           <span className="text-[11px] text-slate-500">Source: your catalog</span>
         </div>
