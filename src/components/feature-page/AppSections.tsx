@@ -10,8 +10,8 @@ export interface AppStep {
   body: string
 }
 
-export const AppSteps: React.FC<{ headline: React.ReactNode; lead: string; steps: AppStep[] }> = ({ headline, lead, steps }) => (
-  <Section id="how" className="section-spacing bg-secondary/20 border-b border-border scroll-mt-32">
+export const AppSteps: React.FC<{ headline: React.ReactNode; lead: string; steps: AppStep[]; background?: string }> = ({ headline, lead, steps, background = 'bg-secondary/20' }) => (
+  <Section id="how" className={`section-spacing ${background} border-b border-border scroll-mt-32`}>
     <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
       <div className="mb-12 md:mb-14 flex flex-col gap-4 max-w-2xl">
         <h2 className="text-section-title">{headline}</h2>
@@ -37,10 +37,17 @@ export interface AppFeature {
   body: string
 }
 
-export const AppFeatureCards: React.FC<{ headline: React.ReactNode; subhead: string; features: AppFeature[] }> = ({ headline, subhead, features }) => (
-  <Section id="features" className="section-spacing bg-background border-b border-border scroll-mt-32">
+export const AppFeatureCards: React.FC<{
+  headline: React.ReactNode
+  subhead: string
+  features: AppFeature[]
+  id?: string
+  eyebrow?: string
+  background?: string
+}> = ({ headline, subhead, features, id = 'features', eyebrow = 'Capabilities', background = 'bg-background' }) => (
+  <Section id={id} className={`section-spacing ${background} border-b border-border scroll-mt-32`}>
     <div className="max-w-content mx-auto px-6 sm:px-8 lg:px-12">
-      <SectionHeader eyebrow="Capabilities" headline={headline} subhead={subhead} align="center" />
+      <SectionHeader eyebrow={eyebrow} headline={headline} subhead={subhead} align="center" />
 
       <ul className="m-0 p-0 list-none grid grid-cols-1 md:grid-cols-2 gap-5">
         {features.map(({ icon: Icon, title, body }) => (

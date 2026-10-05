@@ -81,7 +81,7 @@ export default function SocialAppPage() {
         headline={<>Consistent on <span className="text-primary">every platform</span></>}
         subhead="What 1-SOCIAL is designed to do."
         features={[
-          { icon: Sparkles, title: 'Content from your catalog', body: 'Posts and captions are generated from your own products, so what you share matches what you sell.' },
+          { icon: Sparkles, title: 'Content from your catalog', body: 'Posts and captions are generated from your own products and brand story, not generic templates, so what you share is authentic and matches what you sell.' },
           { icon: CalendarDays, title: 'Scheduling calendar', body: 'See your week at a glance and plan posts ahead instead of posting day by day.' },
           { icon: Send, title: 'Automatic publishing', body: 'Posts go out at the time you set, across your connected platforms, without logging in to each one.' },
           { icon: LayoutDashboard, title: 'One dashboard', body: 'Create, schedule and track your social posts in one place.' },

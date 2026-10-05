@@ -1,5 +1,5 @@
 import { Metadata } from 'next'
-import { Boxes, Heading, PenLine, Layers } from 'lucide-react'
+import { Boxes, Heading, PenLine, Layers, Fingerprint, Database, Gauge, Award } from 'lucide-react'
 import { buildMetadata } from '@/lib/seo'
 import { ENTITY_PRODUCTS } from '@/lib/entities'
 import { CtaBand } from '@/components/shared/CtaBand'
@@ -27,6 +27,10 @@ const faqs = [
   {
     q: 'How is 1-BLOG different from a generic AI writer?',
     a: 'A generic writer starts from a blank page. 1-BLOG starts from your products, so every draft is built around real items in your catalog rather than treating blogging as a separate activity.',
+  },
+  {
+    q: 'Is this just AI-generated content?',
+    a: 'AI does the writing, but the substance comes from you: your products, your data and your story. Each section shows a confidence level for how well it is backed by your own data, so the result is authentic content rather than generic text.',
   },
   {
     q: 'Do I stay in control of what is written?',
@@ -67,7 +71,22 @@ export default function BlogAppPage() {
         heroMoment={<BlogHeroCard />}
       />
 
+      <AppFeatureCards
+        id="authentic"
+        eyebrow="Authentic content"
+        background="bg-secondary/20"
+        headline={<>Your data{' '}<br />Your story{' '}<br />Your <span className="text-primary">authority</span></>}
+        subhead="1-BLOG uses AI to write, but it is not generic AI content. It comes from your own products, your own data and your own story: the original, first-hand material that search engines and AI assistants look for."
+        features={[
+          { icon: Fingerprint, title: 'Authentic by design', body: 'Every draft is built from your catalog and your brand story, not from what the rest of the internet already says.' },
+          { icon: Database, title: 'Clean, consistent facts', body: 'Product names, materials, sizes and details come straight from your catalog, so your content matches your listings.' },
+          { icon: Gauge, title: 'A confidence level for every section', body: 'Each part of a draft shows how well it is backed by your own data, so you know exactly what to check before you use it.' },
+          { icon: Award, title: 'Content that carries authority', body: 'Original, first-hand content is hard to copy. Your products and your story give your blog something no one else has.' },
+        ]}
+      />
+
       <AppSteps
+        background="bg-background"
         headline={<>How it <span className="text-primary">works</span></>}
         lead="Three steps from a product in your catalog to a structured draft."
         steps={[
@@ -80,6 +99,7 @@ export default function BlogAppPage() {
       <AppFeatureCards
         headline={<>Built on your <span className="text-primary">products</span></>}
         subhead="What 1-BLOG is designed to do."
+        background="bg-secondary/20"
         features={[
           { icon: Boxes, title: 'Starts from your catalog', body: 'Posts are built from the product names, details and images you already have, so they stay accurate to what you sell.' },
           { icon: Heading, title: 'Structured drafts', body: 'Clear titles, headings and sections that readers and search engines can follow.' },

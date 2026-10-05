@@ -1,13 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
-import { ArrowDown, CheckCircle2, FileText, Package } from 'lucide-react'
+import { ArrowDown, CheckCircle2, FileText, Gauge, Package } from 'lucide-react'
 
 // Static illustration for the 1-BLOG page: one catalog product becomes a structured draft.
 const outline = [
-  'Where Sanganer block printing comes from',
-  'How each pattern is printed by hand',
-  'Styling a block-printed comforter',
-  'Caring for hand-printed cotton',
+  { h: 'Where Sanganer block printing comes from', confidence: 'High' },
+  { h: 'How each pattern is printed by hand', confidence: 'High' },
+  { h: 'Styling a block-printed comforter', confidence: 'High' },
+  { h: 'Caring for hand-printed cotton', confidence: 'Check' },
 ]
 
 export const BlogHeroCard: React.FC = () => (
@@ -41,10 +41,11 @@ export const BlogHeroCard: React.FC = () => (
       <div className="border border-primary/40 bg-primary/5 rounded-[var(--radius)] p-4 flex flex-col gap-3">
         <h4 className="text-[15px] font-semibold leading-snug text-slate-100">The Art of Sanganer Hand Block Printing: A Bedroom Story</h4>
         <ol className="m-0 p-0 list-none flex flex-col gap-2">
-          {outline.map((h, i) => (
+          {outline.map(({ h, confidence }) => (
             <li key={h} className="flex items-start gap-2.5 text-[13px] text-slate-300">
               <span className="font-mono text-[11px] text-primary pt-0.5">H2</span>
-              <span className={i === outline.length - 1 ? 'text-slate-400' : ''}>{h}</span>
+              <span className="flex-1">{h}</span>
+              <span className={`shrink-0 text-[11px] font-semibold uppercase tracking-wider ${confidence === 'High' ? 'text-success' : 'text-warning'}`}>{confidence}</span>
             </li>
           ))}
         </ol>
@@ -54,8 +55,8 @@ export const BlogHeroCard: React.FC = () => (
     {/* Status */}
     <div className="p-5 pt-4 bg-slate-900/40 border-t border-border/50 flex flex-wrap items-center justify-between gap-3">
       <div className="flex flex-wrap gap-2">
-        <span className="px-2.5 py-1 rounded-full border border-slate-700/50 text-xs font-medium text-slate-400">4 sections</span>
-        <span className="px-2.5 py-1 rounded-full border border-slate-700/50 text-xs font-medium text-slate-400">Built from 1 product</span>
+        <span className="px-2.5 py-1 rounded-full border border-slate-700/50 text-xs font-medium text-slate-400">Source: your catalog</span>
+        <span className="px-2.5 py-1 rounded-full border border-slate-700/50 text-xs font-medium text-slate-400 flex items-center gap-1.5"><Gauge className="w-3 h-3 text-success" aria-hidden="true" /> Confidence: high</span>
       </div>
       <span className="flex items-center gap-1.5 text-xs font-semibold text-primary">
         <CheckCircle2 className="w-4 h-4" aria-hidden="true" /> Ready for your review
