@@ -74,8 +74,8 @@ export default function BlogAppPage() {
       <AppFeatureCards
         id="authentic"
         eyebrow="Authentic content"
-        background="bg-secondary/20"
-        headline={<>Your data{' '}<br />Your story{' '}<br />Your <span className="text-primary">authority</span></>}
+        background="reading-light"
+        headline={<>Your data{' '}<br />Your story{' '}<br />Your <span className="text-brand">authority</span></>}
         subhead="1-BLOG uses AI to write, but it is not generic AI content. It comes from your own products, your own data and your own story: the original, first-hand material that search engines and AI assistants look for."
         features={[
           { icon: Fingerprint, title: 'Authentic by design', body: 'Every draft is built from your catalog and your brand story, not from what the rest of the internet already says.' },

@@ -4,6 +4,7 @@ import { Section } from '@/components/shared/Section'
 import { SectionHeader } from '@/components/shared/SectionHeader'
 
 // Shared sections for the app pages: "How it works" steps and a grid of capability cards.
+// Pass background="reading-light" for a light (white) section, as on the homepage.
 
 export interface AppStep {
   title: string
